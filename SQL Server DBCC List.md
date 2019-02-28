@@ -3,19 +3,25 @@
 Source links:
  - [MSDN DBCC (Transact-SQL)](https://msdn.microsoft.com/en-us/library/ms188796.aspx)
  - [SQL SERVER – DBCC commands List – documented and undocumented](http://blog.sqlauthority.com/2007/05/15/sql-server-dbcc-commands-list-documented-and-undocumented/) (by Pinal Dave)
+ - [Microsoft SQL Server DBCC Commands list](http://www.sqlservice.se/microsoft-sql-server-dbcc-commands/) (by Steinar Andersen)
+ - [Concept and basics of DBCC Commands in SQL Server](https://www.sqlshack.com/concept-and-basics-of-dbcc-commands-in-sql-server/) (by Mustafa EL-Masry)
 
 
-To learn about all the DBCC commands run following script in query analyzer.
-DBCC TRACEON(2520)
-DBCC HELP ('?')
+To learn about all the DBCC commands run following script in query analyzer:
+```
+DBCC TRACEON(2520);
+DBCC HELP ('?');
 GO
+```
 
-To learn about syntax of an individual DBCC command run following script in query analyzer.
-DBCC HELP(<command>)
+To learn about syntax of an individual DBCC command run following script in query analyzer:
+```
+DBCC HELP(<command>);
 GO
+```
 
 Following is the list of all the DBCC commands and their syntax. List contains documented and undocumented DBCC commands.
-
+```
 DBCC activecursors [(spid)]
 
 DBCC addextendedproc (function_name, dll_name)
@@ -24,8 +30,7 @@ DBCC addinstance (objectname, instancename)
 
 DBCC adduserobject (name)
 
-DBCC auditevent (eventclass, eventsubclass, success, loginname
-, rolename, dbusername, loginid)
+DBCC auditevent (eventclass, eventsubclass, success, loginname, rolename, dbusername, loginid)
 
 DBCC autopilot (typeid, dbid, tabid, indid, pages [,flag])
 
@@ -41,32 +46,31 @@ DBCC cachestats
 
 DBCC callfulltext
 
-DBCC checkalloc [('database_name'[, NOINDEX | REPAIR])] [WITH NO_INFOMSGS[, ALL_ERRORMSGS][, ESTIMATEONLY]]
+DBCC CHECKALLOC [('database_name'[, NOINDEX | REPAIR])] [WITH NO_INFOMSGS[, ALL_ERRORMSGS][, ESTIMATEONLY]] https://msdn.microsoft.com/en-us/library/ms188422.aspx
 
-DBCC checkcatalog [('database_name')] [WITH NO_INFOMSGS]
+DBCC CHECKCATALOG [('database_name')] [WITH NO_INFOMSGS] https://msdn.microsoft.com/en-us/library/ms186720.aspx
 
-DBCC checkconstraints [( 'tab_name' | tab_id | 'constraint_name' | constraint_id )] [WITH ALL_CONSTRAINTS | ALL_ERRORMSGS]
+DBCC CHECKCONSTRAINTS [( 'tab_name' | tab_id | 'constraint_name' | constraint_id )] [WITH ALL_CONSTRAINTS | ALL_ERRORMSGS] https://msdn.microsoft.com/en-us/library/ms189496.aspx
 
-DBCC checkdb [('database_name'[, NOINDEX | REPAIR])] [WITH NO_INFOMSGS[, ALL_ERRORMSGS] [, PHYSICAL_ONLY][, ESTIMATEONLY][,DBCC TABLOCK]
+DBCC CHECKDB [('database_name'[, NOINDEX | REPAIR])] [WITH NO_INFOMSGS[, ALL_ERRORMSGS] [, PHYSICAL_ONLY][, ESTIMATEONLY][,DBCC TABLOCK] https://msdn.microsoft.com/en-us/library/ms176064.aspx
 
 DBCC checkdbts (dbid, newTimestamp)]
 
-DBCC checkfilegroup [( [ {'filegroup_name' | filegroup_id} ] [, NOINDEX] )] [WITH NO_INFOMSGS
-[, ALL_ERRORMSGS][, PHYSICAL_ONLY][, ESTIMATEONLY][, TABLOCK]]
+DBCC checkfilegroup [( [ {'filegroup_name' | filegroup_id} ] [, NOINDEX] )] [WITH NO_INFOMSGS[, ALL_ERRORMSGS][, PHYSICAL_ONLY][, ESTIMATEONLY][, TABLOCK]]
 
 DBCC checkident ('table_name'[, { NORESEED | {RESEED [, new_reseed_value] } } ] )
 
 DBCC checkprimaryfile ( {'FileName'} [, opt={0|1|2|3} ])
 
-DBCC checktable ('table_name'[, {NOINDEX | index_id | REPAIR}])
-[WITH NO_INFOMSGS[, ALL_ERRORMSGS] [, PHYSICAL_ONLY][, ESTIMATEONLY][, TABLOCK]]
+DBCC CHECKTABLE ('table_name'[, {NOINDEX | index_id | REPAIR}]) [WITH NO_INFOMSGS[, ALL_ERRORMSGS] [, PHYSICAL_ONLY][, ESTIMATEONLY][, TABLOCK]] https://msdn.microsoft.com/en-us/library/ms174338.aspx
 
 DBCC cleantable ('database_name'|database_id, 'table_name'|table_id,[batch_size])
 
 DBCC cacheprofile [( {actionid} [, bucketid])
 
-DBCC clearspacecaches ('database_name'|database_id,
-'table_name'|table_id, 'index_name'|index_id)
+DBCC clearspacecaches ('database_name'|database_id, 'table_name'|table_id, 'index_name'|index_id)
+
+DBCC CLONEDATABASE https://support.microsoft.com/en-us/kb/3177838
 
 DBCC collectstats (on | off)
 
@@ -102,8 +106,7 @@ DBCC dropextendedproc (function_name)
 
 DBCC dropuserobject ('object_name')
 
-DBCC dumptrigger ({'BREAK', {0 | 1}} | 'DISPLAY' | {'SET', exception_number}
-| {'CLEAR', exception_number})
+DBCC dumptrigger ({'BREAK', {0 | 1}} | 'DISPLAY' | {'SET', exception_number} | {'CLEAR', exception_number})
 
 DBCC errorlog
 
@@ -122,7 +125,7 @@ DBCC flushprocindb (database)
 
 DBCC free dll_name (FREE)
 
-DBCC freeproccache
+DBCC FREEPROCCACHE [ ( { plan_handle | sql_handle | pool_name } ) ] [ WITH NO_INFOMSGS ] https://www.brentozar.com/archive/2016/02/when-shrinking-tempdb-just-wont-shrink/ https://msdn.microsoft.com/en-us/library/ms174283.aspx
 
 dbcc freeze_io (db)
 
@@ -139,7 +142,7 @@ dbcc ind ( { 'dbname' | dbid }, { 'objname' | objid }, { indid | 0 | -1 | -2 } )
 
 DBCC indexdefrag ({dbid | dbname | 0}, {tableid | tablename}, {indid |indname})
 
-DBCC inputbuffer (spid)
+DBCC INPUTBUFFER ( session_id [ , request_id ]) [WITH NO_INFOMSGS ] https://msdn.microsoft.com/en-us/library/ms187730.aspx
 
 DBCC invalidate_textptr (textptr)
 
@@ -156,8 +159,7 @@ DBCC lock ([{'DUMPTABLE' | 'DUMPSTATS' | 'RESETSTATS' | 'HASH'}] |
 
 DBCC lockobjectschema ('object_name')
 
-DBCC log ([dbid[,{0|1|2|3|4}[,['lsn','[0x]x:y:z']|['numrecs',num]|['xdesid','x:y'] |['extent','x:y']|['pageid','x:y']|['objid',{x,'y'}]|['logrecs',
-{'lop'|op}…]|['output',x,['filename','x']]…]]])
+DBCC log ([dbid[,{0|1|2|3|4}[,['lsn','[0x]x:y:z']|['numrecs',num]|['xdesid','x:y'] |['extent','x:y']|['pageid','x:y']|['objid',{x,'y'}]|['logrecs', {'lop'|op}…]|['output',x,['filename','x']]…]]])
 
 DBCC loginfo [({'database_name' | dbid})]
 
@@ -190,18 +192,15 @@ DBCC perflog
 
 DBCC perfmon
 
-DBCC pglinkage (dbid, startfile, startpg, number, printopt={0|1|2}
-, targetfile, targetpg, order={1|0})
+DBCC pglinkage (dbid, startfile, startpg, number, printopt={0|1|2}, targetfile, targetpg, order={1|0})
 
 DBCC pintable (database_id, table_id)
 
-DBCC procbuf [({'dbname' | dbid}[, {'objname' | objid}
-[, nbufs[, printopt = { 0 | 1 } ]]] )]
+DBCC procbuf [({'dbname' | dbid}[, {'objname' | objid}[, nbufs[, printopt = { 0 | 1 } ]]] )]
 
 DBCC proccache
 
-DBCC prtipage (dbid, objid, indexid [, [{{level, 0}
-| {filenum, pagenum}}] [,printopt]])
+DBCC prtipage (dbid, objid, indexid [, [{{level, 0} | {filenum, pagenum}}] [,printopt]])
 
 DBCC pss [(uid[, spid[, printopt = { 1 | 0 }]] )]
 
@@ -247,13 +246,11 @@ DBCC showweights
 DBCC shrinkdatabase ({dbid | 'dbname'}, [freespace_percentage
 [, {NOTRUNCATE | TRUNCATEONLY}]])
 
-DBCC shrinkfile ({fileid | 'filename'}, [compress_size
-[, {NOTRUNCATE | TRUNCATEONLY | EMPTYFILE}]])
+DBCC shrinkfile ({fileid | 'filename'}, [compress_size[, {NOTRUNCATE | TRUNCATEONLY | EMPTYFILE}]])
 
 DBCC sqlmgrstats
 
-DBCC sqlperf (LOGSPACE)({IOSTATS | LRUSTATS | NETSTATS | RASTATS [, CLEAR]}
-| {THREADS} | {LOGSPACE})
+DBCC SQLPERF (LOGSPACE)({IOSTATS | LRUSTATS | NETSTATS | RASTATS [, CLEAR]} | {THREADS} | {LOGSPACE}) https://docs.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-sqlperf-transact-sql
 
 DBCC stackdump [( {uid[, spid[, ecid]} | {threadId, 'THREADID'}] )]
 
@@ -261,7 +258,7 @@ DBCC tab ( dbid, objid )
 
 DBCC tape_control {'query' | 'release'}[,('.tape')]
 
-DBCC tec [( uid[, spid[, ecid]] )]
+DBCC TEC [( uid[, spid[, ecid]] )] http://sqlonice.com/context-in-perspective-6-taking-sessions-to-task/
 
 DBCC textall [({'database_name'|database_id}[, 'FULL' | FAST] )]
 
@@ -273,7 +270,7 @@ DBCC traceoff [( tracenum [, tracenum … ] )]
 
 DBCC traceon [( tracenum [, tracenum … ] )]
 
-DBCC tracestatus (trace# [, …trace#])
+DBCC TRACESTATUS ( [ [ trace# [ ,...n ] ] [ , ] [ -1 ] ] ) [ WITH NO_INFOMSGS ] https://msdn.microsoft.com/en-us/library/ms187809.aspx
 
 DBCC unpintable (dbid, table_id)
 
@@ -289,3 +286,5 @@ DBCC useroptions DBCC wakeup (spid)
 
 DBCC writepage ({ dbid, 'dbname' }, fileid, pageid, offset, length, data)
 
+DBCC OPTIMIZER_WHATIF ({property/cost_number | property_name} [, {integer_value | string_value} ]) http://www.sqlhammer.com/dbcc-optimizer_whatif-spoofing-production-hardware
+```
