@@ -3,10 +3,15 @@ Download links and complete information for all Microsoft SQL Server versions an
 
 Headers:
  - [Frequently used terms and acronyms](#frequently-used-terms-and-acronyms)
+ - [SQL Server Patching Shortcut](#sql-server-patching-shortcut)
  - [What are the most recent updates for SQL Server?](#what-are-the-most-recent-updates-for-sql-server)
- - [Microsoft SQL Server installation files hash](#microsoft-sql-server-installation-files-hash)
+ - [Microsoft SQL Server installation files info](#microsoft-sql-server-installation-files-info)
+ - [SQL Server Developer Edition Info](#sql-server-developer-edition-info)
+ - [SQL Server Express direct download links](#sql-server-express-direct-download-links)
  - [Internal Database Version and Compatibility Level](#internal-database-version-and-compatibility-level)
  - [Quick summary for SQL Server Service Packs](#quick-summary-for-sql-server-service-packs)
+ - [Microsoft SQL Server 2019 Builds](#microsoft-sql-server-2019-builds)
+ - [Microsoft SQL Server 2017 Builds](#microsoft-sql-server-2017-builds)
  - [Microsoft SQL Server 2016 Builds](#microsoft-sql-server-2016-builds)
  - [Microsoft SQL Server 2014 Builds](#microsoft-sql-server-2014-builds)
  - [Microsoft SQL Server 2012 Builds](#microsoft-sql-server-2012-builds)
@@ -18,146 +23,409 @@ Headers:
  - [Microsoft SQL Server 6.5 Builds](#microsoft-sql-server-65-builds)
  - [Microsoft SQL Server 6.0 Builds](#microsoft-sql-server-60-builds)
 
-Source link:
- - **Awesome official Microsoft article** - How to determine the version, edition and update level of SQL Server and its components: [KB321185](https://support.microsoft.com/en-us/kb/321185)
- - Naming schema for Microsoft SQL Server software update packages: [KB822499](https://support.microsoft.com/en-us/kb/822499)
- - Description of the standard terminology that is used to describe Microsoft software updates: [KB824684](https://support.microsoft.com/en-us/kb/824684)
- - An Incremental Servicing Model is available from the SQL Server team to deliver hotfixes for reported problems: [KB935897](https://support.microsoft.com/en-us/kb/935897)
- - SQL Server Updates by Brent Ozar team: http://sqlserverupdates.com/
- - Unofficial build chart lists: http://sqlserverbuilds.blogspot.ru/
- - Wikipedia: https://en.wikipedia.org/wiki/Microsoft_SQL_Server
- - SQL Server 2005 Downloads: https://msdn.microsoft.com/en-us/sqlserver/bb671254.aspx
- - SQL Server 2000 Downloads: https://msdn.microsoft.com/en-us/sqlserver/bb895925
- - SQL Server 7.0 Downloads: https://msdn.microsoft.com/en-us/sqlserver/bb671066
+Useful links:
+ - [KB321185 How to determine the version, edition and update level of SQL Server and its components](https://support.microsoft.com/help/321185)
+ - [KB822499 Naming schema for Microsoft SQL Server software update packages](https://support.microsoft.com/help/822499)
+ - [Microsoft SQL Server Support Lifecycle](https://support.microsoft.com/en-us/lifecycle?x=5&y=11&c2=1044)
+ - [Microsoft Update Catalog](http://www.catalog.update.microsoft.com)
+ - [SQL Server packages for Linux](https://packages.microsoft.com/)
+ - [Release notes for SQL Server 2017 on Linux](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes?view=sql-server-linux-2017)
+ - [KB824684 Description of the standard terminology that is used to describe Microsoft software updates](https://support.microsoft.com/help/824684)
+ - [KB935897 An Incremental Servicing Model is available from the SQL Server team to deliver hotfixes for reported problems](https://support.microsoft.com/help/935897)
+ - [KB2964518 Recommended updates and configuration options for SQL Server 2012 and SQL Server 2014 with high-performance workloads](https://support.microsoft.com/help/2964518)
+ - [Azure SQL Server Updates](https://azure.microsoft.com/en-us/updates/?product=sql-database&update-type=general-availability)
+ - [Most Recent KBs for Microsoft SQL Server RSS](https://support.microsoft.com/en-us/rss?rssid=1044)
+ - [Testing and Developing Supportability Roadmaps for ISV Applications (PDF)](http://blogs.technet.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-85-48-files/0827.testing-and-developing-supportability-roadmaps-for-isv-applications.pdf)
+ - [SQL Server Updates by Brent Ozar team](http://sqlserverupdates.com/)
+ - [Which Version of SQL Server Should You Use?](https://www.brentozar.com/archive/2019/01/which-version-of-sql-server-should-you-use/)
+ - [SQL Server Builds by SQLSentry](http://blogs.sqlsentry.com/category/sql-server-builds/)
+ - [SQL Server Release Services](https://blogs.msdn.microsoft.com/sqlreleaseservices/)
+ - [Why I have high hopes for the quality of SQL Server 2016 release by Remus Rusanu](https://medium.com/@rusanu/why-i-have-high-hopes-for-the-quality-of-sql-server-2016-release-6173bc1fbc82#.44kg2ktmg)
+ - [Unofficial SQL Server build chart lists](http://sqlserverbuilds.blogspot.ru/)
+ - [Unofficial SQL Server build chart lists in table representation](http://sqlbuilds.ekelmans.com/)
+ - [Hardware and Software Requirements for Installing SQL Server](https://msdn.microsoft.com/en-us//library/ms143506.aspx)
+ - [Wikipedia Microsoft SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
+ - [SQL Server 2005 Downloads](https://msdn.microsoft.com/en-us/sqlserver/bb671254.aspx)
+ - [SQL Server 2000 Downloads](https://msdn.microsoft.com/en-us/sqlserver/bb895925)
+ - [SQL Server 7.0 Downloads](https://msdn.microsoft.com/en-us/sqlserver/bb671066)
 
 Useful articles:
  - [How to identify your SQL Server version and edition](http://support.microsoft.com/kb/321185/en-us)
  - [SQL Server Internal Database Versions](http://sqlserverbuilds.blogspot.ru/2014/01/sql-server-internal-database-versions.html)
- - [Microsoft SQL Server Support Lifecycle](http://support2.microsoft.com/lifecycle/?LN=en-us&c2=1044)
+ - [Microsoft SQL Server Support Lifecycle](https://support.microsoft.com/en-us/lifecycle/)
  - [Microsoft SQL Server Home](http://www.microsoft.com/sql)
  - [Microsoft SQL Server Developer Center](http://msdn.microsoft.com/sqlserver)
  - [Microsoft TechNet: Microsoft SQL Server](http://technet.microsoft.com/en-us/sqlserver)
- - [Microsoft Knowledge Base](http://kbupdate.info/)
- - [Sqlservr.exe versions](http://www.mskbfiles.com/sqlservr.exe.php)
+ - [SQL Server Patching Shortcut](http://www.sqlservercentral.com/articles/SQL+Server+patching/138693/)
 
-**All SQL Server service packs are cumulative, meaning that each new service pack<br />
-contains all the fixes that are included with previous service packs and any new fixes.**
+**All SQL Server service packs and Cumulative Updates are cumulative, meaning that each new service pack and cumulative update contains all the fixes that are included with previous service packs and any new fixes.**
 
 
-## Frequently used terms and acronyms <a id="frequently-used-terms-and-acronyms"></a>
- - **CTP**: Community Technology Preview (beta release)
- - **RC**:  Release Candidate
- - **RTM**: Released To Manufacturing; It is the original, released build version of the product, i.e. what you get on the DVD or when you download the ISO file from MSDN.
- - **RTW**:  Usually means "release to web." It indicates a package that was released to the web and made available to customers for downloading.
- - **CU**:  Cumulative Update; Cumulative updates contain the bug fixes and enhancements–up to that point in time–that have been added since the previous Service Pack release and will be contained in the next service pack release. Installation of the Cumulative Update is similar to the installation of a Service Pack. Cumulative Updates are not fully regression tested.
- - **SP**: A tested, cumulative set of all hotfixes, security updates, critical updates, and updates. Service packs may also contain additional fixes for problems that are found internally since the release of the product and a limited number of customer-requested design changes or features.
- - **GDR**: General Distribution Release; GDR fixes should not contain any of the CU updates.
- - **QFE**: Quick Fix Engineering; QFE updates include CU fixes.
- - **SU**: Security update.
- - **Hotfix**: A single, cumulative package that includes one or more files that are used to address a problem in a product and are cumulative at the binary and file level. A hotfix addresses a specific customer situation and may not be distributed outside the customer's organization.
+## Frequently used terms and acronyms
+<a id="frequently-used-terms-and-acronyms"></a>
+**Great thanks to Aaron Bertrand for awesome article**: [Definitions of SQL Server release acronyms](http://blogs.sqlsentry.com/aaronbertrand/back-to-basics-release-acronyms/)
+
+ - **COD** *Critical On-Demand*: This is a fix for an issue that is deemed "critical" because of the severity of the issue, the number of customers it affects,
+or the lack of a feasible workaround (usually a combination of two or all three).
+The fix is released out-of-band from the usual Cumulative Update / Service Pack release cycle, and then rolled into the next Cumulative Update (or, depending on timing, the one after that).
+A COD can sometimes contain more than one QFE (defined below).
+ - **CU** *Cumulative Update*: This is a roll-up of multiple fixes that occurs between Service Packs, usually on a 60-day cycle (though that is subject to change).
+It used to require an e-mail and password to download and extract the files, because they were "less tested" than service packs, but [this is no longer the case](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-updates-to-the-sql-server-incremental-servicing-model-ism/).
+Functionality can also be added in Cumulative Updates (previously, this would only happen in Service Packs, and before that, only in major releases).
+Kendra Little just published [a fantastic blog post about this](http://www.littlekendra.com/2016/04/28/required-testing-for-installing-sql-server-cumulative-updates-and-service-packs/).
+You should feel comfortable applying Cumulative Updates as quickly as your regression and other test processes allow.
+ - **CTP** *Community Technology Preview*: This is a build of the "next" version of SQL Server (or sometimes a Service Pack) that can be used for testing new features and reporting bugs.
+With few exceptions, CTPs cannot be used in a production scenario, and they are usually limited to Express / Evaluation Editions.
+ - **GA** *General Availability*: For the traditional SQL Server product, this usually means that you can download the ISO from the usual sources (MSDN downloads, the TechNet Evaluation Center, or your volume licensing servers).
+For Azure SQL Database, this usually means that you can go and turn on the functionality without first agreeing to a waiver about preview functionality.
+ - **GDR** *General Distribution Release*: A GDR fix contains issues that are security-related and/or have a wide impact, and are released without any other critical updates that have been released for the specific branch.
+These are typically used by customers who need the fixes they contain, but do not have the resources to test all of the other fixes that come with Cumulative Updates.
+ - **QFE** *Quick Fix Engineering*: This is a potentially less-tested fix (also sometimes called a hotfix) that gets distributed to a small number of customers for a very specific issue, through a COD or CU.
+(In the Windows world, this is called an LDR – Limited Distribution Release – but that nomenclature has not caught on in the SQL Server team.)
+ - **RC** *Release Candidate*: This is a build that is almost ready for final release (RTM / GA). Usually it is feature complete, with the only remaining work comprised of minor bug fixes and fit & finish.
+However, this is not always strictly the case, as a few behavior changes were introduced in RCs for SQL Server 2016.
+ - **RDP** *Rapid Deployment Program*: No, this has nothing to do with remote desktop; it refers to a set of "early adopter" customers, usually used to help market the launch of a new version or feature.
+These are almost always a subset of TAP, and are almost always running the new version in production months before it is available to the public. James Serra goes into more detail [here](http://www.jamesserra.com/archive/2011/10/what-is-microsoft-tap-and-rdp/).
+ - **RTM** *Released To Manufacturing*: This means that the release is ready. Back when Microsoft shipped software on CDs and later DVDs, this represented the point in time when the discs could be printed.
+Not to be confused with launch (which is a marketing thing only) or General Availability (which means you can actually get the code).
+The delay between RTM and GA is much shorter now that software is generally distributed online instead of on physical media.
+ - **RTW** *Release to Web*: It indicates a package that was released to the web and made available to customers for downloading.
+ - **TAP** *Technology Adoption Program*: This describes a set of customers that help Microsoft shape and test specific features for a new release (or help shape and test new features individually).
+ - **SP** *Service Pack*: A Service Pack is, now, essentially a Cumulative Update with slightly different labeling.
+It is a roll-up of updates (including bug fixes and security updates) and sometimes contains new features.
+Like Cumulative Updates, Service Packs are cumulative. If you are applying SP3, you do not need to first deploy SP1 and SP2.
+ - **SU** or **CVE**: Security update.
+ - **Hotfix**: A single, cumulative package that includes one or more files that are used to address a problem in a product and are cumulative at the binary and file level. A hotfix addresses a specific customer situation and may not be distributed outside the customers organization.
+
+### References
+ - [KB #824684 : Description of the standard terminology that is used to describe Microsoft software updates](https://support.microsoft.com/en-us/kb/824684)
+ - [KB #935897 : An Incremental Servicing Model is available from the SQL Server team to deliver hotfixes for reported problems](https://support.microsoft.com/en-us/kb/935897)
+ - [QFE vs GDR/LDR hotfixes](https://blogs.technet.microsoft.com/instan/2009/03/04/qfe-vs-gdrldr-hotfixes/)
+ - [GDR, QFE, LDR… WTH?](http://blogs.technet.com/b/mrsnrub/archive/2009/05/14/gdr-qfe-ldr-wth.aspx)
+ - [GDR & LDR : The Next Generation](http://blogs.technet.com/b/mrsnrub/archive/2009/05/14/gdr-qfe-ldr-wth.aspx)
+ - [Terms used by Microsoft to describe the various software updates released by it](http://www.thewindowsclub.com/terms-used-by-microsoft-to-describe-the-various-software-updates-released-by-it)
+ - [What is Microsoft TAP and RDP?](http://www.jamesserra.com/archive/2011/10/what-is-microsoft-tap-and-rdp/)
 
 
-## What are the most recent updates for SQL Server? <a id="what-are-the-most-recent-updates-for-sql-server"></a>
+## SQL Server Patching Shortcut
+<a id="sql-server-patching-shortcut"></a>
 
-| Version | Latest Update                                                      | Build Number                                   | Release Date                             | Support Ends | Other Updates                                                     |
-|---------|--------------------------------------------------------------------|------------------------------------------------|---------------------------               |--------------|-------------------------------------------------------------------|
-| 2016    | [Download CTP3.3 2016]                                             | 13.0.1000.281                                  | 2016-02-01                               | ?            | [Other SQL 2016 Updates](#microsoft-sql-server-2016-builds)       |
-| 2014    | [Download 2014] then<br/>[SP1 2014] then<br/>[CU5 KB3130926]       | 12.0.2000.8<br/>12.0.4100.1<br/>12.0.4439.1    | 2014-02-23<br/>2015-05-15<br/>2016-02-22 | 2024-07-09   | [Other SQL 2014 Updates](#microsoft-sql-server-2014-builds)       |
-| 2012    | [Download 2012] then<br/>[SP3 2012] then<br/>[CU1 KB3123299]       | 11.0.2100.60<br/>11.0.6020.0<br/>11.0.6518.0   | 2012-02-14<br/>2015-11-21<br/>2016-01-19 | 2022-07-12   | [Other SQL 2012 Updates](#microsoft-sql-server-2012-builds)       |
-| 2008 R2 | [Download 2008 R2] then <br/>[SP3 2008 R2] then<br/>[SU KB3045311] | 6.1.7601.17514<br/>10.50.6000<br/>10.50.6220.0 | 2010-11-21<br/>2014-09-30<br/>2015-07-14 | 2019-07-09   | [Other SQL 2008 R2 Updates](#microsoft-sql-server-2008-r2-builds) |
-| 2008    | [Download 2008] then<br/>[SP4 2008] then<br/>[SU KB3045316]        | 6.0.6001.18000<br/>10.00.6000<br/>10.0.6241.0  | 2008-01-19<br/>2014-09-30<br/>2015-07-14 | 2019-07-09   | [Other SQL 2008 Updates](#microsoft-sql-server-2008-builds)       |
-| 2005    | [Download SP4 2005] then<br/>[CU3 KB2507769]                       | 9.00.5000.00<br/>9.00.5266                     | 2010-12-17<br/>2011-03-17                | 2016-04-12   | [Other SQL 2005 Updates](#microsoft-sql-server-2005-builds)       |
+Step 1. After the CU file has been downloaded, open a DOS prompt and launch it with the /extract option with a path of your choice appended to this option. For example:
+```bat
+SQLServer2017-KB4052574-x64.exe /extract C:\SQL2017CU2
+```
+After a few moments you should see the progress bar dialog pop up. The target directory will be created if it does not exist, so this is also a great option for automating patch installs.
 
-[Download CTP3.3 2016]:https://technet.microsoft.com/en-in/evalcenter/mt130694.aspx
-[Download 2014]:https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014
-[SP1 2014]:https://support.microsoft.com/en-us/kb/3058865
-[CU5 KB3130926]:https://support.microsoft.com/en-us/kb/3130926
-[Download 2012]:https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2012
-[SP3 2012]:http://www.microsoft.com/en-us/download/details.aspx?id=49996
-[CU1 KB3123299]:https://support.microsoft.com/en-us/kb/3123299
+No step 2 required. The patch has been extracted to a location of your choice, which means there's one less thing to worry about when it's time to carry out the actual patching.
+
+Profits:
+ - This saves time as the install files can be extracted in advance, and if you have to patch a lot of servers this saving is multiplied as the files are extracted once, instead of every time on every server.
+ - This time saving also serves to reduces risk as it is one less thing that could go wrong during patching. The last thing you want to be doing during a patching window is scrambling around on a server clearing space in temp folders because there was not enough space free on e.g. the C: drive for the patch to extract itself.
+ - This is also a great way of retrieving just an individual msi file (e.g. sqlncli.msi)
+
+
+## What are the most recent updates for SQL Server?
+<a id="what-are-the-most-recent-updates-for-sql-server"></a>
+
+| Version | Latest Update                                                         | Build Number                                 | Release Date                             | Lifecycle Start | Mainstream Support | Extended Support | Other Updates                                                     |
+|---------|-----------------------------------------------------------------------|----------------------------------------------|------------------------------------------|-----------------|--------------------|------------------|-------------------------------------------------------------------|
+| 2019    | [Install 2019 CTP 2.2]                                                | 15.0.1200.24                                 | 2018-12-11                               | ?               | ?                  | ?                | [Other SQL 2019 Updates](#microsoft-sql-server-2019-builds)       |
+| 2017    | [Install 2017 RTM] then [CU13 KB4483666]                              | 14.0.1000.169<br/>14.0.3049.1                | 2017-10-02<br/>2019-01-08                | 2017-08-28      | 2022-11-10         | 2027-12-10       | [Other SQL 2017 Updates](#microsoft-sql-server-2017-builds)       |
+| 2016    | [Install 2016 SP2] then [CU5 KB4475776]                               | 13.0.5026.0<br/>13.0.5264.1                  | 2018-04-24<br/>2019-01-23                | 2016-11-16      | 2021-07-13         | 2026-07-14       | [Other SQL 2016 Updates](#microsoft-sql-server-2016-builds)       |
+| 2014    | [Install 2014 SP2] then<br/>[SP3 KB4022619] then<br/> [CU1 KB4470220] | 12.0.5000.0<br/>12.0.6024.0<br/>12.0.6205.1  | 2016-07-11<br/>2018-10-30<br/>2018-12-12 | 2016-07-14      | 2019-07-09         | 2024-07-09       | [Other SQL 2014 Updates](#microsoft-sql-server-2014-builds)       |
+| 2012    | [Install 2012] then<br/>[SP4 2012] then<br/>[ADV180002 (GDR)]         | 11.0.2100.60<br/>11.0.7001.0<br/>11.0.7462.6 | 2012-02-14<br/>2017-10-05<br/>2018-01-12 | 2015-12-01      | 2017-07-11         | 2022-07-12       | [Other SQL 2012 Updates](#microsoft-sql-server-2012-builds)       |
+| 2008 R2 | [Install 2008 R2] then <br/>[SP3 2008 R2] then<br/>[SU KB3045311]     | 10.50.1600<br/>10.50.6000<br/>10.50.6220.0   | 2010-11-21<br/>2014-09-30<br/>2015-07-14 | Review Note     | 2014-07-08         | 2019-07-09       | [Other SQL 2008 R2 Updates](#microsoft-sql-server-2008-r2-builds) |
+| 2008    | [Install 2008] then<br/>[SP4 2008] then<br/>[SU KB3045316]            | 10.0.1600.0<br/>10.0.6000<br/>10.0.6241.0    | 2008-01-19<br/>2014-09-30<br/>2015-07-14 | 2014-07-07      | 2014-07-08         | 2019-07-09       | [Other SQL 2008 Updates](#microsoft-sql-server-2008-builds)       |
+
+**For downloading distributive for SQL Server 2008 R2 and SQL Server 2008 you must have MSDN subscription, see [Install 2008 R2] and [Install 2008] links.**
+
+[Install 2019 CTP 2.2]:https://www.microsoft.com/en-us/sql-server/sql-server-2019#Install
+[Install 2017 RTM]:https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+[CU13 KB4483666]:https://support.microsoft.com/help/4483666
+[Install 2016 SP2]:https://go.microsoft.com/fwlink/?LinkID=799011
+[CU5 KB4475776]:https://support.microsoft.com/help/4475776
+[Install 2014 SP2]:https://www.microsoft.com/evalcenter/evaluate-sql-server-2014-sp2
+[SP3 KB4022619]:https://support.microsoft.com/help/4022619
+[CU1 KB4470220]:https://support.microsoft.com/help/4470220
+[Install 2012]:https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2012
+[SP4 2012]:https://support.microsoft.com/en-us/help/4018073
+[ADV180002 (GDR)]:https://support.microsoft.com/en-us/help/4057116
 [CU9 KB3098512]:https://support.microsoft.com/en-us/kb/3098512
-[Download 2008 R2]:https://www.microsoft.com/en-us/download/details.aspx?id=11093
+[Install 2008 R2]:https://msdn.microsoft.com/subscriptions/securedownloads/#searchTerm=sql%20server%202008%20r2&ProductFamilyId=0&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0
 [SP3 2008 R2]:http://www.microsoft.com/en-us/download/details.aspx?id=44271
 [SU KB3045311]:https://www.microsoft.com/downloads/details.aspx?familyid=7af16cb8-c944-41cb-a897-c6fc373869cd
-[Download 2008]:https://www.microsoft.com/en-us/download/details.aspx?id=5023
+[Install 2008]:https://msdn.microsoft.com/subscriptions/securedownloads/#searchTerm=sql%20server%202008&ProductFamilyId=0&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0
 [SP4 2008]:http://www.microsoft.com/en-us/download/details.aspx?id=44278
-[SU KB3045316]:https://www.microsoft.com/downloads/details.aspx?familyid=40328565-3067-4e36-96ba-26ade333d715
-[Download SP4 2005]:http://www.microsoft.com/downloads/en/details.aspx?FamilyID=b953e84f-9307-405e-bceb-47bd345baece
-[CU3 KB2507769]:http://support.microsoft.com/kb/2507769
+[SU KB3045316]:https://support.microsoft.com/help/3045311
+[Developer Free]:https://www.microsoft.com/en-us/cloud-platform/sql-server-editions-developers
 
 
-## Microsoft SQL Server installation files hash <a id="microsoft-sql-server-installation-files-hash"></a>
+## Microsoft SQL Server installation files info
+<a id="microsoft-sql-server-installation-files-info"></a>
+SHA1 hash you can easy get with default Windows utility [certutil](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil 'certutil Microsoft docs').
 
-|Direct Download Link      | File Name                                                            | SHA1                                                        |
-|--------------------------|----------------------------------------------------------------------|-------------------------------------------------------------|
-| [SQL Server 2016 CTP3.3] | SQLServer2016CTP3.3-x64-ENU.iso                                      | 6c b7 ae f1 e0 b0 d5 e5 ae 10 90 74 16 20 e6 7f 77 f3 6b 8e |
-| [SQL Server 2014]        | SQLServer2014-x64-ENU.iso                                            | 9e d2 f6 40 d7 3b 78 ed 51 20 f6 9a ba b4 9b ec ff 5b 00 60 |
-| [SQL Server 2014 SP1]    | SQLServer2014SP1-KB3058865-x64-ENU.exe                               | 2c 84 e2 eb d0 d3 cb 49 80 a3 a1 a8 0d 79 fd 75 20 40 56 26 |
-| [SQL Server 2014 CU5]    | SQLServer2014-KB3130926-x64.exe                                      | 9a ea 16 d5 1a 0c d4 5f 05 67 57 6d 18 85 5f 3e 7e 1d 7c 5c |
-| [SQL Server 2012]        | SQLFULL_ENU.iso                                                      | be 00 94 2c c5 6d 03 3e 2c 9d ce 8a 17 a6 f2 65 4f 51 84 a3 |
-| [SQL Server 2012 SP3]    | SQLServer2012SP3-KB3072779-x64-ENU.exe                               | db f0 1b 6d c6 d6 0c 2b 04 5c 92 d9 18 62 e6 08 7a d7 2a 0a |
-| [SQL Server 2012 CU1]    | SQLServer2012-KB3123299-x64.exe                                      | 6e 6c 4a a8 bf ca 24 2c 28 70 66 a9 a9 43 4e 3a 00 94 3e 94 |
-| [SQL Server 2008 R2]     | 7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso | e1 f1 12 e3 b0 b3 03 a0 67 6f 70 dc 35 85 4b d7 6c d2 54 50 |
-| [SQL Server 2008 R2 SP3] | SQLServer2008R2SP3-KB2979597-x64-ENU.exe                             | 19 4c d7 40 d5 81 2b 12 63 9b 47 88 6e bd e0 d0 47 74 b4 ec |
-| [SQL Server 2008 R2 SU]  | SQLServer2008R2-KB3045316-x64.exe                                    | 3a a4 d8 20 55 3b 1e 5d 96 73 55 41 cb b5 5d 97 32 2c 28 6e |
-| [SQL Server 2008]        | 6001.18000.080118-1840_amd64fre_Server_en-us-KRMSXFRE_EN_DVD.exe     | e4 d6 29 00 0f c2 3d a9 f9 e0 77 4b 79 69 80 ff 7f 71 f7 48 |
-| [SQL Server 2008 SP4]    | SQLServer2008SP4-KB2979596-x64-ENU.exe                               | 13 61 0d 6c b3 9e 37 fc d4 a3 33 82 44 a3 ca 2a 8a 40 4c d8 |
-| [SQL Server 2008 SU]     | SQLServer2008-KB3045311-x64.exe                                      | 37 a1 97 c6 09 90 d2 e8 3e 98 d1 09 01 09 a4 ab 3f 2a be 4b |
+For example, for single file:
+```bat
+certUtil -hashfile "d:\SQL Server\SQLServer2014SP1-KB3058865-x64-ENU.exe" sha1
+```
 
-[SQL Server 2016 CTP3.3]:http://care.dlservice.microsoft.com/dl/download/F/A/F/FAF43C03-51BB-43F2-9ECD-406CE3230CCF/SQLServer2016CTP3.3-x64-ENU.iso
-[SQL Server 2014]:http://care.dlservice.microsoft.com/dl/download/2/F/8/2F8F7165-BB21-4D1E-B5D8-3BD3CE73C77D/SQLServer2014SP1-FullSlipstream-x64-ENU.iso
-[SQL Server 2014 SP1]:https://download.microsoft.com/download/2/F/8/2F8F7165-BB21-4D1E-B5D8-3BD3CE73C77D/SQLServer2014SP1-KB3058865-x64-ENU.exe
-[SQL Server 2014 CU5]:https://download.microsoft.com/download/9/5/3/953C5CEC-69F1-4B43-8226-44504C55199D/SQL2014SP1CU5/x64/SQLServer2014-KB3130926-x64.exe
+Or for all files with .exe extensions in folder:
+```bat
+FOR /R "d:\SQL Server" %I IN (*.exe) DO certUtil -hashfile "%I" sha1
+```
+
+Alternative download link for all English x64 distributives: https://rebrand.ly/sql-server-distribs
+
+| Direct x64 Download Link              | File Name                                                         | Release Date |  Build Number | Size, MB | SHA1                                     |
+|---------------------------------------|-------------------------------------------------------------------|--------------|--------------:|---------:|------------------------------------------|
+| [SQL Server 2019]                     | SQLServer-2019-CTP-2.2-x64-ENU.iso                                | 2018-12-11   | 15.0.1200.24  |     1302 | 5b54d0ef478d422766b19fe2e1f99ee7d9bdf6e2 |
+| [SQL Server 2017]                     | SQLServer2017-x64-ENU-Dev.iso                                     | 2017-10-02   | 14.0.1000.169 |     1476 | 0280ff6c1447d287a6bd3b86b81e459fe252d17a |
+| [SQL Server 2017 CU13 Hotfix]         | SQLServer2017-KB4483666-x64                                       | 2019-01-08   | 14.0.3049.1   |      488 | 6f2de49e491048ab4cb17160d4efc653c3a29bf1 |
+| [SQL Server 2016 SP2]                 | SQLServer2016SP1-KB3182545-x64-ENU.exe                            | 2018-04-24   | 13.0.5026.0   |     2832 | 6309d729a0f063d11c0bb7f840f1069483406755 |
+| [SQL Server 2016 SP2 CU5]             | SQLServer2016-KB4475776-x64.exe                                   | 2019-01-23   | 13.0.5264.1   |      712 | 68af970cf5ffea7e549216b20dfa9fab4e2e6e8f |
+| [SQL Server 2014 SP2]                 | SQLServer2014SP2-FullSlipstream-x64-ENU.iso                       | 2016-07-11   | 12.0.5000.0   |     3010 | 16f1934dc1f47994cd924439f884a05c6ad4d173 |
+| [SQL Server 2014 SP3 KB4022619]       | SQLServer2014SP3-KB4022619-x64-ENU.exe                            | 2018-10-30   | 12.0.6024.0   |      791 | a0959d84f72fd9f8a8832ca691efc420050df9de |
+| [SQL Server 2014 SP3 CU1 KB4470220]   | SQLServer2014-KB4470220-x64.exe                                   | 2018-12-12   | 12.0.6205.1   |      601 | 727d462ffcb618400c813ae6bf06e3a9cc8418f2 |
+| [SQL Server 2012]                     | SQLFULL_ENU.iso                                                   | 2012-02-14   | 11.0.2100.60  |     4300 | be00942cc56d033e2c9dce8a17a6f2654f5184a3 |
+| [SQL Server 2012 SP4]                 | SQLServer2012SP4-KB4018073-x64-ENU.exe                            | 2017-10-05   | 11.0.7001.0   |     1024 | 95127ee2e8dfef180752e531a83cd948c24a3a87 |
+| [SQL Server 2012 SP4 ADV180002 (GDR)] | SQLServer2012-KB4057116-x64.exe                                   | 2018-01-12   | 11.0.7462.6   |      672 | c0c2e0e6519363a5bb3d3ca78d55ef664a8c8995 |
+| SQL Server 2008 R2 RTM                | SW_DVD9_SQL_Svr_Enterprise_Edtn_2008_R2_English_MLF_X16-29540.ISO | 2010-04-21   | 10.50.1600.1  |     4177 | 18105db70f0f0b23418f5005a6ce4b25317c6d03 |
+| [SQL Server 2008 R2 SP3]              | SQLServer2008R2SP3-KB2979597-x64-ENU.exe                          | 2014-09-30   | 10.50.6220.0  |      358 | 194cd740d5812b12639b47886ebde0d04774b4ec |
+| [SQL Server 2008 R2 SU]               | SQLServer2008R2-KB3045316-x64.exe                                 | 2015-07-14   | 10.50.6000    |       58 | 3aa4d820553b1e5d96735541cbb55d97322c286e |
+| [SQL Server 2008]                     | ?                                                                 | 2008-01-19   | 10.0.1600.0   |        ? | ?                                        |
+| [SQL Server 2008 SP4]                 | SQLServer2008SP4-KB2979596-x64-ENU.exe                            | 2014-09-30   | 10.0.6241.0   |      378 | 13610d6cb39e37fcd4a3338244a3ca2a8a404cd8 |
+| [SQL Server 2008 SU]                  | SQLServer2008-KB3045311-x64.exe                                   | 2015-07-14   | 10.00.6000    |       61 | 37a197c60990d2e83e98d1090109a4ab3f2abe4b |
+
+**For downloading distributive for SQL Server 2008 R2 and SQL Server 2008 you must have MSDN subscription, see [Install 2008 R2] and [Install 2008] links.**
+
+[SQL Server 2019]:https://go.microsoft.com/fwlink/?linkid=866664
+[SQL Server 2017]:https://go.microsoft.com/fwlink/?linkid=853016
+[SQL Server 2017 CU13 Hotfix]:http://download.microsoft.com/download/4/3/9/439277DD-1041-48F8-A5E5-FA6493E44BC5/SQLServer2017-KB4483666-x64.exe
+[SQL Server 2016]:http://care.dlservice.microsoft.com/dl/download/F/E/9/FE9397FA-BFAB-4ADD-8B97-91234BC774B2/SQLServer2016-x64-ENU.iso
+[SQL Server 2016 SP2]:https://go.microsoft.com/fwlink/?LinkID=799011
+[SQL Server 2016 SP2 CU5]:https://download.microsoft.com/download/6/0/6/606B3A2E-0EAE-4DCD-930D-178686370921/SQLServer2016-KB4475776-x64.exe
+[SQL Server 2014 SP2]:http://care.dlservice.microsoft.com/dl/download/6/D/9/6D90C751-6FA3-4A78-A78E-D11E1C254700/SQLServer2014SP2-FullSlipstream-x64-ENU.iso
+[SQL Server 2014 SP3 KB4022619]:https://download.microsoft.com/download/7/9/F/79F4584A-A957-436B-8534-3397F33790A6/SQLServer2014SP3-KB4022619-x64-ENU.exe
+[SQL Server 2014 SP3 CU1 KB4470220]:https://download.microsoft.com/download/A/5/A/A5AACC94-29A5-4890-90BD-847320EE0E93/SQLServer2014-KB4470220-x64.exe
 [SQL Server 2012]:https://download.microsoft.com/download/4/C/7/4C7D40B9-BCF8-4F8A-9E76-06E9B92FE5AE/ENU/SQLFULL_ENU.iso
-[SQL Server 2012 SP3]:https://download.microsoft.com/download/B/1/7/B17F8608-FA44-462D-A43B-00F94591540A/ENU/x64/SQLServer2012SP3-KB3072779-x64-ENU.exe
-[SQL Server 2012 CU1]:https://download.microsoft.com/download/3/0/D/30D98783-31D6-4123-9F87-5058BA9FC977/SQL12SP3QFECU1/x64/SQLServer2012-KB3123299-x64.exe
-[SQL Server 2008 R2]:https://download.microsoft.com/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso
+[SQL Server 2012 SP4]:https://download.microsoft.com/download/E/A/B/EABF1E75-54F0-42BB-B0EE-58E837B7A17F/SQLServer2012SP4-KB4018073-x64-ENU.exe
+[SQL Server 2012 SP4 ADV180002 (GDR)]:https://download.microsoft.com/download/F/6/1/F618E667-BA6E-4428-A36A-8B4F5190FCC8/SQLServer2012-KB4057116-x64.exe
+[SQL Server 2008 R2]:https://msdn.microsoft.com/subscriptions/securedownloads/#searchTerm=sql%20server%202008%20r2&ProductFamilyId=0&Languages=en&FileExtensions=.iso&PageSize=10&PageIndex=0&FileId=0
 [SQL Server 2008 R2 SP3]:https://download.microsoft.com/download/D/7/A/D7A28B6C-FCFE-4F70-A902-B109388E01E9/ENU/SQLServer2008R2SP3-KB2979597-x64-ENU.exe
 [SQL Server 2008 R2 SU]:https://download.microsoft.com/download/4/D/A/4DAE6F9E-960E-4A59-BDE7-1D92DA508315/SQLServer2008R2-KB3045316-x64.exe
 [SQL Server 2008]:https://download.microsoft.com/download/D/D/B/DDB17DC1-A879-44DD-BD11-C0991D292AD7/6001.18000.080118-1840_amd64fre_Server_en-us-KRMSXFRE_EN_DVD.exe
 [SQL Server 2008 SP4]:https://download.microsoft.com/download/5/E/7/5E7A89F7-C013-4090-901E-1A0F86B6A94C/ENU/SQLServer2008SP4-KB2979596-x64-ENU.exe
 [SQL Server 2008 SU]:https://download.microsoft.com/download/E/C/0/EC0A7C15-9A6D-4F41-9B9F-BCA10CC3937C/SQLServer2008-KB3045311-x64.exe
 
-## Internal Database Version and Compatibility Level <a id="internal-database-version-and-compatibility-level"></a>
 
-| SQL Server Version                           | Code Name   | Release Year | Internal Database Version | Database Compatibility Level |
-|:---------------------------------------------|:------------|-------------:|--------------------------:|-----------------------------:|
-| SQL Server 2016                              | ?           | 2016         | 782                       | 120                          |
-| SQL Server 2014                              | SQL14       | 2014         | 782                       | 120                          |
-| SQL Server 2012                              | Denali      | 2012         | 706                       | 110                          |
-| SQL Server 2012 CTP1                         | Denali      | 2010         | 684                       | 110                          |
-| SQL Server 2008 R2                           | Kilimanjaro | 2010         | 660 / 661                 | 100                          |
-| Azure SQL DB                                 | CloudDB     | 2010         | ?                         | ?                            |
-| SQL Server 2008                              | Katmai      | 2008         | 655                       | 100                          |
-| SQL Server 2005 SP2+ with VarDecimal enabled | Yukon       | 2005         | 612                       |  90                          |
-| SQL Server 2005                              | Yukon       | 2005         | 611                       |  90                          |
-| SQL Server 2000                              | Shiloh      | 2000         | 539                       |  80                          |
-| SQL Server 7.0                               | Sphinx      | 1998         | 515                       |  70                          |
-| SQL Server 6.5                               | Hydra       | 1996         | 408                       |  65                          |
-| SQL Server 6.0                               | SQL95       | 1995         | ?                         |  60                          |
-| SQL Server 4.21                              | SQLNT       | 1993         | ?                         |  60                          |
-| SQL Server 1.1 (16 bit)                      | ?           | 1991         | ?                         |  60                          |
-| SQL Server 1.0 (16 bit)                      | Ashton-Tate | 1989         | ?                         |  60                          |
+## SQL Server Developer Edition Info
+<a id="sql-server-developer-edition-info"></a>
+**Now it is free!!!** [SQL Server Developer Edition Download page](https://my.visualstudio.com/downloads?q=sql%20server%20developer)
+
+For downloading your copy SQL Server Developer Edition you just need to join the [Visual Studio Dev Essentials program](https://www.visualstudio.com/en-us/products/visual-studio-dev-essentials-vs.aspx)
+
+| Edition\Direct Download Link                                                | Release Date | File name                                                                    | Size, Mb | SHA1                                     |
+|-----------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------|---------:|------------------------------------------|
+| SQL Server 2017 Developer (x64) - DVD (English)                             | 2017-10-02   | en_sql_server_2017_developer_x64_dvd_11296168.iso                            |     1475 | 0280FF6C1447D287A6BD3B86B81E459FE252D17A |
+| SQL Server 2016 Developer with Service Pack 2 (x64) - DVD (English)         | 2018-05-22   | en_sql_server_2016_developer_with_service_pack_2_x64_dvd_12194995.iso        |     2800 | 74279286C2ABFBA9E9FF6DBEE60B71669BD234D2 |
+| SQL Server 2016 Developer (x64) - DVD (English)                             | 2016-06-01   | en_sql_server_2016_developer_x64_dvd_8777069.iso                             |     2100 | 1B23982FE56DF3BFE0456BDF0702612EB72ABF75 |
+| SQL Server 2014 Developer Edition with Service Pack 1 (x64) - DVD (English) | 2015-05-21   | en_sql_server_2014_developer_edition_with_service_pack_1_x64_dvd_6668542.iso |     3025 | BFEE1F300C39638DA0D2CD594636698C6207C852 |
+| SQL Server 2014 Developer Edition with Service Pack 1 (x86) - DVD (English) | 2015-05-21   | en_sql_server_2014_developer_edition_with_service_pack_1_x86_dvd_6668541.iso |     2462 | ED3C70507A73BCC63D67CFA272CD849B9418A18E |
+| SQL Server 2014 Developer Edition (x64) - DVD (English)                     | 2014-04-01   | en_sql_server_2014_developer_edition_x64_dvd_3940406.iso                     |     2486 | F73F430F55A71DA219FC7257A3A28E8FC142530F |
+| SQL Server 2014 Developer Edition (x86) - DVD (English)                     | 2014-04-01   | en_sql_server_2014_developer_edition_x86_dvd_3938200.iso                     |     2039 | 395B35FD80AA959B02B0C399DA1BB0C020DB6310 |
 
 
-## Quick summary for SQL Server Service Packs <a id="quick-summary-for-sql-server-service-packs"></a>
+## SQL Server Express direct download links
+<a id="sql-server-express-direct-download-links"></a>
+Original post written by Scott Hanselman: http://www.hanselman.com/blog/DownloadSQLServerExpress.aspx<br />
+Official Microsoft SQL Server Express page: https://www.microsoft.com/en-us/server-cloud/products/sql-server-editions/sql-server-express.aspx
 
-| Version            | Codename    | RTM (no SP)  | SP1                             | SP2                             | SP3                               | SP4                             |
-|:-------------------|:------------|:-------------|:--------------------------------|:--------------------------------|:----------------------------------|:--------------------------------|
-| SQL Server 2016    | ?           | [CTP 3.3]    |                                 |                                 |                                   |                                 |
-| SQL Server 2014    | SQL14       | 12.0.2000.8  | [12.0.4100.1]<br/>12.1.4100.1   |                                 |                                   |                                 |
-| SQL Server 2012    | Denali      | 11.0.2100.60 | [11.0.3000.0]<br/>11.1.3000.0   | [11.0.5058.0]                   | [11.0.6020.0]                     |                                 |
-| SQL Server 2008 R2 | Kilimanjaro | 10.50.1600.1 | [10.50.2500.0]<br/>10.51.2500.0 | [10.50.4000.0]<br/>10.52.4000.0 | [10.50.6000.34]<br/>10.53.6000.34 |                                 |
-| SQL Server 2008    | Katmai      | 10.0.1600.22 | [10.0.2531.0]<br/>10.1.2531.0   | [10.0.4000.0]<br/>10.2.4000.0   | [10.0.5500.0]<br/>10.3.5500.0     | [10.0.6000.29]<br/>10.4.6000.29 |
-| SQL Server 2005    | Yukon       | 9.0.1399.06  | [9.0.2047]                      | [9.0.3042]                      | [9.0.4035]                        | [9.0.5000]                      |
-| SQL Server 2000    | Shiloh      | 8.0.194      | [8.0.384]                       | [8.0.532]                       | [8.0.760]                         | [8.0.2039]                      |
-| SQL Server 7.0     | Sphinx      | 7.0.623      | 7.0.699                         | 7.0.842                         | 7.0.961                           | [7.0.1063]                      |
 
-[CTP 3.3]:https://technet.microsoft.com/en-in/evalcenter/mt130694.aspx
+### [Download SQL Server 2017 Express](https://www.microsoft.com/en-us/download/details.aspx?id=55994)
+
+### [Download SQL Server 2016 Express](https://www.microsoft.com/en-us/download/details.aspx?id=52679)
+
+
+### [Download SQL Server 2014 Express](http://www.microsoft.com/en-us/download/details.aspx?id=42299)
+[Download Microsoft SQL Server 2014 Service Pack 1 (SP1) Express ](https://www.microsoft.com/en-us/download/details.aspx?id=46697)<br />
+You likely just want SQL Server 2014 Express with Tools. This download includes SQL Management Studio:
+ - [SQL Server 2014 Express x64](http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/ExpressAndTools%2064BIT/SQLEXPRWT_x64_ENU.exe)
+ - [SQL Server 2014 Express x86](http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/ExpressAndTools%2032BIT/SQLEXPRWT_x86_ENU.exe)
+
+Here's just SQL Server 2014 Management Studio:
+ - [SQL Management Studio x64](http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/MgmtStudio%2064BIT/SQLManagementStudio_x64_ENU.exe)
+ - [SQL Management Studio x86](http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/MgmtStudio%2032BIT/SQLManagementStudio_x86_ENU.exe)
+
+SQL Server 2014 Express with Advanced Services:
+ - [Advanced Services x64](http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/ExpressAdv%2064BIT/SQLEXPRADV_x64_ENU.exe)
+ - [Advanced Services x86](http://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/ExpressAdv%2032BIT/SQLEXPRADV_x86_ENU.exe)
+
+
+### [Download SQL Server 2012 Express](http://www.microsoft.com/en-us/download/details.aspx?id=29062)
+[Download Microsoft SQL Server 2012 Service Pack 1 (SP1) Express ](https://www.microsoft.com/en-us/download/details.aspx?id=35579)<br />
+You likely just want SQL Server 2012 Express with Tools. This download includes SQL Management Studio:
+ - [SQL Server 2012 Express x64](http://download.microsoft.com/download/8/D/D/8DD7BDBA-CEF7-4D8E-8C16-D9F69527F909/ENU/x64/SQLEXPRWT_x64_ENU.exe)
+
+Here's just SQL Server 2012 Management Studio:
+ - [SQL Management Studio x64](http://download.microsoft.com/download/8/D/D/8DD7BDBA-CEF7-4D8E-8C16-D9F69527F909/ENU/x64/SQLManagementStudio_x64_ENU.exe)
+ - [SQL Management Studio x86](http://download.microsoft.com/download/8/D/D/8DD7BDBA-CEF7-4D8E-8C16-D9F69527F909/ENU/x86/SQLManagementStudio_x86_ENU.exe)
+
+
+### [Download SQL Server 2008 Express R2 SP2](http://www.microsoft.com/en-us/download/details.aspx?id=30438)
+You likely just want SQL Server 2008 Express with Tools. This download includes SQL Management Studio:
+ - [SQL Server 2008 Express x64](http://download.microsoft.com/download/0/4/B/04BE03CD-EAF3-4797-9D8D-2E08E316C998/SQLEXPRWT_x64_ENU.exe)
+ - [SQL Server 2008 Express x86](http://download.microsoft.com/download/0/4/B/04BE03CD-EAF3-4797-9D8D-2E08E316C998/SQLEXPRWT_x86_ENU.exe)
+
+Here's just SQL Server 2008 Management Studio:
+ - [SQL Management Studio x64](http://download.microsoft.com/download/0/4/B/04BE03CD-EAF3-4797-9D8D-2E08E316C998/SQLManagementStudio_x64_ENU.exe)
+ - [SQL Management Studio x86](http://download.microsoft.com/download/0/4/B/04BE03CD-EAF3-4797-9D8D-2E08E316C998/SQLManagementStudio_x86_ENU.exe)
+
+
+### [Download SQL Server 2005 Express](https://www.microsoft.com/en-us/download/details.aspx?id=21844)
+
+
+## Internal Database Version and Compatibility Level
+<a id="internal-database-version-and-compatibility-level"></a>
+
+### Database Compatibility Level
+The compatibility level of a database dictates how certain language elements of the database function as it relates to an earlier version of SQL Server. 
+In a nutshell, this offers up partial “backward compatibility” to an earlier version.
+This functionality is not all encompassing as only certain aspects (i.e. certain syntax) of the database would pertain to this setting.
+
+You can see what compatibility level a database is at by using the SSMS or via code.
+
+Via SSMS:
+ 1. After connecting to the appropriate instance of the SQL Server Database Engine, in Object Explorer, click the server name.
+ 2. Expand **Databases**, and, depending on the database, either select a user database or expand **System Databases** and select a system database.
+ 3. Right-click the database, and then click **Properties**. The **Database Properties** dialog box opens.
+ 4. In the **Select a page** pane, click **Options**. The current compatibility level is displayed in the **Compatibility level** list box.
+ 5. To change the compatibility level, select a different option from the list. The choices are **SQL Server 2008 (100)**, **SQL Server 2012 (110)** or **SQL Server 2014 (120)**.
+
+Via T-SQL:
+```sql
+-- For SQL Server 2005 and newer
+SELECT name, compatibility_level FROM sys.databases WHERE name = 'DatabaseNameHere';
+
+-- For SQL Server 2000
+SELECT name, cmptlevel FROM sysdatabases WHERE name = 'DatabaseNameHere';
+```
+
+To ALTER DATABASE Compatibility Level use simple command:
+```sql
+ALTER DATABASE database_name SET COMPATIBILITY_LEVEL = { 150 | 140 | 130 | 120 | 110 | 100 | 90 }
+```
+
+### Internal Database Version and Compatibility level
+[The Importance of Database Compatibility Level in SQL Server](https://www.sqlskills.com/blogs/glenn/the-importance-of-database-compatibility-level-in-sql-server/)
+
+The database version is a number stamped in the boot page of a database that indicates the SQL Server version of the most recent SQL Server instance the database was attached to.
+**The database version number does not equal the SQL Server version and does not equal the compatibility level should be considered as a completely different attribute of the database.**
+
+The database version is an internal versioning system that defines what version of SQL Server the database was a recent resident of.
+If you migrate a database from an older version to a newer version, the database version value will be increased to reflect the version number of the new server’s model database.
+
+When you create a database, the database version is "stamped" with the same version as the **Model** database.
+It is worth noting that if the **Model** database was originally created on a different server edition and then subsequently upgraded, you potentially could end up
+with slightly different numbers than what you might expect.
+As you upgrade the database to new SQL Server edition (you can not go backward) the version of the database increases.
+This is done automatically regardless of what method you use to upgrade the database to the new version of SQL Server.
+
+```sql
+-- 1 using DBCC PAGE to look at the boot page (9) of the database
+DBCC TRACEON(3604);
+DBCC PAGE('DatabaseName', 1, 9, 3);
+DBCC TRACEOFF(3604);
+GO
+
+-- 2 using DBCC DBINFO
+DBCC TRACEON(3604);
+DBCC DBINFO;
+DBCC TRACEOFF(3604);
+GO
+
+-- 3 using database property
+SELECT DatabaseProperty('DatabaseNameHere','version');
+GO
+
+-- 4 using RESTORE HEADERONLY for backup files, field DatabaseVersion
+RESTORE HEADERONLY FROM DISK=N'd:\DatabseBackupFile.bak' WITH NOUNLOAD;
+GO
+```
+
+You will note that for each DBCC command we have to turn on [trace flag 3604](https://rebrand.ly/gh-sqlserver-trace-flags#3604) so that the output of the DBCC command is sent to the SSMS window rather than the default location, the SQL Server log.
+
+If you are still on SQL Serever 2000, you can see this information with a simple query:
+```sql
+SELECT name, version FROM master.dbo.sysdatabases;
+```
+
+Execute the following query to determine the version of the Database Engine that you are connected to:
+```sql
+SELECT SERVERPROPERTY('ProductVersion');
+```
+
+| SQL Server Version                           | Database Engine | Code Name    | Release Year | Internal Database Version | Compatibility Level Designation | Supported Compatibility Level |
+|:---------------------------------------------|----------------:|:-------------|-------------:|--------------------------:|--------------------------------:|------------------------------:|
+| SQL Server 2019                              | 15              |  2019        | 2018         | 895                       | 150                             | 150, 140, 130, 120, 110       |
+| SQL Server 2017                              | 14              |  2017        | 2017         | 869                       | 140                             | 140, 130, 120, 110, 100       |
+| SQL Server 2016                              | 13              |  2016        | 2016         | 852                       | 130                             | 130, 120, 110, 100            |
+| Azure SQL Database                           | 14              |  CloudDB     | 2010 (2018)  | 862                       | 140                             | 140, 130, 120, 110, 100       |
+| SQL Server 2014                              | 12              |  SQL14       | 2014         | 782                       | 120                             | 120, 110, 100                 |
+| SQL Server 2012                              | 11              |  Denali      | 2012         | 706                       | 110                             | 110, 100, 90                  |
+| SQL Server 2012 CTP1                         | 11              |  Denali      | 2010         | 684                       | 110                             | 110, 100, 90                  |
+| SQL Server 2008 R2                           | 10.5            |  Kilimanjaro | 2010         | 660 / 661                 | 100                             | 100, 90, 80                   |
+| SQL Server 2008                              | 10              |  Katmai      | 2008         | 655                       | 100                             | 100, 90, 80                   |
+| SQL Server 2005 SP2+ with VarDecimal enabled |  9              |  Yukon       | 2005         | 612                       |  90                             | 90, 80                        |
+| SQL Server 2005                              |  9              |  Yukon       | 2005         | 611                       |  90                             | 90, 80                        |
+| SQL Server 2000                              |  8              |  Shiloh      | 2000         | 539                       |  80                             | 80                            |
+| SQL Server 7.0                               |  ?              |  Sphinx      | 1998         | 515                       |  70                             | 70                            |
+| SQL Server 6.5                               |  ?              |  Hydra       | 1996         | 408                       |  65                             | 65                            |
+| SQL Server 6.0                               |  ?              |  SQL95       | 1995         | ?                         |  60                             | ?                             |
+| SQL Server 4.21                              |  ?              |  SQLNT       | 1993         | ?                         |  60                             | ?                             |
+| SQL Server 1.1 (16 bit)                      |  ?              |  ?           | 1991         | ?                         |  60                             | ?                             |
+| SQL Server 1.0 (16 bit)                      |  ?              |  Ashton-Tate | 1989         | ?                         |  60                             | ?                             |
+
+**Azure SQL Database V12** was released in December 2014. One aspect of that release was that newly created databases had their compatibility level set to 120. In 2015 SQL Database began support for level 130, although the default remained 120.
+
+Starting in mid-June 2016, in Azure SQL Database, the default compatibility level will be 130 instead of 120 for newly created databases. Existing databases created before mid-June 2016 will not be affected, and will maintain their current compatibility level (100, 110, or 120).
+
+If you want level 130 for your database generally, but you have reason to prefer the level 110 cardinality estimation algorithm, see [ALTER DATABASE SCOPED CONFIGURATION (Transact-SQL)](https://msdn.microsoft.com/en-us/library/mt629158.aspx), and in particular its keyword LEGACY_CARDINALITY_ESTIMATION =ON.
+
+For details about how to assess the performance differences of your most important queries, between two compatibility levels on Azure SQL Database, see [Improved Query Performance with Compatibility Level 130 in Azure SQL Database](http://azure.microsoft.com/documentation/articles/sql-database-compatibility-level-query-performance-130/).
+
+### References
+ - [Compatibility Level vs Database Version](http://sqlrus.com/2014/10/compatibility-level-vs-database-version/) (by John Morehouse)
+ - [What’s the difference between database version and database compatibility level?](https://blogs.msdn.microsoft.com/sqlserverstorageengine/2007/04/26/whats-the-difference-between-database-version-and-database-compatibility-level/) (by Paul Randal)
+ - [ALTER DATABASE Compatibility Level (Transact-SQL)](https://msdn.microsoft.com/library/bb510680(SQL.130).aspx)
+ - [View or Change the Compatibility Level of a Database](https://msdn.microsoft.com/library/bb933794.aspx)
+ - [Database Version vs Database Compatibility Level](http://sqlblog.com/blogs/jonathan_kehayias/archive/2009/07/28/database-version-vs-database-compatibility-level.aspx) (by Jonathan Kehayias)
+
+
+## Quick summary for SQL Server Service Packs
+<a id="quick-summary-for-sql-server-service-packs"></a>
+
+| Version            | Codename    | RTM (no SP)     | SP1            | SP2                             | SP3                               | SP4                             |
+|:-------------------|:------------|:----------------|:---------------|:--------------------------------|:----------------------------------|:--------------------------------|
+| SQL Server 2017    | 2017        | [14.0.1000.169] |                |                                 |                                   |                                 |
+| SQL Server 2016    | 2016        | [13.0.1601.5]   | [13.0.4001.0]  | [13.5026.0]                     |                                   |                                 |
+| SQL Server 2014    | SQL14       | 12.0.2000.8     | [12.0.4100.1]  | [12.0.5000.0]                   |                                   |                                 |
+| SQL Server 2012    | Denali      | 11.0.2100.60    | [11.0.3000.0]  | [11.0.5058.0]                   | [11.0.6020.0]                     | [11.0.7001.0]                   |
+| SQL Server 2008 R2 | Kilimanjaro | 10.50.1600.1    | [10.50.2500.0] | [10.50.4000.0]<br/>10.52.4000.0 | [10.50.6000.34]<br/>10.53.6000.34 |                                 |
+| SQL Server 2008    | Katmai      | 10.0.1600.22    | [10.0.2531.0]  | [10.0.4000.0]<br/>10.2.4000.0   | [10.0.5500.0]<br/>10.3.5500.0     | [10.0.6000.29]<br/>10.4.6000.29 |
+| SQL Server 2005    | Yukon       | 9.0.1399.06     | [9.0.2047]     | [9.0.3042]                      | [9.0.4035]                        | [9.0.5000]                      |
+| SQL Server 2000    | Shiloh      | 8.0.194         | [8.0.384]      | [8.0.532]                       | [8.0.760]                         | [8.0.2039]                      |
+| SQL Server 7.0     | Sphinx      | 7.0.623         | 7.0.699        | 7.0.842                         | 7.0.961                           | [7.0.1063]                      |
+
+[14.0.1000.169]:https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+[13.5026.0]:https://go.microsoft.com/fwlink/?LinkID=799011
+[13.0.1601.5]:https://www.microsoft.com/en-in/evalcenter/evaluate-sql-server-2016
+[13.0.4001.0]:https://support.microsoft.com/en-us/kb/3182545
+[12.0.5000.0]:https://support.microsoft.com/en-us/kb/3171021
 [12.0.4100.1]:http://www.microsoft.com/en-us/download/details.aspx?id=46694
 [11.0.3000.0]:http://www.microsoft.com/en-us/download/details.aspx?id=35575
 [11.0.5058.0]:http://www.microsoft.com/en-us/download/details.aspx?id=43340
 [11.0.6020.0]:http://www.microsoft.com/en-us/download/details.aspx?id=49996
+[11.0.7001.0]:https://www.microsoft.com/en-us/download/details.aspx?id=56040
 [10.50.2500.0]:http://www.microsoft.com/en-us/download/details.aspx?id=26727
 [10.50.4000.0]:http://www.microsoft.com/en-us/download/details.aspx?id=30437
 [10.50.6000.34]:http://www.microsoft.com/en-us/download/details.aspx?id=44271
@@ -176,78 +444,399 @@ contains all the fixes that are included with previous service packs and any new
 [7.0.1063]:https://www.microsoft.com/en-us/download/details.aspx?id=7959
 
 
-## Microsoft SQL Server 2016 Builds <a id="microsoft-sql-server-2016-builds"></a>
+## Microsoft SQL Server 2019 Builds
+<a id="microsoft-sql-server-2019-builds"></a>
+More additional information about latest vNext SQL Server release you can find in this articles:
+ - [What's new in SQL Server 2019](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-ver15?view=sql-server-ver15#utf-8-support)
+ - [What's New in the First Public CTP of SQL Server 2019](https://www.mssqltips.com/sqlservertip/5710/whats-new-in-the-first-public-ctp-of-sql-server-2019/)
+ - [Froid: How SQL Server vNext Might Fix the Scalar Functions Problem](https://www.brentozar.com/archive/2018/01/froid-sql-server-vnext-might-fix-scalar-functions-problem/)
+ - [What’s New in SQL Server 2019 System Tables](https://www.brentozar.com/archive/2018/09/whats-new-in-sql-server-2019-system-tables/)
+ - [What’s New in SQL Server 2019’s sys.messages: More Unannounced Features](https://www.brentozar.com/archive/2018/09/whats-new-in-sql-server-2019s-sys-messages-more-unannounced-features/)
+ - [What’s New in SQL Server 2019: Faster Table Variables (And New Parameter Sniffing Issues)](https://www.brentozar.com/archive/2018/09/sql-server-2019-faster-table-variables-and-new-parameter-sniffing-issues/)
+ - [What’s New in SQL Server 2019: Adaptive Memory Grants](https://www.brentozar.com/archive/2018/09/whats-new-in-sql-server-2019-adaptive-memory-grants/)
+ - [Leaked: SQL Server 2019 Big Data Clusters Introduction Video](https://www.brentozar.com/archive/2018/09/leaked-sql-server-2019-big-data-clusters-introduction-video/)
+ - [Native UTF-8 Support in SQL Server 2019: Savior, False Prophet, or Both?](https://sqlquantumleap.com/2018/09/28/native-utf-8-support-in-sql-server-2019-savior-false-prophet-or-both/)
 
-| Build         | File version      | KB / Description                                                                | Release Date |
-|---------------|-------------------|---------------------------------------------------------------------------------|--------------|
-| 13.0.1000.281 | 2015.130.1000.281 | [Microsoft SQL Server 2016 Community Technology Preview 3.3 (CTP3.3)]           | 2016-02-01   |
-| 13.0.900.73   | 2015.130.900.73   | Microsoft SQL Server 2016 Community Technology Preview 3.2 (CTP3.2)             | 2015-12-11   |
-| 13.0.801.12   | 2015.130.801.12   | Microsoft SQL Server 2016 Community Technology Preview 3.1 (CTP3.1)             | 2015-12-01   |
-| 13.0.700.242  | 2015.130.700.242  | Microsoft SQL Server 2016 Community Technology Preview 3.0 (CTP3.0)             | 2015-10-28   |
-| 13.0.600.65   | 2015.130.600.65   | Microsoft SQL Server 2016 Community Technology Preview 2.4 (CTP2.4)             | 2015-09-30   |
-| 13.0.500.53   | 2015.130.500.53   | Microsoft SQL Server 2016 Community Technology Preview 2.3 (CTP2.3)             | 2015-08-28   |
-| 13.0.407.1    | 2015.130.407.1    | Microsoft SQL Server 2016 Community Technology Preview 2.2 (CTP2.2)             | 2015-07-23   |
-| 13.0.400.91   | 2015.130.400.91   | Microsoft SQL Server 2016 Community Technology Preview 2.2 (CTP2.2) [withdrawn] | 2015-07-22   |
-| 13.0.300.44   | 2015.130.300.444  | Microsoft SQL Server 2016 Community Technology Preview 2.1 (CTP2.1)             | 2015-06-24   |
-| 13.0.200.172  | 2015.130.200.172  | Microsoft SQL Server 2016 Community Technology Preview 2 (CTP2)                 | 2015-05-27   |
+Here is the latest output from `SELECT @@VERSION` for SQL Server 2019 CTP Developer Edition:
 
-[Microsoft SQL Server 2016 Community Technology Preview 3.3 (CTP3.3)]:https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2016
+```
+Microsoft SQL Server 2019 (CTP2.1) - 15.0.1100.94 (X64)
+   Nov  1 2018 14:35:49
+   Copyright (C) 2018 Microsoft Corporation
+   Developer Edition (64-bit) on…
+```
+
+| Build         | File version      | Branch | Type | KB / Description                   | Release Date | Build Date | Fixes | Public | Size, Mb |
+|---------------|-------------------|--------|------|----------------------------------- |--------------|------------|------:|-------:|---------:|
+| 15.0.1200.24  | 2018.150.1200.24  | CTP    | CTP  | [Microsoft SQL Server 2019 CTP2.2] | 2018-12-11   | 2018-11-02 |       |        |     1302 |
+| 15.0.1100.94  | 2018.150.1100.34  | CTP    | CTP  | Microsoft SQL Server 2019 CTP2.1   | 2018-11-06   | 2018-11-02 |       |        |     1299 |
+| 15.0.1000.34  | 2018.150.1000.34  | CTP    | CTP  | Microsoft SQL Server 2019 CTP2.0   | 2018-09-24   | 2018-09-18 |       |        |     1532 |
+
+[Microsoft SQL Server 2019 CTP2.2]:https://www.microsoft.com/en-us/sql-server/sql-server-2019#Install
 
 
-## Microsoft SQL Server 2014 Builds <a id="microsoft-sql-server-2014-builds"></a>
+## Microsoft SQL Server 2017 Builds
+<a id="microsoft-sql-server-2017-builds"></a>
 
-| Build        | File version     | KB / Description                                                                                                                   | Release Date |
-|--------------|------------------|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 12.0.4439.1  | 2014.120.4439.1  | [3130926 Cumulative Update 5 (CU5) for SQL Server 2014 Service Pack 1]                                                             | 2016-02-22   |
-| 12.0.4436.0  | 2014.120.4436.0  | [3106660 Cumulative update package 4 (CU4) for SQL Server 2014 Service Pack 1]                                                     | 2015-12-21   |
-| 12.0.4427.24 | 2014.120.4427.24 | [3094221 Cumulative update package 3 (CU3) for SQL Server 2014 Service Pack 1]                                                     | 2015-10-21   |
-| 12.0.4422.0  | 2014.120.4422.0  | [3075950 Cumulative update package 2 (CU2) for SQL Server 2014 Service Pack 1]                                                     | 2015-08-17   |
-| 12.0.4416.0  | 2014.120.4416.0  | [3067839 Cumulative update package 1 (CU1) for SQL Server 2014 Service Pack 1]                                                     | 2015-06-22   |
-| 12.0.4213.0  | 2014.120.4213.0  | [MS15-058: Description of the nonsecurity update for SQL Server 2014 Service Pack 1 GDR: July 14, 2015]                            | 2015-07-14   |
-| 12.0.4100.1  | 2014.120.4100.1  | [SQL Server 2014 Service Pack 1 (SP1)]                                                                                             | 2015-05-14   |
-| 12.0.4050.0  | 2014.120.4050.0  | SQL Server 2014 Service Pack 1 (SP1) [withdrawn]                                                                                   | 2015-04-15   |
-| 12.0.2560.0  | 2014.120.2550.0  | [3106659 Cumulative update package 11 (CU11) for SQL Server 2014]                                                                  | 2015-12-21   |
-| 12.0.2556.4  | 2014.120.2556.4  | [3094220 Cumulative update package 10 (CU10) for SQL Server 2014]                                                                  | 2015-10-20   |
-| 12.0.2553    | 2014.120.2553.0  | [3075949 Cumulative update package 9 (CU9) for SQL Server 2014]                                                                    | 2015-08-17   |
-| 12.0.2548    | 2014.120.2548.0  | [MS15-058: Description of the security update for SQL Server 2014 QFE: July 14, 2015]                                              | 2015-07-14   |
-| 12.0.2546    | 2014.120.2546.0  | [3067836 Cumulative update package 8 (CU8) for SQL Server 2014]                                                                    | 2015-06-22   |
-| 12.0.2506    | 2014.120.2506.0  | [3063054 Update enables Premium Storage support for Data files on Azure Storage and resolves backup failures]                      | 2015-05-19   |
-| 12.0.2505    | 2014.120.2505.0  | [3052167 FIX: Error 1205 when you execute parallel query that contains outer join operators in SQL Server 2014]                    | 2015-05-19   |
-| 12.0.2504    | 2014.120.2504.0  | [2999809 FIX: Poor performance when a query contains table joins in SQL Server 2014]                                               | 2015-05-05   |
-| 12.0.2504    | 2014.120.2504.0  | [3058512 FIX: Unpivot Transformation task changes null to zero or empty strings in SSIS 2014]                                      | 2015-05-05   |
-| 12.0.2495    | 2014.120.2495.0  | [3046038 Cumulative update package 7 (CU7) for SQL Server 2014]                                                                    | 2015-04-23   |
-| 12.0.2488    | 2014.120.2488.0  | [3048751 FIX: Deadlock cannot be resolved automatically when you run a SELECT query that can result in a parallel batch-mode scan] | 2015-04-01   |
-| 12.0.2485    | 2014.120.2485.0  | [3043788 An on-demand hotfix update package is available for SQL Server 2014]                                                      | 2015-03-16   |
-| 12.0.2480    | 2014.120.2480.0  | [3031047 Cumulative update package 6 (CU6) for SQL Server 2014]                                                                    | 2015-02-16   |
-| 12.0.2474    | 2014.120.2474.0  | [3034679 FIX: AlwaysOn availability groups are reported as NOT SYNCHRONIZING]                                                      | 2015-05-15   |
-| 12.0.2472    | 2014.120.2472.0  | [3032087 FIX: Cannot show requested dialog after you connect to the latest SQL Database Update V12 (preview) with SQL Server 2014] | 2015-01-28   |
-| 12.0.2464    | 2014.120.2464.0  | [3024815 Large query compilation waits on RESOURCE_SEMAPHORE_QUERY_COMPILE in SQL Server 2014]                                     | 2015-01-05   |
-| 12.0.2456    | 2014.120.2456.0  | [3011055 Cumulative update package 5 (CU5) for SQL Server 2014]                                                                    | 2014-12-18   |
-| 12.0.2436    | 2014.120.2436.0  | [3014867 FIX: "Remote hardening failure" exception cannot be caught and a potential data loss when you use SQL Server 2014]        | 2014-11-27   |
-| 12.0.2430    | 2014.120.2430.0  | [2999197 Cumulative update package 4 (CU4) for SQL Server 2014]                                                                    | 2014-10-21   |
-| 12.0.2423    | 2014.120.2423.0  | [3007050 FIX: RTDATA_LIST waits when you run natively stored procedures that encounter expected failures in SQL Server 2014]       | 2014-10-22   |
-| 12.0.2405    | 2014.120.2405.0  | [2999809 FIX: Poor performance when a query contains table joins in SQL Server 2014]                                               | 2014-09-25   |
-| 12.0.2402    | 2014.120.2402.0  | [2984923 Cumulative update package 3 (CU3) for SQL Server 2014]                                                                    | 2014-08-18   |
-| 12.0.2381    | 2014.120.2381.0  | [2977316 MS14-044: Description of the security update for SQL Server 2014 (QFE)]                                                   | 2014-08-12   |
-| 12.0.2370    | 2014.120.2370.0  | [2967546 Cumulative update package 2 (CU2) for SQL Server 2014]                                                                    | 2014-06-27   |
-| 12.0.2342    | 2014.120.2342.0  | [2931693 Cumulative update package 1 (CU1) for SQL Server 2014]                                                                    | 2014-04-21   |
-| 12.0.2269    | 2014.120.2269.0  | [3045324 MS15-058: Description of the security update for SQL Server 2014 GDR: July 14, 2015]                                      | 2015-07-14   |
-| 12.0.2254    | 2014.120.2254.0  | [2977315 MS14-044: Description of the security update for SQL Server 2014 (GDR)]                                                   | 2014-08-12   |
-| 12.0.2000    | 2014.120.2000.8  | SQL Server 2014 RTM                                                                                                                | 2014-04-01   |
-| 12.0.1524    | 2014.120.1524.0  | Microsoft SQL Server 2014 Community Technology Preview 2 (CTP2)                                                                    | 2013-10-15   |
-| 11.0.9120    | 2013.110.9120.0  | Microsoft SQL Server 2014 Community Technology Preview 1 (CTP1)                                                                    | 2013-06-25   |
+All SQL Server 2017 CU downloads: [Catalog Update Microsoft SQL Server 2017](http://www.catalog.update.microsoft.com/Search.aspx?q=sql%20server%202017)
 
+Here is the latest output from `SELECT @@VERSION` for SQL Server 2017 Developer Edition:
+
+```
+Microsoft SQL Server 2017 (RTM-CU13-OD) (KB4483666) - 14.0.3049.1 (X64)
+   Dec 15 2018 11:16:42
+   Copyright (C) 2017 Microsoft Corporation
+   Developer Edition (64-bit) on …
+```
+
+Useful articles:
+ - [Release notes for SQL Server 2017 on Linux](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes)
+ - [How I spot not-yet-documented features in SQL Server CTPs](https://blogs.sentryone.com/aaronbertrand/fishing-for-features-in-ctps/)
+ - [More ways to discover changes in new versions of SQL Server](https://blogs.sentryone.com/aaronbertrand/more-changes-sql-server/)
+
+| Build         | File version      | Branch | Type | KB / Description                                                                                         | Release Date | Build Date | Fixes | Public | Size, Mb |
+|---------------|-------------------|--------|------|----------------------------------------------------------------------------------------------------------|--------------|------------|------:|-------:|---------:|
+| 14.0.3049.1   | 2017.140.3049.1   | RTM    | COD  | [4483666 On-demand hotfix update package for SQL Server 2017 CU13]                                       | 2018-01-09   | 2018-12-15 |     3 |      3 |      488 |
+| 14.0.3048.4   | 2017.140.3048.4   | RTM    | CU   | **Withdrawn** [4466404 Microsoft SQL Server 2017 CU13]                                                   | 2018-12-18   | 2018-12-01 |    62 |     50 |      488 |
+| 14.0.3045.24  | 2017.140.3045.24  | RTM    | CU   | [4464082 Microsoft SQL Server 2017 CU12]                                                                 | 2018-10-24   | 2018-10-19 |    22 |     18 |      488 |
+| 14.0.3038.14  | 2017.140.3038.14  | RTM    | CU   | [4462262 Microsoft SQL Server 2017 CU11]                                                                 | 2018-09-20   | 2018-09-14 |    21 |     14 |      487 |
+| 14.0.3037.1   | 2017.140.3037.1   | RTM    | CU   | [4342123 Microsoft SQL Server 2017 CU10]                                                                 | 2018-08-27   | 2018-07-27 |    30 |     22 |      486 |
+| 14.0.3035.2   | 2017.140.3035.2   | RTM    | COD  | [4293805 Security update for SQL Server 2017 CU: August 14, 2018] **CVE-2018-8273**                      | 2018-08-14   | 2018-07-07 |     1 |      1 |      486 |
+| 14.0.3030.27  | 2017.140.3030.27  | RTM    | CU   | [4341265 Microsoft SQL Server 2017 CU9]                                                                  | 2018-07-18   | 2018-06-30 |    27 |     18 |      486 |
+| 14.0.3029.16  | 2017.140.3029.16  | RTM    | CU   | [4338363 Microsoft SQL Server 2017 CU8]                                                                  | 2018-06-21   | 2018-06-13 |    60 |     31 |      475 |
+| 14.0.3026.27  | 2017.140.3026.27  | RTM    | CU   | [4229789 Microsoft SQL Server 2017 CU7]                                                                  | 2018-05-24   | 2018-05-10 |    47 |     28 |      473 |
+| 14.0.3025.34  | 2017.140.3025.34  | RTM    | CU   | [4101464 Microsoft SQL Server 2017 CU6]                                                                  | 2018-04-19   | 2018-03-03 |    39 |     39 |      473 |
+| 14.0.3023.8   | 2017.140.3023.8   | RTM    | CU   | [4092643 Microsoft SQL Server 2017 CU5]                                                                  | 2018-03-20   | 2018-03-03 |    22 |     13 |      472 |
+| 14.0.3022.28  | 2017.140.3022.28  | RTM    | CU   | [4056498 Microsoft SQL Server 2017 CU4]                                                                  | 2018-02-20   | 2018-02-10 |    81 |     55 |      472 |
+| 14.0.3015.40  | 2017.140.3015.40  | RTM    | CU   | [4052987 Microsoft SQL Server 2017 CU3]                                                                  | 2017-01-03   | 2017-12-23 |    14 |     13 |      459 |
+| 14.0.3008.27  | 2017.140.3008.27  | RTM    | CU   | [4052574 Microsoft SQL Server 2017 CU2]                                                                  | 2017-11-28   | 2017-11-16 |    56 |     33 |      276 |
+| 14.0.3006.16  | 2017.140.3006.16  | RTM    | CU   | [4038634 Microsoft SQL Server 2017 CU1]                                                                  | 2017-10-24   | 2017-10-19 |    72 |     68 |      250 |
+| 14.0.2002.14  | 2017.140.2002.14  | RTM    | COD  | [4293803 Security update for SQL Server 2017 GDR: August 14, 2018] **CVE-2018-8273**                     | 2018-08-14   | 2018-07-21 |     1 |      1 |      433 |
+| 14.0.2000.63  | 2017.140.2000.63  | RTM    | COD  | [4057122 Security update for SQL Server 2017 GDR: January 3, 2018] **CVE-2017-5715,2017-5753,2017-5754** | 2018-01-03   | 2017-12-23 |     1 |      1 |      431 |
+| 14.0.1000.169 | 2017.140.1000.169 | RTM    | RTM  | [Microsoft SQL Server 2017 RTM]                                                                          | 2017-10-02   | 2017-08-23 |       |        |     1475 |
+| 14.0.900.75   | 2017.140.900.75   | RC     | RC   | Microsoft SQL Server 2017 Release Candidate 2                                                            | 2017-08-02   | 2017-07-27 |       |        |     1473 |
+| 14.0.800.90   | 2017.140.800.90   | RC     | RC   | Microsoft SQL Server 2017 Release Candidate 1                                                            | 2017-07-17   | 2017-07-11 |       |        |     1473 |
+| 14.0.600.250  | 2017.140.600.250  | CTP    | CTP  | Microsoft SQL Server 2017 Community Technology Preview 2.1 (CTP2.1)                                      | 2017-05-17   | 2017-05-10 |       |        |     1606 |
+| 14.0.500.272  | 2017.140.500.272  | CTP    | CTP  | Microsoft SQL Server vNext Community Technology Preview 2.0 (CTP2.0)                                     | 2017-04-19   | 2017-04-13 |       |        |     1721 |
+| 14.0.405.198  | 2017.140.405.198  | CTP    | CTP  | Microsoft SQL Server vNext Community Technology Preview 1.4 (CTP1.4)                                     | 2017-03-17   | 2017-03-11 |       |        |     2001 |
+| 14.0.304.138  | 2016.140.304.138  | CTP    | CTP  | Microsoft SQL Server vNext Community Technology Preview 1.3 (CTP1.3)                                     | 2017-02-17   | 2017-02-14 |       |        |     1978 |
+| 14.0.200.24   | 2016.140.200.24   | CTP    | CTP  | Microsoft SQL Server vNext Community Technology Preview 1.2 (CTP1.2)                                     | 2017-01-18   | 2017-01-11 |       |        |     1975 |
+| 14.0.100.187  | 2016.140.100.187  | CTP    | CTP  | Microsoft SQL Server vNext Community Technology Preview 1.1 (CTP1.1)                                     | 2016-12-16   | 2016-12-11 |       |        |     1975 |
+| 14.0.1.246    | 2016.140.1.246    | CTP    | CTP  | Microsoft SQL Server vNext Community Technology Preview 1 (CTP1)                                         | 2016-11-16   | 2016-11-02 |       |        |     1983 |
+
+[4483666 On-demand hotfix update package for SQL Server 2017 CU13]:https://support.microsoft.com/help/4483666
+[4466404 Microsoft SQL Server 2017 CU13]:https://support.microsoft.com/help/4466404
+[4464082 Microsoft SQL Server 2017 CU12]:https://support.microsoft.com/help/4464082
+[4462262 Microsoft SQL Server 2017 CU11]:https://support.microsoft.com/help/4462262
+[4342123 Microsoft SQL Server 2017 CU10]:https://support.microsoft.com/help/4342123
+[4293805 Security update for SQL Server 2017 CU: August 14, 2018]:https://support.microsoft.com/help/4293805
+[4341265 Microsoft SQL Server 2017 CU9]:https://support.microsoft.com/help/4341265
+[4338363 Microsoft SQL Server 2017 CU8]:https://support.microsoft.com/help/4338363
+[4229789 Microsoft SQL Server 2017 CU7]:https://support.microsoft.com/help/4229789
+[4101464 Microsoft SQL Server 2017 CU6]:https://support.microsoft.com/help/4101464
+[4092643 Microsoft SQL Server 2017 CU5]:https://support.microsoft.com/help/4092643
+[4056498 Microsoft SQL Server 2017 CU4]:https://support.microsoft.com/help/4056498
+[4052987 Microsoft SQL Server 2017 CU3]:https://support.microsoft.com/help/4052987
+[4052574 Microsoft SQL Server 2017 CU2]:https://support.microsoft.com/help/4052574
+[4038634 Microsoft SQL Server 2017 CU1]:https://support.microsoft.com/help/4038634
+[4293803 Security update for SQL Server 2017 GDR: August 14, 2018]:https://support.microsoft.com/help/4293803
+[4057122 Security update for SQL Server 2017 GDR: January 3, 2018]:https://support.microsoft.com/help/4057122
+[Microsoft SQL Server 2017 RTM]:https://www.microsoft.com/sql-server/sql-server-downloads
+
+
+<a id="microsoft-sql-server-2016-builds"></a>
+## Microsoft SQL Server 2016 Builds
+
+All SQL Server 2016 CU downloads: [Catalog Update Microsoft SQL Server 2016](http://www.catalog.update.microsoft.com/Search.aspx?q=sql%20server%202016)
+
+Here is the latest output from `SELECT @@VERSION` for SQL Server 2016 Developer Edition on Windows:
+```
+Microsoft SQL Server 2016 (SP2-CU5) (KB4475776) - 13.0.5264.1 (X64)
+   Jan 10 2019 18:51:38
+   Copyright (c) Microsoft Corporation
+   Developer Edition (64-bit) on …
+```
+
+| Build         | File version      | Branch | Type | KB / Description                                                                                                               | Release Date | Build Date | Fixes | Public | Size, Mb |
+|---------------|-------------------|--------|------|--------------------------------------------------------------------------------------------------------------------------------|--------------|------------|------:|-------:|---------:|
+| 13.0.5264.1   | 2015.130.5264.1   | SP2    | CU   | [4475776 Cumulative Update 5 for SQL Server 2016 SP2]                                                                          | 2019-01-23   | 2019-01-11 |    52 |     43 |      712 |
+| 13.0.5239.0   | 2015.130.5239.0   | SP2    | COD  | [4482972 On-demand hotfix update package 2 for SQL Server 2016 SP2 CU4]                                                        | 2018-12-20   | 2018-12-03 |     3 |      3 |      690 |
+| 13.0.5233.0   | 2015.130.5233.0   | SP2    | CU   | [4464106 Cumulative Update 4 for SQL Server 2016 SP2]                                                                          | 2018-11-13   | 2018-11-03 |    42 |     36 |      690 |
+| 13.0.5216.0   | 2015.130.5216.0   | SP2    | CU   | [4458871 Cumulative Update 3 for SQL Server 2016 SP2]                                                                          | 2018-09-21   | 2018-09-14 |    41 |     27 |      688 |
+| 13.0.5201.2   | 2015.131.5201.2   | SP2    | CU   | [4458621 Security update for SQL Server 2016 SP2 CU: August 19, 2018] **CVE-2018-8273**                                        | 2018-08-19   | 2018-08-18 |     1 |      0 |      672 |
+| 13.0.5161.0   | 2015.131.5161.0   | SP2    | CU   | **Withdrawn** [4293807 Security update for SQL Server 2016 SP2 (CU): August 14, 2018] **CVE-2018-8273**                        | 2018-08-14   | 2018-07-18 |     1 |      0 |      672 |
+| 13.0.5153.0   | 2015.130.5153.0   | SP2    | CU   | [4340355 Cumulative Update 2 for SQL Server 2016 SP2]                                                                          | 2018-07-16   | 2018-06-29 |    29 |     21 |      671 |
+| 13.0.5149.0   | 2015.130.5149.0   | SP2    | CU   | [4135048 Cumulative Update 1 for SQL Server 2016 SP2]                                                                          | 2018-05-30   | 2018-05-19 |    45 |     28 |      549 |
+| 13.0.5081.1   | 2015.131.5081.1   | SP2    | COD  | [4293802 Security update for SQL Server 2016 SP2 GDR: August 14, 2018] **CVE-2018-8273**                                       | 2018-05-30   | 2018-05-19 |     1 |      0 |      492 |
+| 13.0.5026.0   | 2015.130.5026.0   | SP2    | SP   | [4052908 SQL Server 2016 Service Pack 2 release information]                                                                   | 2018-04-24   | 2018-03-18 |    50 |     50 |      774 |
+| 13.0.4550.1   | 2015.130.4550.1   | SP1    | CU   | [4475775 Cumulative Update 13 for SQL Server 2016 SP1]                                                                         | 2019-01-23   | 2019-01-11 |    12 |      9 |      761 |
+| 13.0.4541.0   | 2015.130.4541.0   | SP1    | CU   | [4464343 Cumulative Update 12 for SQL Server 2016 SP1]                                                                         | 2018-11-13   | 2018-10-27 |    21 |     16 |      761 |
+| 13.0.4531.0   | 2015.130.4531.0   | SP1    | COD  | [4465443 FIX: The "modification_counter" in DMV sys.dm_db_stats_properties shows incorrect value when partitions are merged]   | 2018-09-27   | 2018-09-22 |     1 |      1 |      759 |
+| 13.0.4528.0   | 2015.130.4528.0   | SP1    | CU   | [4459676 Cumulative Update 11 for SQL Server 2016 SP1]                                                                         | 2018-09-18   | 2018-08-31 |    14 |      8 |      762 |
+| 13.0.4522.0   | 2015.130.4522.0   | SP1    | CU   | **Withdrawn** [4293808 Security update for SQL Server 2016 SP1 (CU): August 14, 2018] **CVE-2018-8273**                        | 2018-08-14   | 2018-07-18 |     1 |      0 |      774 |
+| 13.0.4514.0   | 2015.130.4514.0   | SP1    | CU   | [4341569 Cumulative Update 10 for SQL Server 2016 SP1]                                                                         | 2018-07-16   | 2018-06-23 |    26 |     21 |      761 |
+| 13.0.4502.0   | 2015.130.4502.0   | SP1    | CU   | [4100997 Cumulative Update 9 for SQL Server 2016 SP1]                                                                          | 2018-05-30   | 2018-05-15 |    39 |     25 |      761 |
+| 13.0.4474.0   | 2015.130.4474.0   | SP1    | CU   | [4077064 Cumulative Update 8 for SQL Server 2016 SP1]                                                                          | 2018-03-19   | 2018-02-24 |    57 |     37 |      760 |
+| 13.0.4466.4   | 2015.130.4466.4   | SP1    | CU   | [4057119 Cumulative Update 7 for SQL Server 2016 SP1]                                                                          | 2018-01-03   | 2017-11-09 |    15 |     14 |      758 |
+| 13.0.4457.0   | 2015.130.4457.0   | SP1    | CU   | [4037354 Cumulative Update 6 for SQL Server 2016 SP1]                                                                          | 2017-11-21   | 2017-11-09 |    55 |     41 |      689 |
+| 13.0.4451.0   | 2015.130.4451.0   | SP1    | CU   | [4040714 Cumulative Update 5 for SQL Server 2016 SP1]                                                                          | 2017-09-18   | 2017-09-06 |    49 |     44 |      689 |
+| 13.0.4446.0   | 2015.130.4446.0   | SP1    | CU   | [4024305 Cumulative Update 4 for SQL Server 2016 SP1]                                                                          | 2017-08-08   | 2017-07-16 |    63 |     49 |      534 |
+| 13.0.4435.0   | 2015.130.4435.0   | SP1    | CU   | [4019916 Cumulative Update 3 for SQL Server 2016 SP1]                                                                          | 2017-05-15   | 2017-04-27 |    70 |     57 |      534 |
+| 13.0.4422.0   | 2015.130.4422.0   | SP1    | CU   | [4013106 Cumulative Update 2 for SQL Server 2016 SP1]                                                                          | 2017-03-20   | 2017-03-06 |   117 |    100 |      415 |
+| 13.0.4411.0   | 2015.130.4411.0   | SP1    | CU   | [3208177 Cumulative update 1 for SQL Server 2016 Service Pack 1]                                                               | 2017-01-18   | 2017-01-06 |    63 |     55 |      439 |
+| 13.0.4224.16  | 2015.130.4224.16  | SP1    | CU   | [4458842 Security update for SQL Server 2016 SP1 GDR: August 22, 2018] **CVE-2018-8273**                                       | 2018-08-22   |            |     1 |      0 |      700 |
+| 13.0.4223.10  | 2015.130.4223.10  | SP1    | CU   | **Withdrawn** [4293801 Security update for SQL Server 2016 SP1 GDR: August 14, 2018] **CVE-2018-8273**                         | 2018-08-14   |            |     1 |      0 |          |
+| 13.0.4210.6   | 2015.130.4210.6   | SP1    | CU   | [4057118 Description of the security update for SQL Server 2016 SP1 GDR: January 3, 2018] **CVE-2017-5715,2017-5753,2017-5754**|2018-01-03    |            |     1 |      0 |      696 |
+| 13.0.4206.0   | 2015.130.4206.0   | SP1    | COD  | [4019089 Description of the security update for SQL Server 2016 Service Pack 1 GDR: August 8, 2017]                            | 2017-07-16   |            |     1 |      1 |      364 |
+| 13.0.4202.0   | 2015.130.4202.0   | SP1    | COD  | [3210089 GDR update package for SQL Server 2016 SP1]                                                                           | 2016-12-16   | 2016-12-13 |     3 |      3 |      378 |
+| 13.0.4199.0   | 2015.130.4199.0   | SP1    | COD  | [3207512 Important update for SQL Server 2016 SP1 Reporting Services]                                                          | 2016-11-23   | 2016-11-18 |     2 |      2 |      521 |
+| 13.0.4001.0   | 2015.130.4001.0   | SP1    | SP   | [3182545 SQL Server 2016 Service Pack 1 release information]                                                                   | 2016-11-16   | 2016-10-29 |    33 |     33 |      552 |
+| 13.0.2218.0   | 2015.130.2218.0   | RTM    | COD  | [4058559 Security update for SQL Server 2016 CU: January 6, 2018] **CVE-2017-5715,2017-5753,2017-5754**                        | 2018-01-06   |            |       |        |      918 |
+| 13.0.2216.0   | 2015.130.2216.0   | RTM    | CU   | [4037357 Cumulative Update 9 for SQL Server 2016]                                                                              | 2017-11-21   | 2017-11-09 |    26 |     21 |      865 |
+| 13.0.2213.0   | 2015.130.2213.0   | RTM    | CU   | [4040713 Cumulative Update 8 for SQL Server 2016]                                                                              | 2017-09-18   | 2017-09-06 |    19 |     17 |      864 |
+| 13.0.2210.0   | 2015.130.2210.0   | RTM    | CU   | [4024304 Cumulative Update 7 for SQL Server 2016]                                                                              | 2017-08-08   | 2017-07-16 |    33 |     30 |      815 |
+| 13.0.2204.0   | 2015.130.2204.0   | RTM    | CU   | [4019914 Cumulative Update 6 for SQL Server 2016]                                                                              | 2017-05-15   | 2017-04-20 |    28 |     22 |      814 |
+| 13.0.2197.0   | 2015.130.2197.0   | RTM    | CU   | [4013105 Cumulative Update 5 for SQL Server 2016]                                                                              | 2017-03-20   | 2017-02-25 |    56 |     47 |      700 |
+| 13.0.2193.0   | 2015.130.2193.0   | RTM    | CU   | [3205052 Cumulative update 4 for SQL Server 2016]                                                                              | 2017-01-18   | 2017-01-06 |    65 |     57 |      699 |
+| 13.0.2190.2   | 2015.130.2190.2   | RTM    | COD  | [3210110 On-demand hotfix update package for SQL Server 2016 CU3]                                                              | 2016-12-16   | 2016-12-13 |     3 |      3 |      691 |
+| 13.0.2186.6   | 2015.130.2186.6   | RTM    | CU   | [3194717 MS16-136: Description of the security update for SQL Server 2016 CU]                                                  | 2016-11-08   | 2016-10-31 |    31 |     31 |      691 |
+| 13.0.2186.6   | 2015.130.2186.6   | RTM    | CU   | [3205413 Cumulative update 3 for SQL Server 2016] **Duplicate KB3194717**                                                      | 2016-11-08   | 2016-10-31 |       |        |      691 |
+| 13.0.2170.0   | 2015.130.2170.0   | RTM    | COD  | [3199171 On-demand hotfix update package for SQL Server 2016 CU2]                                                              | 2016-11-01   | 2016-10-11 |     4 |      4 |      689 |
+| 13.0.2169.0   | 2015.130.2169.0   | RTM    | COD  | [3195813 On-demand hotfix update package for SQL Server 2016 CU2]                                                              | 2016-10-26   | 2016-10-05 |     4 |      4 |      689 |
+| 13.0.2164.0   | 2015.130.2164.0   | RTM    | CU   | [3182270 Cumulative Update 2 for SQL Server 2016]                                                                              | 2016-09-22   | 2016-09-09 |    68 |     64 |      689 |
+| 13.0.2149.0   | 2015.130.2149.0   | RTM    | CU   | [3164674 Cumulative Update 1 for SQL Server 2016]                                                                              | 2016-07-25   | 2016-07-11 |   192 |    146 |      665 |
+| 13.0.1745.2   | 2015.130.1745.2   | RTM    | COD  | [4058560 Description of the security update for SQL Server 2016 GDR: January 6, 2018] **CVE-2017-5715,2017-5753,2017-5754**    | 2018-01-06   |            |       |        |      687 |
+| 13.0.1742.0   | 2015.130.1742.0   | RTM    | COD  | [4019088 Security update for SQL Server 2016 RTM GDR: August 8, 2017] **CVE-2017-8516**                                        | 2017-08-08   |            |       |        |      451 |
+| 13.0.1728.2   | 2015.130.1728.2   | RTM    | COD  | [3210111 GDR update package for SQL Server 2016 RTM]                                                                           | 2016-12-16   |            |       |        |      339 |
+| 13.0.1722.0   | 2015.130.1722.0   | RTM    | COD  | [3194716 MS16-136: Description of the security update for SQL Server 2016 GDR]                                                 | 2016-11-08   | 2016-10-31 |     3 |      3 |      342 |
+| 13.0.1711.0   | 2015.130.1711.0   | RTM    | COD  | [3179258 Processing a partition causes data loss on other partitions after the database is restored in SQL Server 2016 (1200)] | 2016-08-17   | 2016-07-30 |       |        |      282 |
+| 13.0.1708.0   | 2015.130.1708.0   | RTM    | COD  | [3164398 Critical update for SQL Server 2016 MSVCRT prerequisites]                                                             | 2016-06-04   | 2016-06-02 |       |        |      265 |
+| 13.0.1601.5   | 2015.130.1601.5   | RTM    | RTM  | [Microsoft SQL Server 2016 RTM]                                                                                                | 2016-06-01   | 2016-04-29 |       |        |     2050 |
+| 13.0.1400.361 | 2015.130.1400.361 | RC     | RC   | Microsoft SQL Server 2016 Community Technology Release Candidate 3 (RC3)                                                       | 2016-04-15   | 2016-04-09 |       |        |     2114 |
+| 13.0.1300.275 | 2015.130.1300.275 | RC     | RC   | Microsoft SQL Server 2016 Community Technology Release Candidate 2 (RC2)                                                       | 2016-04-01   | 2016-03-26 |       |        |     2101 |
+| 13.0.1200.242 | 2015.130.1200.242 | RC     | RC   | Microsoft SQL Server 2016 Community Technology Release Candidate 1 (RC1)                                                       | 2016-03-18   | 2016-03-10 |       |        |     2083 |
+| 13.0.1100.288 | 2015.130.1100.288 | RC     | RC   | Microsoft SQL Server 2016 Community Technology Release Candidate 0 (RC0)                                                       | 2016-03-07   | 2016-02-29 |       |        |          |
+| 13.0.1000.281 | 2015.130.1000.281 | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 3.3 (CTP3.3)                                                            | 2016-02-03   | 2016-01-28 |       |        |          |
+| 13.0.900.73   | 2015.130.900.73   | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 3.2 (CTP3.2)                                                            | 2015-12-17   | 2015-12-10 |       |        |          |
+| 13.0.801.12   | 2015.130.801.12   | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 3.1 (CTP3.1 refresh)                                                    | 2015-12-05   | 2015-12-01 |       |        |          |
+| 13.0.801.111  | 2015.130.801.111  | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 3.1 (CTP3.1)                                                            | 2015-11-30   | 2015-11-21 |       |        |          |
+| 13.0.700.242  | 2015.130.700.242  | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 3.0 (CTP3.0)                                                            | 2015-10-29   | 2015-10-26 |       |        |          |
+| 13.0.600.65   | 2015.130.600.65   | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 2.4 (CTP2.4)                                                            | 2015-09-30   | 2015-09-20 |       |        |          |
+| 13.0.500.53   | 2015.130.500.53   | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 2.3 (CTP2.3)                                                            | 2015-08-28   | 2015-08-24 |       |        |          |
+| 13.0.407.1    | 2015.130.407.1    | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 2.2 (CTP2.2)                                                            | 2015-07-29   | 2015-07-22 |       |        |          |
+| 13.0.400.91   | 2015.130.400.91   | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 2.2 (CTP2.2) (withdrawn)                                                | 2015-07-22   | 2015-07-16 |       |        |          |
+| 13.0.300.44   | 2015.130.300.444  | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 2.1 (CTP2.1)                                                            | 2015-06-14   | 2015-06-12 |       |        |          |
+| 13.0.200.172  | 2015.130.200.172  | CTP    | CTP  | Microsoft SQL Server 2016 Community Technology Preview 2 (CTP2)                                                                | 2015-05-26   | 2015-05-21 |       |        |          |
+
+[4475776 Cumulative Update 5 for SQL Server 2016 SP2]:https://support.microsoft.com/help/4475776
+[4482972 On-demand hotfix update package 2 for SQL Server 2016 SP2 CU4]:https://support.microsoft.com/help/4482972
+[4464106 Cumulative Update 4 for SQL Server 2016 SP2]:https://support.microsoft.com/help/4464106
+[4458871 Cumulative Update 3 for SQL Server 2016 SP2]:https://support.microsoft.com/help/4458871
+[4458621 Security update for SQL Server 2016 SP2 CU: August 19, 2018]:https://support.microsoft.com/help/4458621
+[4293807 Security update for SQL Server 2016 SP2 (CU): August 14, 2018]:https://support.microsoft.com/help/4293807/
+[4340355 Cumulative Update 2 for SQL Server 2016 SP2]:https://support.microsoft.com/help/4340355
+[4135048 Cumulative Update 1 for SQL Server 2016 SP2]:https://support.microsoft.com/help/4135048
+[4293802 Security update for SQL Server 2016 SP2 GDR: August 14, 2018]:https://support.microsoft.com/help/4293802
+[4464343 Cumulative Update 12 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4464343
+[4465443 FIX: The "modification_counter" in DMV sys.dm_db_stats_properties shows incorrect value when partitions are merged]:https://support.microsoft.com/help/4465443/
+[4052908 SQL Server 2016 Service Pack 2 release information]:https://support.microsoft.com/help/4052908
+[4475775 Cumulative Update 13 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4475775
+[4459676 Cumulative Update 11 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4459676
+[4293808 Security update for SQL Server 2016 SP1 (CU): August 14, 2018]:https://support.microsoft.com/help/4293808
+[4341569 Cumulative Update 10 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4341569
+[4100997 Cumulative Update 9 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4100997
+[4077064 Cumulative Update 8 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4077064
+[4057119 Cumulative Update 7 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4057119
+[4037354 Cumulative Update 6 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4037354
+[4040714 Cumulative Update 5 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4040714
+[4024305 Cumulative Update 4 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4024305
+[4019916 Cumulative Update 3 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4019916
+[4013106 Cumulative Update 2 for SQL Server 2016 SP1]:https://support.microsoft.com/help/4013106
+[3208177 Cumulative update 1 for SQL Server 2016 Service Pack 1]:https://support.microsoft.com/help/3208177
+[4458842 Security update for SQL Server 2016 SP1 GDR: August 22, 2018]:https://support.microsoft.com/help/4458842
+[4293801 Security update for SQL Server 2016 SP1 GDR: August 14, 2018]:https://support.microsoft.com/help/4293801
+[4057118 Description of the security update for SQL Server 2016 SP1 GDR: January 3, 2018]:https://support.microsoft.com/help/4057118
+[4019089 Description of the security update for SQL Server 2016 Service Pack 1 GDR: August 8, 2017]:https://support.microsoft.com/help/4019089
+[3210089 GDR update package for SQL Server 2016 SP1]:https://support.microsoft.com/help/3210089
+[3207512 Important update for SQL Server 2016 SP1 Reporting Services]:https://support.microsoft.com/help/3207512
+[3182545 SQL Server 2016 Service Pack 1 release information]:https://support.microsoft.com/help/3182545
+[4058559 Security update for SQL Server 2016 CU: January 6, 2018]:https://support.microsoft.com/help/4058559
+[4037357 Cumulative Update 9 for SQL Server 2016]:https://support.microsoft.com/help/4037357
+[4040713 Cumulative Update 8 for SQL Server 2016]:https://support.microsoft.com/help/4040713
+[4024304 Cumulative Update 7 for SQL Server 2016]:https://support.microsoft.com/help/4024304
+[4019914 Cumulative Update 6 for SQL Server 2016]:https://support.microsoft.com/help/4019914
+[4013105 Cumulative Update 5 for SQL Server 2016]:https://support.microsoft.com/help/4013105
+[3205052 Cumulative update 4 for SQL Server 2016]:https://support.microsoft.com/help/3205052
+[4058560 Description of the security update for SQL Server 2016 GDR: January 6, 2018]:https://support.microsoft.com/help/4058560
+[4019088 Security update for SQL Server 2016 RTM GDR: August 8, 2017]:https://support.microsoft.com/help/4019088
+[3210111 GDR update package for SQL Server 2016 RTM]:https://support.microsoft.com/help/3210111
+[3210110 On-demand hotfix update package for SQL Server 2016 CU3]:https://support.microsoft.com/help/3210110
+[3194717 MS16-136: Description of the security update for SQL Server 2016 CU]:https://support.microsoft.com/help/3194717
+[3205413 Cumulative update 3 for SQL Server 2016]:https://support.microsoft.com/help/3205413
+[3199171 On-demand hotfix update package for SQL Server 2016 CU2]:https://support.microsoft.com/help/3199171
+[3195813 On-demand hotfix update package for SQL Server 2016 CU2]:https://support.microsoft.com/help/3195813
+[3182270 Cumulative Update 2 for SQL Server 2016]:https://support.microsoft.com/help/3182270
+[3164674 Cumulative Update 1 for SQL Server 2016]:https://support.microsoft.com/help/3164674
+[3194716 MS16-136: Description of the security update for SQL Server 2016 GDR]:https://support.microsoft.com/help/3194716
+[3179258 Processing a partition causes data loss on other partitions after the database is restored in SQL Server 2016 (1200)]:http://support.microsoft.com/help/3179258
+[3164398 Critical update for SQL Server 2016 MSVCRT prerequisites]:https://support.microsoft.com/help/3164398
+[Microsoft SQL Server 2016 RTM]:https://www.microsoft.com/evalcenter/evaluate-sql-server-2016
+
+
+<a id="microsoft-sql-server-2014-builds"></a>
+## Microsoft SQL Server 2014 Builds
+
+All SQL Server 2014 CU downloads: [Catalog Update Microsoft SQL Server 2014](http://www.catalog.update.microsoft.com/Search.aspx?q=sql%20server%202014)
+
+Here is the latest output from `SELECT @@VERSION` for SQL Server 2014 Developer Edition on Windows:
+
+```
+Microsoft SQL Server 2014 (SP3-CU1) (KB4470220) - 12.0.6205.1 (X64)
+   Nov 30 2018 02:59:03
+   Copyright (c) Microsoft Corporation
+   Developer Edition (64-bit) on …
+```
+
+| Build        | File version     | Branch | Type | KB / Description                                                                                                                   | Release Date | Fixes | Public | Size, Mb |
+|--------------|------------------|--------|------|------------------------------------------------------------------------------------------------------------------------------------|--------------|------:|-------:|---------:|
+| 12.0.6205.1  | 2014.120.6205.1  | SP3    | CU   | [4470220 Cumulative Update 1 for SQL Server 2014 SP3]                                                                              | 2018-12-12   |    16 |     13 |      601 |
+| 12.0.6024.0  | 2014.120.6024.0  | SP3    | SP   | [4022619 SQL Server 2014 Service Pack 3 release information]                                                                       | 2018-10-30   |    31 |      6 |      791 |
+| 12.0.5605.1  | 2014.120.5605.1  | SP2    | SP   | [4469137 Cumulative Update 15 for SQL Server 2014 SP2]                                                                             | 2018-12-12   |     8 |      7 |      679 |
+| 12.0.5600.1  | 2014.120.5600.1  | SP2    | CU   | [4459860 Cumulative Update 14 for SQL Server 2014 SP2]                                                                             | 2018-10-15   |     8 |      6 |      678 |
+| 12.0.5590.1  | 2014.120.5590.1  | SP2    | CU   | [4456287 Cumulative Update 13 for SQL Server 2014 SP2]                                                                             | 2018-08-27   |     4 |      4 |      679 |
+| 12.0.5589.7  | 2014.120.5589.7  | SP2    | CU   | [4130489 Cumulative Update 12 for SQL Server 2014 SP2]                                                                             | 2018-06-18   |    27 |     16 |      678 |
+| 12.0.5579.0  | 2014.120.5579.0  | SP2    | CU   | [4077063 Cumulative Update 11 for SQL Server 2014 SP2]                                                                             | 2018-03-19   |    12 |     10 |      677 |
+| 12.0.5571.0  | 2014.120.5571.0  | SP2    | CU   | [4052725 Cumulative Update 10 for SQL Server 2014 SP2]                                                                             | 2018-01-16   |     5 |      4 |      676 |
+| 12.0.5563.0  | 2014.120.5563.0  | SP2    | CU   | [4055557 Cumulative Update 9 for SQL Server 2014 SP2]                                                                              | 2017-12-18   |     8 |      7 |      540 |
+| 12.0.5557.0  | 2014.120.5557.0  | SP2    | CU   | [4037356 Cumulative Update 8 for SQL Server 2014 SP2]                                                                              | 2017-10-17   |    15 |      8 |      539 |
+| 12.0.5556.0  | 2014.120.5556.0  | SP2    | CU   | [4032541 Cumulative Update 7 for SQL Server 2014 SP2]                                                                              | 2017-08-28   |    15 |      8 |      539 |
+| 12.0.5553.0  | 2014.120.5553.0  | SP2    | CU   | [4019094 Cumulative Update 6 for SQL Server 2014 SP2]                                                                              | 2017-08-08   |    29 |     29 |      539 |
+| 12.0.5546.0  | 2014.120.5546.0  | SP2    | CU   | [4013098 Cumulative Update 5 for SQL Server 2014 SP2]                                                                              | 2017-04-18   |    24 |     21 |      557 |
+| 12.0.5540.0  | 2014.120.5540.0  | SP2    | CU   | [4010394 Cumulative Update 4 for SQL Server 2014 SP2]                                                                              | 2017-02-21   |    30 |     27 |      555 |
+| 12.0.5538.0  | 2014.120.5538.0  | SP2    | CU   | [3204388 Cumulative update 3 for SQL Server 2014 SP2]                                                                              | 2016-12-28   |    44 |     39 |      555 |
+| 12.0.5532.0  | 2014.120.5532.0  | SP2    | CU   | [3194718 MS16-136: Description of the security update for SQL Server 2014 Service Pack 2 CU: November 8, 2016]                     | 2016-11-08   |     1 |      1 |      551 |
+| 12.0.5522.0  | 2014.120.5522.0  | SP2    | CU   | [3188778 Cumulative update 2 for SQL Server 2014 SP2]                                                                              | 2016-10-18   |    18 |     18 |      550 |
+| 12.0.5511.0  | 2014.120.5511.0  | SP2    | CU   | [3178925 Cumulative update 1 for SQL Server 2014 SP2]                                                                              | 2016-08-24   |    45 |     36 |      556 |
+| 12.0.5214.6  | 2014.120.5214.6  | SP2    | GDR  | [4057120 Security update for SQL Server 2014 Service Pack 2 GDR: January 16, 2018] **CVE-2017-5715,2017-5753,2017-5754**           | 2018-01-16   |       |        |      960 |
+| 12.0.5207.0  | 2014.120.5207.0  | SP2    | GDR  | [4019093 Description of the security update for SQL Server 2014 Service Pack 2 GDR: August 8, 2017]                                | 2017-08-08   |     1 |      1 |      413 |
+| 12.0.5203.0  | 2014.120.5203.0  | SP2    | GDR  | [3194714 MS16-136: Description of the security update for SQL Server 2014 Service Pack 2 GDR: November 8, 2016]                    | 2016-11-08   |     1 |      1 |      463 |
+| 12.0.5000.0  | 2014.120.5000.0  | SP2    | SP   | [3171021 SQL Server 2014 Service Pack 2 release information]                                                                       | 2016-07-11   |   133 |     55 |      681 |
+| 12.0.4522.0  | 2014.120.4522.0  | SP1    | CU   | [4019099 Cumulative Update 13 for SQL Server 2014 SP1] **Last CU for 2014 SP1**                                                    | 2017-08-08   |    11 |     11 |      577 |
+| 12.0.4511.0  | 2014.120.4511.0  | SP1    | CU   | [4017793 Cumulative Update 12 for SQL Server 2014 SP1]                                                                             | 2017-04-17   |    12 |     11 |      573 |
+| 12.0.4502.0  | 2014.120.4502.0  | SP1    | CU   | [4010392 Cumulative Update 11 for SQL Server 2014 SP1]                                                                             | 2017-02-21   |    15 |     15 |      571 |
+| 12.0.4491.0  | 2014.120.4491.0  | SP1    | CU   | [3204399 Cumulative update package 10 for SQL Server 2014 Service Pack 1]                                                          | 2016-12-28   |    33 |     27 |      571 |
+| 12.0.4487.0  | 2014.120.4487.0  | SP1    | CU   | [3194722 MS16-136: Description of the security update for SQL Server 2014 Service Pack 1 CU: November 8, 2016]                     | 2016-11-08   |     1 |      1 |      569 |
+| 12.0.4474.0  | 2014.120.4474.0  | SP1    | CU   | [3186964 Cumulative update 9 for SQL Server 2014 SP1]                                                                              | 2016-10-18   |    14 |     14 |      912 |
+| 12.0.4468.0  | 2014.120.4468.0  | SP1    | CU   | [3174038 Cumulative update 8 for SQL Server 2014 SP1]                                                                              | 2016-08-16   |    38 |     38 |      929 |
+| 12.0.4463.0  | 2014.120.4463.0  | SP1    | COD  | [3174370 COD Hotfix A memory leak occurs when you use Azure Storage in SQL Server 2014]                                            | 2016-08-04   |     1 |      1 |          |
+| 12.0.4459.0  | 2014.120.4459.0  | SP1    | CU   | [3162659 Cumulative Update 7 for SQL Server 2014 SP1]                                                                              | 2016-06-20   |    35 |     33 |      928 |
+| 12.0.4457.0  | 2014.120.4457.0  | SP1    | CU   | [3167392 Cumulative Update 6 for SQL Server 2014 Service Pack 1] **Refresh**                                                       | 2016-05-31   |    44 |     43 |      927 |
+| 12.0.4452.0  | 2014.120.4452.0  | SP1    | COD  | 3147825 COD Hotfix **Deprecated**                                                                                                  | 2016-04-05   |     1 |      1 |          |
+| 12.0.4449.0  | 2014.120.4449.0  | SP1    | CU   | [3144524 Cumulative update 6 for SQL Server 2014 SP1 (deprecated)] **Deprecated**                                                  | 2016-04-18   |   N/A |    N/A |          |
+| 12.0.4439.1  | 2014.120.4439.1  | SP1    | CU   | [3130926 Cumulative Update 5 (CU5) for SQL Server 2014 Service Pack 1]                                                             | 2016-02-22   |    20 |     20 |      924 |
+| 12.0.4437.0  | 2014.120.4437.0  | SP1    | COD  | [3130999 On-demand hotfix update package for SQL Server 2014 Service Pack 1 Cumulative Update 4]                                   | 2016-02-05   |     2 |      2 |          |
+| 12.0.4436.0  | 2014.120.4436.0  | SP1    | CU   | [3106660 Cumulative update package 4 (CU4) for SQL Server 2014 Service Pack 1]                                                     | 2015-12-21   |    34 |     34 |          |
+| 12.0.4433.0  | 2014.120.4433.0  | SP1    | COD  | [3119148 FIX: Error 3203 occurs and a SQL Server 2014 backup job can't restart after a network failure]                            | 2015-12-09   |     1 |      1 |          |
+| 12.0.4432.0  | 2014.120.4432.0  | SP1    | COD  | [3097972 FIX: Error when your stored procedure calls another stored procedure on a linked server in SQL Server 2014]               | 2015-11-19   |     3 |      3 |          |
+| 12.0.4427.24 | 2014.120.4427.24 | SP1    | CU   | [3094221 Cumulative update package 3 (CU3) for SQL Server 2014 Service Pack 1]                                                     | 2015-10-21   |    40 |     36 |          |
+| 12.0.4422.0  | 2014.120.4422.0  | SP1    | CU   | [3075950 Cumulative update package 2 (CU2) for SQL Server 2014 Service Pack 1]                                                     | 2015-08-17   |    51 |     46 |          |
+| 12.0.4419.0  | 2014.120.4419.0  | SP1    | COD  | [3078973 An on-demand hotfix update package is available for SQL Server 2014 SP1]                                                  | 2015-07-24   |    13 |     13 |          |
+| 12.0.4416.0  | 2014.120.4416.0  | SP1    | CU   | [3067839 Cumulative update package 1 (CU1) for SQL Server 2014 Service Pack 1]                                                     | 2015-06-22   |   141 |    121 |          |
+| 12.0.4237.0  | 2014.120.4237.0  | SP1    | GDR  | [4019091 Security update for SQL Server 2014 Service Pack 1 GDR: August 8, 2017]                                                   | 2017-08-08   |     1 |      1 |      391 |
+| 12.0.4232.0  | 2014.120.4232.0  | SP1    | CU   | [3194720 MS16-136: Description of the security update for SQL Server 2014 Service Pack 1 GDR: November 8, 2016]                    | 2016-11-08   |     1 |      1 |      371 |
+| 12.0.4219.0  | 2014.120.4219.0  | SP1    | GDR  | [3098852 SP1 GDR TLS 1.2 Update]                                                                                                   | 2016-01-29   |       |        |          |
+| 12.0.4213.0  | 2014.120.4213.0  | SP1    | GDR  | [3070446 MS15-058: Description of the nonsecurity update for SQL Server 2014 Service Pack 1 GDR: July 14, 2015]                    | 2015-07-14   |       |        |      381 |
+| 12.0.4100.1  | 2014.120.4100.1  | SP1    | SP   | [3058865 SQL Server 2014 Service Pack 1 release information]                                                                       | 2015-05-14   |    29 |     29 |     1025 |
+| 12.0.4050.0  | 2014.120.4050.0  | SP1    | SP   | SQL Server 2014 Service Pack 1 (SP1) (initial)                                                                                     | 2015-04-15   |       |        |          |
+| 12.0.2569.0  | 2014.120.2569.0  | RTM    | CU   | [3158271 Cumulative update package 14 (CU14) for SQL Server 2014] **Last CU for 2014 RTM**                                         | 2016-06-20   |    21 |     20 |     1049 |
+| 12.0.2568.0  | 2014.120.2568.0  | RTM    | CU   | [3144517 Cumulative update package 13 (CU13) for SQL Server 2014]                                                                  | 2016-04-18   |    30 |     30 |     1047 |
+| 12.0.2564.0  | 2014.120.2564.0  | RTM    | CU   | [3130923 Cumulative update package 12 (CU12) for SQL Server 2014]                                                                  | 2016-02-22   |     7 |      7 |     1045 |
+| 12.0.2560.0  | 2014.120.2550.0  | RTM    | CU   | [3106659 Cumulative update package 11 (CU11) for SQL Server 2014]                                                                  | 2015-12-21   |    19 |     19 |          |
+| 12.0.2556.4  | 2014.120.2556.4  | RTM    | CU   | [3094220 Cumulative update package 10 (CU10) for SQL Server 2014]                                                                  | 2015-10-20   |    33 |     30 |          |
+| 12.0.2553.0  | 2014.120.2553.0  | RTM    | CU   | [3075949 Cumulative update package 9 (CU9) for SQL Server 2014]                                                                    | 2015-08-17   |    31 |     30 |          |
+| 12.0.2548.0  | 2014.120.2548.0  | RTM    | CU   | [3045323 MS15-058: Description of the security update for SQL Server 2014 QFE: July 14, 2015]                                      | 2015-07-14   |     1 |      1 |     1038 |
+| 12.0.2546.0  | 2014.120.2546.0  | RTM    | CU   | [3067836 Cumulative update package 8 (CU8) for SQL Server 2014]                                                                    | 2015-06-22   |    40 |     38 |          |
+| 12.0.2506.0  | 2014.120.2506.0  | RTM    | COD  | [3063054 Update enables Premium Storage support for Data files on Azure Storage and resolves backup failures]                      | 2015-05-19   |     1 |      1 |          |
+| 12.0.2505.0  | 2014.120.2505.0  | RTM    | COD  | [3052167 FIX: Error 1205 when you execute parallel query that contains outer join operators in SQL Server 2014]                    | 2015-05-19   |     1 |      1 |          |
+| 12.0.2504.0  | 2014.120.2504.0  | RTM    | COD  | [2999809 FIX: Poor performance when a query contains table joins in SQL Server 2014]                                               | 2015-05-05   |     2 |      2 |          |
+| 12.0.2504.0  | 2014.120.2504.0  | RTM    | COD  | [3058512 FIX: Unpivot Transformation task changes null to zero or empty strings in SSIS 2014]                                      | 2015-05-05   |       |        |          |
+| 12.0.2495.0  | 2014.120.2495.0  | RTM    | CU   | [3046038 Cumulative update package 7 (CU7) for SQL Server 2014]                                                                    | 2015-04-23   |    47 |     41 |          |
+| 12.0.2488.0  | 2014.120.2488.0  | RTM    | COD  | [3048751 FIX: Deadlock cannot be resolved automatically when you run a SELECT query that can result in a parallel batch-mode scan] | 2015-04-01   |     1 |      1 |          |
+| 12.0.2485.0  | 2014.120.2485.0  | RTM    | COD  | [3043788 An on-demand hotfix update package is available for SQL Server 2014]                                                      | 2015-03-16   |     1 |      1 |          |
+| 12.0.2480.0  | 2014.120.2480.0  | RTM    | CU   | [3031047 Cumulative update package 6 (CU6) for SQL Server 2014]                                                                    | 2015-02-16   |    64 |     55 |          |
+| 12.0.2474.0  | 2014.120.2474.0  | RTM    | COD  | [3034679 FIX: AlwaysOn availability groups are reported as NOT SYNCHRONIZING]                                                      | 2015-02-04   |     1 |      1 |          |
+| 12.0.2472.0  | 2014.120.2472.0  | RTM    | COD  | [3032087 FIX: Cannot show requested dialog after you connect to the latest SQL Database Update V12 (preview) with SQL Server 2014] | 2015-01-28   |     1 |      1 |          |
+| 12.0.2464.0  | 2014.120.2464.0  | RTM    | COD  | [3024815 Large query compilation waits on RESOURCE_SEMAPHORE_QUERY_COMPILE in SQL Server 2014]                                     | 2015-01-05   |     1 |      1 |          |
+| 12.0.2456.0  | 2014.120.2456.0  | RTM    | CU   | [3011055 Cumulative update package 5 (CU5) for SQL Server 2014]                                                                    | 2014-12-18   |    54 |     48 |          |
+| 12.0.2436.0  | 2014.120.2436.0  | RTM    | COD  | [3014867 FIX: "Remote hardening failure" exception cannot be caught and a potential data loss when you use SQL Server 2014]        | 2014-11-27   |     1 |      1 |          |
+| 12.0.2430.0  | 2014.120.2430.0  | RTM    | CU   | [2999197 Cumulative update package 4 (CU4) for SQL Server 2014]                                                                    | 2014-10-21   |    66 |     54 |          |
+| 12.0.2423.0  | 2014.120.2423.0  | RTM    | COD  | [3007050 FIX: RTDATA_LIST waits when you run natively stored procedures that encounter expected failures in SQL Server 2014]       | 2014-10-22   |       |        |          |
+| 12.0.2405.0  | 2014.120.2405.0  | RTM    | COD  | [2999809 FIX: Poor performance when a query contains table joins in SQL Server 2014]                                               | 2014-09-25   |       |        |          |
+| 12.0.2402.0  | 2014.120.2402.0  | RTM    | CU   | [2984923 Cumulative update package 3 (CU3) for SQL Server 2014]                                                                    | 2014-08-18   |    40 |     32 |          |
+| 12.0.2381.0  | 2014.120.2381.0  | RTM    | QFE  | [2977316 MS14-044: Description of the security update for SQL Server 2014 (QFE)]                                                   | 2014-08-12   |     1 |      1 |      602 |
+| 12.0.2370.0  | 2014.120.2370.0  | RTM    | CU   | [2967546 Cumulative update package 2 (CU2) for SQL Server 2014]                                                                    | 2014-06-27   |    52 |     48 |          |
+| 12.0.2342.0  | 2014.120.2342.0  | RTM    | CU   | [2931693 Cumulative update package 1 (CU1) for SQL Server 2014]                                                                    | 2014-04-21   |   121 |    114 |          |
+| 12.0.2271.0  | 2014.120.2271.0  | RTM    | GDR  | [TLS 1.2 support for SQL Server 2014 RTM]                                                                                          | 2016-01-29   |     3 |      3 |          |
+| 12.0.2269.0  | 2014.120.2269.0  | RTM    | GDR  | [3045324 MS15-058: Description of the security update for SQL Server 2014 GDR: July 14, 2015]                                      | 2015-07-14   |     2 |      2 |      388 |
+| 12.0.2254.0  | 2014.120.2254.0  | RTM    | GDR  | [2977315 MS14-044: Description of the security update for SQL Server 2014 (GDR)]                                                   | 2014-08-12   |     1 |      1 |      183 |
+| 12.0.2000.8  | 2014.120.2000.8  | RTM    | RTM  | SQL Server 2014 RTM                                                                                                                | 2014-04-01   |     - |      - |          |
+| 12.0.1524.0  | 2014.120.1524.0  | CTP    | CTP  | Microsoft SQL Server 2014 Community Technology Preview 2 (CTP2)                                                                    | 2013-10-15   |       |        |          |
+| 11.0.9120.0  | 2013.110.9120.0  | CTP    | CTP  | Microsoft SQL Server 2014 Community Technology Preview 1 (CTP1)                                                                    | 2013-06-25   |       |        |          |
+
+[4470220 Cumulative Update 1 for SQL Server 2014 SP3]:https://support.microsoft.com/help/4470220
+[4022619 SQL Server 2014 Service Pack 3 release information]:https://support.microsoft.com/help/4022619
+[4469137 Cumulative Update 15 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4469137
+[4459860 Cumulative Update 14 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4459860
+[4456287 Cumulative Update 13 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4456287
+[4130489 Cumulative Update 12 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4130489
+[4077063 Cumulative Update 11 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4077063
+[4052725 Cumulative Update 10 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4052725/cumulative-update-10-for-sql-server-2014-sp2
+[4055557 Cumulative Update 9 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4055557/cumulative-update-9-for-sql-server-2014-sp2
+[4037356 Cumulative Update 8 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4037356/cumulative-update-8-for-sql-server-2014-sp2
+[4032541 Cumulative Update 7 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4032541/cumulative-update-7-for-sql-server-2014-sp2
+[4019094 Cumulative Update 6 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4019094/cumulative-update-6-for-sql-server-2014-sp2
+[4013098 Cumulative Update 5 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4013098/cumulative-update-5-for-sql-server-2014-sp2
+[4010394 Cumulative Update 4 for SQL Server 2014 SP2]:https://support.microsoft.com/help/4010394/cumulative-update-4-for-sql-server-2014-sp2
+[3204388 Cumulative update 3 for SQL Server 2014 SP2]:https://support.microsoft.com/help/3204388
+[3194718 MS16-136: Description of the security update for SQL Server 2014 Service Pack 2 CU: November 8, 2016]:https://support.microsoft.com/help/3194718
+[3188778 Cumulative update 2 for SQL Server 2014 SP2]:https://support.microsoft.com/help/3188778
+[3178925 Cumulative update 1 for SQL Server 2014 SP2]:https://support.microsoft.com/help/3178925
+[3194714 MS16-136: Description of the security update for SQL Server 2014 Service Pack 2 GDR: November 8, 2016]:https://support.microsoft.com/en-us/help/3194714/
+[3171021 SQL Server 2014 Service Pack 2 release information]:https://support.microsoft.com/help/3171021
+[4019099 Cumulative Update 13 for SQL Server 2014 SP1]:https://support.microsoft.com/help/4019099/cumulative-update-13-for-sql-server-2014-sp1
+[4017793 Cumulative Update 12 for SQL Server 2014 SP1]:https://support.microsoft.com/help/4017793/cumulative-update-12-for-sql-server-2014-sp1
+[4010392 Cumulative Update 11 for SQL Server 2014 SP1]:https://support.microsoft.com/help/4010392/cumulative-update-11-for-sql-server-2014-sp1
+[3204399 Cumulative update package 10 for SQL Server 2014 Service Pack 1]:https://support.microsoft.com/help/3204399
+[3194722 MS16-136: Description of the security update for SQL Server 2014 Service Pack 1 CU: November 8, 2016]:https://support.microsoft.com/en-us/kb/3194722
+[3186964 Cumulative update 9 for SQL Server 2014 SP1]:https://support.microsoft.com/help/3186964
+[4057120 Security update for SQL Server 2014 Service Pack 2 GDR: January 16, 2018]:https://support.microsoft.com/help/4057120
+[4019093 Description of the security update for SQL Server 2014 Service Pack 2 GDR: August 8, 2017]:https://support.microsoft.com/help/4019093/
+[3174038 Cumulative update 8 for SQL Server 2014 SP1]:https://support.microsoft.com/en-us/kb/3174038
+[3174370 COD Hotfix A memory leak occurs when you use Azure Storage in SQL Server 2014]:https://support.microsoft.com/en-us/kb/3174370
+[3162659 Cumulative Update 7 for SQL Server 2014 SP1]:https://support.microsoft.com/en-us/kb/3162659
+[3167392 Cumulative Update 6 for SQL Server 2014 Service Pack 1]:https://support.microsoft.com/en-us/kb/3167392
+[3144524 Cumulative update 6 for SQL Server 2014 SP1 (deprecated)]:https://support.microsoft.com/en-us/kb/3144524
 [3130926 Cumulative Update 5 (CU5) for SQL Server 2014 Service Pack 1]:https://support.microsoft.com/en-us/kb/3130926
+[3130999 On-demand hotfix update package for SQL Server 2014 Service Pack 1 Cumulative Update 4]:https://support.microsoft.com/en-us/kb/3130999
 [3106660 Cumulative update package 4 (CU4) for SQL Server 2014 Service Pack 1]:https://support.microsoft.com/en-us/kb/3106660
+[3119148 FIX: Error 3203 occurs and a SQL Server 2014 backup job can't restart after a network failure]:http://support.microsoft.com/kb/3119148
+[3097972 FIX: Error when your stored procedure calls another stored procedure on a linked server in SQL Server 2014]:http://support.microsoft.com/kb/3097972
 [3094221 Cumulative update package 3 (CU3) for SQL Server 2014 Service Pack 1]:http://support.microsoft.com/kb/3094221
 [3075950 Cumulative update package 2 (CU2) for SQL Server 2014 Service Pack 1]:http://support.microsoft.com/kb/3075950
+[3078973 An on-demand hotfix update package is available for SQL Server 2014 SP1]:http://support.microsoft.com/kb/3078973
 [3067839 Cumulative update package 1 (CU1) for SQL Server 2014 Service Pack 1]:http://support.microsoft.com/kb/3067839
-[MS15-058: Description of the nonsecurity update for SQL Server 2014 Service Pack 1 GDR: July 14, 2015]:https://support.microsoft.com/en-us/kb/3070446
-[SQL Server 2014 Service Pack 1 (SP1)]:http://www.microsoft.com/en-us/download/details.aspx?id=46694
+[4019091 Security update for SQL Server 2014 Service Pack 1 GDR: August 8, 2017]:http://support.microsoft.com/help/4019091
+[3194720 MS16-136: Description of the security update for SQL Server 2014 Service Pack 1 GDR: November 8, 2016]:https://support.microsoft.com/en-us/kb/3194720
+[3098852 SP1 GDR TLS 1.2 Update]:https://support.microsoft.com/en-us/hotfix/kbhotfix?kbnum=3098852&kbln=en-us
+[3070446 MS15-058: Description of the nonsecurity update for SQL Server 2014 Service Pack 1 GDR: July 14, 2015]:https://support.microsoft.com/en-us/kb/3070446
+[3058865 SQL Server 2014 Service Pack 1 release information]:https://support.microsoft.com/en-us/kb/3058865
+[3158271 Cumulative update package 14 (CU14) for SQL Server 2014]:https://support.microsoft.com/en-us/kb/3158271
+[3144517 Cumulative update package 13 (CU13) for SQL Server 2014]:https://support.microsoft.com/en-us/kb/3144517
+[3130923 Cumulative update package 12 (CU12) for SQL Server 2014]:https://support.microsoft.com/en-us/kb/3130923
 [3106659 Cumulative update package 11 (CU11) for SQL Server 2014]:http://support.microsoft.com/kb/3106659
 [3094220 Cumulative update package 10 (CU10) for SQL Server 2014]:http://support.microsoft.com/kb/3094220
 [3075949 Cumulative update package 9 (CU9) for SQL Server 2014]:http://support.microsoft.com/kb/3075949
-[MS15-058: Description of the security update for SQL Server 2014 QFE: July 14, 2015]:https://support.microsoft.com/en-us/kb/3045323
+[3045323 MS15-058: Description of the security update for SQL Server 2014 QFE: July 14, 2015]:https://support.microsoft.com/en-us/kb/3045323
 [3067836 Cumulative update package 8 (CU8) for SQL Server 2014]:http://support.microsoft.com/kb/3067836
 [3063054 Update enables Premium Storage support for Data files on Azure Storage and resolves backup failures]:http://support.microsoft.com/kb/3063054
 [3052167 FIX: Error 1205 when you execute parallel query that contains outer join operators in SQL Server 2014]:http://support.microsoft.com/kb/3052167
@@ -269,86 +858,130 @@ contains all the fixes that are included with previous service packs and any new
 [2977316 MS14-044: Description of the security update for SQL Server 2014 (QFE)]:http://support.microsoft.com/kb/2977316
 [2967546 Cumulative update package 2 (CU2) for SQL Server 2014]:http://support.microsoft.com/kb/2967546
 [2931693 Cumulative update package 1 (CU1) for SQL Server 2014]:http://support.microsoft.com/kb/2931693
+[TLS 1.2 support for SQL Server 2014 RTM]:https://support.microsoft.com/en-us/hotfix/kbhotfix?kbnum=3098856&kbln=en-us
 [3045324 MS15-058: Description of the security update for SQL Server 2014 GDR: July 14, 2015]:https://support.microsoft.com/en-us/kb/3045324
 [2977315 MS14-044: Description of the security update for SQL Server 2014 (GDR)]:http://support.microsoft.com/kb/2977315
 
 
-## Microsoft SQL Server 2012 Builds <a id="microsoft-sql-server-2012-builds"></a>
+## Microsoft SQL Server 2012 Builds
+<a id="microsoft-sql-server-2012-builds"></a>
 
-| Build         | File version     | KB / Description                                                                                                                       | Release Date |
-|---------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 11.0.6518.0   | 11.3.6518.0      | [3123299 Cumulative update package 1 for SQL Server 2012 SP3]                                                                          | 2016-01-19   |
-| 11.0.6518.0   | 11.0.6518.0      | [3072779 SQL Server 2012 Service Pack 3 release information]                                                                           | 2015-11-20   |
-| 11.0.5644.2   | 11.0.5644.2      | [3120313 Cumulative update package 10 for SQL Server 2012 SP2]                                                                         | 2016-01-19   |
-| 11.3.6020.0   | 11.3.6020.0      | [Microsoft SQL Server 2012 Service Pack 3 (SP3)]                                                                                       | 2015-11-21   |
-| 11.0.5641.0   | 11.2.56.41.0     | [3098512 Cumulative update package 9 for SQL Server 2012 SP2]                                                                          | 2015-11-16   |
-| 11.0.5636     | 2011.110.5636.3  | [3097636 FIX: Performance decrease when application with connection pooling frequently connects or disconnects in SQL Server]          | 2015-09-22   |
-| 11.0.5634     | 2011.110.5634.0  | [3082561 Cumulative update package 8 (CU8) for SQL Server 2012 Service Pack 2]                                                         | 2015-09-21   |
-| 11.0.5629     | 2011.110.5629.0  | [3087872 FIX: Access violations when you use the FileTable feature in SQL Server 2012]                                                 | 2015-08-31   |
-| 11.0.5623     | 2011.110.5623.0  | [3072100 Cumulative update package 7 (CU7) for SQL Server 2012 Service Pack 2]                                                         | 2015-07-20   |
-| 11.0.5613     | 2011.110.5613.0  | [3045319 MS15-058: Description of the security update for SQL Server 2012 Service Pack 2 QFE: July 14, 2015]                           | 2015-07-14   |
-| 11.0.5592     | 2011.110.5592.0  | [3052468 Cumulative update package 6 (CU6) for SQL Server 2012 Service Pack 2]                                                         | 2015-05-19   |
-| 11.0.5582     | 2011.110.5582.0  | [3037255 Cumulative update package 5 (CU5) for SQL Server 2012 Service Pack 2]                                                         | 2015-03-16   |
-| 11.0.5571     | 2011.110.5571.0  | [3034679 FIX: AlwaysOn availability groups are reported as NOT SYNCHRONIZING]                                                          | 2015-05-15   |
-| 11.0.5569     | 2011.110.5569.0  | [3007556 Cumulative update package 4 (CU4) for SQL Server 2012 Service Pack 2]                                                         | 2015-01-20   |
-| 11.0.5556     | 2011.110.5556.0  | [3002049 Cumulative update package 3 (CU3) for SQL Server 2012 Service Pack 2]                                                         | 2014-11-17   |
-| 11.0.5548     | 2011.110.5548.0  | [2983175 Cumulative update package 2 (CU2) for SQL Server 2012 Service Pack 2]                                                         | 2014-09-15   |
-| 11.0.5532     | 2011.110.5532.0  | [2976982 Cumulative update package 1 (CU1) for SQL Server 2012 Service Pack 2]                                                         | 2014-07-24   |
-| 11.0.5522     | 2011.110.5522.0  | [2969896 FIX: Data loss in clustered index occurs when you run online build index in SQL Server 2012 (Hotfix for SQL2012 SP2)]         | 2014-06-20   |
-| 11.0.5343     | 2011.110.5343.0  | [3045321 MS15-058: Description of the security update for SQL Server 2012 Service Pack 2 GDR: July 14, 2015]                           | 2015-07-14   |
-| 11.0.5058     | 2011.110.5058.0  | [SQL Server 2012 Service Pack 2 (SP2)]                                                                                                 | 2014-06-10   |
-| 11.0.3513     | 2011.110.3513.0  | [3045317 MS15-058: Description of the security update for SQL Server 2012 SP1 QFE: July 14, 2015]                                      | 2015-07-14   |
-| 11.0.3492     | 2011.110.3492.0  | [3052476 Cumulative update package 16 (CU16) for SQL Server 2012 Service Pack 1]                                                       | 2015-05-18   |
-| 11.0.3487     | 2011.110.3487.0  | [3038001 Cumulative update package 15 (CU15) for SQL Server 2012 Service Pack 1]                                                       | 2015-03-16   |
-| 11.0.3486     | 2011.110.3486.0  | [3023636 Cumulative update package 14 (CU14) for SQL Server 2012 Service Pack 1]                                                       | 2015-01-19   |
-| 11.0.3460     | 2011.110.3460.0  | [2977325 MS14-044: Description of the security update for SQL Server 2012 Service Pack 1 (QFE)]                                        | 2014-08-12   |
-| 11.0.3482     | 2011.110.3482.0  | [3002044 Cumulative update package 13 (CU13) for SQL Server 2012 Service Pack 1]                                                       | 2014-11-17   |
-| 11.0.3470     | 2011.110.3470.0  | [2991533 Cumulative update package 12 (CU12) for SQL Server 2012 Service Pack 1]                                                       | 2014-09-15   |
-| 11.0.3449     | 2011.110.3449.0  | [2975396 Cumulative update package 11 (CU11) for SQL Server 2012 Service Pack 1]                                                       | 2014-07-21   |
-| 11.0.3437     | 2011.110.3437.0  | [2969896 FIX: Data loss in clustered index occurs when you run online build index in SQL Server 2012 (Hotfix for SQL2012 SP1)]         | 2014-06-10   |
-| 11.0.3431     | 2011.110.3431.0  | [2954099 Cumulative update package 10 (CU10) for SQL Server 2012 Service Pack 1]                                                       | 2014-05-19   |
-| 11.0.3412     | 2011.110.3412.0  | [2931078 Cumulative update package 9 (CU9) for SQL Server 2012 Service Pack 1]                                                         | 2014-03-18   |
-| 11.0.3401     | 2011.110.3401.0  | [2917531 Cumulative update package 8 (CU8) for SQL Server 2012 Service Pack 1]                                                         | 2014-01-20   |
-| 11.0.3393     | 2011.110.3393.0  | [2894115 Cumulative update package 7 (CU7) for SQL Server 2012 Service Pack 1]                                                         | 2013-11-18   |
-| 11.0.3381     | 2011.110.3381.0  | [2874879 Cumulative update package 6 (CU6) for SQL Server 2012 Service Pack 1]                                                         | 2013-09-16   |
-| 11.0.3373     | 2011.110.3373.0  | [2861107 Cumulative update package 5 (CU5) for SQL Server 2012 Service Pack 1]                                                         | 2013-07-16   |
-| 11.0.3368     | 2011.110.3368.0  | [2833645 Cumulative update package 4 (CU4) for SQL Server 2012 Service Pack 1]                                                         | 2013-05-31   |
-| 11.0.3350     | 2011.110.3350.0  | [2832017 FIX: You can’t create or open SSIS projects or maintenance plans after you apply Cumulative Update 3 for SQL Server 2012 SP1] | 2013-04-17   |
-| 11.0.3349     | 2011.110.3349.0  | [2812412 Cumulative update package 3 (CU3) for SQL Server 2012 Service Pack 1]                                                         | 2013-03-18   |
-| 11.0.3339     | 2011.110.3339.0  | [2790947 Cumulative update package 2 (CU2) for SQL Server 2012 Service Pack 1]                                                         | 2013-01-25   |
-| 11.0.3335     | 2011.110.3335.0  | [2800050 FIX: Component installation process fails after you install SQL Server 2012 SP1]                                              | 2013-01-14   |
-| 11.0.3321     | 2011.110.3321.0  | [2765331 Cumulative update package 1 (CU1) for SQL Server 2012 Service Pack 1]                                                         | 2012-11-20   |
-| 11.0.3156     | 2011.110.3156.0  | [3045318 MS15-058: Description of the security update for SQL Server 2012 SP1 GDR: July 14, 2015]                                      | 2015-07-14   |
-| 11.0.3153     | 2011.110.3153.0  | [2977326 MS14-044: Description of the security update for SQL Server 2012 Service Pack 1 (GDR)]                                        | 2014-08-12   |
-| 11.0.3128     | 2011.110.3128.0  | [2793634 Windows Installer starts repeatedly after you install SQL Server 2012 SP1]                                                    | 2013-01-03   |
-| 11.0.3000     | 2011.110.3000.0  | [SQL Server 2012 Service Pack 1 (SP1)]                                                                                                 | 2012-11-06   |
-| 11.0.2845     | 2011.110.2845.0  | SQL Server 2012 Service Pack 1 Customer Technology Preview 4 (CTP4)                                                                    | 2012-09-20   |
-| 11.0.2809     | 2011.110.2809.24 | SQL Server 2012 Service Pack 1 Customer Technology Preview 3 (CTP3)                                                                    | 2012-07-05   |
-| 11.0.2424     | 2011.110.2424.0  | [2908007 Cumulative update package 11 (CU11) for SQL Server 2012]                                                                      | 2013-12-17   |
-| 11.0.2420     | 2011.110.2420.0  | [2891666 Cumulative update package 10 (CU10) for SQL Server 2012]                                                                      | 2013-10-21   |
-| 11.0.2419     | 2011.110.2419.0  | [2867319 Cumulative update package 9 (CU9) for SQL Server 2012]                                                                        | 2013-08-21   |
-| 11.0.2410     | 2011.110.2410.0  | [2844205 Cumulative update package 8 (CU8) for SQL Server 2012]                                                                        | 2013-06-18   |
-| 11.0.2405     | 2011.110.2405.0  | [2823247 Cumulative update package 7 (CU7) for SQL Server 2012]                                                                        | 2013-04-15   |
-| 11.0.2401     | 2011.110.2401.0  | [2728897 Cumulative update package 6 (CU6) for SQL Server 2012]                                                                        | 2013-02-18   |
-| 11.0.2395     | 2011.110.2395.0  | [2777772 Cumulative update package 5 (CU5) for SQL Server 2012]                                                                        | 2012-12-18   |
-| 11.0.9000     | 2011.110.9000.5  | Microsoft SQL Server 2012 With Power View For Multidimensional Models Customer Technology Preview (CTP3)                               | 2012-11-27   |
-| 11.0.2383     | 2011.110.2383.0  | [2758687 Cumulative update package 4 (CU4) for SQL Server 2012]                                                                        | 2012-10-18   |
-| 11.0.2376     | 2011.110.2376.0  | [Microsoft Security Bulletin MS12-070]                                                                                                 | 2012-10-09   |
-| 11.0.2332     | 2011.110.2332.0  | [2723749 Cumulative update package 3 (CU3) for SQL Server 2012]                                                                        | 2012-08-29   |
-| 11.0.2325     | 2011.110.2325.0  | [2703275 Cumulative update package 2 (CU2) for SQL Server 2012]                                                                        | 2012-06-18   |
-| 11.0.2316     | 2011.110.2316.0  | [2679368 Cumulative update package 1 (CU1) for SQL Server 2012]                                                                        | 2012-04-12   |
-| 11.0.2218     | 2011.110.2218.0  | [Microsoft Security Bulletin MS12-070]                                                                                                 | 2012-10-09   |
-| 11.0.2214     | 2011.110.2214.0  | 2685308 FIX: SSAS uses only 20 cores in SQL Server 2012 Business Intelligence                                                          | 2012-04-06   |
-| 11.0.2100     | 2011.110.2100.60 | SQL Server 2012 RTM                                                                                                                    | 2012-03-06   |
-| 11.0.1913     | 2011.110.1913.37 | Microsoft SQL Server 2012 Release Candidate 1 (RC1)                                                                                    | 2011-12-16   |
-| 11.0.1750     | 2011.110.1750.32 | Microsoft SQL Server 2012 Release Candidate 0 (RC0)                                                                                    | 2011-11-17   |
-| 11.0.1440     | 2010.110.1440.19 | Microsoft SQL Server 2012 (codename Denali) Community Technology Preview 3 (CTP3)                                                      | 2011-07-11   |
-| 11.0.1103     | 2010.110.1103.9  | Microsoft SQL Server 2012 (codename Denali) Community Technology Preview 1 (CTP1)                                                      | 2010-11-08   |
+All SQL Server 2014 CU downloads: [Catalog Update Microsoft SQL Server 2012](http://www.catalog.update.microsoft.com/Search.aspx?q=sql%20server%202012)
 
+| Build         | File version     | Branch | Type | KB / Description                                                                                                                       | Release Date |
+|---------------|------------------|--------|------|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 11.0.77462.6  | 2011.110.7462.6  | SP4    | GDR  | [4057116 Security Advisory ADV180002 (GDR)]                                                                                            | 2018-01-12   |
+| 11.0.7001.0   | 2011.110.7001.0  | SP4    | SP   | [4018073 SQL Server 2012 Service Pack 4 release information]                                                                           | 2017-10-05   |
+| 11.0.6607.3   | 2011.110.6607.3  | SP3    | CU   | [4016762 Cumulative Update 10 for SQL Server 2012 SP3]                                                                                 | 2017-08-08   |
+| 11.0.6598.0   | 2011.110.6598.0  | SP3    | CU   | [4016762 Cumulative Update 9 for SQL Server 2012 SP3]                                                                                  | 2017-05-15   |
+| 11.0.6594.0   | 2011.110.6594.0  | SP3    | CU   | [4013104 Cumulative Update 8 for SQL Server 2012 SP3]                                                                                  | 2017-03-21   |
+| 11.0.6579.0   | 2011.110.6579.0  | SP3    | CU   | [3205051 Cumulative Update Package 7 for SQL Server 2012 SP3]                                                                          | 2017-01-18   |
+| 11.0.6567.0   | 2011.110.6567.0  | SP3    | COD  | [3194724 MS16-136: Description of the security update for SQL Server 2012 Service Pack 3 CU: November 8, 2016]                         | 2016-11-17   |
+| 11.0.6544.0   | 2011.110.6544.0  | SP3    | CU   | [3180915 Cumulative update 5 for SQL Server 2012 Service Pack 3]                                                                       | 2016-09-20   |
+| 11.0.6540.0   | 2011.110.6540.0  | SP3    | CU   | [3165264 Cumulative Update 4 for SQL Server 2012 SP3]                                                                                  | 2016-07-18   |
+| 11.0.6537.0   | 2011.110.6537.0  | SP3    | CU   | [3152635 Cumulative update package 3 for SQL Server 2012 SP3]                                                                          | 2016-05-16   |
+| 11.0.6523.0   | 2011.110.6523.0  | SP3    | CU   | [3137746 Cumulative update package 2 for SQL Server 2012 SP3]                                                                          | 2016-03-21   |
+| 11.0.6518.0   | 2011.110.6518.0  | SP3    | CU   | [3123299 Cumulative update package 1 for SQL Server 2012 SP3]                                                                          | 2016-01-19   |
+| 11.0.6248.0   | 2011.110.6248.0  | SP3    | GDR  | [3194721 MS16-136: Description of the security update for SQL Server 2012 Service Pack 3 GDR: November 8, 2016]                        | 2016-11-08   |
+| 11.0.6216.27  | 2011.110.6216.27 | SP3    | GDR  | [3135244 TLS 1.2 support for SQL Server 2012 SP3 GDR]                                                                                  | 2016-01-27   |
+| 11.3.6020.0   | 2011.110.6020.0  | SP3    | SP   | [3072779 Microsoft SQL Server 2012 Service Pack 3 (SP3)]                                                                               | 2015-11-21   |
+| 11.0.5678.0   | 2011.110.5678.0  | SP2    | CU   | [3205054 Cumulative Update 16 for SQL Server 2012 SP2]                                                                                 | 2017-01-18   |
+| 11.0.5676.0   | 2011.110.5676.0  | SP2    | CU   | [3205416 Cumulative update package 15 (CU15) for SQL Server 2012 Service Pack 2]                                                       | 2016-11-17   |
+| 11.0.5676.0   | 2011.110.5676.0  | SP2    | COD  | [3194725 MS16-136: Description of the security update for SQL Server 2012 Service Pack 2 CU: November 8, 2016]                         | 2016-11-17   |
+| 11.0.5657.0   | 2011.110.5657.0  | SP2    | CU   | [3180914 Cumulative Update 14 for SQL Server 2012 SP2]                                                                                 | 2016-09-20   |
+| 11.0.5655.0   | 2011.110.5655.0  | SP2    | CU   | [3165266 Cumulative Update 13 for SQL Server 2012 SP2]                                                                                 | 2016-07-18   |
+| 11.0.5649.0   | 2011.110.5649.0  | SP2    | CU   | [3152637 Cumulative update package 12 for SQL Server 2012 SP2]                                                                         | 2016-05-16   |
+| 11.0.5646.2   | 2011.110.5646.2  | SP2    | CU   | [3137745 Cumulative update package 11 for SQL Server 2012 SP2]                                                                         | 2016-03-21   |
+| 11.0.5644.2   | 2011.110.5644.2  | SP2    | CU   | [3120313 Cumulative update package 10 for SQL Server 2012 SP2]                                                                         | 2016-01-19   |
+| 11.0.5641.0   | 2011.110.5641.0  | SP2    | CU   | [3098512 Cumulative update package 9 for SQL Server 2012 SP2]                                                                          | 2015-11-16   |
+| 11.0.5636     | 2011.110.5636.3  | SP2    | COD  | [3097636 FIX: Performance decrease when application with connection pooling frequently connects or disconnects in SQL Server]          | 2015-09-22   |
+| 11.0.5634     | 2011.110.5634.0  | SP2    | CU   | [3082561 Cumulative update package 8 (CU8) for SQL Server 2012 Service Pack 2]                                                         | 2015-09-21   |
+| 11.0.5629     | 2011.110.5629.0  | SP2    | COD  | [3087872 FIX: Access violations when you use the FileTable feature in SQL Server 2012]                                                 | 2015-08-31   |
+| 11.0.5623     | 2011.110.5623.0  | SP2    | CU   | [3072100 Cumulative update package 7 (CU7) for SQL Server 2012 Service Pack 2]                                                         | 2015-07-20   |
+| 11.0.5613     | 2011.110.5613.0  | SP2    | COD  | [3045319 MS15-058: Description of the security update for SQL Server 2012 Service Pack 2 QFE: July 14, 2015]                           | 2015-07-14   |
+| 11.0.5592     | 2011.110.5592.0  | SP2    | CU   | [3052468 Cumulative update package 6 (CU6) for SQL Server 2012 Service Pack 2]                                                         | 2015-05-19   |
+| 11.0.5582     | 2011.110.5582.0  | SP2    | CU   | [3037255 Cumulative update package 5 (CU5) for SQL Server 2012 Service Pack 2]                                                         | 2015-03-16   |
+| 11.0.5571     | 2011.110.5571.0  | SP2    | COD  | [3034679 FIX: AlwaysOn availability groups are reported as NOT SYNCHRONIZING]                                                          | 2015-05-15   |
+| 11.0.5569     | 2011.110.5569.0  | SP2    | CU   | [3007556 Cumulative update package 4 (CU4) for SQL Server 2012 Service Pack 2]                                                         | 2015-01-20   |
+| 11.0.5556     | 2011.110.5556.0  | SP2    | CU   | [3002049 Cumulative update package 3 (CU3) for SQL Server 2012 Service Pack 2]                                                         | 2014-11-17   |
+| 11.0.5548     | 2011.110.5548.0  | SP2    | CU   | [2983175 Cumulative update package 2 (CU2) for SQL Server 2012 Service Pack 2]                                                         | 2014-09-15   |
+| 11.0.5532     | 2011.110.5532.0  | SP2    | CU   | [2976982 Cumulative update package 1 (CU1) for SQL Server 2012 Service Pack 2]                                                         | 2014-07-24   |
+| 11.0.5522     | 2011.110.5522.0  | SP2    | COD  | [2969896 FIX: Data loss in clustered index occurs when you run online build index in SQL Server 2012 (Hotfix for SQL2012 SP2)]         | 2014-06-20   |
+| 11.0.5388     | 2012.110.5388.0  | SP2    | GDR  | [3194719 MS16-136: Description of the security update for SQL Server 2012 Service Pack 2 GDR: November 8, 2016]                        | 2016-11-08   |
+| 11.0.5352     | 2012.110.5352.0  | SP2    | GDR  | [3135244 TLS 1.2 support for SQL Server 2012 SP2 GDR]                                                                                  | 2016-01-27   |
+| 11.0.5343     | 2011.110.5343.0  | SP2    | GDR  | [3045321 MS15-058: Description of the security update for SQL Server 2012 Service Pack 2 GDR: July 14, 2015]                           | 2015-07-14   |
+| 11.0.5058     | 2011.110.5058.0  | SP2    | SP   | [SQL Server 2012 Service Pack 2 (SP2)]                                                                                                 | 2014-06-10   |
+| 11.0.3513     | 2011.110.3513.0  | SP1    | QFE  | [3045317 MS15-058: Description of the security update for SQL Server 2012 SP1 QFE: July 14, 2015]                                      | 2015-07-14   |
+| 11.0.3492     | 2011.110.3492.0  | SP1    | CU   | [3052476 Cumulative update package 16 (CU16) for SQL Server 2012 Service Pack 1]                                                       | 2015-05-18   |
+| 11.0.3487     | 2011.110.3487.0  | SP1    | CU   | [3038001 Cumulative update package 15 (CU15) for SQL Server 2012 Service Pack 1]                                                       | 2015-03-16   |
+| 11.0.3486     | 2011.110.3486.0  | SP1    | QFE  | [3023636 Cumulative update package 14 (CU14) for SQL Server 2012 Service Pack 1]                                                       | 2015-01-19   |
+| 11.0.3460     | 2011.110.3460.0  | SP1    | COD  | [2977325 MS14-044: Description of the security update for SQL Server 2012 Service Pack 1 (QFE)]                                        | 2014-08-12   |
+| 11.0.3482     | 2011.110.3482.0  | SP1    | CU   | [3002044 Cumulative update package 13 (CU13) for SQL Server 2012 Service Pack 1]                                                       | 2014-11-17   |
+| 11.0.3470     | 2011.110.3470.0  | SP1    | CU   | [2991533 Cumulative update package 12 (CU12) for SQL Server 2012 Service Pack 1]                                                       | 2014-09-15   |
+| 11.0.3449     | 2011.110.3449.0  | SP1    | CU   | [2975396 Cumulative update package 11 (CU11) for SQL Server 2012 Service Pack 1]                                                       | 2014-07-21   |
+| 11.0.3437     | 2011.110.3437.0  | SP1    | COD  | [2969896 FIX: Data loss in clustered index occurs when you run online build index in SQL Server 2012 (Hotfix for SQL2012 SP1)]         | 2014-06-10   |
+| 11.0.3431     | 2011.110.3431.0  | SP1    | CU   | [2954099 Cumulative update package 10 (CU10) for SQL Server 2012 Service Pack 1]                                                       | 2014-05-19   |
+| 11.0.3412     | 2011.110.3412.0  | SP1    | CU   | [2931078 Cumulative update package 9 (CU9) for SQL Server 2012 Service Pack 1]                                                         | 2014-03-18   |
+| 11.0.3401     | 2011.110.3401.0  | SP1    | CU   | [2917531 Cumulative update package 8 (CU8) for SQL Server 2012 Service Pack 1]                                                         | 2014-01-20   |
+| 11.0.3393     | 2011.110.3393.0  | SP1    | CU   | [2894115 Cumulative update package 7 (CU7) for SQL Server 2012 Service Pack 1]                                                         | 2013-11-18   |
+| 11.0.3381     | 2011.110.3381.0  | SP1    | CU   | [2874879 Cumulative update package 6 (CU6) for SQL Server 2012 Service Pack 1]                                                         | 2013-09-16   |
+| 11.0.3373     | 2011.110.3373.0  | SP1    | CU   | [2861107 Cumulative update package 5 (CU5) for SQL Server 2012 Service Pack 1]                                                         | 2013-07-16   |
+| 11.0.3368     | 2011.110.3368.0  | SP1    | CU   | [2833645 Cumulative update package 4 (CU4) for SQL Server 2012 Service Pack 1]                                                         | 2013-05-31   |
+| 11.0.3350     | 2011.110.3350.0  | SP1    | COD  | [2832017 FIX: You can’t create or open SSIS projects or maintenance plans after you apply Cumulative Update 3 for SQL Server 2012 SP1] | 2013-04-17   |
+| 11.0.3349     | 2011.110.3349.0  | SP1    | CU   | [2812412 Cumulative update package 3 (CU3) for SQL Server 2012 Service Pack 1]                                                         | 2013-03-18   |
+| 11.0.3339     | 2011.110.3339.0  | SP1    | CU   | [2790947 Cumulative update package 2 (CU2) for SQL Server 2012 Service Pack 1]                                                         | 2013-01-25   |
+| 11.0.3335     | 2011.110.3335.0  | SP1    | COD  | [2800050 FIX: Component installation process fails after you install SQL Server 2012 SP1]                                              | 2013-01-14   |
+| 11.0.3321     | 2011.110.3321.0  | SP1    | CU   | [2765331 Cumulative update package 1 (CU1) for SQL Server 2012 Service Pack 1]                                                         | 2012-11-20   |
+| 11.0.3156     | 2011.110.3156.0  | SP1    | COD  | [3045318 MS15-058: Description of the security update for SQL Server 2012 SP1 GDR: July 14, 2015]                                      | 2015-07-14   |
+| 11.0.3153     | 2011.110.3153.0  | SP1    | GDR  | [2977326 MS14-044: Description of the security update for SQL Server 2012 Service Pack 1 (GDR)]                                        | 2014-08-12   |
+| 11.0.3128     | 2011.110.3128.0  | SP1    | COD  | [2793634 Windows Installer starts repeatedly after you install SQL Server 2012 SP1]                                                    | 2013-01-03   |
+| 11.0.3000     | 2011.110.3000.0  | SP1    | SP   | [SQL Server 2012 Service Pack 1 (SP1)]                                                                                                 | 2012-11-06   |
+| 11.0.2845     | 2011.110.2845.0  | SP1    | CTP  | SQL Server 2012 Service Pack 1 Customer Technology Preview 4 (CTP4)                                                                    | 2012-09-20   |
+| 11.0.2809     | 2011.110.2809.24 | SP1    | CTP  | SQL Server 2012 Service Pack 1 Customer Technology Preview 3 (CTP3)                                                                    | 2012-07-05   |
+| 11.0.2424     | 2011.110.2424.0  | RTM    | CU   | [2908007 Cumulative update package 11 (CU11) for SQL Server 2012]                                                                      | 2013-12-17   |
+| 11.0.2420     | 2011.110.2420.0  | RTM    | CU   | [2891666 Cumulative update package 10 (CU10) for SQL Server 2012]                                                                      | 2013-10-21   |
+| 11.0.2419     | 2011.110.2419.0  | RTM    | CU   | [2867319 Cumulative update package 9 (CU9) for SQL Server 2012]                                                                        | 2013-08-21   |
+| 11.0.2410     | 2011.110.2410.0  | RTM    | CU   | [2844205 Cumulative update package 8 (CU8) for SQL Server 2012]                                                                        | 2013-06-18   |
+| 11.0.2405     | 2011.110.2405.0  | RTM    | CU   | [2823247 Cumulative update package 7 (CU7) for SQL Server 2012]                                                                        | 2013-04-15   |
+| 11.0.2401     | 2011.110.2401.0  | RTM    | CU   | [2728897 Cumulative update package 6 (CU6) for SQL Server 2012]                                                                        | 2013-02-18   |
+| 11.0.2395     | 2011.110.2395.0  | RTM    | CU   | [2777772 Cumulative update package 5 (CU5) for SQL Server 2012]                                                                        | 2012-12-18   |
+| 11.0.9000     | 2011.110.9000.5  | RTM    | CTP  | Microsoft SQL Server 2012 With Power View For Multidimensional Models Customer Technology Preview (CTP3)                               | 2012-11-27   |
+| 11.0.2383     | 2011.110.2383.0  | RTM    | CU   | [2758687 Cumulative update package 4 (CU4) for SQL Server 2012]                                                                        | 2012-10-18   |
+| 11.0.2376     | 2011.110.2376.0  | RTM    | COD  | [Microsoft Security Bulletin MS12-070]                                                                                                 | 2012-10-09   |
+| 11.0.2332     | 2011.110.2332.0  | RTM    | CU   | [2723749 Cumulative update package 3 (CU3) for SQL Server 2012]                                                                        | 2012-08-29   |
+| 11.0.2325     | 2011.110.2325.0  | RTM    | CU   | [2703275 Cumulative update package 2 (CU2) for SQL Server 2012]                                                                        | 2012-06-18   |
+| 11.0.2316     | 2011.110.2316.0  | RTM    | CU   | [2679368 Cumulative update package 1 (CU1) for SQL Server 2012]                                                                        | 2012-04-12   |
+| 11.0.2218     | 2011.110.2218.0  | RTM    | COD  | [Microsoft Security Bulletin MS12-070]                                                                                                 | 2012-10-09   |
+| 11.0.2214     | 2011.110.2214.0  | RTM    | COD  | 2685308 FIX: SSAS uses only 20 cores in SQL Server 2012 Business Intelligence                                                          | 2012-04-06   |
+| 11.0.2100     | 2011.110.2100.60 | RTM    | RTM  | SQL Server 2012 RTM                                                                                                                    | 2012-03-06   |
+| 11.0.1913     | 2011.110.1913.37 | RC     | RC   | Microsoft SQL Server 2012 Release Candidate 1 (RC1)                                                                                    | 2011-12-16   |
+| 11.0.1750     | 2011.110.1750.32 | RC     | RC   | Microsoft SQL Server 2012 Release Candidate 0 (RC0)                                                                                    | 2011-11-17   |
+| 11.0.1440     | 2010.110.1440.19 | CTP    | CTP  | Microsoft SQL Server 2012 (codename Denali) Community Technology Preview 3 (CTP3)                                                      | 2011-07-11   |
+| 11.0.1103     | 2010.110.1103.9  | CTP    | CTP  | Microsoft SQL Server 2012 (codename Denali) Community Technology Preview 1 (CTP1)                                                      | 2010-11-08   |
+
+[4057116 Security Advisory ADV180002 (GDR)]:https://support.microsoft.com/en-us/help/4057116/security-update-for-vulnerabilities-in-sql-server
+[4018073 SQL Server 2012 Service Pack 4 release information]:https://support.microsoft.com/en-us/help/4018073/sql-server-2012-service-pack-4-release-information
+[4016762 Cumulative Update 10 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/help/4025925/cumulative-update-10-for-sql-server-2012-sp3
+[4016762 Cumulative Update 9 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/help/4016762/cumulative-update-9-for-sql-server-2012-sp3
+[4013104 Cumulative Update 8 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/help/4013104/cumulative-update-8-for-sql-server-2012-sp3
+[3205051 Cumulative Update Package 7 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/help/3205051/cumulative-update-7-for-sql-server-2012-sp3
+[3194724 MS16-136: Description of the security update for SQL Server 2012 Service Pack 3 CU: November 8, 2016]:https://support.microsoft.com/en-us/kb/3194724
+[3194725 MS16-136: Description of the security update for SQL Server 2012 Service Pack 2 CU: November 8, 2016]:https://support.microsoft.com/en-us/kb/3194725
+[3180914 Cumulative Update 14 for SQL Server 2012 SP2]:https://support.microsoft.com/en-us/kb/3180914
+[3180915 Cumulative update 5 for SQL Server 2012 Service Pack 3]:https://support.microsoft.com/en-us/kb/3180915
+[3165264 Cumulative Update 4 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/kb/3165264
+[3165266 Cumulative Update 13 for SQL Server 2012 SP2]:https://support.microsoft.com/en-us/kb/3165266
+[3152635 Cumulative update package 3 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/kb/3152635
+[3152637 Cumulative update package 12 for SQL Server 2012 SP2]:https://support.microsoft.com/en-us/kb/3152637
+[3137746 Cumulative update package 2 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/kb/3137746
+[3137745 Cumulative update package 11 for SQL Server 2012 SP2]:https://support.microsoft.com/en-us/kb/3137745
 [3123299 Cumulative update package 1 for SQL Server 2012 SP3]:https://support.microsoft.com/en-us/kb/3123299
-[3072779 SQL Server 2012 Service Pack 3 release information]:https://support.microsoft.com/en-us/kb/3072779
+[3205416 Cumulative update package 15 (CU15) for SQL Server 2012 Service Pack 2]:https://support.microsoft.com/en-us/kb/3205416
+[3194721 MS16-136: Description of the security update for SQL Server 2012 Service Pack 3 GDR: November 8, 2016]:https://support.microsoft.com/en-us/kb/3194721
+[3135244 TLS 1.2 support for SQL Server 2012 SP3 GDR]:https://support.microsoft.com/en-us/kb/3135244
 [3120313 Cumulative update package 10 for SQL Server 2012 SP2]:https://support.microsoft.com/en-us/kb/3120313
-[Microsoft SQL Server 2012 Service Pack 3 (SP3)]:https://technet.microsoft.com/en-in/evalcenter/mt130694.aspx
+[3072779 Microsoft SQL Server 2012 Service Pack 3 (SP3)]:https://support.microsoft.com/en-us/kb/3072779
+[3205054 Cumulative Update 16 for SQL Server 2012 SP2]:https://support.microsoft.com/en-us/help/3205054/cumulative-update-16-for-sql-server-2012-sp2
 [3098512 Cumulative update package 9 for SQL Server 2012 SP2]:https://support.microsoft.com/en-us/kb/3098512
 [3097636 FIX: Performance decrease when application with connection pooling frequently connects or disconnects in SQL Server]:https://support.microsoft.com/en-us/kb/3097636
 [3082561 Cumulative update package 8 (CU8) for SQL Server 2012 Service Pack 2]:http://support.microsoft.com/kb/3082561
@@ -363,6 +996,8 @@ contains all the fixes that are included with previous service packs and any new
 [2983175 Cumulative update package 2 (CU2) for SQL Server 2012 Service Pack 2]:http://support.microsoft.com/kb/2983175
 [2976982 Cumulative update package 1 (CU1) for SQL Server 2012 Service Pack 2]:http://support.microsoft.com/kb/2976982
 [2969896 FIX: Data loss in clustered index occurs when you run online build index in SQL Server 2012 (Hotfix for SQL2012 SP2)]:http://support.microsoft.com/kb/2969896
+[3194719 MS16-136: Description of the security update for SQL Server 2012 Service Pack 2 GDR: November 8, 2016]:https://support.microsoft.com/en-us/kb/3194719
+[3135244 TLS 1.2 support for SQL Server 2012 SP2 GDR]:https://support.microsoft.com/en-us/kb/3135244
 [3045321 MS15-058: Description of the security update for SQL Server 2012 Service Pack 2 GDR: July 14, 2015]:https://support.microsoft.com/en-us/kb/3045321
 [SQL Server 2012 Service Pack 2 (SP2)]:http://www.microsoft.com/en-us/download/details.aspx?id=43340
 [3045317 MS15-058: Description of the security update for SQL Server 2012 SP1 QFE: July 14, 2015]:https://support.microsoft.com/en-us/kb/3045317
@@ -405,83 +1040,93 @@ contains all the fixes that are included with previous service packs and any new
 [2685308 FIX: SSAS uses only 20 cores in SQL Server 2012 Business Intelligence]:http://support.microsoft.com/kb/2685308
 
 
-## Microsoft SQL Server 2008 R2 Builds <a id="microsoft-sql-server-2008-r2-builds"></a>
+<a id="microsoft-sql-server-2008-r2-builds"></a>
+## Microsoft SQL Server 2008 R2 Builds
 
-| Build      | File version     | KB / Description                                                                                                                                                                              | Release Date |
-|------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 10.50.6529 | 2009.100.6529.0  | [3045314 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 3 QFE: July 14, 2015]                                                                               | 2015-07-14   |
-| 10.50.6525 | 2009.100.6525.0  | [3033860 An on-demand hotfix update package is available for SQL Server 2008 R2 Service Pack 3 (SP3)]                                                                                         | 2015-02-09   |
-| 10.50.6220 | 2009.100.6220.0  | [3045316 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 3 GDR: July 14, 2015]                                                                               | 2015-07-14   |
-| 10.50.6000 | 2009.100.6000.0  | [SQL Server 2008 R2 Service Pack 3 (SP3)]                                                                                                                                                     | 2014-09-26   |
-| 10.50.4339 | 2009.100.4339.0  | [3045312 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 2 QFE: July 14, 2015]                                                                               | 2015-07-14   |
-| 10.50.4331 | 2009.100.4331.0  | [2987585 Restore Log with Standby Mode on an Advanced Format disk may cause a 9004 error in SQL Server 2008 R2 or SQL Server 2012]                                                            | 2014-08-27   |
-| 10.50.4321 | 2009.100.4321.0  | [2977319 MS14-044: Description of the security update for SQL Server 2008 R2 Service Pack 2 (QFE)]                                                                                            | 2014-08-12   |
-| 10.50.4319 | 2009.100.4319.0  | [2967540 Cumulative update package 13 (CU13) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2014-06-30   |
-| 10.50.4305 | 2009.100.4305.0  | [2938478 Cumulative update package 12 (CU12) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2014-04-21   |
-| 10.50.4302 | 2009.100.4302.0  | [2926028 Cumulative update package 11 (CU11) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2014-02-18   |
-| 10.50.4297 | 2009.100.4297.0  | [2908087 Cumulative update package 10 (CU10) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2013-12-16   |
-| 10.50.4295 | 2009.100.4295.0  | [2887606 Cumulative update package 9 (CU9) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-10-29   |
-| 10.50.4290 | 2009.100.4290.0  | [2871401 Cumulative update package 8 (CU8) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-08-30   |
-| 10.50.4286 | 2009.100.4286.0  | [2844090 Cumulative update package 7 (CU7) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-06-17   |
-| 10.50.4285 | 2009.100.4285.0  | [2830140 Cumulative update package 6 (CU6) for SQL Server 2008 R2 Service Pack 2 (updated)]                                                                                                   | 2013-06-13   |
-| 10.50.4279 | 2009.100.4279.0  | 2830140 Cumulative update package 6 (CU6) for SQL Server 2008 R2 Service Pack 2 (replaced)                                                                                                    | 2013-04-15   |
-| 10.50.4276 | 2009.100.4276.0  | [2797460 Cumulative update package 5 (CU5) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-02-18   |
-| 10.50.4270 | 2009.100.4270.0  | [2777358 Cumulative update package 4 (CU4) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-12-17   |
-| 10.50.4266 | 2009.100.4266.0  | [2754552 Cumulative update package 3 (CU3) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-10-15   |
-| 10.50.4263 | 2009.100.4263.0  | [2740411 Cumulative update package 2 (CU2) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-08-29   |
-| 10.50.4260 | 2009.100.4260.0  | [2720425 Cumulative update package 1 (CU1) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-08-01   |
-| 10.50.4042 | 2009.100.4042.0  | [3045313 MS15-058: MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 2 GDR: July 14, 2015]                                                                     | 2015-07-14   |
-| 10.50.4033 | 2009.100.4033.0  | [2977320 MS14-044: Description of the security update for SQL Server 2008 R2 Service Pack 2 (GDR)]                                                                                            | 2014-08-12   |
-| 10.50.4000 | 2009.100.4000.0  | [SQL Server 2008 R2 Service Pack 2 (SP2)]                                                                                                                                                     | 2012-06-26   |
-| 10.50.3720 | 2009.100.3720.0  | SQL Server 2008 R2 Service Pack 2 Community Technology Preview (CTP)                                                                                                                          | 2012-05-13   |
-| 10.50.2881 | 2009.100.2881.0  | [2868244 An on-demand hotfix update package for SQL Server 2008 R2 Service Pack 1]                                                                                                            | 2013-08-12   |
-| 10.50.2876 | 2009.100.2876.0  | [2855792 Cumulative update package 13 (CU13) for SQL Server 2008 R2 Service Pack 1]                                                                                                           | 2013-06-17   |
-| 10.50.2875 | 2009.100.2875.0  | [2828727 Cumulative update package 12 (CU12) for SQL Server 2008 R2 Service Pack 1 (updated)]                                                                                                 | 2013-06-13   |
-| 10.50.2874 | 2009.100.2874.0  | 2828727 Cumulative update package 12 (CU12) for SQL Server 2008 R2 Service Pack 1 (replaced)                                                                                                  | 2013-04-15   |
-| 10.50.2861 | 2009.100.2861.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                        | 2012-10-09   |
-| 10.50.2869 | 2009.100.2869.0  | [2812683 Cumulative update package 11 (CU11) for SQL Server 2008 R2 Service Pack 1]                                                                                                           | 2013-02-18   |
-| 10.50.2868 | 2009.100.2868.0  | [2783135 Cumulative update package 10 (CU10) for SQL Server 2008 R2 Service Pack 1]                                                                                                           | 2012-12-17   |
-| 10.50.2866 | 2009.100.2866.0  | [2756574 Cumulative update package 9 (CU9) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-11-06   |
-| 10.50.2861 | 2009.100.2861.0  | [2716439 MS12-070: Description of the security update for SQL Server 2008 R2 Service Pack 1 QFE: October 9, 2012]                                                                             | 2012-10-09   |
-| 10.50.2822 | 2009.100.2822.0  | [2723743 Cumulative update package 8 (CU8) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-08-29   |
-| 10.50.2817 | 2009.100.2817.0  | [2703282 Cumulative update package 7 (CU7) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-06-18   |
-| 10.50.2811 | 2009.100.2811.0  | [2679367 Cumulative update package 6 (CU6) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-04-16   |
-| 10.50.2807 | 2009.100.2807.0  | [2675522 FIX: Access violation when you run DML statements against a table that has partitioned indexes in SQL Server 2008 R2]                                                                | 2012-03-12   |
-| 10.50.2806 | 2009.100.2806.0  | [2659694 Cumulative update package 5 (CU5) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-02-22   |
-| 10.50.2799 | 2009.100.2799.0  | [2633357 FIX: "Non-yielding Scheduler" error might occur when you run a query that uses the CHARINDEX function in SQL Server 2008 R2]                                                         | 2012-02-22   |
-| 10.50.2796 | 2009.100.2796.0  | [2633146 Cumulative update package 4 (CU4) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-12-20   |
-| 10.50.2789 | 2009.100.2789.0  | [2591748 Cumulative update package 3 (CU3) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-10-17   |
-| 10.50.2776 | 2009.100.2776.0  | [2606883 FIX: Slow performance when an AFTER trigger runs on a partitioned table in SQL Server 2008 R2]                                                                                       | 2011-10-18   |
-| 10.50.2772 | 2009.100.2772.0  | [2567714 Cumulative update package 2 (CU2) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-08-15   |
-| 10.50.2769 | 2009.100.2769.0  | [2544793 Cumulative update package 1 (CU1) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-07-18   |
-| 10.50.2550 | 2009.100.2550.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                        | 2012-10-09   |
-| 10.50.2500 | 2009.100.2500.0  | [SQL Server 2008 R2 Service Pack 1 (SP1)]                                                                                                                                                     | 2011-07-11   |
-| 10.50.1817 | 2009.100.1817.0  | [2703280 Cumulative update package 14 (CU14) for SQL Server 2008 R2]                                                                                                                          | 2012-06-18   |
-| 10.50.1815 | 2009.100.1815.0  | [2679366 Cumulative update package 13 (CU13) for SQL Server 2008 R2]                                                                                                                          | 2012-04-17   |
-| 10.50.1810 | 2009.100.1810.0  | [2659692 Cumulative update package 12 (CU12) for SQL Server 2008 R2]                                                                                                                          | 2012-02-21   |
-| 10.50.1809 | 2009.100.1809.0  | [2633145 Cumulative update package 11 (CU11) for SQL Server 2008 R2]                                                                                                                          | 2012-01-09   |
-| 10.50.1807 | 2009.100.1807.0  | [2591746 Cumulative update package 10 (CU10) for SQL Server 2008 R2]                                                                                                                          | 2011-10-19   |
-| 10.50.1804 | 2009.100.1804.0  | [2567713 Cumulative update package 9 (CU9) for SQL Server 2008 R2]                                                                                                                            | 2011-08-16   |
-| 10.50.1800 | 2009.100.1800.0  | [2574699 FIX: Database data files might be incorrectly marked as sparse in SQL Server 2008 R2 or in SQL Server 2008 even when the physical files are marked as not sparse in the file system] | 2011-10-18   |
-| 10.50.1797 | 2009.100.1797.0  | [2534352 Cumulative update package 8 (CU8) for SQL Server 2008 R2]                                                                                                                            | 2011-06-20   |
-| 10.50.1790 | 2009.100.1790.0  | [2494086 MS11-049: Description of the security update for SQL Server 2008 R2 QFE: June 14, 2011]                                                                                              | 2011-06-17   |
-| 10.50.1777 | 2009.100.1777.0  | [2507770 Cumulative update package 7 (CU7) for SQL Server 2008 R2]                                                                                                                            | 2011-06-16   |
-| 10.50.1769 | 2009.100.1769.0  | [2520808 FIX: Non-yielding scheduler error when you run a query that uses a TVP in SQL Server 2008 or in SQL Server 2008 R2 if SQL Profiler or SQL Server Extended Events is used]            | 2011-04-18   |
-| 10.50.1765 | 2009.100.1765.0  | [2489376 Cumulative update package 6 (CU6) for SQL Server 2008 R2]                                                                                                                            | 2011-02-21   |
-| 10.50.1753 | 2009.100.1753.0  | [2438347 Cumulative update package 5 (CU5) for SQL Server 2008 R2]                                                                                                                            | 2010-12-23   |
-| 10.50.1746 | 2009.100.1746.0  | [2345451 Cumulative update package 4 (CU4) for SQL Server 2008 R2]                                                                                                                            | 2010-10-18   |
-| 10.50.1734 | 2009.100.1734.0  | [2261464 Cumulative update package 3 (CU3) for SQL Server 2008 R2]                                                                                                                            | 2010-08-20   |
-| 10.50.1720 | 2009.100.1720.0  | [2072493 Cumulative update package 2 (CU2) for SQL Server 2008 R2]                                                                                                                            | 2010-06-25   |
-| 10.50.1702 | 2009.100.1702.0  | [981355 Cumulative update package 1 (CU1) for SQL Server 2008 R2]                                                                                                                             | 2010-05-18   |
-| 10.50.1617 | 2009.100.1617.0  | [2494088 MS11-049: Description of the security update for SQL Server 2008 R2 GDR: June 14, 2011]                                                                                              | 2011-06-14   |
-| 10.50.1600 | 2009.100.1600.1  | SQL Server 2008 R2 RTM                                                                                                                                                                        | 2010-04-21   |
-| 10.50.1352 | 2009.100.1352.12 | Microsoft SQL Server 2008 R2 November Community Technology Preview (CTP)                                                                                                                      | 2009-11-12   |
-| 10.50.1092 | 2009.100.1092.20 | Microsoft SQL Server 2008 R2 August Community Technology Preview (CTP)                                                                                                                        | 2009-06-30   |
+### All SQL Server 2008 R2 CU downloads
+[Catalog Update Microsoft SQL Server 2008 R2]:http://www.catalog.update.microsoft.com/Search.aspx?q=sql%20server%202008%20R2
 
+| Build         | File version     | KB / Description                                                                                                                                                                              | Release Date |
+|---------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 10.50.6542    | 2009.100.6542.0  | [3146034 Intermittent service terminations occur after you install any SQL Server 2008 or SQL Server 2008 R2 versions from KB3135244]                                                         | 2016-03-03   |
+| 10.50.6537    | 2009.100.6537.0  | [3135244 TLS 1.2 support for SQL Server 2008 R2 SP3]                                                                                                                                          | 2016-01-27   |
+| 10.50.6529    | 2009.100.6529.0  | [3045314 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 3 QFE: July 14, 2015]                                                                               | 2015-07-14   |
+| 10.50.6525    | 2009.100.6525.0  | [3033860 An on-demand hotfix update package is available for SQL Server 2008 R2 Service Pack 3 (SP3)]                                                                                         | 2015-02-09   |
+| 10.50.6220    | 2009.100.6220.0  | [3045316 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 3 GDR: July 14, 2015]                                                                               | 2015-07-14   |
+| 10.50.6000.34 | 2009.100.6000.34 | [SQL Server 2008 R2 Service Pack 3 (SP3)]                                                                                                                                                     | 2014-09-26   |
+| 10.50.4343    | 2009.100.4343.0  | [3135244 TLS 1.2 support for SQL Server 2008 R2 SP2 (IA-64 only)]                                                                                                                             | 2016-01-27   |
+| 10.50.4339    | 2009.100.4339.0  | [3045312 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 2 QFE: July 14, 2015]                                                                               | 2015-07-14   |
+| 10.50.4331    | 2009.100.4331.0  | [2987585 Restore Log with Standby Mode on an Advanced Format disk may cause a 9004 error in SQL Server 2008 R2 or SQL Server 2012]                                                            | 2014-08-27   |
+| 10.50.4321    | 2009.100.4321.0  | [2977319 MS14-044: Description of the security update for SQL Server 2008 R2 Service Pack 2 (QFE)]                                                                                            | 2014-08-12   |
+| 10.50.4319    | 2009.100.4319.0  | [2967540 Cumulative update package 13 (CU13) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2014-06-30   |
+| 10.50.4305    | 2009.100.4305.0  | [2938478 Cumulative update package 12 (CU12) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2014-04-21   |
+| 10.50.4302    | 2009.100.4302.0  | [2926028 Cumulative update package 11 (CU11) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2014-02-18   |
+| 10.50.4297    | 2009.100.4297.0  | [2908087 Cumulative update package 10 (CU10) for SQL Server 2008 R2 Service Pack 2]                                                                                                           | 2013-12-16   |
+| 10.50.4295    | 2009.100.4295.0  | [2887606 Cumulative update package 9 (CU9) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-10-29   |
+| 10.50.4290    | 2009.100.4290.0  | [2871401 Cumulative update package 8 (CU8) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-08-30   |
+| 10.50.4286    | 2009.100.4286.0  | [2844090 Cumulative update package 7 (CU7) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-06-17   |
+| 10.50.4285    | 2009.100.4285.0  | [2830140 Cumulative update package 6 (CU6) for SQL Server 2008 R2 Service Pack 2 (updated)]                                                                                                   | 2013-06-13   |
+| 10.50.4279    | 2009.100.4279.0  | 2830140 Cumulative update package 6 (CU6) for SQL Server 2008 R2 Service Pack 2 (replaced)                                                                                                    | 2013-04-15   |
+| 10.50.4276    | 2009.100.4276.0  | [2797460 Cumulative update package 5 (CU5) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2013-02-18   |
+| 10.50.4270    | 2009.100.4270.0  | [2777358 Cumulative update package 4 (CU4) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-12-17   |
+| 10.50.4266    | 2009.100.4266.0  | [2754552 Cumulative update package 3 (CU3) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-10-15   |
+| 10.50.4263    | 2009.100.4263.0  | [2740411 Cumulative update package 2 (CU2) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-08-29   |
+| 10.50.4260    | 2009.100.4260.0  | [2720425 Cumulative update package 1 (CU1) for SQL Server 2008 R2 Service Pack 2]                                                                                                             | 2012-08-01   |
+| 10.50.4042    | 2009.100.4042.0  | [3045313 MS15-058: MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 2 GDR: July 14, 2015]                                                                     | 2015-07-14   |
+| 10.50.4033    | 2009.100.4033.0  | [2977320 MS14-044: Description of the security update for SQL Server 2008 R2 Service Pack 2 (GDR)]                                                                                            | 2014-08-12   |
+| 10.50.4000    | 2009.100.4000.0  | [SQL Server 2008 R2 Service Pack 2 (SP2)]                                                                                                                                                     | 2012-06-26   |
+| 10.50.3720    | 2009.100.3720.0  | SQL Server 2008 R2 Service Pack 2 Community Technology Preview (CTP)                                                                                                                          | 2012-05-13   |
+| 10.50.2881    | 2009.100.2881.0  | [2868244 An on-demand hotfix update package for SQL Server 2008 R2 Service Pack 1]                                                                                                            | 2013-08-12   |
+| 10.50.2876    | 2009.100.2876.0  | [2855792 Cumulative update package 13 (CU13) for SQL Server 2008 R2 Service Pack 1]                                                                                                           | 2013-06-17   |
+| 10.50.2875    | 2009.100.2875.0  | [2828727 Cumulative update package 12 (CU12) for SQL Server 2008 R2 Service Pack 1 (updated)]                                                                                                 | 2013-06-13   |
+| 10.50.2874    | 2009.100.2874.0  | 2828727 Cumulative update package 12 (CU12) for SQL Server 2008 R2 Service Pack 1 (replaced)                                                                                                  | 2013-04-15   |
+| 10.50.2861    | 2009.100.2861.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                        | 2012-10-09   |
+| 10.50.2869    | 2009.100.2869.0  | [2812683 Cumulative update package 11 (CU11) for SQL Server 2008 R2 Service Pack 1]                                                                                                           | 2013-02-18   |
+| 10.50.2868    | 2009.100.2868.0  | [2783135 Cumulative update package 10 (CU10) for SQL Server 2008 R2 Service Pack 1]                                                                                                           | 2012-12-17   |
+| 10.50.2866    | 2009.100.2866.0  | [2756574 Cumulative update package 9 (CU9) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-11-06   |
+| 10.50.2861    | 2009.100.2861.0  | [2716439 MS12-070: Description of the security update for SQL Server 2008 R2 Service Pack 1 QFE: October 9, 2012]                                                                             | 2012-10-09   |
+| 10.50.2822    | 2009.100.2822.0  | [2723743 Cumulative update package 8 (CU8) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-08-29   |
+| 10.50.2817    | 2009.100.2817.0  | [2703282 Cumulative update package 7 (CU7) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-06-18   |
+| 10.50.2811    | 2009.100.2811.0  | [2679367 Cumulative update package 6 (CU6) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-04-16   |
+| 10.50.2807    | 2009.100.2807.0  | [2675522 FIX: Access violation when you run DML statements against a table that has partitioned indexes in SQL Server 2008 R2]                                                                | 2012-03-12   |
+| 10.50.2806    | 2009.100.2806.0  | [2659694 Cumulative update package 5 (CU5) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2012-02-22   |
+| 10.50.2799    | 2009.100.2799.0  | [2633357 FIX: "Non-yielding Scheduler" error might occur when you run a query that uses the CHARINDEX function in SQL Server 2008 R2]                                                         | 2012-02-22   |
+| 10.50.2796    | 2009.100.2796.0  | [2633146 Cumulative update package 4 (CU4) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-12-20   |
+| 10.50.2789    | 2009.100.2789.0  | [2591748 Cumulative update package 3 (CU3) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-10-17   |
+| 10.50.2776    | 2009.100.2776.0  | [2606883 FIX: Slow performance when an AFTER trigger runs on a partitioned table in SQL Server 2008 R2]                                                                                       | 2011-10-18   |
+| 10.50.2772    | 2009.100.2772.0  | [2567714 Cumulative update package 2 (CU2) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-08-15   |
+| 10.50.2769    | 2009.100.2769.0  | [2544793 Cumulative update package 1 (CU1) for SQL Server 2008 R2 Service Pack 1]                                                                                                             | 2011-07-18   |
+| 10.50.2550    | 2009.100.2550.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                        | 2012-10-09   |
+| 10.50.2500    | 2009.100.2500.0  | [SQL Server 2008 R2 Service Pack 1 (SP1)]                                                                                                                                                     | 2011-07-11   |
+| 10.50.1817    | 2009.100.1817.0  | [2703280 Cumulative update package 14 (CU14) for SQL Server 2008 R2]                                                                                                                          | 2012-06-18   |
+| 10.50.1815    | 2009.100.1815.0  | [2679366 Cumulative update package 13 (CU13) for SQL Server 2008 R2]                                                                                                                          | 2012-04-17   |
+| 10.50.1810    | 2009.100.1810.0  | [2659692 Cumulative update package 12 (CU12) for SQL Server 2008 R2]                                                                                                                          | 2012-02-21   |
+| 10.50.1809    | 2009.100.1809.0  | [2633145 Cumulative update package 11 (CU11) for SQL Server 2008 R2]                                                                                                                          | 2012-01-09   |
+| 10.50.1807    | 2009.100.1807.0  | [2591746 Cumulative update package 10 (CU10) for SQL Server 2008 R2]                                                                                                                          | 2011-10-19   |
+| 10.50.1804    | 2009.100.1804.0  | [2567713 Cumulative update package 9 (CU9) for SQL Server 2008 R2]                                                                                                                            | 2011-08-16   |
+| 10.50.1800    | 2009.100.1800.0  | [2574699 FIX: Database data files might be incorrectly marked as sparse in SQL Server 2008 R2 or in SQL Server 2008 even when the physical files are marked as not sparse in the file system] | 2011-10-18   |
+| 10.50.1797    | 2009.100.1797.0  | [2534352 Cumulative update package 8 (CU8) for SQL Server 2008 R2]                                                                                                                            | 2011-06-20   |
+| 10.50.1790    | 2009.100.1790.0  | [2494086 MS11-049: Description of the security update for SQL Server 2008 R2 QFE: June 14, 2011]                                                                                              | 2011-06-17   |
+| 10.50.1777    | 2009.100.1777.0  | [2507770 Cumulative update package 7 (CU7) for SQL Server 2008 R2]                                                                                                                            | 2011-06-16   |
+| 10.50.1769    | 2009.100.1769.0  | [2520808 FIX: Non-yielding scheduler error when you run a query that uses a TVP in SQL Server 2008 or in SQL Server 2008 R2 if SQL Profiler or SQL Server Extended Events is used]            | 2011-04-18   |
+| 10.50.1765    | 2009.100.1765.0  | [2489376 Cumulative update package 6 (CU6) for SQL Server 2008 R2]                                                                                                                            | 2011-02-21   |
+| 10.50.1753    | 2009.100.1753.0  | [2438347 Cumulative update package 5 (CU5) for SQL Server 2008 R2]                                                                                                                            | 2010-12-23   |
+| 10.50.1746    | 2009.100.1746.0  | [2345451 Cumulative update package 4 (CU4) for SQL Server 2008 R2]                                                                                                                            | 2010-10-18   |
+| 10.50.1734    | 2009.100.1734.0  | [2261464 Cumulative update package 3 (CU3) for SQL Server 2008 R2]                                                                                                                            | 2010-08-20   |
+| 10.50.1720    | 2009.100.1720.0  | [2072493 Cumulative update package 2 (CU2) for SQL Server 2008 R2]                                                                                                                            | 2010-06-25   |
+| 10.50.1702    | 2009.100.1702.0  | [981355 Cumulative update package 1 (CU1) for SQL Server 2008 R2]                                                                                                                             | 2010-05-18   |
+| 10.50.1617    | 2009.100.1617.0  | [2494088 MS11-049: Description of the security update for SQL Server 2008 R2 GDR: June 14, 2011]                                                                                              | 2011-06-14   |
+| 10.50.1600.1  | 2009.100.1600.1  | SQL Server 2008 R2 RTM                                                                                                                                                                        | 2010-04-21   |
+| 10.50.1352    | 2009.100.1352.12 | Microsoft SQL Server 2008 R2 November Community Technology Preview (CTP)                                                                                                                      | 2009-11-12   |
+| 10.50.1092    | 2009.100.1092.20 | Microsoft SQL Server 2008 R2 August Community Technology Preview (CTP)                                                                                                                        | 2009-06-30   |
+
+[3146034 Intermittent service terminations occur after you install any SQL Server 2008 or SQL Server 2008 R2 versions from KB3135244]:http://support.microsoft.com/en-us/kb/3146034
+[3135244 TLS 1.2 support for SQL Server 2008 R2 SP3]:http://support.microsoft.com/en-us/kb/3135244
 [3045314 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 3 QFE: July 14, 2015]:http://support.microsoft.com/kb/3045314
 [3033860 An on-demand hotfix update package is available for SQL Server 2008 R2 Service Pack 3 (SP3)]:http://support.microsoft.com/kb/3033860
 [3045316 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 3 GDR: July 14, 2015]:http://support.microsoft.com/kb/3045316
 [SQL Server 2008 R2 Service Pack 3 (SP3)]:http://www.microsoft.com/en-us/download/details.aspx?id=44271
+[3135244 TLS 1.2 support for SQL Server 2008 R2 SP2 (IA-64 only)]:http://support.microsoft.com/en-us/kb/3135244
 [3045312 MS15-058: Description of the security update for SQL Server 2008 R2 Service Pack 2 QFE: July 14, 2015]:http://support.microsoft.com/kb/3045312
 [2987585 Restore Log with Standby Mode on an Advanced Format disk may cause a 9004 error in SQL Server 2008 R2 or SQL Server 2012]:http://support.microsoft.com/kb/2987585
 [2977319 MS14-044: Description of the security update for SQL Server 2008 R2 Service Pack 2 (QFE)]:http://support.microsoft.com/kb/2977319
@@ -540,102 +1185,109 @@ contains all the fixes that are included with previous service packs and any new
 [2494088 MS11-049: Description of the security update for SQL Server 2008 R2 GDR: June 14, 2011]:http://support.microsoft.com/kb/2494088
 
 
-## Microsoft SQL Server 2008 Builds <a id="microsoft-sql-server-2008-builds"></a>
+## Microsoft SQL Server 2008 Builds
+<a id="microsoft-sql-server-2008-builds"></a>
 
-| Build      | File version     | KB / Description                                                                                                                                                                                                                                          | Release Date |
-|------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 10.00.6535 | 2007.100.6535.0  | [3045308 MS15-058: Description of the security update for SQL Server 2008 Service Pack 4 QFE: July 14, 2015]                                                                                                                                              | 2015-07-14   |
-| 10.00.6526 | 2007.100.6526.0  | [3034373 An on-demand hotfix update package is available for SQL Server 2008 Service Pack 4 (SP4)]                                                                                                                                                        | 2015-02-09   |
-| 10.00.6241 | 2007.100.6241.0  | [3045311 MS15-058: Description of the security update for SQL Server 2008 Service Pack 4 GDR: July 14, 2015]                                                                                                                                              | 2015-07-14   |
-| 10.00.6000 | 2007.100.6000.0  | [SQL Server 2008 Service Pack 4 (SP4)]                                                                                                                                                                                                                    | 2014-09-30   |
-| 10.00.5890 | 2007.100.5890.0  | [3045303 MS15-058: Description of the security update for SQL Server 2008 Service Pack 3 QFE: July 14, 2015]                                                                                                                                              | 2015-07-14   |
-| 10.00.5869 | 2007.100.5869.0  | [2977322 MS14-044: Description of the security update for SQL Server 2008 SP3 (QFE)]                                                                                                                                                                      | 2014-08-12   |
-| 10.00.5867 | 2007.100.5867.0  | [2877204 FIX: Error 8985 when you run the "dbcc shrinkfile" statement by using the logical name of a file in SQL Server 2008 R2 or SQL Server 2008]                                                                                                       | 2014-07-02   |
-| 10.00.5861 | 2007.100.5861.0  | [2958696 Cumulative update package 17 (CU17) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2014-05-19   |
-| 10.00.5852 | 2007.100.5852.0  | [2936421 Cumulative update package 16 (CU16) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2014-03-17   |
-| 10.00.5850 | 2007.100.5850.0  | [2923520 Cumulative update package 15 (CU15) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2014-01-20   |
-| 10.00.5848 | 2007.100.5848.0  | [2893410 Cumulative update package 14 (CU14) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-11-18   |
-| 10.00.5846 | 2007.100.5846.0  | [2880350 Cumulative update package 13 (CU13) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-09-16   |
-| 10.00.5844 | 2007.100.5844.0  | [2863205 Cumulative update package 12 (CU12) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-07-16   |
-| 10.00.5841 | 2007.100.5841.0  | [2834048 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 3 (updated)]                                                                                                                                                                | 2013-06-13   |
-| 10.00.5840 | 2007.100.5840.0  | 2834048 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 3 (replaced)                                                                                                                                                                 | 2013-05-20   |
-| 10.00.5835 | 2007.100.5835.0  | [2814783 Cumulative update package 10 (CU10) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-03-18   |
-| 10.00.5829 | 2007.100.5829.0  | [2799883 Cumulative update package 9 (CU9) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2013-01-23   |
-| 10.00.5828 | 2007.100.5828.0  | [2771833 Cumulative update package 8 (CU8) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-11-19   |
-| 10.00.5826 | 2007.100.5826.0  | [2716435 Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                            | 2012-10-09   |
-| 10.00.5794 | 2007.100.5794.0  | [2738350 Cumulative update package 7 (CU7) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-09-21   |
-| 10.00.5788 | 2007.100.5788.0  | [2715953 Cumulative update package 6 (CU6) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-07-16   |
-| 10.00.5785 | 2007.100.5785.0  | [2696626 Cumulative update package 5 (CU5) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-05-19   |
-| 10.00.5775 | 2007.100.5775.0  | [2673383 Cumulative update package 4 (CU4) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-03-20   |
-| 10.00.5770 | 2007.100.5770.0  | [2648098 Cumulative update package 3 (CU3) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-01-16   |
-| 10.00.5768 | 2007.100.5768.0  | [2633143 Cumulative update package 2 (CU2) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2011-11-22   |
-| 10.00.5766 | 2007.100.5766.0  | [2617146 Cumulative update package 1 (CU1) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2011-10-18   |
-| 10.00.5538 | 2007.100.5538.0  | [3045305 MS15-058: Description of the security update for SQL Server 2008 Service Pack 3 GDR: July 14, 2015]                                                                                                                                              | 2015-07-14   |
-| 10.00.5520 | 2007.100.5520.0  | [2977321 MS14-044: Description of the security update for SQL Server 2008 SP3 (GDR)]                                                                                                                                                                      | 2014-08-12   |
-| 10.00.5512 | 2007.100.5512.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                                    | 2012-10-09   |
-| 10.00.5500 | 2007.100.5500.0  | [SQL Server 2008 Service Pack 3 (SP3)]                                                                                                                                                                                                                    | 2011-10-06   |
-| 10.00.5416 | 2007.100.5416.0  | SQL Server 2008 Service Pack 3 CTP                                                                                                                                                                                                                        | 2011-08-22   |
-| 10.00.4371 | 2007.100.4371.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                                    | 2012-10-09   |
-| 10.00.4333 | 2007.100.4333.0  | [2715951 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 2]                                                                                                                                                                          | 2012-07-16   |
-| 10.00.4332 | 2007.100.4332.0  | [2696625 Cumulative update package 10 (CU10) for SQL Server 2008 Service Pack 2]                                                                                                                                                                          | 2012-05-20   |
-| 10.00.4330 | 2007.100.4330.0  | [2673382 Cumulative update package 9 (CU9) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2012-03-19   |
-| 10.00.4326 | 2007.100.4326.0  | [2648096 Cumulative update package 8 (CU8) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2012-01-30   |
-| 10.00.4323 | 2007.100.4323.0  | [2617148 Cumulative update package 7 (CU7) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-11-21   |
-| 10.00.4321 | 2007.100.4321.0  | [2582285 Cumulative update package 6 (CU6) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-09-20   |
-| 10.00.4316 | 2007.100.4316.0  | [2555408 Cumulative update package 5 (CU5) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-07-18   |
-| 10.00.4285 | 2007.100.4285.0  | [2527180 Cumulative update package 4 (CU4) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-05-16   |
-| 10.00.4279 | 2007.100.4279.0  | [2498535 Cumulative update package 3 (CU3) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-03-11   |
-| 10.00.4272 | 2007.100.4272.0  | [2467239 Cumulative update package 2 (CU2) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-02-10   |
-| 10.00.4266 | 2007.100.4266.0  | [2289254 Cumulative update package 1 (CU1) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2010-11-15   |
-| 10.00.4067 | 2007.100.4067.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                                    | 2012-10-09   |
-| 10.00.4064 | 2007.100.4064.0  | [2494089 MS11-049: Description of the security update for SQL Server 2008 Service Pack 2 GDR: June 14, 2011]                                                                                                                                              | 2011-06-14   |
-| 10.00.4000 | 2007.100.4000.0  | [SQL Server 2008 Service Pack 2 (SP2)]                                                                                                                                                                                                                    | 2010-09-29   |
-| 10.00.3798 | 2007.100.3798.0  | SQL Server 2008 Service Pack 2 CTP                                                                                                                                                                                                                        | 2010-07-07   |
-| 10.00.2850 | 2007.100.2850.0  | [2582282 Cumulative update package 16 (CU16) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-09-19   |
-| 10.00.2847 | 2007.100.2847.0  | [2555406 Cumulative update package 15 (CU15) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-07-18   |
-| 10.00.2821 | 2007.100.2821.0  | [2527187 Cumulative update package 14 (CU14) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-05-16   |
-| 10.00.2816 | 2007.100.2816.0  | [2497673 Cumulative update package 13 (CU13) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-03-22   |
-| 10.00.2808 | 2007.100.2808.0  | [2467236 Cumulative update package 12 (CU12) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-02-10   |
-| 10.00.2804 | 2007.100.2804.0  | [2413738 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2010-11-15   |
-| 10.00.2799 | 2007.100.2799.0  | [2279604 Cumulative update package 10 (CU10) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2010-09-21   |
-| 10.00.2789 | 2007.100.2789.0  | [2083921 Cumulative update package 9 (CU9) for SQL Server 2008 Service Pack 1]                                                                                                                                                                            | 2010-07-21   |
-| 10.00.2787 | 2007.100.2787.0  | [2231277 FIX: The Reporting Services service stops unexpectedly after you apply SQL Server 2008 SP1 CU 7 or CU8]                                                                                                                                          | 2010-07-30   |
-| 10.00.2775 | 2007.100.2775.0  | [981702 Cumulative update package 8 (CU8) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2010-05-17   |
-| 10.00.2766 | 2007.100.2766.0  | [979065 Cumulative update package 7 (CU7) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2010-03-26   |
-| 10.00.2757 | 2007.100.2757.0  | [977443 Cumulative update package 6 (CU6) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2010-01-18   |
-| 10.00.2746 | 2007.100.2746.0  | [975977 Cumulative update package 5 (CU5) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-11-16   |
-| 10.00.2740 | 2007.100.2740.0  | [976761 FIX: Error message when you perform a rolling upgrade in a SQL Server 2008 cluster : "18401, Login failed for user SQLTEST\AgentService. Reason: Server is in script upgrade mode. Only administrator can connect at this time.[SQLState 42000]"] | 2009-11-24   |
-| 10.00.2734 | 2007.100.2734.0  | [973602 Cumulative update package 4 (CU4) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-09-22   |
-| 10.00.2723 | 2007.100.2723.0  | [971491 Cumulative update package 3 (CU3) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-07-21   |
-| 10.00.2714 | 2007.100.2714.0  | [970315 Cumulative update package 2 (CU2) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-05-18   |
-| 10.00.2712 | 2007.100.2712.0  | [970507 FIX: Error message in SQL Server 2008 when you run an INSERT SELECT statement on a table: "Violation of PRIMARY KEY constraint '<PrimaryKey>'. Cannot insert duplicate key in object '<TableName>'"]                                              | 2009-07-21   |
-| 10.00.2710 | 2007.100.2710.0  | [969099 Cumulative update package 1 (CU1) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-04-16   |
-| 10.00.2573 | 2007.100.2573.0  | [2494096 MS11-049: Description of the security update for SQL Server 2008 Service Pack 1 GDR: June 14, 2011]                                                                                                                                              | 2011-06-14   |
-| 10.00.2531 | 2007.100.2531.0  | [SQL Server 2008 Service Pack 1 (SP1)]                                                                                                                                                                                                                    | 2009-04-07   |
-| 10.00.2520 | 2007.100.2520.0  | SQL Server 2008 Service Pack 1 - CTP                                                                                                                                                                                                                      | 2009-02-23   |
-| 10.00.1835 | 2007.100.1835.0  | [979064 Cumulative update package 10 (CU10) for SQL Server 2008]                                                                                                                                                                                          | 2010-03-15   |
-| 10.00.1828 | 2007.100.1828.0  | [977444 Cumulative update package 9 (CU9) for SQL Server 2008]                                                                                                                                                                                            | 2010-01-18   |
-| 10.00.1823 | 2007.100.1823.0  | [975976 Cumulative update package 8 (CU8) for SQL Server 2008]                                                                                                                                                                                            | 2009-11-16   |
-| 10.00.1818 | 2007.100.1818.0  | [973601 Cumulative update package 7 (CU7) for SQL Server 2008]                                                                                                                                                                                            | 2009-09-21   |
-| 10.00.1812 | 2007.100.1812.0  | [971490 Cumulative update package 6 (CU6) for SQL Server 2008]                                                                                                                                                                                            | 2009-07-21   |
-| 10.00.1806 | 2007.100.1806.0  | [969531 Cumulative update package 5 (CU5) for SQL Server 2008]                                                                                                                                                                                            | 2009-05-18   |
-| 10.00.1798 | 2007.100.1798.0  | [963036 Cumulative update package 4 (CU4) for SQL Server 2008]                                                                                                                                                                                            | 2009-03-17   |
-| 10.00.1787 | 2007.100.1787.0  | [960484 Cumulative update package 3 (CU3) for SQL Server 2008]                                                                                                                                                                                            | 2009-01-19   |
-| 10.00.1779 | 2007.100.1779.0  | [958186 Cumulative update package 2 (CU2) for SQL Server 2008]                                                                                                                                                                                            | 2008-11-19   |
-| 10.00.1771 | 2007.100.1771.0  | [958611 FIX: You may receive incorrect results when you run a query that references three or more tables in the FROM clause in SQL Server 2008]                                                                                                           | 2008-10-29   |
-| 10.00.1763 | 2007.100.1763.0  | [956717 Cumulative update package 1 (CU1) for SQL Server 2008]                                                                                                                                                                                            | 2008-10-28   |
-| 10.00.1750 | 2007.100.1750.0  | [956718 FIX: A MERGE statement may not enforce a foreign key constraint when the statement updates a unique key column that is not part of a clustering key that has a single row as the update source in SQL Server 2008]                                | 2008-08-25   |
-| 10.00.1600 | 2007.100.1600.22 | [SQL Server 2008 RTM]                                                                                                                                                                                                                                     | 2008-08-07   |
-| 10.00.1442 | 2007.100.1442.32 | Microsoft SQL Server 2008 RC0                                                                                                                                                                                                                             | 2008-06-05   |
-| 10.00.1300 | 2007.100.1300.13 | Microsoft SQL Server 2008 CTP, February 2008                                                                                                                                                                                                              | 2008-02-19   |
-| 10.00.1075 | 2007.100.1075.23 | Microsoft SQL Server 2008 CTP, November 2007                                                                                                                                                                                                              | 2007-11-18   |
-| 10.00.1049 | 2007.100.1049.14 | SQL Server 2008 CTP, July 2007                                                                                                                                                                                                                            | 2007-07-31   |
-| 10.00.1019 | 2007.100.1019.17 | SQL Server 2008 CTP, June 2007                                                                                                                                                                                                                            | 2007-05-21   |
+| Build        | File version     | KB / Description                                                                                                                                                                                                                                          | Release Date |
+|--------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 10.0.6547    | 2007.100.6547.0  | [3146034 Intermittent service terminations occur after you install any SQL Server 2008 or SQL Server 2008 R2 versions from KB3135244]                                                                                                                     | 2016-03-03   |
+| 10.0.6543    | 2007.100.6543.0  | [3135244 TLS 1.2 support for SQL Server 2008 SP4]                                                                                                                                                                                                         | 2016-01-27   |
+| 10.0.6535    | 2007.100.6535.0  | [3045308 MS15-058: Description of the security update for SQL Server 2008 Service Pack 4 QFE: July 14, 2015]                                                                                                                                              | 2015-07-14   |
+| 10.0.6526    | 2007.100.6526.0  | [3034373 An on-demand hotfix update package is available for SQL Server 2008 Service Pack 4 (SP4)]                                                                                                                                                        | 2015-02-09   |
+| 10.0.6241    | 2007.100.6241.0  | [3045311 MS15-058: Description of the security update for SQL Server 2008 Service Pack 4 GDR: July 14, 2015]                                                                                                                                              | 2015-07-14   |
+| 10.0.6000.29 | 2007.100.6000.29 | [2979596 SQL Server 2008 Service Pack 4 release information]                                                                                                                                                                                              | 2014-09-30   |
+| 10.0.5894    | 2007.100.5894.0  | [3135244 TLS 1.2 support for SQL Server 2008 SP3 (IA-64 only)]                                                                                                                                                                                            | 2016-01-27   |
+| 10.0.5890    | 2007.100.5890.0  | [3045303 MS15-058: Description of the security update for SQL Server 2008 Service Pack 3 QFE: July 14, 2015]                                                                                                                                              | 2015-07-14   |
+| 10.0.5869    | 2007.100.5869.0  | [2977322 MS14-044: Description of the security update for SQL Server 2008 SP3 (QFE)]                                                                                                                                                                      | 2014-08-12   |
+| 10.0.5867    | 2007.100.5867.0  | [2877204 FIX: Error 8985 when you run the "dbcc shrinkfile" statement by using the logical name of a file in SQL Server 2008 R2 or SQL Server 2008]                                                                                                       | 2014-07-02   |
+| 10.0.5861    | 2007.100.5861.0  | [2958696 Cumulative update package 17 (CU17) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2014-05-19   |
+| 10.0.5852    | 2007.100.5852.0  | [2936421 Cumulative update package 16 (CU16) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2014-03-17   |
+| 10.0.5850    | 2007.100.5850.0  | [2923520 Cumulative update package 15 (CU15) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2014-01-20   |
+| 10.0.5848    | 2007.100.5848.0  | [2893410 Cumulative update package 14 (CU14) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-11-18   |
+| 10.0.5846    | 2007.100.5846.0  | [2880350 Cumulative update package 13 (CU13) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-09-16   |
+| 10.0.5844    | 2007.100.5844.0  | [2863205 Cumulative update package 12 (CU12) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-07-16   |
+| 10.0.5841    | 2007.100.5841.0  | [2834048 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 3 (updated)]                                                                                                                                                                | 2013-06-13   |
+| 10.0.5840    | 2007.100.5840.0  | 2834048 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 3 (replaced)                                                                                                                                                                 | 2013-05-20   |
+| 10.0.5835    | 2007.100.5835.0  | [2814783 Cumulative update package 10 (CU10) for SQL Server 2008 Service Pack 3]                                                                                                                                                                          | 2013-03-18   |
+| 10.0.5829    | 2007.100.5829.0  | [2799883 Cumulative update package 9 (CU9) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2013-01-23   |
+| 10.0.5828    | 2007.100.5828.0  | [2771833 Cumulative update package 8 (CU8) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-11-19   |
+| 10.0.5826    | 2007.100.5826.0  | [2716435 Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                            | 2012-10-09   |
+| 10.0.5794    | 2007.100.5794.0  | [2738350 Cumulative update package 7 (CU7) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-09-21   |
+| 10.0.5788    | 2007.100.5788.0  | [2715953 Cumulative update package 6 (CU6) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-07-16   |
+| 10.0.5785    | 2007.100.5785.0  | [2696626 Cumulative update package 5 (CU5) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-05-19   |
+| 10.0.5775    | 2007.100.5775.0  | [2673383 Cumulative update package 4 (CU4) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-03-20   |
+| 10.0.5770    | 2007.100.5770.0  | [2648098 Cumulative update package 3 (CU3) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2012-01-16   |
+| 10.0.5768    | 2007.100.5768.0  | [2633143 Cumulative update package 2 (CU2) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2011-11-22   |
+| 10.0.5766    | 2007.100.5766.0  | [2617146 Cumulative update package 1 (CU1) for SQL Server 2008 Service Pack 3]                                                                                                                                                                            | 2011-10-18   |
+| 10.0.5538    | 2007.100.5538.0  | [3045305 MS15-058: Description of the security update for SQL Server 2008 Service Pack 3 GDR: July 14, 2015]                                                                                                                                              | 2015-07-14   |
+| 10.0.5520    | 2007.100.5520.0  | [2977321 MS14-044: Description of the security update for SQL Server 2008 SP3 (GDR)]                                                                                                                                                                      | 2014-08-12   |
+| 10.0.5512    | 2007.100.5512.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                                    | 2012-10-09   |
+| 10.0.5500    | 2007.100.5500.0  | [SQL Server 2008 Service Pack 3 (SP3)]                                                                                                                                                                                                                    | 2011-10-06   |
+| 10.0.5416    | 2007.100.5416.0  | SQL Server 2008 Service Pack 3 CTP                                                                                                                                                                                                                        | 2011-08-22   |
+| 10.0.4371    | 2007.100.4371.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                                    | 2012-10-09   |
+| 10.0.4333    | 2007.100.4333.0  | [2715951 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 2]                                                                                                                                                                          | 2012-07-16   |
+| 10.0.4332    | 2007.100.4332.0  | [2696625 Cumulative update package 10 (CU10) for SQL Server 2008 Service Pack 2]                                                                                                                                                                          | 2012-05-20   |
+| 10.0.4330    | 2007.100.4330.0  | [2673382 Cumulative update package 9 (CU9) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2012-03-19   |
+| 10.0.4326    | 2007.100.4326.0  | [2648096 Cumulative update package 8 (CU8) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2012-01-30   |
+| 10.0.4323    | 2007.100.4323.0  | [2617148 Cumulative update package 7 (CU7) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-11-21   |
+| 10.0.4321    | 2007.100.4321.0  | [2582285 Cumulative update package 6 (CU6) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-09-20   |
+| 10.0.4316    | 2007.100.4316.0  | [2555408 Cumulative update package 5 (CU5) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-07-18   |
+| 10.0.4285    | 2007.100.4285.0  | [2527180 Cumulative update package 4 (CU4) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-05-16   |
+| 10.0.4279    | 2007.100.4279.0  | [2498535 Cumulative update package 3 (CU3) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-03-11   |
+| 10.0.4272    | 2007.100.4272.0  | [2467239 Cumulative update package 2 (CU2) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2011-02-10   |
+| 10.0.4266    | 2007.100.4266.0  | [2289254 Cumulative update package 1 (CU1) for SQL Server 2008 Service Pack 2]                                                                                                                                                                            | 2010-11-15   |
+| 10.0.4067    | 2007.100.4067.0  | [Microsoft Security Bulletin MS12-070]                                                                                                                                                                                                                    | 2012-10-09   |
+| 10.0.4064    | 2007.100.4064.0  | [2494089 MS11-049: Description of the security update for SQL Server 2008 Service Pack 2 GDR: June 14, 2011]                                                                                                                                              | 2011-06-14   |
+| 10.0.4000    | 2007.100.4000.0  | [SQL Server 2008 Service Pack 2 (SP2)]                                                                                                                                                                                                                    | 2010-09-29   |
+| 10.0.3798    | 2007.100.3798.0  | SQL Server 2008 Service Pack 2 CTP                                                                                                                                                                                                                        | 2010-07-07   |
+| 10.0.2850    | 2007.100.2850.0  | [2582282 Cumulative update package 16 (CU16) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-09-19   |
+| 10.0.2847    | 2007.100.2847.0  | [2555406 Cumulative update package 15 (CU15) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-07-18   |
+| 10.0.2821    | 2007.100.2821.0  | [2527187 Cumulative update package 14 (CU14) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-05-16   |
+| 10.0.2816    | 2007.100.2816.0  | [2497673 Cumulative update package 13 (CU13) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-03-22   |
+| 10.0.2808    | 2007.100.2808.0  | [2467236 Cumulative update package 12 (CU12) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2011-02-10   |
+| 10.0.2804    | 2007.100.2804.0  | [2413738 Cumulative update package 11 (CU11) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2010-11-15   |
+| 10.0.2799    | 2007.100.2799.0  | [2279604 Cumulative update package 10 (CU10) for SQL Server 2008 Service Pack 1]                                                                                                                                                                          | 2010-09-21   |
+| 10.0.2789    | 2007.100.2789.0  | [2083921 Cumulative update package 9 (CU9) for SQL Server 2008 Service Pack 1]                                                                                                                                                                            | 2010-07-21   |
+| 10.0.2787    | 2007.100.2787.0  | [2231277 FIX: The Reporting Services service stops unexpectedly after you apply SQL Server 2008 SP1 CU 7 or CU8]                                                                                                                                          | 2010-07-30   |
+| 10.0.2775    | 2007.100.2775.0  | [981702 Cumulative update package 8 (CU8) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2010-05-17   |
+| 10.0.2766    | 2007.100.2766.0  | [979065 Cumulative update package 7 (CU7) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2010-03-26   |
+| 10.0.2757    | 2007.100.2757.0  | [977443 Cumulative update package 6 (CU6) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2010-01-18   |
+| 10.0.2746    | 2007.100.2746.0  | [975977 Cumulative update package 5 (CU5) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-11-16   |
+| 10.0.2740    | 2007.100.2740.0  | [976761 FIX: Error message when you perform a rolling upgrade in a SQL Server 2008 cluster : "18401, Login failed for user SQLTEST\AgentService. Reason: Server is in script upgrade mode. Only administrator can connect at this time.SQLState 42000"]   | 2009-11-24   |
+| 10.0.2734    | 2007.100.2734.0  | [973602 Cumulative update package 4 (CU4) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-09-22   |
+| 10.0.2723    | 2007.100.2723.0  | [971491 Cumulative update package 3 (CU3) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-07-21   |
+| 10.0.2714    | 2007.100.2714.0  | [970315 Cumulative update package 2 (CU2) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-05-18   |
+| 10.0.2712    | 2007.100.2712.0  | [970507 FIX: Error message in SQL Server 2008 when you run an INSERT SELECT statement on a table: "Violation of PRIMARY KEY constraint '<PrimaryKey>'. Cannot insert duplicate key in object '<TableName>'"]                                              | 2009-07-21   |
+| 10.0.2710    | 2007.100.2710.0  | [969099 Cumulative update package 1 (CU1) for SQL Server 2008 Service Pack 1]                                                                                                                                                                             | 2009-04-16   |
+| 10.0.2573    | 2007.100.2573.0  | [2494096 MS11-049: Description of the security update for SQL Server 2008 Service Pack 1 GDR: June 14, 2011]                                                                                                                                              | 2011-06-14   |
+| 10.0.2531    | 2007.100.2531.0  | [SQL Server 2008 Service Pack 1 (SP1)]                                                                                                                                                                                                                    | 2009-04-07   |
+| 10.0.2520    | 2007.100.2520.0  | SQL Server 2008 Service Pack 1 - CTP                                                                                                                                                                                                                      | 2009-02-23   |
+| 10.0.1835    | 2007.100.1835.0  | [979064 Cumulative update package 10 (CU10) for SQL Server 2008]                                                                                                                                                                                          | 2010-03-15   |
+| 10.0.1828    | 2007.100.1828.0  | [977444 Cumulative update package 9 (CU9) for SQL Server 2008]                                                                                                                                                                                            | 2010-01-18   |
+| 10.0.1823    | 2007.100.1823.0  | [975976 Cumulative update package 8 (CU8) for SQL Server 2008]                                                                                                                                                                                            | 2009-11-16   |
+| 10.0.1818    | 2007.100.1818.0  | [973601 Cumulative update package 7 (CU7) for SQL Server 2008]                                                                                                                                                                                            | 2009-09-21   |
+| 10.0.1812    | 2007.100.1812.0  | [971490 Cumulative update package 6 (CU6) for SQL Server 2008]                                                                                                                                                                                            | 2009-07-21   |
+| 10.0.1806    | 2007.100.1806.0  | [969531 Cumulative update package 5 (CU5) for SQL Server 2008]                                                                                                                                                                                            | 2009-05-18   |
+| 10.0.1798    | 2007.100.1798.0  | [963036 Cumulative update package 4 (CU4) for SQL Server 2008]                                                                                                                                                                                            | 2009-03-17   |
+| 10.0.1787    | 2007.100.1787.0  | [960484 Cumulative update package 3 (CU3) for SQL Server 2008]                                                                                                                                                                                            | 2009-01-19   |
+| 10.0.1779    | 2007.100.1779.0  | [958186 Cumulative update package 2 (CU2) for SQL Server 2008]                                                                                                                                                                                            | 2008-11-19   |
+| 10.0.1771    | 2007.100.1771.0  | [958611 FIX: You may receive incorrect results when you run a query that references three or more tables in the FROM clause in SQL Server 2008]                                                                                                           | 2008-10-29   |
+| 10.0.1763    | 2007.100.1763.0  | [956717 Cumulative update package 1 (CU1) for SQL Server 2008]                                                                                                                                                                                            | 2008-10-28   |
+| 10.0.1750    | 2007.100.1750.0  | [956718 FIX: A MERGE statement may not enforce a foreign key constraint when the statement updates a unique key column that is not part of a clustering key that has a single row as the update source in SQL Server 2008]                                | 2008-08-25   |
+| 10.0.1600    | 2007.100.1600.22 | [SQL Server 2008 RTM]                                                                                                                                                                                                                                     | 2008-08-07   |
+| 10.0.1442    | 2007.100.1442.32 | Microsoft SQL Server 2008 RC0                                                                                                                                                                                                                             | 2008-06-05   |
+| 10.0.1300    | 2007.100.1300.13 | Microsoft SQL Server 2008 CTP, February 2008                                                                                                                                                                                                              | 2008-02-19   |
+| 10.0.1075    | 2007.100.1075.23 | Microsoft SQL Server 2008 CTP, November 2007                                                                                                                                                                                                              | 2007-11-18   |
+| 10.0.1049    | 2007.100.1049.14 | SQL Server 2008 CTP, July 2007                                                                                                                                                                                                                            | 2007-07-31   |
+| 10.0.1019    | 2007.100.1019.17 | SQL Server 2008 CTP, June 2007                                                                                                                                                                                                                            | 2007-05-21   |
 
+[3146034 Intermittent service terminations occur after you install any SQL Server 2008 or SQL Server 2008 R2 versions from KB3135244]:http://support.microsoft.com/en-us/kb/3146034
+[3135244 TLS 1.2 support for SQL Server 2008 SP4]:http://support.microsoft.com/en-us/kb/3135244
 [3045308 MS15-058: Description of the security update for SQL Server 2008 Service Pack 4 QFE: July 14, 2015]:http://support.microsoft.com/kb/3045308
 [3034373 An on-demand hotfix update package is available for SQL Server 2008 Service Pack 4 (SP4)]:http://support.microsoft.com/kb/3034373
 [3045311 MS15-058: Description of the security update for SQL Server 2008 Service Pack 4 GDR: July 14, 2015]:https://support.microsoft.com/en-us/kb/3045311
-[SQL Server 2008 Service Pack 4 (SP4)]:http://www.microsoft.com/en-us/download/details.aspx?id=44278
+[2979596 SQL Server 2008 Service Pack 4 release information]:https://support.microsoft.com/en-us/kb/2979596
+[3135244 TLS 1.2 support for SQL Server 2008 SP3 (IA-64 only)]:http://support.microsoft.com/en-us/kb/3135244
 [3045303 MS15-058: Description of the security update for SQL Server 2008 Service Pack 3 QFE: July 14, 2015]:https://support.microsoft.com/en-us/kb/3045303
 [2977322 MS14-044: Description of the security update for SQL Server 2008 SP3 (QFE)]:http://support.microsoft.com/kb/2977322
 [2877204 FIX: Error 8985 when you run the "dbcc shrinkfile" statement by using the logical name of a file in SQL Server 2008 R2 or SQL Server 2008]:http://support.microsoft.com/kb/2877204
@@ -689,7 +1341,7 @@ contains all the fixes that are included with previous service packs and any new
 [979065 Cumulative update package 7 (CU7) for SQL Server 2008 Service Pack 1]:http://support.microsoft.com/kb/979065
 [977443 Cumulative update package 6 (CU6) for SQL Server 2008 Service Pack 1]:http://support.microsoft.com/kb/977443
 [975977 Cumulative update package 5 (CU5) for SQL Server 2008 Service Pack 1]:http://support.microsoft.com/kb/975977
-[976761 FIX: Error message when you perform a rolling upgrade in a SQL Server 2008 cluster : "18401, Login failed for user SQLTEST\AgentService. Reason: Server is in script upgrade mode. Only administrator can connect at this time.[SQLState 42000]"]:http://support.microsoft.com/kb/976761
+[976761 FIX: Error message when you perform a rolling upgrade in a SQL Server 2008 cluster : "18401, Login failed for user SQLTEST\AgentService. Reason: Server is in script upgrade mode. Only administrator can connect at this time.SQLState 42000"]:http://support.microsoft.com/kb/976761
 [973602 Cumulative update package 4 (CU4) for SQL Server 2008 Service Pack 1]:http://support.microsoft.com/kb/973602
 [971491 Cumulative update package 3 (CU3) for SQL Server 2008 Service Pack 1]:http://support.microsoft.com/kb/971491
 [970315 Cumulative update package 2 (CU2) for SQL Server 2008 Service Pack 1]:http://support.microsoft.com/kb/970315
@@ -712,7 +1364,8 @@ contains all the fixes that are included with previous service packs and any new
 [SQL Server 2008 RTM]:http://msdn.microsoft.com/en-us/subscriptions/downloads/details/default.aspx?pm=pid%3a334
 
 
-## Microsoft SQL Server 2005 Builds <a id="microsoft-sql-server-2005-builds"></a>
+## Microsoft SQL Server 2005 Builds
+<a id="microsoft-sql-server-2005-builds"></a>
 
 | Build     | File version   | KB / Description                                                                                                                                                                                                                                                     | Release Date |
 |-----------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
@@ -1201,811 +1854,443 @@ contains all the fixes that are included with previous service packs and any new
 [911662 FIX: You may receive an access violation error message when you run a SELECT query in SQL Server 2005]:http://support.microsoft.com/kb/911662
 [915793 FIX: You cannot restore the log backups on the mirror server after you remove database mirroring for the mirror database in SQL Server 2005]:http://support.microsoft.com/kb/915793
 [910416 FIX: Error message when you run certain queries or certain stored procedures in SQL Server 2005: "A severe error occurred on the current command"]:http://support.microsoft.com/kb/910416
-[932557 FIX: A script task or a script component may not run correctly when you run an SSIS package in SQL Server 2005 build 1399]:http://support.microsoft.com/kb/932557
+[932557 FIX: A script task or a script component may not run correctly when you run an SSIS package in SQL Server 2005 build 1399]:https://support.microsoft.com/help/932557
 
 
-## Microsoft SQL Server 2000 Builds <a id="microsoft-sql-server-2000-builds"></a>
+## Microsoft SQL Server 2000 Builds
+<a id="microsoft-sql-server-2000-builds"></a>
 
 | Build     | File version   | KB / Description                                                                                                                                                                                                                                              | Release Date |
 |-----------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 8.00.2305 | 2000.80.2305.0 | [983811 MS12-060: Description of the security update for SQL Server 2000 Service Pack 4 QFE: August 14, 2012]                                                                                                                                                 | 2012-08-14   |
 | 8.00.2301 | 2000.80.2301.0 | [983809 MS12-027: Description of the security update for Microsoft SQL Server 2000 Service Pack 4 QFE: April 10, 2012]                                                                                                                                        | 2012-04-10   |
-| 8.00.2283 | 2000.80.2283.0 | [971524 FIX: An access violation occurs when you run a DELETE statement or an UPDATE statement in the Itanium-based versions of SQL Server 2000 after you install security update MS09-004]                                                                   | 2009-06-15   |
+| 8.00.2283 | 2000.80.2283.0 | 971524 FIX: An access violation occurs when you run a DELETE statement or an UPDATE statement in the Itanium-based versions of SQL Server 2000 after you install security update MS09-004]                                                                    | 2009-06-15   |
 | 8.00.2282 | 2000.80.2282.0 | [960083 MS09-004: Description of the security update for SQL Server 2000 QFE and for MSDE 2000: February 10, 2009]                                                                                                                                            | 2009-02-10   |
-| 8.00.2279 | 2000.80.2279.0 | [959678 FIX: When you run the SPSBackup.exe utility to back up a SQL Server 2000 database that is configured as a back-end database for a Windows SharePoint Services server, the backup operation fails]                                                     | 2009-04-08   |
-| 8.00.2273 | 2000.80.2273.0 | [948111 MS08-040: Description of the security update for SQL Server 2000 QFE and MSDE 2000 July 8, 2008]                                                                                                                                                      | 2008-08-05   |
-| 8.00.2271 | 2000.80.2271.0 | [946584 FIX: The SPACE function always returns one space in SQL Server 2000 if the SPACE function uses a collation that differs from the collation of the current database]                                                                                   | 2008-03-12   |
-| 8.00.2265 | 2000.80.2265.0 | [944985 FIX: The data on the publisher does not match the data on the subscriber when you synchronize a SQL Server 2005 Mobile Edition subscriber with a SQL Server 2000 "merge replication" publisher]                                                       | 2007-12-19   |
-| 8.00.2253 | 2000.80.2253.0 | [939317 FIX: The CPU utilization may suddenly increase to 100 percent when there are many connections to an instance of SQL Server 2000 on a computer that has multiple processors]                                                                           | 2007-10-09   |
-| 8.00.2249 | 2000.80.2249.0 | [936232 FIX: An access violation may occur when you try to log in to an instance of SQL Server 2000]                                                                                                                                                          | 2007-05-25   |
-| 8.00.2248 | 2000.80.2248.0 | [935950 FIX: The foreign key that you created between two tables does not work after you run the CREATE INDEX statement in SQL Server 2000]                                                                                                                   | 2007-06-14   |
-| 8.00.2246 | 2000.80.2246.0 | [935465 An updated version of Sqlvdi.dll is now available for SQL Server 2000]                                                                                                                                                                                | 2007-06-18   |
-| 8.00.2245 | 2000.80.2245.0 | [933573 FIX: You may receive an assertion or database corruption may occur when you use the bcp utility or the "Bulk Insert" Transact-SQL command to import data in SQL Server 2000]                                                                          | 2007-04-24   |
-| 8.00.2244 | 2000.80.2244.0 | [934203 FIX: A hotfix for Microsoft SQL Server 2000 Service Pack 4 may not update all the necessary files on an x64-based computer]                                                                                                                           | 2007-05-10   |
-| 8.00.2242 | 2000.80.2242.0 | [929131 FIX: In SQL Server 2000, the synchronization process is slow, and the CPU usage is high on the computer that is configured as the Distributor]                                                                                                        | 2007-03-28   |
-| 8.00.2238 | 2000.80.2238.0 | [931932 FIX: The merge agent fails intermittently when you use merge replication that uses a custom resolver after you install SQL Server 2000 Service Pack 4]                                                                                                | 2007-02-21   |
-| 8.00.2236 | 2000.80.2236.0 | [930484 FIX: CPU utilization may approach 100 percent on a computer that is running SQL Server 2000 after you run the BACKUP DATABASE statement or the BACKUP LOG statement]                                                                                  | 2007-02-02   |
-| 8.00.2234 | 2000.80.2234.0 | [929440 FIX: Error messages when you try to update table rows or insert table rows into a table in SQL Server 2000: "644" or "2511"]                                                                                                                          | 2007-02-22   |
-| 8.00.2232 | 2000.80.2232.0 | [928568 FIX: SQL Server 2000 stops responding when you cancel a query or when a query time-out occurs, and error messages are logged in the SQL Server error log file]                                                                                        | 2007-01-15   |
-| 8.00.2231 | 2000.80.2231.0 | [928079 FIX: The Sqldumper.exe utility cannot generate a filtered SQL Server dump file when you use the Remote Desktop Connection service or Terminal Services to connect to a Windows 2000 Server-based computer in SQL Server 2000]                         | 2007-06-19   |
-| 8.00.2229 | 2000.80.2229.0 | [927186 FIX: Error message when you create a merge replication for tables that have computed columns in SQL Server 2000 Service Pack 4: "The process could not log conflict information"]                                                                     | 2007-07-24   |
-| 8.00.2226 | 2000.80.2226.0 | [925684 FIX: You may experience one or more symptoms when you run a "CREATE INDEX" statement on an instance of SQL Server 2000]                                                                                                                               | 2006-11-20   |
-| 8.00.2226 | 2000.80.2226.0 | [925732 FIX: You may receive inconsistent comparison results when you compare strings by using a width sensitive collation in SQL Server 2000]                                                                                                                | 2006-11-13   |
-| 8.00.2223 | 2000.80.2223.0 | [925419 FIX: The server stops responding, the performance is slow, and a time-out occurs in SQL Server 2000]                                                                                                                                                  | 2007-07-20   |
-| 8.00.2223 | 2000.80.2223.0 | [925678 FIX: Error message when you schedule a Replication Merge Agent job to run after you install SQL Server 2000 Service Pack 4: "The process could not enumerate changes at the 'Subscriber'"]                                                            | 2006-10-31   |
-| 8.00.2218 | 2000.80.2218.0 | [925297 FIX: The result may be sorted in the wrong order when you run a query that uses the ORDER BY clause to sort a column in a table in SQL Server 2000]                                                                                                   | 2007-06-19   |
-| 8.00.2217 | 2000.80.2217.0 | [924664 FIX: You cannot stop the SQL Server service, or many minidump files and many log files are generated in SQL Server 2000]                                                                                                                              | 2007-10-25   |
-| 8.00.2215 | 2000.80.2215.0 | [923796 FIX: Data in a subscriber of a merge publication in SQL Server 2000 differs from the data in the publisher]                                                                                                                                           | 2007-01-12   |
-| 8.00.2215 | 2000.80.2215.0 | [924662 FIX: The query performance may be slow when you query data from a view in SQL Server 2000]                                                                                                                                                            | 2006-10-05   |
-| 8.00.2215 | 2000.80.2215.0 | [923563 FIX: Error message when you configure an immediate updating transactional replication in SQL Server 2000: "Implicit conversion from datatype 'text' to 'nvarchar' is not allowed"]                                                                    | 2006-10-30   |
-| 8.00.2215 | 2000.80.2215.0 | [923327 FIX: You may receive an access violation error message when you import data by using the "Bulk Insert" command in SQL Server 2000]                                                                                                                    | 2006-12-28   |
-| 8.00.2209 | 2000.80.2209.0 | [923797 The Knowledge Base (KB) Article You Requested Is Currently Not Available]                                                                                                                                                                             | ???          |
-| 8.00.2207 | 2000.80.2207.0 | [923344 FIX: A SQL Server 2000 session may be blocked for the whole time that a Snapshot Agent job runs]                                                                                                                                                      | 2006-08-28   |
-| 8.00.2201 | 2000.80.2201.0 | [920930 FIX: Error message when you try to run a query on a linked server in SQL Server 2000]                                                                                                                                                                 | 2006-08-21   |
-| 8.00.2199 | 2000.80.2199.0 | [919221 FIX: SQL Server 2000 may take a long time to complete the synchronization phase when you create a merge publication]                                                                                                                                  | 2006-07-26   |
-| 8.00.2197 | 2000.80.2197.0 | [919133 FIX: Each query takes a long time to compile when you execute a single query or when you execute multiple concurrent queries in SQL Server 2000]                                                                                                      | 2006-08-02   |
-| 8.00.2197 | 2000.80.2197.0 | [919068 FIX: The query may return incorrect results, and the execution plan for the query may contain a "Table Spool" operator in SQL Server 2000]                                                                                                            | 2006-08-08   |
-| 8.00.2197 | 2000.80.2197.0 | [919399 FIX: A profiler trace in SQL Server 2000 may stop logging events unexpectedly, and you may receive the following error message: "Failed to read trace data"]                                                                                          | 2006-10-18   |
-| 8.00.2196 | 2000.80.2196.0 | [919165 FIX: A memory leak occurs when you run a remote query by using a linked server in SQL Server 2000]                                                                                                                                                    | 2006-08-14   |
-| 8.00.2194 | 2000.80.2194.0 | [917565 FIX: Error 17883 is logged in the SQL Server error log, and the instance of SQL Server 2000 temporarily stops responding]                                                                                                                             | 2007-02-21   |
-| 8.00.2194 | 2000.80.2194.0 | [917972 FIX: You receive an access violation error message when you try to perform a read of a large binary large object column in SQL Server 2000]                                                                                                           | 2006-09-22   |
-| 8.00.2192 | 2000.80.2192.0 | [917606 FIX: You may notice a decrease in performance when you run a query that uses the UNION ALL operator in SQL Server 2000 Service Pack 4]                                                                                                                | 2006-08-04   |
-| 8.00.2191 | 2000.80.2191.0 | [916698 FIX: Error message when you run SQL Server 2000: "Failed assertion = 'lockFound == TRUE'"]                                                                                                                                                            | 2006-07-26   |
-| 8.00.2191 | 2000.80.2191.0 | [916950 FIX: You may experience heap corruption, and SQL Server 2000 may shut down with fatal access violations when you try to browse files in SQL Server 2000 Enterprise Manager on a Windows Server 2003 x64-based computer]                               | 2006-10-03   |
-| 8.00.2189 | 2000.80.2189.0 | [916652 FIX: An access violation may occur when you run a query on a table that has a multicolumn index in SQL Server 2000]                                                                                                                                   | 2006-07-26   |
-| 8.00.2189 | 2000.80.2189.0 | [913438 FIX: The SQL Server process may end unexpectedly when you turn on trace flag -T1204 and a profiler trace is capturing the Lock:DeadLock Chain event in SQL Server 2000 SP4]                                                                           | 2006-07-19   |
-| 8.00.2187 | 2000.80.2187.0 | [915340 FIX: A deadlock occurs when the scheduled SQL Server Agent job that you add or that you update is running in SQL Server 2000]                                                                                                                         | 2007-06-18   |
-| 8.00.2187 | 2000.80.2187.0 | [916287 A cumulative hotfix package is available for SQL Server 2000 Service Pack 4 build 2187]                                                                                                                                                               | 2006-10-16   |
-| 8.00.2187 | 2000.80.2187.0 | [914384 FIX: The database status changes to Suspect when you perform a bulk copy in a transaction and then roll back the transaction in SQL Server 2000]                                                                                                      | 2006-07-26   |
-| 8.00.2187 | 2000.80.2187.0 | [915065 FIX: Error message when you try to apply a hotfix on a SQL Server 2000-based computer that is configured as a MSCS node: "An error in updating your system has occurred"]                                                                             | 2006-12-11   |
-| 8.00.2180 | 2000.80.2180.0 | [913789 FIX: The password that you specify in a BACKUP statement appears in the SQL Server Errorlog file or in the Application event log if the BACKUP statement does not run in SQL Server 2000]                                                             | 2007-02-19   |
-| 8.00.2180 | 2000.80.2180.0 | [913684 FIX: You may receive error messages when you use linked servers in SQL Server 2000 on a 64-bit Itanium processor]                                                                                                                                     | 2006-07-26   |
-| 8.00.2175 | 2000.80.2175.0 | [911678 FIX: No rows may be returned, and you may receive an error message when you try to import SQL Profiler trace files into tables by using the fn_trace_gettable function in SQL Server 2000]                                                            | 2006-07-26   |
-| 8.00.2172 | 2000.80.2172.0 | [910707 FIX: When you query a view that was created by using the VIEW_METADATA option, an access violation may occur in SQL Server 2000]                                                                                                                      | 2006-07-26   |
-| 8.00.2171 | 2000.80.2171.0 | [909369 FIX: Automatic checkpoints on some SQL Server 2000 databases do not run as expected]                                                                                                                                                                  | 2006-07-26   |
-| 8.00.2168 | 2000.80.2168.0 | [907813 FIX: An error occurs when you try to access the Analysis Services performance monitor counter object after you apply Windows Server 2003 SP1]                                                                                                         | 2006-11-21   |
-| 8.00.2166 | 2000.80.2166.0 | [909734 FIX: An error message is logged, and new diagnostics do not capture the thread stack when the SQL Server User Mode Scheduler (UMS) experiences a nonyielding thread in SQL Server 2000 Service Pack 4]                                                | 2006-07-26   |
-| 8.00.2162 | 2000.80.2162.0 | [904660 A cumulative hotfix package is available for SQL Server 2000 Service Pack 4 build 2162]                                                                                                                                                               | 2006-09-15   |
-| 8.00.2159 | 2000.80.2159.0 | [907250 FIX: You may experience concurrency issues when you run the DBCC INDEXDEFRAG statement in SQL Server 2000]                                                                                                                                            | 2006-07-26   |
-| 8.00.2156 | 2000.80.2156.0 | [906790 FIX: You receive an error message when you try to rebuild the master database after you have installed hotfix builds in SQL Server 2000 SP4 64-bit]                                                                                                   | 2006-07-25   |
-| 8.00.2151 | 2000.80.2151.0 | [903742 FIX: You receive an "Error: 8526, Severity: 16, State: 2" error message in SQL Profiler when you use SQL Query Analyzer to start or to enlist into a distributed transaction after you have installed SQL Server 2000 SP4]                            | 2006-07-25   |
-| 8.00.2151 | 2000.80.2151.0 | [904244 FIX: Incorrect data is inserted unexpectedly when you perform a bulk copy operation by using the DB-Library API in SQL Server 2000 Service Pack 4]                                                                                                    | 2007-06-13   |
-| 8.00.2148 | 2000.80.2148.0 | [899430 FIX: An access violation may occur when you run a SELECT query and the NO_BROWSETABLE option is set to ON in Microsoft SQL Server 2000]                                                                                                               | 2006-07-25   |
-| 8.00.2148 | 2000.80.2148.0 | [899431 FIX: An access violation occurs in the Mssdi98.dll file, and SQL Server crashes when you use SQL Query Analyzer to debug a stored procedure in SQL Server 2000 Service Pack 4]                                                                        | 2006-07-25   |
-| 8.00.2148 | 2000.80.2148.0 | [900390 FIX: The Mssdmn.exe process may use lots of CPU capacity when you perform a SQL Server 2000 full text search of Office Word documents]                                                                                                                | 2006-06-01   |
-| 8.00.2148 | 2000.80.2148.0 | [900404 FIX: The results of the query may be returned much slower than you expect when you run a query that includes a GROUP BY statement in SQL Server 2000]                                                                                                 | 2006-06-01   |
-| 8.00.2148 | 2000.80.2148.0 | [901212 FIX: You receive an error message if you use the sp_addalias or sp_dropalias procedures when the IMPLICIT_TRANSACTIONS option is set to ON in SQL Server 2000 SP4]                                                                                    | 2006-07-25   |
-| 8.00.2148 | 2000.80.2148.0 | [902150 FIX: Some 32-bit applications that use SQL-DMO and SQL-VDI APIs may stop working after you install SQL Server 2000 Service Pack 4 on an Itanium-based computer]                                                                                       | 2006-06-01   |
-| 8.00.2148 | 2000.80.2148.0 | [902955 FIX: You receive a "Getting registry information" message when you run the Sqldiag.exe utility after you install SQL Server 2000 SP4]                                                                                                                 | 2006-07-25   |
-| 8.00.2147 | 2000.80.2147.0 | [899410 FIX: You may experience slow server performance when you start a trace in an instance of SQL Server 2000 that runs on a computer that has more than four processors]                                                                                  | 2006-06-01   |
-| 8.00.2145 | 2000.80.2145.0 | [826906 FIX: A query that uses a view that contains a correlated subquery and an aggregate runs slowly]                                                                                                                                                       | 2005-10-25   |
-| 8.00.2145 | 2000.80.2145.0 | [836651 FIX: You receive query results that were not expected when you use both ANSI joins and non-ANSI joins]                                                                                                                                                | 2006-06-07   |
-| 8.00.2066 | 2000.80.2066.0 | [Microsoft Security Bulletin MS12-060]                                                                                                                                                                                                                        | 2012-08-14   |
-| 8.00.2065 | 2000.80.2065.0 | [983808 MS12-027: Description of the security update for Microsoft SQL Server 2000 Service Pack 4 GDR: April 10, 2012]                                                                                                                                        | 2012-04-10   |
-| 8.00.2055 | 2000.80.2055.0 | [959420 MS09-004: Vulnerabilities in Microsoft SQL Server could allow remote code execution]                                                                                                                                                                  | 2009-02-10   |
-| 8.00.2040 | 2000.80.2040.0 | [899761 FIX: Not all memory is available when AWE is enabled on a computer that is running a 32-bit version of SQL Server 2000 SP4]                                                                                                                           | 2006-08-15   |
-| 8.00.2039 | 2000.80.2039.0 | [SQL Server 2000 Service Pack 4 (SP4)]                                                                                                                                                                                                                        | 2005-05-06   |
+| 8.00.2279 | 2000.80.2279.0 | 959678 FIX: When you run the SPSBackup.exe utility to back up a SQL Server 2000 database that is configured as a back-end database for a Windows SharePoint Services server, the backup operation fails                                                       | 2009-04-08   |
+| 8.00.2273 | 2000.80.2273.0 | 948111 MS08-040: Description of the security update for SQL Server 2000 QFE and MSDE 2000 July 8, 2008                                                                                                                                                        | 2008-08-05   |
+| 8.00.2271 | 2000.80.2271.0 | 946584 FIX: The SPACE function always returns one space in SQL Server 2000 if the SPACE function uses a collation that differs from the collation of the current database                                                                                     | 2008-03-12   |
+| 8.00.2265 | 2000.80.2265.0 | 944985 FIX: The data on the publisher does not match the data on the subscriber when you synchronize a SQL Server 2005 Mobile Edition subscriber with a SQL Server 2000 "merge replication" publisher                                                         | 2007-12-19   |
+| 8.00.2253 | 2000.80.2253.0 | 939317 FIX: The CPU utilization may suddenly increase to 100 percent when there are many connections to an instance of SQL Server 2000 on a computer that has multiple processors                                                                             | 2007-10-09   |
+| 8.00.2249 | 2000.80.2249.0 | 936232 FIX: An access violation may occur when you try to log in to an instance of SQL Server 2000                                                                                                                                                            | 2007-05-25   |
+| 8.00.2248 | 2000.80.2248.0 | 935950 FIX: The foreign key that you created between two tables does not work after you run the CREATE INDEX statement in SQL Server 2000                                                                                                                     | 2007-06-14   |
+| 8.00.2246 | 2000.80.2246.0 | 935465 An updated version of Sqlvdi.dll is now available for SQL Server 2000                                                                                                                                                                                  | 2007-06-18   |
+| 8.00.2245 | 2000.80.2245.0 | 933573 FIX: You may receive an assertion or database corruption may occur when you use the bcp utility or the "Bulk Insert" Transact-SQL command to import data in SQL Server 2000                                                                            | 2007-04-24   |
+| 8.00.2244 | 2000.80.2244.0 | 934203 FIX: A hotfix for Microsoft SQL Server 2000 Service Pack 4 may not update all the necessary files on an x64-based computer                                                                                                                             | 2007-05-10   |
+| 8.00.2242 | 2000.80.2242.0 | 929131 FIX: In SQL Server 2000, the synchronization process is slow, and the CPU usage is high on the computer that is configured as the Distributor                                                                                                          | 2007-03-28   |
+| 8.00.2238 | 2000.80.2238.0 | 931932 FIX: The merge agent fails intermittently when you use merge replication that uses a custom resolver after you install SQL Server 2000 Service Pack 4                                                                                                  | 2007-02-21   |
+| 8.00.2236 | 2000.80.2236.0 | 930484 FIX: CPU utilization may approach 100 percent on a computer that is running SQL Server 2000 after you run the BACKUP DATABASE statement or the BACKUP LOG statement                                                                                    | 2007-02-02   |
+| 8.00.2234 | 2000.80.2234.0 | 929440 FIX: Error messages when you try to update table rows or insert table rows into a table in SQL Server 2000: "644" or "2511"                                                                                                                            | 2007-02-22   |
+| 8.00.2232 | 2000.80.2232.0 | 928568 FIX: SQL Server 2000 stops responding when you cancel a query or when a query time-out occurs, and error messages are logged in the SQL Server error log file                                                                                          | 2007-01-15   |
+| 8.00.2231 | 2000.80.2231.0 | 928079 FIX: The Sqldumper.exe utility cannot generate a filtered SQL Server dump file when you use the Remote Desktop Connection service or Terminal Services to connect to a Windows 2000 Server-based computer in SQL Server 2000                           | 2007-06-19   |
+| 8.00.2229 | 2000.80.2229.0 | 927186 FIX: Error message when you create a merge replication for tables that have computed columns in SQL Server 2000 Service Pack 4: "The process could not log conflict information"                                                                       | 2007-07-24   |
+| 8.00.2226 | 2000.80.2226.0 | 925684 FIX: You may experience one or more symptoms when you run a "CREATE INDEX" statement on an instance of SQL Server 2000                                                                                                                                 | 2006-11-20   |
+| 8.00.2226 | 2000.80.2226.0 | 925732 FIX: You may receive inconsistent comparison results when you compare strings by using a width sensitive collation in SQL Server 2000                                                                                                                  | 2006-11-13   |
+| 8.00.2223 | 2000.80.2223.0 | 925419 FIX: The server stops responding, the performance is slow, and a time-out occurs in SQL Server 2000                                                                                                                                                    | 2007-07-20   |
+| 8.00.2223 | 2000.80.2223.0 | 925678 FIX: Error message when you schedule a Replication Merge Agent job to run after you install SQL Server 2000 Service Pack 4: "The process could not enumerate changes at the 'Subscriber'"                                                              | 2006-10-31   |
+| 8.00.2218 | 2000.80.2218.0 | 925297 FIX: The result may be sorted in the wrong order when you run a query that uses the ORDER BY clause to sort a column in a table in SQL Server 2000                                                                                                     | 2007-06-19   |
+| 8.00.2217 | 2000.80.2217.0 | 924664 FIX: You cannot stop the SQL Server service, or many minidump files and many log files are generated in SQL Server 2000                                                                                                                                | 2007-10-25   |
+| 8.00.2215 | 2000.80.2215.0 | 923796 FIX: Data in a subscriber of a merge publication in SQL Server 2000 differs from the data in the publisher                                                                                                                                             | 2007-01-12   |
+| 8.00.2215 | 2000.80.2215.0 | 924662 FIX: The query performance may be slow when you query data from a view in SQL Server 2000                                                                                                                                                              | 2006-10-05   |
+| 8.00.2215 | 2000.80.2215.0 | 923563 FIX: Error message when you configure an immediate updating transactional replication in SQL Server 2000: "Implicit conversion from datatype 'text' to 'nvarchar' is not allowed"                                                                      | 2006-10-30   |
+| 8.00.2215 | 2000.80.2215.0 | 923327 FIX: You may receive an access violation error message when you import data by using the "Bulk Insert" command in SQL Server 2000                                                                                                                      | 2006-12-28   |
+| 8.00.2209 | 2000.80.2209.0 | 923797 The Knowledge Base (KB) Article You Requested Is Currently Not Available                                                                                                                                                                               | ???          |
+| 8.00.2207 | 2000.80.2207.0 | 923344 FIX: A SQL Server 2000 session may be blocked for the whole time that a Snapshot Agent job runs                                                                                                                                                        | 2006-08-28   |
+| 8.00.2201 | 2000.80.2201.0 | 920930 FIX: Error message when you try to run a query on a linked server in SQL Server 2000                                                                                                                                                                   | 2006-08-21   |
+| 8.00.2199 | 2000.80.2199.0 | 919221 FIX: SQL Server 2000 may take a long time to complete the synchronization phase when you create a merge publication                                                                                                                                    | 2006-07-26   |
+| 8.00.2197 | 2000.80.2197.0 | 919133 FIX: Each query takes a long time to compile when you execute a single query or when you execute multiple concurrent queries in SQL Server 2000                                                                                                        | 2006-08-02   |
+| 8.00.2197 | 2000.80.2197.0 | 919068 FIX: The query may return incorrect results, and the execution plan for the query may contain a "Table Spool" operator in SQL Server 2000                                                                                                              | 2006-08-08   |
+| 8.00.2197 | 2000.80.2197.0 | 919399 FIX: A profiler trace in SQL Server 2000 may stop logging events unexpectedly, and you may receive the following error message: "Failed to read trace data"                                                                                            | 2006-10-18   |
+| 8.00.2196 | 2000.80.2196.0 | 919165 FIX: A memory leak occurs when you run a remote query by using a linked server in SQL Server 2000                                                                                                                                                      | 2006-08-14   |
+| 8.00.2194 | 2000.80.2194.0 | 917565 FIX: Error 17883 is logged in the SQL Server error log, and the instance of SQL Server 2000 temporarily stops responding                                                                                                                               | 2007-02-21   |
+| 8.00.2194 | 2000.80.2194.0 | 917972 FIX: You receive an access violation error message when you try to perform a read of a large binary large object column in SQL Server 2000                                                                                                             | 2006-09-22   |
+| 8.00.2192 | 2000.80.2192.0 | 917606 FIX: You may notice a decrease in performance when you run a query that uses the UNION ALL operator in SQL Server 2000 Service Pack 4                                                                                                                  | 2006-08-04   |
+| 8.00.2191 | 2000.80.2191.0 | 916698 FIX: Error message when you run SQL Server 2000: "Failed assertion = 'lockFound == TRUE'"                                                                                                                                                              | 2006-07-26   |
+| 8.00.2191 | 2000.80.2191.0 | 916950 FIX: You may experience heap corruption, and SQL Server 2000 may shut down with fatal access violations when you try to browse files in SQL Server 2000 Enterprise Manager on a Windows Server 2003 x64-based computer                                 | 2006-10-03   |
+| 8.00.2189 | 2000.80.2189.0 | 916652 FIX: An access violation may occur when you run a query on a table that has a multicolumn index in SQL Server 2000                                                                                                                                     | 2006-07-26   |
+| 8.00.2189 | 2000.80.2189.0 | 913438 FIX: The SQL Server process may end unexpectedly when you turn on trace flag -T1204 and a profiler trace is capturing the Lock:DeadLock Chain event in SQL Server 2000 SP4                                                                             | 2006-07-19   |
+| 8.00.2187 | 2000.80.2187.0 | 915340 FIX: A deadlock occurs when the scheduled SQL Server Agent job that you add or that you update is running in SQL Server 2000                                                                                                                           | 2007-06-18   |
+| 8.00.2187 | 2000.80.2187.0 | 916287 A cumulative hotfix package is available for SQL Server 2000 Service Pack 4 build 2187                                                                                                                                                                 | 2006-10-16   |
+| 8.00.2187 | 2000.80.2187.0 | 914384 FIX: The database status changes to Suspect when you perform a bulk copy in a transaction and then roll back the transaction in SQL Server 2000                                                                                                        | 2006-07-26   |
+| 8.00.2187 | 2000.80.2187.0 | 915065 FIX: Error message when you try to apply a hotfix on a SQL Server 2000-based computer that is configured as a MSCS node: "An error in updating your system has occurred"                                                                               | 2006-12-11   |
+| 8.00.2180 | 2000.80.2180.0 | 913789 FIX: The password that you specify in a BACKUP statement appears in the SQL Server Errorlog file or in the Application event log if the BACKUP statement does not run in SQL Server 2000                                                               | 2007-02-19   |
+| 8.00.2180 | 2000.80.2180.0 | 913684 FIX: You may receive error messages when you use linked servers in SQL Server 2000 on a 64-bit Itanium processor                                                                                                                                       | 2006-07-26   |
+| 8.00.2175 | 2000.80.2175.0 | 911678 FIX: No rows may be returned, and you may receive an error message when you try to import SQL Profiler trace files into tables by using the fn_trace_gettable function in SQL Server 2000                                                              | 2006-07-26   |
+| 8.00.2172 | 2000.80.2172.0 | 910707 FIX: When you query a view that was created by using the VIEW_METADATA option, an access violation may occur in SQL Server 2000                                                                                                                        | 2006-07-26   |
+| 8.00.2171 | 2000.80.2171.0 | 909369 FIX: Automatic checkpoints on some SQL Server 2000 databases do not run as expected                                                                                                                                                                    | 2006-07-26   |
+| 8.00.2168 | 2000.80.2168.0 | 907813 FIX: An error occurs when you try to access the Analysis Services performance monitor counter object after you apply Windows Server 2003 SP1                                                                                                           | 2006-11-21   |
+| 8.00.2166 | 2000.80.2166.0 | 909734 FIX: An error message is logged, and new diagnostics do not capture the thread stack when the SQL Server User Mode Scheduler (UMS) experiences a nonyielding thread in SQL Server 2000 Service Pack 4                                                  | 2006-07-26   |
+| 8.00.2162 | 2000.80.2162.0 | 904660 A cumulative hotfix package is available for SQL Server 2000 Service Pack 4 build 2162                                                                                                                                                                 | 2006-09-15   |
+| 8.00.2159 | 2000.80.2159.0 | 907250 FIX: You may experience concurrency issues when you run the DBCC INDEXDEFRAG statement in SQL Server 2000                                                                                                                                              | 2006-07-26   |
+| 8.00.2156 | 2000.80.2156.0 | 906790 FIX: You receive an error message when you try to rebuild the master database after you have installed hotfix builds in SQL Server 2000 SP4 64-bit                                                                                                     | 2006-07-25   |
+| 8.00.2151 | 2000.80.2151.0 | 903742 FIX: You receive an "Error: 8526, Severity: 16, State: 2" error message in SQL Profiler when you use SQL Query Analyzer to start or to enlist into a distributed transaction after you have installed SQL Server 2000 SP4                              | 2006-07-25   |
+| 8.00.2151 | 2000.80.2151.0 | 904244 FIX: Incorrect data is inserted unexpectedly when you perform a bulk copy operation by using the DB-Library API in SQL Server 2000 Service Pack 4                                                                                                      | 2007-06-13   |
+| 8.00.2148 | 2000.80.2148.0 | 899430 FIX: An access violation may occur when you run a SELECT query and the NO_BROWSETABLE option is set to ON in Microsoft SQL Server 2000                                                                                                                 | 2006-07-25   |
+| 8.00.2148 | 2000.80.2148.0 | 899431 FIX: An access violation occurs in the Mssdi98.dll file, and SQL Server crashes when you use SQL Query Analyzer to debug a stored procedure in SQL Server 2000 Service Pack 4                                                                          | 2006-07-25   |
+| 8.00.2148 | 2000.80.2148.0 | 900390 FIX: The Mssdmn.exe process may use lots of CPU capacity when you perform a SQL Server 2000 full text search of Office Word documents                                                                                                                  | 2006-06-01   |
+| 8.00.2148 | 2000.80.2148.0 | 900404 FIX: The results of the query may be returned much slower than you expect when you run a query that includes a GROUP BY statement in SQL Server 2000                                                                                                   | 2006-06-01   |
+| 8.00.2148 | 2000.80.2148.0 | 901212 FIX: You receive an error message if you use the sp_addalias or sp_dropalias procedures when the IMPLICIT_TRANSACTIONS option is set to ON in SQL Server 2000 SP4                                                                                      | 2006-07-25   |
+| 8.00.2148 | 2000.80.2148.0 | 902150 FIX: Some 32-bit applications that use SQL-DMO and SQL-VDI APIs may stop working after you install SQL Server 2000 Service Pack 4 on an Itanium-based computer                                                                                         | 2006-06-01   |
+| 8.00.2148 | 2000.80.2148.0 | 902955 FIX: You receive a "Getting registry information" message when you run the Sqldiag.exe utility after you install SQL Server 2000 SP4                                                                                                                   | 2006-07-25   |
+| 8.00.2147 | 2000.80.2147.0 | 899410 FIX: You may experience slow server performance when you start a trace in an instance of SQL Server 2000 that runs on a computer that has more than four processors                                                                                    | 2006-06-01   |
+| 8.00.2145 | 2000.80.2145.0 | 826906 FIX: A query that uses a view that contains a correlated subquery and an aggregate runs slowly                                                                                                                                                         | 2005-10-25   |
+| 8.00.2145 | 2000.80.2145.0 | 836651 FIX: You receive query results that were not expected when you use both ANSI joins and non-ANSI joins                                                                                                                                                  | 2006-06-07   |
+| 8.00.2066 | 2000.80.2066.0 | Microsoft Security Bulletin MS12-060                                                                                                                                                                                                                          | 2012-08-14   |
+| 8.00.2065 | 2000.80.2065.0 | 983808 MS12-027: Description of the security update for Microsoft SQL Server 2000 Service Pack 4 GDR: April 10, 2012                                                                                                                                          | 2012-04-10   |
+| 8.00.2055 | 2000.80.2055.0 | 959420 MS09-004: Vulnerabilities in Microsoft SQL Server could allow remote code execution                                                                                                                                                                    | 2009-02-10   |
+| 8.00.2040 | 2000.80.2040.0 | 899761 FIX: Not all memory is available when AWE is enabled on a computer that is running a 32-bit version of SQL Server 2000 SP4                                                                                                                             | 2006-08-15   |
+| 8.00.2039 | 2000.80.2039.0 | SQL Server 2000 Service Pack 4 (SP4)                                                                                                                                                                                                                          | 2005-05-06   |
 | 8.00.2026 | 2000.80.2026.0 | SQL Server 2000 Service Pack 4 (SP4) Beta                                                                                                                                                                                                                     | ???          |
-| 8.00.1547 | 2000.80.1547.0 | [899410 FIX: You may experience slow server performance when you start a trace in an instance of SQL Server 2000 that runs on a computer that has more than four processors]                                                                                  | 2006-06-01   |
-| 8.00.1077 | 2000.80.1077.0 | [983814 MS12-070: Description of the security update for SQL Server 2000 Reporting Services Service Pack 2]                                                                                                                                                   | 2012-10-09   |
-| 8.00.1037 | 2000.80.1037.0 | [930484 FIX: CPU utilization may approach 100 percent on a computer that is running SQL Server 2000 after you run the BACKUP DATABASE statement or the BACKUP LOG statement]                                                                                  | 2007-02-02   |
-| 8.00.1036 | 2000.80.1036.0 | [929410 FIX: Error message when you run a full-text query in SQL Server 2000: "Error: 17883, Severity: 1, State: 0"]                                                                                                                                          | 2007-01-11   |
-| 8.00.1035 | 2000.80.1035.0 | [917593 FIX: The "Audit Logout" event does not appear in the trace results file when you run a profiler trace against a linked server instance in SQL Server 2000]                                                                                            | 2006-09-22   |
-| 8.00.1034 | 2000.80.1034.0 | [915328 FIX: You may intermittently experience an access violation error when a query is executed in a parallel plan and the execution plan contains either a HASH JOIN operation or a Sort operation in SQL Server 2000]                                     | 2006-08-09   |
-| 8.00.1029 | 2000.80.1029.0 | [902852 FIX: Error message when you run an UPDATE statement that uses two JOIN hints to update a table in SQL Server 2000: "Internal SQL Server error"]                                                                                                       | 2006-06-01   |
-| 8.00.1027 | 2000.80.1027.0 | [900416 FIX: A 17883 error may occur you run a query that uses a hash join in SQL Server 2000]                                                                                                                                                                | 2006-07-25   |
-| 8.00.1025 | 2000.80.1025.0 | [899428 FIX: You receive incorrect results when you run a query that uses a cross join operator in SQL Server 2000 SP3]                                                                                                                                       | 2006-06-01   |
-| 8.00.1025 | 2000.80.1025.0 | [899430 FIX: An access violation may occur when you run a SELECT query and the NO_BROWSETABLE option is set to ON in Microsoft SQL Server 2000]                                                                                                               | 2006-07-25   |
-| 8.00.1024 | 2000.80.1024.0 | [898709 FIX: Error message when you use SQL Server 2000: "Time out occurred while waiting for buffer latch type 3"]                                                                                                                                           | 2006-07-25   |
-| 8.00.1021 | 2000.80.1021.0 | [887700 FIX: Server Network Utility may display incorrect protocol properties in SQL Server 2000]                                                                                                                                                             | 2006-07-25   |
-| 8.00.1020 | 2000.80.1020.0 | [896985 FIX: The Subscriber may not be able to upload changes to the Publisher when you incrementally add an article to a publication in SQL Server 2000 SP3]                                                                                                 | 2006-07-25   |
-| 8.00.1019 | 2000.80.1019.0 | [897572 FIX: You may receive a memory-related error message when you repeatedly create and destroy an out-of-process COM object within the same batch or stored procedure in SQL Server 2000]                                                                 | 2006-06-01   |
-| 8.00.1017 | 2000.80.1017.0 | [896425 FIX: The BULK INSERT statement silently skips insert attempts when the data value is NULL and the column is defined as NOT NULL for INT, SMALLINT, and BIGINT data types in SQL Server 2000]                                                          | 2006-06-01   |
-| 8.00.1014 | 2000.80.1014.0 | [895123 FIX: You may receive error message 701, error message 802, and error message 17803 when many hashed buffers are available in SQL Server 2000]                                                                                                         | 2006-06-01   |
-| 8.00.1014 | 2000.80.1014.0 | [895187 FIX: You receive an error message when you try to delete records by running a Delete Transact-SQL statement in SQL Server 2000]                                                                                                                       | 2006-07-25   |
-| 8.00.1013 | 2000.80.1013.0 | [891866 FIX: The query runs slower than you expected when you try to parse a query in SQL Server 2000]                                                                                                                                                        | 2006-06-01   |
-| 8.00.1009 | 2000.80.1009.0 | [894257 FIX: You receive an "Incorrect syntax near ')'" error message when you run a script that was generated by SQL-DMO for an Operator object in SQL Server 2000]                                                                                          | 2006-06-01   |
-| 8.00.1007 | 2000.80.1007.0 | [893312 FIX: You may receive a "SQL Server could not spawn process_loginread thread" error message, and a memory leak may occur when you cancel a remote query in SQL Server 2000]                                                                            | 2006-06-01   |
-| 8.00.1003 | 2000.80.1003.0 | [892923 FIX: Differential database backups may not contain database changes in the Page Free Space (PFS) pages in SQL Server 2000]                                                                                                                            | 2006-06-01   |
-| 8.00.1001 | 2000.80.1001.0 | [892205 FIX: You may receive a 17883 error message when SQL Server 2000 performs a very large hash operation]                                                                                                                                                 | 2006-06-01   |
-| 8.00.1000 | 2000.80.1000.0 | [891585 FIX: Database recovery does not occur, or a user database is marked as suspect in SQL Server 2000]                                                                                                                                                    | 2006-06-01   |
-| 8.00.997  | 2000.80.997.0  | [891311 FIX: You cannot create new TCP/IP socket based connections after error messages 17882 and 10055 are written to the Microsoft SQL Server 2000 error log]                                                                                               | 2006-07-18   |
-| 8.00.996  | 2000.80.996.0  | [891017 FIX: SQL Server 2000 may stop responding to other requests when you perform a large deallocation operation]                                                                                                                                           | 2006-06-01   |
-| 8.00.996  | 2000.80.996.0  | [891268 FIX: You receive a 17883 error message and SQL Server 2000 may stop responding to other requests when you perform large in-memory sort operations]                                                                                                    | 2006-06-01   |
-| 8.00.994  | 2000.80.994.0  | [890942 FIX: Some complex queries are slower after you install SQL Server 2000 Service Pack 2 or SQL Server 2000 Service Pack 3]                                                                                                                              | 2006-06-01   |
-| 8.00.994  | 2000.80.994.0  | [890768 FIX: You experience non-convergence in a replication topology when you unpublish or drop columns from a dynamically filtered publication in SQL Server 2000]                                                                                          | 2006-06-01   |
-| 8.00.994  | 2000.80.994.0  | [890767 FIX: You receive a "Server: Msg 107, Level 16, State 3, Procedure TEMP_VIEW_Merge, Line 1" error message when the sum of the length of the published column names in a merge publication exceeds 4,000 characters in SQL Server 2000]                 | 2006-06-01   |
-| 8.00.993  | 2000.80.993.0  | [890925 FIX: The @@ERROR system function may return an incorrect value when you execute a Transact-SQL statement that uses a parallel execution plan in SQL Server 2000 32-bit or in SQL Server 2000 64-bit]                                                  | 2006-06-01   |
-| 8.00.993  | 2000.80.993.0  | [888444 FIX: You receive a 17883 error in SQL Server 2000 Service Pack 3 or in SQL Server 2000 Service Pack 3a when a worker thread becomes stuck in a registry call]                                                                                         | 2006-06-01   |
-| 8.00.993  | 2000.80.993.0  | [890742 FIX: Error message when you use a loopback linked server to run a distributed query in SQL Server 2000: "Could not perform the requested operation because the minimum query memory is not available"]                                                | 2006-05-15   |
-| 8.00.991  | 2000.80.991.0  | [889314 FIX: Non-convergence may occur in a merge replication topology if the primary connection to the publisher is disconnected]                                                                                                                            | 2006-06-01   |
-| 8.00.990  | 2000.80.990.0  | [890200 FIX: SQL Server 2000 stops listening for new TCP/IP Socket connections unexpectedly after error message 17882 is written to the SQL Server 2000 error log]                                                                                            | 2006-06-01   |
-| 8.00.988  | 2000.80.988.0  | [889166 FIX: You receive a "Msg 3628" error message when you run an inner join query in SQL Server 2000]                                                                                                                                                      | 2006-06-01   |
-| 8.00.985  | 2000.80.985.0  | [889239 FIX: Start times in the SQL Profiler are different for the Audit:Login and Audit:Logout Events in SQL Server 2000]                                                                                                                                    | 2006-06-01   |
-| 8.00.980  | 2000.80.980.0  | [887974 FIX: A fetch on a dynamic cursor can cause unexpected results in SQL Server 2000 Service Pack 3]                                                                                                                                                      | 2006-06-01   |
-| 8.00.977  | 2000.80.977.0  | [888007 You receive a "The product does not have a prerequisite update installed" error message when you try to install a SQL Server 2000 post-Service Pack 3 hotfix]                                                                                         | 2005-08-31   |
-| 8.00.973  | 2000.80.973.0  | [884554 FIX: A SPID stops responding with a NETWORKIO (0x800) waittype in SQL Server Enterprise Manager when SQL Server tries to process a fragmented TDS network packet]                                                                                     | 2006-06-01   |
-| 8.00.972  | 2000.80.972.0  | [885290 FIX: An assertion error occurs when you insert data in the same row in a table by using multiple connections to an instance of SQL Server]                                                                                                            | 2006-06-01   |
-| 8.00.970  | 2000.80.970.0  | [872842 FIX: A CHECKDB statement reports a 2537 corruption error after SQL Server transfers data to a sql_variant column in SQL Server 2000]                                                                                                                  | 2006-06-01   |
-| 8.00.967  | 2000.80.967.0  | [878501 FIX: You may receive an error message when you run a SET IDENTITY_INSERT ON statement on a table and then try to insert a row into the table in SQL Server 2000]                                                                                      | 2006-06-01   |
-| 8.00.962  | 2000.80.962.0  | [883415 FIX: A user-defined function returns results that are not correct for a query]                                                                                                                                                                        | 2006-06-01   |
-| 8.00.961  | 2000.80.961.0  | [873446 FIX: An access violation exception may occur when multiple users try to perform data modification operations at the same time that fire triggers that reference a deleted or an inserted table in SQL Server 2000 on a computer that is running SMP]  | 2006-06-01   |
-| 8.00.959  | 2000.80.959.0  | [878500 FIX: An Audit Object Permission event is not produced when you run a TRUNCATE TABLE statement]                                                                                                                                                        | 2006-06-01   |
-| 8.00.957  | 2000.80.957.0  | [870994 FIX: An access violation exception may occur when you run a query that uses index names in the WITH INDEX option to specify an index hint]                                                                                                            | 2006-06-01   |
-| 8.00.955  | 2000.80.955.0  | [867798 FIX: The @date_received parameter of the xp_readmail extended stored procedure incorrectly returns the date and the time that an e-mail message is submitted by the sender in SQL Server 2000]                                                        | 2007-01-08   |
-| 8.00.954  | 2000.80.954.0  | [843282 FIX: The Osql.exe utility does not run a Transact-SQL script completely if you start the program from a remote session by using a background service and then log off the console session]                                                            | 2007-01-05   |
-| 8.00.952  | 2000.80.952.0  | [867878 FIX: The Log Reader Agent may cause 17883 error messages]                                                                                                                                                                                             | 2006-06-01   |
-| 8.00.952  | 2000.80.952.0  | [867879 FIX: Merge replication non-convergence occurs with SQL Server CE subscribers]                                                                                                                                                                         | 2006-06-01   |
-| 8.00.952  | 2000.80.952.0  | [867880 FIX: Merge Agent may fail with an "Invalid character value for cast specification" error message]                                                                                                                                                     | 2006-06-01   |
-| 8.00.949  | 2000.80.949.0  | [843266 FIX: Shared page locks can be held until end of the transaction and can cause blocking or performance problems in SQL Server 2000 Service Pack 3 (SP3)]                                                                                               | 2006-06-02   |
-| 8.00.948  | 2000.80.948.0  | [843263 FIX: You may receive an 8623 error message when you try to run a complex query on an instance of SQL Server]                                                                                                                                          | 2006-06-01   |
-| 8.00.944  | 2000.80.944.0  | [839280 FIX: SQL debugging does not work in Visual Studio .NET after you install Windows XP Service Pack 2]                                                                                                                                                   | 2006-06-05   |
-| 8.00.937  | 2000.80.937.0  | [841776 FIX: Additional diagnostics have been added to SQL Server 2000 to detect unreported read operation failures]                                                                                                                                          | 2006-06-01   |
-| 8.00.936  | 2000.80.936.0  | [841627 FIX: SQL Server 2000 may underestimate the cardinality of a query expression under certain circumstances]                                                                                                                                             | 2006-06-01   |
-| 8.00.935  | 2000.80.935.0  | [841401 FIX: You may notice incorrect values for the "Active Transactions" counter when you perform multiple transactions on an instance of SQL Server 2000 that is running on an SMP computer]                                                               | 2006-06-01   |
-| 8.00.934  | 2000.80.934.0  | [841404 FIX: You may receive a "The query processor could not produce a query plan" error message in SQL Server when you run a query that includes multiple subqueries that use self-joins]                                                                   | 2006-06-01   |
-| 8.00.933  | 2000.80.933.0  | [840856 FIX: The MSSQLServer service exits unexpectedly in SQL Server 2000 Service Pack 3]                                                                                                                                                                    | 2006-06-02   |
-| 8.00.929  | 2000.80.929.0  | [839529 FIX: 8621 error conditions may cause SQL Server 2000 64-bit to close unexpectedly]                                                                                                                                                                    | 2006-06-01   |
-| 8.00.928  | 2000.80.928.0  | [839589 FIX: The thread priority is raised for some threads in a parallel query]                                                                                                                                                                              | 2006-06-01   |
-| 8.00.927  | 2000.80.927.0  | [839688 FIX: Profiler RPC events truncate parameters that have a text data type to 16 characters]                                                                                                                                                             | 2006-06-01   |
-| 8.00.926  | 2000.80.926.0  | [839523 FIX: An access violation exception may occur when you update a text column by using a stored procedure in SQL Server 2000]                                                                                                                            | 2006-06-01   |
-| 8.00.923  | 2000.80.923.0  | [838460 FIX: The xp_logininfo procedure may fail with error 8198 after you install Q825042 or any hotfix with SQL Server 8.00.0840 or later]                                                                                                                  | 2006-06-01   |
-| 8.00.922  | 2000.80.922.0  | [837970 FIX: You may receive an "Invalid object name..." error message when you run the DBCC CHECKCONSTRAINTS Transact-SQL statement on a table in SQL Server 2000]                                                                                           | 2005-10-25   |
-| 8.00.919  | 2000.80.919.0  | [837957 FIX: When you use Transact-SQL cursor variables to perform operations that have large iterations, memory leaks may occur in SQL Server 2000]                                                                                                          | 2005-10-25   |
-| 8.00.916  | 2000.80.916.0  | [317989 FIX: Sqlakw32.dll May Corrupt SQL Statements]                                                                                                                                                                                                         | 2005-09-27   |
-| 8.00.915  | 2000.80.915.0  | [837401 FIX: Rows are not successfully inserted into a table when you use the BULK INSERT command to insert rows]                                                                                                                                             | 2005-10-25   |
-| 8.00.913  | 2000.80.913.0  | [836651 FIX: You receive query results that were not expected when you use both ANSI joins and non-ANSI joins]                                                                                                                                                | 2006-06-07   |
-| 8.00.911  | 2000.80.911.0  | [837957 FIX: When you use Transact-SQL cursor variables to perform operations that have large iterations, memory leaks may occur in SQL Server 2000]                                                                                                          | 2005-10-25   |
-| 8.00.910  | 2000.80.910.0  | [834798 FIX: SQL Server 2000 may not start if many users try to log in to SQL Server when SQL Server is trying to start]                                                                                                                                      | 2005-10-25   |
-| 8.00.908  | 2000.80.908.0  | [834290 FIX: You receive a 644 error message when you run an UPDATE statement and the isolation level is set to READ UNCOMMITTED]                                                                                                                             | 2005-10-25   |
-| 8.00.904  | 2000.80.904.0  | [834453 FIX: The Snapshot Agent may fail after you make schema changes to the underlying tables of a publication]                                                                                                                                             | 2005-04-22   |
-| 8.00.892  | 2000.80.892.0  | [833710 FIX: You receive an error message when you try to restore a database backup that spans multiple devices]                                                                                                                                              | 2005-10-25   |
-| 8.00.891  | 2000.80.891.0  | [836141 FIX: An access violation exception may occur when SQL Server runs many parallel query processing operations on a multiprocessor computer]                                                                                                             | 2005-04-01   |
-| 8.00.879  | 2000.80.879.0  | [832977 FIX: The DBCC PSS Command may cause access violations and 17805 errors in SQL Server 2000]                                                                                                                                                            | 2005-10-25   |
-| 8.00.878  | 2000.80.878.0  | [831950 FIX: You receive error message 3456 when you try to apply a transaction log to a server]                                                                                                                                                              | 2005-10-25   |
-| 8.00.876  | 2000.80.876.0  | [830912 FIX: Key Names Read from an .Ini File for a Dynamic Properties Task May Be Truncated]                                                                                                                                                                 | 2005-10-25   |
-| 8.00.876  | 2000.80.876.0  | [831997 FIX: An invalid cursor state occurs after you apply Hotfix 8.00.0859 or later in SQL Server 2000]                                                                                                                                                     | 2005-10-25   |
-| 8.00.876  | 2000.80.876.0  | [831999 FIX: An AWE system uses more memory for sorting or for hashing than a non-AWE system in SQL Server 2000]                                                                                                                                              | 2005-10-25   |
-| 8.00.873  | 2000.80.873.0  | [830887 FIX: Some queries that have a left outer join and an IS NULL filter run slower after you install SQL Server 2000 post-SP3 hotfix]                                                                                                                     | 2005-10-25   |
-| 8.00.871  | 2000.80.871.0  | [830767 FIX: SQL Query Analyzer may stop responding when you close a query window or open a file]                                                                                                                                                             | 2005-10-25   |
-| 8.00.871  | 2000.80.871.0  | [830860 FIX: The performance of a computer that is running SQL Server 2000 degrades when query execution plans against temporary tables remain in the procedure cache]                                                                                        | 2005-10-25   |
-| 8.00.870  | 2000.80.870.0  | [830262 FIX: Unconditional Update May Not Hold Key Locks on New Key Values]                                                                                                                                                                                   | 2005-10-25   |
-| 8.00.869  | 2000.80.869.0  | [830588 FIX: Access violation when you trace keyset-driven cursors by using SQL Profiler]                                                                                                                                                                     | 2005-10-25   |
-| 8.00.866  | 2000.80.866.0  | [830366 FIX: An access violation occurs in SQL Server 2000 when a high volume of local shared memory connections occur after you install security update MS03-031]                                                                                            | 2006-01-16   |
-| 8.00.865  | 2000.80.865.0  | [830395 FIX: An access violation occurs during compilation if the table contains statistics for a computed column]                                                                                                                                            | 2005-10-25   |
-| 8.00.865  | 2000.80.865.0  | [828945 FIX: You cannot insert explicit values in an IDENTITY column of a SQL Server table by using the SQLBulkOperations function or the SQLSetPos ODBC function in SQL Server 2000]                                                                         | 2005-10-25   |
-| 8.00.863  | 2000.80.863.0  | [829205 FIX: Query performance may be slow and may be inconsistent when you run a query while another query that contains an IN operator with many values is compiled]                                                                                        | 2005-10-25   |
-| 8.00.863  | 2000.80.863.0  | [829444 FIX: A floating point exception occurs during the optimization of a query]                                                                                                                                                                            | 2005-10-25   |
-| 8.00.859  | 2000.80.859.0  | [821334 FIX: Issues that are resolved in SQL Server 2000 build 8.00.0859]                                                                                                                                                                                     | 2005-03-31   |
-| 8.00.858  | 2000.80.858.0  | [828637 FIX: Users Can Control the Compensating Change Process in Merge Replication]                                                                                                                                                                          | 2005-10-25   |
-| 8.00.857  | 2000.80.857.0  | [828017 The Knowledge Base (KB) Article You Requested Is Currently Not Available]                                                                                                                                                                             | ???          |
-| 8.00.857  | 2000.80.857.0  | [827714 FIX: A query may fail with retail assertion when you use the NOLOCK hint or the READ UNCOMMITTED isolation level]                                                                                                                                     | 2005-11-23   |
-| 8.00.857  | 2000.80.857.0  | [828308 FIX: An Internet Explorer script error occurs when you access metadata information by using DTS in SQL Server Enterprise Manager]                                                                                                                     | 2005-10-25   |
-| 8.00.856  | 2000.80.856.0  | [828096 FIX: Key Locks Are Held Until the End of the Statement for Rows That Do Not Pass Filter Criteria]                                                                                                                                                     | 2005-10-25   |
-| 8.00.854  | 2000.80.854.0  | [828699 FIX: An Access Violation Occurs When You Run DBCC UPDATEUSAGE on a Database That Has Many Objects]                                                                                                                                                    | 2005-10-25   |
-| 8.00.852  | 2000.80.852.0  | [830466 FIX: You may receive an "Internal SQL Server error" error message when you run a Transact-SQL SELECT statement on a view that has many subqueries in SQL Server 2000]                                                                                 | 2005-04-01   |
-| 8.00.852  | 2000.80.852.0  | [827954 FIX: Slow Execution Times May Occur When You Run DML Statements Against Tables That Have Cascading Referential Integrity]                                                                                                                             | 2005-10-25   |
-| 8.00.851  | 2000.80.851.0  | [826754 FIX: A Deadlock Occurs If You Run an Explicit UPDATE STATISTICS Command]                                                                                                                                                                              | 2005-10-25   |
-| 8.00.850  | 2000.80.850.0  | [826860 FIX: Linked Server Query May Return NULL If It Is Performed Through a Keyset Cursor]                                                                                                                                                                  | 2005-10-25   |
-| 8.00.850  | 2000.80.850.0  | [826815 FIX: You receive an 8623 error message in SQL Server when you try to run a query that has multiple correlated subqueries]                                                                                                                             | 2005-10-25   |
-| 8.00.850  | 2000.80.850.0  | [826906 FIX: A query that uses a view that contains a correlated subquery and an aggregate runs slowly]                                                                                                                                                       | 2005-10-25   |
-| 8.00.848  | 2000.80.848.0  | [826822 FIX: A Member of the db_accessadmin Fixed Database Role Can Create an Alias for the dbo Special User]                                                                                                                                                 | 2005-10-25   |
-| 8.00.847  | 2000.80.847.0  | [826433 PRB: Additional SQL Server Diagnostics Added to Detect Unreported I/O Problems]                                                                                                                                                                       | 2005-10-25   |
-| 8.00.845  | 2000.80.845.0  | [826364 FIX: A Query with a LIKE Comparison Results in a Non-Optimal Query Plan When You Use a Hungarian SQL Server Collation]                                                                                                                                | 2005-10-05   |
-| 8.00.845  | 2000.80.845.0  | [825854 FIX: No Exclusive Locks May Be Taken If the DisAllowsPageLocks Value Is Set to True]                                                                                                                                                                  | 2005-10-25   |
-| 8.00.844  | 2000.80.844.0  | [826080 FIX: SQL Server 2000 protocol encryption applies to JDBC clients]                                                                                                                                                                                     | 2006-10-17   |
-| 8.00.842  | 2000.80.842.0  | [825043 FIX: Rows are unexpectedly deleted when you run a distributed query to delete or to update a linked server table]                                                                                                                                     | 2005-10-25   |
-| 8.00.841  | 2000.80.841.0  | [825225 FIX: You receive an error message when you run a parallel query that uses an aggregation function or the GROUP BY clause]                                                                                                                             | 2005-10-25   |
-| 8.00.840  | 2000.80.840.0  | [319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors]                                                                                                                                                                 | 2005-09-27   |
-| 8.00.840  | 2000.80.840.0  | [319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors]                                                                                                                                                                 | 2005-09-27   |
-| 8.00.839  | 2000.80.839.0  | [823877 FIX: An Access Violation May Occur When You Run a Query That Contains 32,000 or More OR Clauses]                                                                                                                                                      | 2005-10-25   |
-| 8.00.839  | 2000.80.839.0  | [824027 FIX: A Cursor with a Large Object Parameter May Cause an Access Violation on CStmtCond::XretExecute]                                                                                                                                                  | 2005-10-25   |
-| 8.00.837  | 2000.80.837.0  | [820788 FIX: Delayed domain authentication may cause SQL Server to stop responding]                                                                                                                                                                           | 2005-10-25   |
-| 8.00.837  | 2000.80.837.0  | [821741 FIX: Lock monitor exception in DeadlockMonitor::ResolveDeadlock]                                                                                                                                                                                      | 2005-10-25   |
-| 8.00.837  | 2000.80.837.0  | [821548 FIX: A Parallel Query May Generate an Access Violation After You Install SQL Server 2000 SP3]                                                                                                                                                         | 2005-10-25   |
-| 8.00.837  | 2000.80.837.0  | [821740 FIX: MS DTC Transaction Commit Operation Blocks Itself]                                                                                                                                                                                               | 2005-10-25   |
-| 8.00.837  | 2000.80.837.0  | [823514 FIX: Build 8.00.0837: A query that contains a correlated subquery runs slowly]                                                                                                                                                                        | 2005-10-25   |
-| 8.00.819  | 2000.80.819.0  | [826161 FIX: You are prompted for password confirmation after you change a standard SQL Server login]                                                                                                                                                         | 2005-10-25   |
-| 8.00.818  | 2000.80.818.0  | [821277 MS03-031: Security patch for SQL Server 2000 Service Pack 3]                                                                                                                                                                                          | 2006-01-09   |
-| 8.00.818  | 2000.80.818.0  | [821337 FIX: Localized versions of SQL Mail and the Web Assistant Wizard may not work as expected in SQL Server 2000 64 bit]                                                                                                                                  | 2005-03-16   |
-| 8.00.818  | 2000.80.818.0  | [818388 FIX: A Transact-SQL Statement That Is Embedded in the Database Name Runs with System Administrator Permissions]                                                                                                                                       | 2005-02-10   |
-| 8.00.818  | 2000.80.818.0  | [826161 FIX: You are prompted for password confirmation after you change a standard SQL Server login]                                                                                                                                                         | 2005-10-25   |
-| 8.00.818  | 2000.80.818.0  | [821280 MS03-031: Security Patch for SQL Server 2000 64-bit]                                                                                                                                                                                                  | 2006-03-14   |
-| 8.00.816  | 2000.80.816.0  | [818766 FIX: Intense SQL Server activity results in spinloop wait]                                                                                                                                                                                            | 2005-10-25   |
-| 8.00.814  | 2000.80.814.0  | [819662 FIX: Distribution Cleanup Agent Incorrectly Cleans Up Entries for Anonymous Subscribers]                                                                                                                                                              | 2005-10-25   |
-| 8.00.811  | 2000.80.811.0  | [819248 FIX: An access violation exception may occur when you insert a row in a table that is referenced by indexed views in SQL Server 2000]                                                                                                                 | 2006-04-03   |
-| 8.00.811  | 2000.80.811.0  | [819662 FIX: Distribution Cleanup Agent Incorrectly Cleans Up Entries for Anonymous Subscribers]                                                                                                                                                              | 2005-10-25   |
-| 8.00.811  | 2000.80.811.0  | [818897 FIX: Invalid TDS Sent to SQL Server Results in Access Violation]                                                                                                                                                                                      | 2005-10-25   |
-| 8.00.807  | 2000.80.807.0  | [818899 FIX: Error Message 3628 May Occur When You Run a Complex Query]                                                                                                                                                                                       | 2005-10-25   |
-| 8.00.804  | 2000.80.804.0  | [818729 FIX: Internal Query Processor Error 8623 When Microsoft SQL Server Tries to Compile a Plan for a Complex Query]                                                                                                                                       | 2005-10-25   |
-| 8.00.801  | 2000.80.801.0  | [818540 FIX: SQL Server Enterprise Manager unexpectedly quits when you modify a DTS package]                                                                                                                                                                  | 2006-01-26   |
-| 8.00.800  | 2000.80.800.0  | [818414 FIX: The Sqldumper.exe File Does Not Generate a Userdump File When It Runs Against a Windows Service]                                                                                                                                                 | 2005-09-27   |
-| 8.00.800  | 2000.80.800.0  | [818097 FIX: An Access Violation May Occur When You Run DBCC DBREINDEX on a Table That Has Hypothetical Indexes]                                                                                                                                              | 2005-09-27   |
-| 8.00.800  | 2000.80.800.0  | [818188 FIX: Query on the sysmembers Virtual Table May Fail with a Stack Overflow]                                                                                                                                                                            | 2005-09-27   |
-| 8.00.798  | 2000.80.798.0  | [817464 FIX: Using Sp_executesql in Merge Agent Operations]                                                                                                                                                                                                   | 2005-09-27   |
-| 8.00.794  | 2000.80.794.0  | [817464 FIX: Using Sp_executesql in Merge Agent Operations]                                                                                                                                                                                                   | 2005-09-27   |
-| 8.00.794  | 2000.80.794.0  | [813524 FIX: OLE DB conversion errors may occur after you select a literal string that represents datetime data as a column]                                                                                                                                  | 2005-09-27   |
-| 8.00.794  | 2000.80.794.0  | [816440 FIX: Error 8623 is Raised When SQL Server Compiles a Complex Query]                                                                                                                                                                                   | 2005-09-27   |
-| 8.00.794  | 2000.80.794.0  | [817709 FIX: SQL Server 2000 might produce an incorrect cardinality estimate for outer joins]                                                                                                                                                                 | 2005-02-11   |
-| 8.00.791  | 2000.80.791.0  | [815249 FIX: Performance of a query that is run from a client program on a SQL Server SP3 database is slow after you restart the instance of SQL Server]                                                                                                      | 2005-09-27   |
-| 8.00.790  | 2000.80.790.0  | [817081 FIX: You receive an error message when you use the SQL-DMO BulkCopy object to import data into a SQL Server table]                                                                                                                                    | 2005-09-27   |
-| 8.00.789  | 2000.80.789.0  | [816840 FIX: Error 17883 May Display Message Text That Is Not Correct]                                                                                                                                                                                        | 2005-09-27   |
-| 8.00.788  | 2000.80.788.0  | [816985 FIX: You cannot install SQL Server 2000 SP3 on the Korean version of SQL Server 2000]                                                                                                                                                                 | 2005-09-27   |
-| 8.00.781  | 2000.80.781.0  | [815057 FIX: SQL Server 2000 Uninstall Option Does Not Remove All Files]                                                                                                                                                                                      | 2005-09-27   |
-| 8.00.780  | 2000.80.780.0  | [816039 FIX: Code Point Comparison Semantics for SQL_Latin1_General_Cp850_BIN Collation]                                                                                                                                                                      | 2005-09-27   |
-| 8.00.780  | 2000.80.780.0  | [816084 FIX: sysindexes.statblob Column May Be Corrupted After You Run a DBCC DBREINDEX Statement]                                                                                                                                                            | 2005-09-27   |
-| 8.00.780  | 2000.80.780.0  | [810185 SQL Server 2000 hotfix update for SQL Server 2000 Service Pack 3 and 3a]                                                                                                                                                                              | 2006-10-10   |
-| 8.00.779  | 2000.80.779.0  | [814035 FIX: A Full-Text Population Fails After You Apply SQL Server 2000 Service Pack 3]                                                                                                                                                                     | 2005-09-27   |
-| 8.00.776  | 2000.80.776.0  | [Unidentified]                                                                                                                                                                                                                                                | ???          |
-| 8.00.775  | 2000.80.775.0  | [815115 FIX: A DTS package that uses global variables ignores an error message raised by RAISERROR]                                                                                                                                                           | 2005-09-27   |
-| 8.00.769  | 2000.80.769.0  | [814889 FIX: A DELETE statement with a JOIN might fail and you receive a 625 error]                                                                                                                                                                           | 2005-09-27   |
-| 8.00.769  | 2000.80.769.0  | [814893 FIX: Error Message: "Insufficient key column information for updating" Occurs in SQL Server 2000 SP3]                                                                                                                                                 | 2005-09-27   |
-| 8.00.765  | 2000.80.765.0  | [810163 FIX: An Access Violation Occurs if an sp_cursoropen Call References a Parameter That Is Not Defined]                                                                                                                                                  | 2005-09-27   |
-| 8.00.765  | 2000.80.765.0  | [810688 FIX: Merge Agent Can Resend Changes for Filtered Publications]                                                                                                                                                                                        | 2005-09-27   |
-| 8.00.765  | 2000.80.765.0  | [811611 FIX: Reinitialized SQL Server CE 2.0 subscribers may experience data loss and non-convergence]                                                                                                                                                        | 2005-09-27   |
-| 8.00.765  | 2000.80.765.0  | [813769 FIX: You May Experience Slow Performance When You Debug a SQL Server Service]                                                                                                                                                                         | 2005-09-27   |
-| 8.00.763  | 2000.80.763.0  | [814113 FIX: DTS Designer may generate an access violation after you install SQL Server 2000 Service Pack 3]                                                                                                                                                  | 2005-09-27   |
-| 8.00.762  | 2000.80.762.0  | [814032 FIX: Merge publications cannot synchronize on SQL Server 2000 Service Pack 3]                                                                                                                                                                         | 2005-09-27   |
-| 8.00.760  | 2000.80.760.0  | [SQL Server 2000 Service Pack 3 (SP3 / SP3a)]                                                                                                                                                                                                                 | 2003-08-27   |
-| 8.00.743  | 2000.80.743.0  | [818406 FIX: A Transact-SQL query that uses views may fail unexpectedly in SQL Server 2000 SP2]                                                                                                                                                               | 2005-10-18   |
-| 8.00.743  | 2000.80.743.0  | [818763 FIX: Intense SQL Server Activity Results in Spinloop Wait in SQL Server 2000 Service Pack 2]                                                                                                                                                          | 2005-10-25   |
-| 8.00.741  | 2000.80.741.0  | [818096 FIX: Many Extent Lock Time-outs May Occur During Extent Allocation]                                                                                                                                                                                   | 2005-02-10   |
-| 8.00.736  | 2000.80.736.0  | [816937 FIX: A memory leak may occur when you use the sp_OAMethod stored procedure to call a method of a COM object]                                                                                                                                          | 2005-09-27   |
-| 8.00.735  | 2000.80.735.0  | [814889 FIX: A DELETE statement with a JOIN might fail and you receive a 625 error]                                                                                                                                                                           | 2005-09-27   |
-| 8.00.733  | 2000.80.733.0  | [813759 FIX: A Large Number of NULL Values in Join Columns Result in Slow Query Performance]                                                                                                                                                                  | 2005-09-27   |
-| 8.00.730  | 2000.80.730.0  | [813769 FIX: You May Experience Slow Performance When You Debug a SQL Server Service]                                                                                                                                                                         | 2005-09-27   |
-| 8.00.728  | 2000.80.728.0  | [814460 FIX: Merge Replication with Alternate Synchronization Partners May Not Succeed After You Change the Retention Period]                                                                                                                                 | 2005-09-27   |
-| 8.00.725  | 2000.80.725.0  | [812995 FIX: A Query with an Aggregate Function May Fail with a 3628 Error]                                                                                                                                                                                   | 2005-09-27   |
-| 8.00.725  | 2000.80.725.0  | [813494 FIX: Distribution Agent Fails with "Violation of Primary Key Constraint" Error Message]                                                                                                                                                               | 2005-09-27   |
-| 8.00.723  | 2000.80.723.0  | [812798 FIX: A UNION ALL View May Not Use Index If Partitions Are Removed at Compile Time]                                                                                                                                                                    | 2005-09-27   |
-| 8.00.721  | 2000.80.721.0  | [812250 FIX: Indexed View May Cause a Handled Access Violation in CIndex::SetLevel1Names]                                                                                                                                                                     | 2005-09-27   |
-| 8.00.721  | 2000.80.721.0  | [812393 FIX: Update or Delete Statement Fails with Error 1203 During Row Lock Escalation]                                                                                                                                                                     | 2005-09-27   |
-| 8.00.718  | 2000.80.718.0  | [811703 FIX: Unexpected results from partial aggregations based on conversions]                                                                                                                                                                               | 2005-09-27   |
-| 8.00.715  | 2000.80.715.0  | [810688 FIX: Merge Agent Can Resend Changes for Filtered Publications]                                                                                                                                                                                        | 2005-09-27   |
-| 8.00.715  | 2000.80.715.0  | [811611 FIX: Reinitialized SQL Server CE 2.0 subscribers may experience data loss and non-convergence]                                                                                                                                                        | 2005-09-27   |
-| 8.00.714  | 2000.80.714.0  | [811478 FIX: Restoring a SQL Server 7.0 database backup in SQL Server 2000 Service Pack 2 (SP2) may cause an assertion error in the Xdes.cpp file]                                                                                                            | 2005-10-18   |
-| 8.00.713  | 2000.80.713.0  | [811205 FIX: An error message occurs when you perform a database or a file SHRINK operation]                                                                                                                                                                  | 2005-09-27   |
-| 8.00.710  | 2000.80.710.0  | [811052 FIX: Latch Time-Out Message 845 Occurs When You Perform a Database or File SHRINK Operation]                                                                                                                                                          | 2005-09-27   |
-| 8.00.705  | 2000.80.705.0  | [810920 FIX: The JOIN queries in the triggers that involve the inserted table or the deleted table may return results that are not consistent]                                                                                                                | 2005-09-27   |
-| 8.00.703  | 2000.80.703.0  | [810526 FIX: Cursors That Have a Long Lifetime May Cause Memory Fragmentation]                                                                                                                                                                                | 2005-09-27   |
-| 8.00.702  | 2000.80.702.0  | [328551 FIX: Concurrency enhancements for the tempdb database]                                                                                                                                                                                                | 2006-07-19   |
-| 8.00.701  | 2000.80.701.0  | [810026 FIX: A DELETE Statement with a Self-Join May Fail and You Receive a 625 Error]                                                                                                                                                                        | 2005-09-27   |
-| 8.00.701  | 2000.80.701.0  | [810163 FIX: An Access Violation Occurs if an sp_cursoropen Call References a Parameter That Is Not Defined]                                                                                                                                                  | 2005-09-27   |
-| 8.00.700  | 2000.80.700.0  | [810072 FIX: Merge Replication Reconciler Stack Overflow]                                                                                                                                                                                                     | 2005-09-27   |
-| 8.00.696  | 2000.80.696.0  | [810052 FIX: A Memory Leak Occurs When Cursors Are Opened During a Connection]                                                                                                                                                                                | 2005-09-27   |
-| 8.00.696  | 2000.80.696.0  | [810010 FIX: The fn_get_sql System Table Function May Cause Various Handled Access Violations]                                                                                                                                                                | 2005-09-27   |
-| 8.00.695  | 2000.80.695.0  | [331885 FIX: Update/Delete Statement Fails with Error 1203 During Page Lock Escalation]                                                                                                                                                                       | 2005-09-27   |
-| 8.00.695  | 2000.80.695.0  | [331965 FIX: The xp_readmail Extended Stored Procedure Overwrites Attachment That Already Exists]                                                                                                                                                             | 2005-02-10   |
-| 8.00.695  | 2000.80.695.0  | [331968 FIX: The xp_readmail and xp_findnextmsg Extended Stored Procedures Do Not Read Mail in Time Received Order]                                                                                                                                           | 2005-02-10   |
-| 8.00.693  | 2000.80.693.0  | [330212 FIX: Parallel logical operation returns results that are not consistent]                                                                                                                                                                              | 2005-09-27   |
-| 8.00.690  | 2000.80.690.0  | [311104 FIX: The SELECT Statement with Parallelism Enabled May Cause an Assertion]                                                                                                                                                                            | 2005-10-12   |
-| 8.00.689  | 2000.80.689.0  | [329499 FIX: Replication Removed from Database After Restore WITH RECOVERY]                                                                                                                                                                                   | 2005-10-11   |
-| 8.00.688  | 2000.80.688.0  | [329487 FIX: Transaction Log Restore Fails with Message 3456]                                                                                                                                                                                                 | 2005-10-11   |
-| 8.00.686  | 2000.80.686.0  | [316333 SQL Server 2000 Security Update for Service Pack 2]                                                                                                                                                                                                   | 2006-11-24   |
-| 8.00.682  | 2000.80.682.0  | [319851 FIX: Assertion and Error Message 3314 Occurs If You Try to Roll Back a Text Operation with READ UNCOMMITTED]                                                                                                                                          | 2005-10-18   |
-| 8.00.679  | 2000.80.679.0  | [316333 SQL Server 2000 Security Update for Service Pack 2]                                                                                                                                                                                                   | 2006-11-24   |
-| 8.00.678  | 2000.80.678.0  | [328354 FIX: A RESTORE DATABASE WITH RECOVERY Statement Can Fail with Error 9003 or Error 9004]                                                                                                                                                               | 2005-09-27   |
+| 8.00.1547 | 2000.80.1547.0 | 899410 FIX: You may experience slow server performance when you start a trace in an instance of SQL Server 2000 that runs on a computer that has more than four processors                                                                                    | 2006-06-01   |
+| 8.00.1077 | 2000.80.1077.0 | 983814 MS12-070: Description of the security update for SQL Server 2000 Reporting Services Service Pack 2                                                                                                                                                     | 2012-10-09   |
+| 8.00.1037 | 2000.80.1037.0 | 930484 FIX: CPU utilization may approach 100 percent on a computer that is running SQL Server 2000 after you run the BACKUP DATABASE statement or the BACKUP LOG statement                                                                                    | 2007-02-02   |
+| 8.00.1036 | 2000.80.1036.0 | 929410 FIX: Error message when you run a full-text query in SQL Server 2000: "Error: 17883, Severity: 1, State: 0"                                                                                                                                            | 2007-01-11   |
+| 8.00.1035 | 2000.80.1035.0 | 917593 FIX: The "Audit Logout" event does not appear in the trace results file when you run a profiler trace against a linked server instance in SQL Server 2000                                                                                              | 2006-09-22   |
+| 8.00.1034 | 2000.80.1034.0 | 915328 FIX: You may intermittently experience an access violation error when a query is executed in a parallel plan and the execution plan contains either a HASH JOIN operation or a Sort operation in SQL Server 2000                                       | 2006-08-09   |
+| 8.00.1029 | 2000.80.1029.0 | 902852 FIX: Error message when you run an UPDATE statement that uses two JOIN hints to update a table in SQL Server 2000: "Internal SQL Server error"                                                                                                         | 2006-06-01   |
+| 8.00.1027 | 2000.80.1027.0 | 900416 FIX: A 17883 error may occur you run a query that uses a hash join in SQL Server 2000                                                                                                                                                                  | 2006-07-25   |
+| 8.00.1025 | 2000.80.1025.0 | 899428 FIX: You receive incorrect results when you run a query that uses a cross join operator in SQL Server 2000 SP3                                                                                                                                         | 2006-06-01   |
+| 8.00.1025 | 2000.80.1025.0 | 899430 FIX: An access violation may occur when you run a SELECT query and the NO_BROWSETABLE option is set to ON in Microsoft SQL Server 2000                                                                                                                 | 2006-07-25   |
+| 8.00.1024 | 2000.80.1024.0 | 898709 FIX: Error message when you use SQL Server 2000: "Time out occurred while waiting for buffer latch type 3"                                                                                                                                             | 2006-07-25   |
+| 8.00.1021 | 2000.80.1021.0 | 887700 FIX: Server Network Utility may display incorrect protocol properties in SQL Server 2000                                                                                                                                                               | 2006-07-25   |
+| 8.00.1020 | 2000.80.1020.0 | 896985 FIX: The Subscriber may not be able to upload changes to the Publisher when you incrementally add an article to a publication in SQL Server 2000 SP3                                                                                                   | 2006-07-25   |
+| 8.00.1019 | 2000.80.1019.0 | 897572 FIX: You may receive a memory-related error message when you repeatedly create and destroy an out-of-process COM object within the same batch or stored procedure in SQL Server 2000                                                                   | 2006-06-01   |
+| 8.00.1017 | 2000.80.1017.0 | 896425 FIX: The BULK INSERT statement silently skips insert attempts when the data value is NULL and the column is defined as NOT NULL for INT, SMALLINT, and BIGINT data types in SQL Server 2000                                                            | 2006-06-01   |
+| 8.00.1014 | 2000.80.1014.0 | 895123 FIX: You may receive error message 701, error message 802, and error message 17803 when many hashed buffers are available in SQL Server 2000                                                                                                           | 2006-06-01   |
+| 8.00.1014 | 2000.80.1014.0 | 895187 FIX: You receive an error message when you try to delete records by running a Delete Transact-SQL statement in SQL Server 2000                                                                                                                         | 2006-07-25   |
+| 8.00.1013 | 2000.80.1013.0 | 891866 FIX: The query runs slower than you expected when you try to parse a query in SQL Server 2000                                                                                                                                                          | 2006-06-01   |
+| 8.00.1009 | 2000.80.1009.0 | 894257 FIX: You receive an "Incorrect syntax near ')'" error message when you run a script that was generated by SQL-DMO for an Operator object in SQL Server 2000                                                                                            | 2006-06-01   |
+| 8.00.1007 | 2000.80.1007.0 | 893312 FIX: You may receive a "SQL Server could not spawn process_loginread thread" error message, and a memory leak may occur when you cancel a remote query in SQL Server 2000                                                                              | 2006-06-01   |
+| 8.00.1003 | 2000.80.1003.0 | 892923 FIX: Differential database backups may not contain database changes in the Page Free Space (PFS) pages in SQL Server 2000                                                                                                                              | 2006-06-01   |
+| 8.00.1001 | 2000.80.1001.0 | 892205 FIX: You may receive a 17883 error message when SQL Server 2000 performs a very large hash operation                                                                                                                                                   | 2006-06-01   |
+| 8.00.1000 | 2000.80.1000.0 | 891585 FIX: Database recovery does not occur, or a user database is marked as suspect in SQL Server 2000                                                                                                                                                      | 2006-06-01   |
+| 8.00.997  | 2000.80.997.0  | 891311 FIX: You cannot create new TCP/IP socket based connections after error messages 17882 and 10055 are written to the Microsoft SQL Server 2000 error log                                                                                                 | 2006-07-18   |
+| 8.00.996  | 2000.80.996.0  | 891017 FIX: SQL Server 2000 may stop responding to other requests when you perform a large deallocation operation                                                                                                                                             | 2006-06-01   |
+| 8.00.996  | 2000.80.996.0  | 891268 FIX: You receive a 17883 error message and SQL Server 2000 may stop responding to other requests when you perform large in-memory sort operations                                                                                                      | 2006-06-01   |
+| 8.00.994  | 2000.80.994.0  | 890942 FIX: Some complex queries are slower after you install SQL Server 2000 Service Pack 2 or SQL Server 2000 Service Pack 3                                                                                                                                | 2006-06-01   |
+| 8.00.994  | 2000.80.994.0  | 890768 FIX: You experience non-convergence in a replication topology when you unpublish or drop columns from a dynamically filtered publication in SQL Server 2000                                                                                            | 2006-06-01   |
+| 8.00.994  | 2000.80.994.0  | 890767 FIX: You receive a "Server: Msg 107, Level 16, State 3, Procedure TEMP_VIEW_Merge, Line 1" error message when the sum of the length of the published column names in a merge publication exceeds 4,000 characters in SQL Server 2000                   | 2006-06-01   |
+| 8.00.993  | 2000.80.993.0  | 890925 FIX: The @@ERROR system function may return an incorrect value when you execute a Transact-SQL statement that uses a parallel execution plan in SQL Server 2000 32-bit or in SQL Server 2000 64-bit                                                    | 2006-06-01   |
+| 8.00.993  | 2000.80.993.0  | 888444 FIX: You receive a 17883 error in SQL Server 2000 Service Pack 3 or in SQL Server 2000 Service Pack 3a when a worker thread becomes stuck in a registry call                                                                                           | 2006-06-01   |
+| 8.00.993  | 2000.80.993.0  | 890742 FIX: Error message when you use a loopback linked server to run a distributed query in SQL Server 2000: "Could not perform the requested operation because the minimum query memory is not available"                                                  | 2006-05-15   |
+| 8.00.991  | 2000.80.991.0  | 889314 FIX: Non-convergence may occur in a merge replication topology if the primary connection to the publisher is disconnected                                                                                                                              | 2006-06-01   |
+| 8.00.990  | 2000.80.990.0  | 890200 FIX: SQL Server 2000 stops listening for new TCP/IP Socket connections unexpectedly after error message 17882 is written to the SQL Server 2000 error log                                                                                              | 2006-06-01   |
+| 8.00.988  | 2000.80.988.0  | 889166 FIX: You receive a "Msg 3628" error message when you run an inner join query in SQL Server 2000                                                                                                                                                        | 2006-06-01   |
+| 8.00.985  | 2000.80.985.0  | 889239 FIX: Start times in the SQL Profiler are different for the Audit:Login and Audit:Logout Events in SQL Server 2000                                                                                                                                      | 2006-06-01   |
+| 8.00.980  | 2000.80.980.0  | 887974 FIX: A fetch on a dynamic cursor can cause unexpected results in SQL Server 2000 Service Pack 3                                                                                                                                                        | 2006-06-01   |
+| 8.00.977  | 2000.80.977.0  | 888007 You receive a "The product does not have a prerequisite update installed" error message when you try to install a SQL Server 2000 post-Service Pack 3 hotfix                                                                                           | 2005-08-31   |
+| 8.00.973  | 2000.80.973.0  | 884554 FIX: A SPID stops responding with a NETWORKIO (0x800) waittype in SQL Server Enterprise Manager when SQL Server tries to process a fragmented TDS network packet                                                                                       | 2006-06-01   |
+| 8.00.972  | 2000.80.972.0  | 885290 FIX: An assertion error occurs when you insert data in the same row in a table by using multiple connections to an instance of SQL Server                                                                                                              | 2006-06-01   |
+| 8.00.970  | 2000.80.970.0  | 872842 FIX: A CHECKDB statement reports a 2537 corruption error after SQL Server transfers data to a sql_variant column in SQL Server 2000                                                                                                                    | 2006-06-01   |
+| 8.00.967  | 2000.80.967.0  | 878501 FIX: You may receive an error message when you run a SET IDENTITY_INSERT ON statement on a table and then try to insert a row into the table in SQL Server 2000                                                                                        | 2006-06-01   |
+| 8.00.962  | 2000.80.962.0  | 883415 FIX: A user-defined function returns results that are not correct for a query                                                                                                                                                                          | 2006-06-01   |
+| 8.00.961  | 2000.80.961.0  | 873446 FIX: An access violation exception may occur when multiple users try to perform data modification operations at the same time that fire triggers that reference a deleted or an inserted table in SQL Server 2000 on a computer that is running SMP    | 2006-06-01   |
+| 8.00.959  | 2000.80.959.0  | 878500 FIX: An Audit Object Permission event is not produced when you run a TRUNCATE TABLE statement                                                                                                                                                          | 2006-06-01   |
+| 8.00.957  | 2000.80.957.0  | 870994 FIX: An access violation exception may occur when you run a query that uses index names in the WITH INDEX option to specify an index hint                                                                                                              | 2006-06-01   |
+| 8.00.955  | 2000.80.955.0  | 867798 FIX: The @date_received parameter of the xp_readmail extended stored procedure incorrectly returns the date and the time that an e-mail message is submitted by the sender in SQL Server 2000                                                          | 2007-01-08   |
+| 8.00.954  | 2000.80.954.0  | 843282 FIX: The Osql.exe utility does not run a Transact-SQL script completely if you start the program from a remote session by using a background service and then log off the console session                                                              | 2007-01-05   |
+| 8.00.952  | 2000.80.952.0  | 867878 FIX: The Log Reader Agent may cause 17883 error messages                                                                                                                                                                                               | 2006-06-01   |
+| 8.00.952  | 2000.80.952.0  | 867879 FIX: Merge replication non-convergence occurs with SQL Server CE subscribers                                                                                                                                                                           | 2006-06-01   |
+| 8.00.952  | 2000.80.952.0  | 867880 FIX: Merge Agent may fail with an "Invalid character value for cast specification" error message                                                                                                                                                       | 2006-06-01   |
+| 8.00.949  | 2000.80.949.0  | 843266 FIX: Shared page locks can be held until end of the transaction and can cause blocking or performance problems in SQL Server 2000 Service Pack 3 (SP3)                                                                                                 | 2006-06-02   |
+| 8.00.948  | 2000.80.948.0  | 843263 FIX: You may receive an 8623 error message when you try to run a complex query on an instance of SQL Server                                                                                                                                            | 2006-06-01   |
+| 8.00.944  | 2000.80.944.0  | 839280 FIX: SQL debugging does not work in Visual Studio .NET after you install Windows XP Service Pack 2                                                                                                                                                     | 2006-06-05   |
+| 8.00.937  | 2000.80.937.0  | 841776 FIX: Additional diagnostics have been added to SQL Server 2000 to detect unreported read operation failures                                                                                                                                            | 2006-06-01   |
+| 8.00.936  | 2000.80.936.0  | 841627 FIX: SQL Server 2000 may underestimate the cardinality of a query expression under certain circumstances                                                                                                                                               | 2006-06-01   |
+| 8.00.935  | 2000.80.935.0  | 841401 FIX: You may notice incorrect values for the "Active Transactions" counter when you perform multiple transactions on an instance of SQL Server 2000 that is running on an SMP computer                                                                 | 2006-06-01   |
+| 8.00.934  | 2000.80.934.0  | 841404 FIX: You may receive a "The query processor could not produce a query plan" error message in SQL Server when you run a query that includes multiple subqueries that use self-joins                                                                     | 2006-06-01   |
+| 8.00.933  | 2000.80.933.0  | 840856 FIX: The MSSQLServer service exits unexpectedly in SQL Server 2000 Service Pack 3                                                                                                                                                                      | 2006-06-02   |
+| 8.00.929  | 2000.80.929.0  | 839529 FIX: 8621 error conditions may cause SQL Server 2000 64-bit to close unexpectedly                                                                                                                                                                      | 2006-06-01   |
+| 8.00.928  | 2000.80.928.0  | 839589 FIX: The thread priority is raised for some threads in a parallel query                                                                                                                                                                                | 2006-06-01   |
+| 8.00.927  | 2000.80.927.0  | 839688 FIX: Profiler RPC events truncate parameters that have a text data type to 16 characters                                                                                                                                                               | 2006-06-01   |
+| 8.00.926  | 2000.80.926.0  | 839523 FIX: An access violation exception may occur when you update a text column by using a stored procedure in SQL Server 2000                                                                                                                              | 2006-06-01   |
+| 8.00.923  | 2000.80.923.0  | 838460 FIX: The xp_logininfo procedure may fail with error 8198 after you install Q825042 or any hotfix with SQL Server 8.00.0840 or later                                                                                                                    | 2006-06-01   |
+| 8.00.922  | 2000.80.922.0  | 837970 FIX: You may receive an "Invalid object name..." error message when you run the DBCC CHECKCONSTRAINTS Transact-SQL statement on a table in SQL Server 2000                                                                                             | 2005-10-25   |
+| 8.00.919  | 2000.80.919.0  | 837957 FIX: When you use Transact-SQL cursor variables to perform operations that have large iterations, memory leaks may occur in SQL Server 2000                                                                                                            | 2005-10-25   |
+| 8.00.916  | 2000.80.916.0  | 317989 FIX: Sqlakw32.dll May Corrupt SQL Statements                                                                                                                                                                                                           | 2005-09-27   |
+| 8.00.915  | 2000.80.915.0  | 837401 FIX: Rows are not successfully inserted into a table when you use the BULK INSERT command to insert rows                                                                                                                                               | 2005-10-25   |
+| 8.00.913  | 2000.80.913.0  | 836651 FIX: You receive query results that were not expected when you use both ANSI joins and non-ANSI joins                                                                                                                                                  | 2006-06-07   |
+| 8.00.911  | 2000.80.911.0  | 837957 FIX: When you use Transact-SQL cursor variables to perform operations that have large iterations, memory leaks may occur in SQL Server 2000                                                                                                            | 2005-10-25   |
+| 8.00.910  | 2000.80.910.0  | 834798 FIX: SQL Server 2000 may not start if many users try to log in to SQL Server when SQL Server is trying to start                                                                                                                                        | 2005-10-25   |
+| 8.00.908  | 2000.80.908.0  | 834290 FIX: You receive a 644 error message when you run an UPDATE statement and the isolation level is set to READ UNCOMMITTED                                                                                                                               | 2005-10-25   |
+| 8.00.904  | 2000.80.904.0  | 834453 FIX: The Snapshot Agent may fail after you make schema changes to the underlying tables of a publication                                                                                                                                               | 2005-04-22   |
+| 8.00.892  | 2000.80.892.0  | 833710 FIX: You receive an error message when you try to restore a database backup that spans multiple devices                                                                                                                                                | 2005-10-25   |
+| 8.00.891  | 2000.80.891.0  | 836141 FIX: An access violation exception may occur when SQL Server runs many parallel query processing operations on a multiprocessor computer                                                                                                               | 2005-04-01   |
+| 8.00.879  | 2000.80.879.0  | 832977 FIX: The DBCC PSS Command may cause access violations and 17805 errors in SQL Server 2000                                                                                                                                                              | 2005-10-25   |
+| 8.00.878  | 2000.80.878.0  | 831950 FIX: You receive error message 3456 when you try to apply a transaction log to a server                                                                                                                                                                | 2005-10-25   |
+| 8.00.876  | 2000.80.876.0  | 830912 FIX: Key Names Read from an .Ini File for a Dynamic Properties Task May Be Truncated                                                                                                                                                                   | 2005-10-25   |
+| 8.00.876  | 2000.80.876.0  | 831997 FIX: An invalid cursor state occurs after you apply Hotfix 8.00.0859 or later in SQL Server 2000                                                                                                                                                       | 2005-10-25   |
+| 8.00.876  | 2000.80.876.0  | 831999 FIX: An AWE system uses more memory for sorting or for hashing than a non-AWE system in SQL Server 2000                                                                                                                                                | 2005-10-25   |
+| 8.00.873  | 2000.80.873.0  | 830887 FIX: Some queries that have a left outer join and an IS NULL filter run slower after you install SQL Server 2000 post-SP3 hotfix                                                                                                                       | 2005-10-25   |
+| 8.00.871  | 2000.80.871.0  | 830767 FIX: SQL Query Analyzer may stop responding when you close a query window or open a file                                                                                                                                                               | 2005-10-25   |
+| 8.00.871  | 2000.80.871.0  | 830860 FIX: The performance of a computer that is running SQL Server 2000 degrades when query execution plans against temporary tables remain in the procedure cache                                                                                          | 2005-10-25   |
+| 8.00.870  | 2000.80.870.0  | 830262 FIX: Unconditional Update May Not Hold Key Locks on New Key Values                                                                                                                                                                                     | 2005-10-25   |
+| 8.00.869  | 2000.80.869.0  | 830588 FIX: Access violation when you trace keyset-driven cursors by using SQL Profiler                                                                                                                                                                       | 2005-10-25   |
+| 8.00.866  | 2000.80.866.0  | 830366 FIX: An access violation occurs in SQL Server 2000 when a high volume of local shared memory connections occur after you install security update MS03-031                                                                                              | 2006-01-16   |
+| 8.00.865  | 2000.80.865.0  | 830395 FIX: An access violation occurs during compilation if the table contains statistics for a computed column                                                                                                                                              | 2005-10-25   |
+| 8.00.865  | 2000.80.865.0  | 828945 FIX: You cannot insert explicit values in an IDENTITY column of a SQL Server table by using the SQLBulkOperations function or the SQLSetPos ODBC function in SQL Server 2000                                                                           | 2005-10-25   |
+| 8.00.863  | 2000.80.863.0  | 829205 FIX: Query performance may be slow and may be inconsistent when you run a query while another query that contains an IN operator with many values is compiled                                                                                          | 2005-10-25   |
+| 8.00.863  | 2000.80.863.0  | 829444 FIX: A floating point exception occurs during the optimization of a query                                                                                                                                                                              | 2005-10-25   |
+| 8.00.859  | 2000.80.859.0  | 821334 FIX: Issues that are resolved in SQL Server 2000 build 8.00.0859                                                                                                                                                                                       | 2005-03-31   |
+| 8.00.858  | 2000.80.858.0  | 828637 FIX: Users Can Control the Compensating Change Process in Merge Replication                                                                                                                                                                            | 2005-10-25   |
+| 8.00.857  | 2000.80.857.0  | 828017 The Knowledge Base (KB) Article You Requested Is Currently Not Available                                                                                                                                                                               | ???          |
+| 8.00.857  | 2000.80.857.0  | 827714 FIX: A query may fail with retail assertion when you use the NOLOCK hint or the READ UNCOMMITTED isolation level                                                                                                                                       | 2005-11-23   |
+| 8.00.857  | 2000.80.857.0  | 828308 FIX: An Internet Explorer script error occurs when you access metadata information by using DTS in SQL Server Enterprise Manager                                                                                                                       | 2005-10-25   |
+| 8.00.856  | 2000.80.856.0  | 828096 FIX: Key Locks Are Held Until the End of the Statement for Rows That Do Not Pass Filter Criteria                                                                                                                                                       | 2005-10-25   |
+| 8.00.854  | 2000.80.854.0  | 828699 FIX: An Access Violation Occurs When You Run DBCC UPDATEUSAGE on a Database That Has Many Objects                                                                                                                                                      | 2005-10-25   |
+| 8.00.852  | 2000.80.852.0  | 830466 FIX: You may receive an "Internal SQL Server error" error message when you run a Transact-SQL SELECT statement on a view that has many subqueries in SQL Server 2000                                                                                   | 2005-04-01   |
+| 8.00.852  | 2000.80.852.0  | 827954 FIX: Slow Execution Times May Occur When You Run DML Statements Against Tables That Have Cascading Referential Integrity                                                                                                                               | 2005-10-25   |
+| 8.00.851  | 2000.80.851.0  | 826754 FIX: A Deadlock Occurs If You Run an Explicit UPDATE STATISTICS Command                                                                                                                                                                                | 2005-10-25   |
+| 8.00.850  | 2000.80.850.0  | 826860 FIX: Linked Server Query May Return NULL If It Is Performed Through a Keyset Cursor                                                                                                                                                                    | 2005-10-25   |
+| 8.00.850  | 2000.80.850.0  | 826815 FIX: You receive an 8623 error message in SQL Server when you try to run a query that has multiple correlated subqueries                                                                                                                               | 2005-10-25   |
+| 8.00.850  | 2000.80.850.0  | 826906 FIX: A query that uses a view that contains a correlated subquery and an aggregate runs slowly                                                                                                                                                         | 2005-10-25   |
+| 8.00.848  | 2000.80.848.0  | 826822 FIX: A Member of the db_accessadmin Fixed Database Role Can Create an Alias for the dbo Special User                                                                                                                                                   | 2005-10-25   |
+| 8.00.847  | 2000.80.847.0  | 826433 PRB: Additional SQL Server Diagnostics Added to Detect Unreported I/O Problems                                                                                                                                                                         | 2005-10-25   |
+| 8.00.845  | 2000.80.845.0  | 826364 FIX: A Query with a LIKE Comparison Results in a Non-Optimal Query Plan When You Use a Hungarian SQL Server Collation                                                                                                                                  | 2005-10-05   |
+| 8.00.845  | 2000.80.845.0  | 825854 FIX: No Exclusive Locks May Be Taken If the DisAllowsPageLocks Value Is Set to True                                                                                                                                                                    | 2005-10-25   |
+| 8.00.844  | 2000.80.844.0  | 826080 FIX: SQL Server 2000 protocol encryption applies to JDBC clients                                                                                                                                                                                       | 2006-10-17   |
+| 8.00.842  | 2000.80.842.0  | 825043 FIX: Rows are unexpectedly deleted when you run a distributed query to delete or to update a linked server table                                                                                                                                       | 2005-10-25   |
+| 8.00.841  | 2000.80.841.0  | 825225 FIX: You receive an error message when you run a parallel query that uses an aggregation function or the GROUP BY clause                                                                                                                               | 2005-10-25   |
+| 8.00.840  | 2000.80.840.0  | 319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors                                                                                                                                                                   | 2005-09-27   |
+| 8.00.840  | 2000.80.840.0  | 319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors                                                                                                                                                                   | 2005-09-27   |
+| 8.00.839  | 2000.80.839.0  | 823877 FIX: An Access Violation May Occur When You Run a Query That Contains 32,000 or More OR Clauses                                                                                                                                                        | 2005-10-25   |
+| 8.00.839  | 2000.80.839.0  | 824027 FIX: A Cursor with a Large Object Parameter May Cause an Access Violation on CStmtCond::XretExecute                                                                                                                                                    | 2005-10-25   |
+| 8.00.837  | 2000.80.837.0  | 820788 FIX: Delayed domain authentication may cause SQL Server to stop responding                                                                                                                                                                             | 2005-10-25   |
+| 8.00.837  | 2000.80.837.0  | 821741 FIX: Lock monitor exception in DeadlockMonitor::ResolveDeadlock                                                                                                                                                                                        | 2005-10-25   |
+| 8.00.837  | 2000.80.837.0  | 821548 FIX: A Parallel Query May Generate an Access Violation After You Install SQL Server 2000 SP3                                                                                                                                                           | 2005-10-25   |
+| 8.00.837  | 2000.80.837.0  | 821740 FIX: MS DTC Transaction Commit Operation Blocks Itself                                                                                                                                                                                                 | 2005-10-25   |
+| 8.00.837  | 2000.80.837.0  | 823514 FIX: Build 8.00.0837: A query that contains a correlated subquery runs slowly                                                                                                                                                                          | 2005-10-25   |
+| 8.00.819  | 2000.80.819.0  | 826161 FIX: You are prompted for password confirmation after you change a standard SQL Server login                                                                                                                                                           | 2005-10-25   |
+| 8.00.818  | 2000.80.818.0  | 821277 MS03-031: Security patch for SQL Server 2000 Service Pack 3                                                                                                                                                                                            | 2006-01-09   |
+| 8.00.818  | 2000.80.818.0  | 821337 FIX: Localized versions of SQL Mail and the Web Assistant Wizard may not work as expected in SQL Server 2000 64 bit                                                                                                                                    | 2005-03-16   |
+| 8.00.818  | 2000.80.818.0  | 818388 FIX: A Transact-SQL Statement That Is Embedded in the Database Name Runs with System Administrator Permissions                                                                                                                                         | 2005-02-10   |
+| 8.00.818  | 2000.80.818.0  | 826161 FIX: You are prompted for password confirmation after you change a standard SQL Server login                                                                                                                                                           | 2005-10-25   |
+| 8.00.818  | 2000.80.818.0  | 821280 MS03-031: Security Patch for SQL Server 2000 64-bit                                                                                                                                                                                                    | 2006-03-14   |
+| 8.00.816  | 2000.80.816.0  | 818766 FIX: Intense SQL Server activity results in spinloop wait                                                                                                                                                                                              | 2005-10-25   |
+| 8.00.814  | 2000.80.814.0  | 819662 FIX: Distribution Cleanup Agent Incorrectly Cleans Up Entries for Anonymous Subscribers                                                                                                                                                                | 2005-10-25   |
+| 8.00.811  | 2000.80.811.0  | 819248 FIX: An access violation exception may occur when you insert a row in a table that is referenced by indexed views in SQL Server 2000                                                                                                                   | 2006-04-03   |
+| 8.00.811  | 2000.80.811.0  | 819662 FIX: Distribution Cleanup Agent Incorrectly Cleans Up Entries for Anonymous Subscribers                                                                                                                                                                | 2005-10-25   |
+| 8.00.811  | 2000.80.811.0  | 818897 FIX: Invalid TDS Sent to SQL Server Results in Access Violation                                                                                                                                                                                        | 2005-10-25   |
+| 8.00.807  | 2000.80.807.0  | 818899 FIX: Error Message 3628 May Occur When You Run a Complex Query                                                                                                                                                                                         | 2005-10-25   |
+| 8.00.804  | 2000.80.804.0  | 818729 FIX: Internal Query Processor Error 8623 When Microsoft SQL Server Tries to Compile a Plan for a Complex Query                                                                                                                                         | 2005-10-25   |
+| 8.00.801  | 2000.80.801.0  | 818540 FIX: SQL Server Enterprise Manager unexpectedly quits when you modify a DTS package                                                                                                                                                                    | 2006-01-26   |
+| 8.00.800  | 2000.80.800.0  | 818414 FIX: The Sqldumper.exe File Does Not Generate a Userdump File When It Runs Against a Windows Service                                                                                                                                                   | 2005-09-27   |
+| 8.00.800  | 2000.80.800.0  | 818097 FIX: An Access Violation May Occur When You Run DBCC DBREINDEX on a Table That Has Hypothetical Indexes                                                                                                                                                | 2005-09-27   |
+| 8.00.800  | 2000.80.800.0  | 818188 FIX: Query on the sysmembers Virtual Table May Fail with a Stack Overflow                                                                                                                                                                              | 2005-09-27   |
+| 8.00.798  | 2000.80.798.0  | 817464 FIX: Using Sp_executesql in Merge Agent Operations                                                                                                                                                                                                     | 2005-09-27   |
+| 8.00.794  | 2000.80.794.0  | 817464 FIX: Using Sp_executesql in Merge Agent Operations                                                                                                                                                                                                     | 2005-09-27   |
+| 8.00.794  | 2000.80.794.0  | 813524 FIX: OLE DB conversion errors may occur after you select a literal string that represents datetime data as a column                                                                                                                                    | 2005-09-27   |
+| 8.00.794  | 2000.80.794.0  | 816440 FIX: Error 8623 is Raised When SQL Server Compiles a Complex Query                                                                                                                                                                                     | 2005-09-27   |
+| 8.00.794  | 2000.80.794.0  | 817709 FIX: SQL Server 2000 might produce an incorrect cardinality estimate for outer joins                                                                                                                                                                   | 2005-02-11   |
+| 8.00.791  | 2000.80.791.0  | 815249 FIX: Performance of a query that is run from a client program on a SQL Server SP3 database is slow after you restart the instance of SQL Server                                                                                                        | 2005-09-27   |
+| 8.00.790  | 2000.80.790.0  | 817081 FIX: You receive an error message when you use the SQL-DMO BulkCopy object to import data into a SQL Server table                                                                                                                                      | 2005-09-27   |
+| 8.00.789  | 2000.80.789.0  | 816840 FIX: Error 17883 May Display Message Text That Is Not Correct                                                                                                                                                                                          | 2005-09-27   |
+| 8.00.788  | 2000.80.788.0  | 816985 FIX: You cannot install SQL Server 2000 SP3 on the Korean version of SQL Server 2000                                                                                                                                                                   | 2005-09-27   |
+| 8.00.781  | 2000.80.781.0  | 815057 FIX: SQL Server 2000 Uninstall Option Does Not Remove All Files                                                                                                                                                                                        | 2005-09-27   |
+| 8.00.780  | 2000.80.780.0  | 816039 FIX: Code Point Comparison Semantics for SQL_Latin1_General_Cp850_BIN Collation                                                                                                                                                                        | 2005-09-27   |
+| 8.00.780  | 2000.80.780.0  | 816084 FIX: sysindexes.statblob Column May Be Corrupted After You Run a DBCC DBREINDEX Statement                                                                                                                                                              | 2005-09-27   |
+| 8.00.780  | 2000.80.780.0  | 810185 SQL Server 2000 hotfix update for SQL Server 2000 Service Pack 3 and 3a                                                                                                                                                                                | 2006-10-10   |
+| 8.00.779  | 2000.80.779.0  | 814035 FIX: A Full-Text Population Fails After You Apply SQL Server 2000 Service Pack 3                                                                                                                                                                       | 2005-09-27   |
+| 8.00.776  | 2000.80.776.0  | Unidentified                                                                                                                                                                                                                                                  | ???          |
+| 8.00.775  | 2000.80.775.0  | 815115 FIX: A DTS package that uses global variables ignores an error message raised by RAISERROR                                                                                                                                                             | 2005-09-27   |
+| 8.00.769  | 2000.80.769.0  | 814889 FIX: A DELETE statement with a JOIN might fail and you receive a 625 error                                                                                                                                                                             | 2005-09-27   |
+| 8.00.769  | 2000.80.769.0  | 814893 FIX: Error Message: "Insufficient key column information for updating" Occurs in SQL Server 2000 SP3                                                                                                                                                   | 2005-09-27   |
+| 8.00.765  | 2000.80.765.0  | 810163 FIX: An Access Violation Occurs if an sp_cursoropen Call References a Parameter That Is Not Defined                                                                                                                                                    | 2005-09-27   |
+| 8.00.765  | 2000.80.765.0  | 810688 FIX: Merge Agent Can Resend Changes for Filtered Publications                                                                                                                                                                                          | 2005-09-27   |
+| 8.00.765  | 2000.80.765.0  | 811611 FIX: Reinitialized SQL Server CE 2.0 subscribers may experience data loss and non-convergence                                                                                                                                                          | 2005-09-27   |
+| 8.00.765  | 2000.80.765.0  | 813769 FIX: You May Experience Slow Performance When You Debug a SQL Server Service                                                                                                                                                                           | 2005-09-27   |
+| 8.00.763  | 2000.80.763.0  | 814113 FIX: DTS Designer may generate an access violation after you install SQL Server 2000 Service Pack 3                                                                                                                                                    | 2005-09-27   |
+| 8.00.762  | 2000.80.762.0  | 814032 FIX: Merge publications cannot synchronize on SQL Server 2000 Service Pack 3                                                                                                                                                                           | 2005-09-27   |
+| 8.00.760  | 2000.80.760.0  | SQL Server 2000 Service Pack 3 (SP3 / SP3a)                                                                                                                                                                                                                   | 2003-08-27   |
+| 8.00.743  | 2000.80.743.0  | 818406 FIX: A Transact-SQL query that uses views may fail unexpectedly in SQL Server 2000 SP2                                                                                                                                                                 | 2005-10-18   |
+| 8.00.743  | 2000.80.743.0  | 818763 FIX: Intense SQL Server Activity Results in Spinloop Wait in SQL Server 2000 Service Pack 2                                                                                                                                                            | 2005-10-25   |
+| 8.00.741  | 2000.80.741.0  | 818096 FIX: Many Extent Lock Time-outs May Occur During Extent Allocation                                                                                                                                                                                     | 2005-02-10   |
+| 8.00.736  | 2000.80.736.0  | 816937 FIX: A memory leak may occur when you use the sp_OAMethod stored procedure to call a method of a COM object                                                                                                                                            | 2005-09-27   |
+| 8.00.735  | 2000.80.735.0  | 814889 FIX: A DELETE statement with a JOIN might fail and you receive a 625 error                                                                                                                                                                             | 2005-09-27   |
+| 8.00.733  | 2000.80.733.0  | 813759 FIX: A Large Number of NULL Values in Join Columns Result in Slow Query Performance                                                                                                                                                                    | 2005-09-27   |
+| 8.00.730  | 2000.80.730.0  | 813769 FIX: You May Experience Slow Performance When You Debug a SQL Server Service                                                                                                                                                                           | 2005-09-27   |
+| 8.00.728  | 2000.80.728.0  | 814460 FIX: Merge Replication with Alternate Synchronization Partners May Not Succeed After You Change the Retention Period                                                                                                                                   | 2005-09-27   |
+| 8.00.725  | 2000.80.725.0  | 812995 FIX: A Query with an Aggregate Function May Fail with a 3628 Error                                                                                                                                                                                     | 2005-09-27   |
+| 8.00.725  | 2000.80.725.0  | 813494 FIX: Distribution Agent Fails with "Violation of Primary Key Constraint" Error Message                                                                                                                                                                 | 2005-09-27   |
+| 8.00.723  | 2000.80.723.0  | 812798 FIX: A UNION ALL View May Not Use Index If Partitions Are Removed at Compile Time                                                                                                                                                                      | 2005-09-27   |
+| 8.00.721  | 2000.80.721.0  | 812250 FIX: Indexed View May Cause a Handled Access Violation in CIndex::SetLevel1Names                                                                                                                                                                       | 2005-09-27   |
+| 8.00.721  | 2000.80.721.0  | 812393 FIX: Update or Delete Statement Fails with Error 1203 During Row Lock Escalation                                                                                                                                                                       | 2005-09-27   |
+| 8.00.718  | 2000.80.718.0  | 811703 FIX: Unexpected results from partial aggregations based on conversions                                                                                                                                                                                 | 2005-09-27   |
+| 8.00.715  | 2000.80.715.0  | 810688 FIX: Merge Agent Can Resend Changes for Filtered Publications                                                                                                                                                                                          | 2005-09-27   |
+| 8.00.715  | 2000.80.715.0  | 811611 FIX: Reinitialized SQL Server CE 2.0 subscribers may experience data loss and non-convergence                                                                                                                                                          | 2005-09-27   |
+| 8.00.714  | 2000.80.714.0  | 811478 FIX: Restoring a SQL Server 7.0 database backup in SQL Server 2000 Service Pack 2 (SP2) may cause an assertion error in the Xdes.cpp file                                                                                                              | 2005-10-18   |
+| 8.00.713  | 2000.80.713.0  | 811205 FIX: An error message occurs when you perform a database or a file SHRINK operation                                                                                                                                                                    | 2005-09-27   |
+| 8.00.710  | 2000.80.710.0  | 811052 FIX: Latch Time-Out Message 845 Occurs When You Perform a Database or File SHRINK Operation                                                                                                                                                            | 2005-09-27   |
+| 8.00.705  | 2000.80.705.0  | 810920 FIX: The JOIN queries in the triggers that involve the inserted table or the deleted table may return results that are not consistent                                                                                                                  | 2005-09-27   |
+| 8.00.703  | 2000.80.703.0  | 810526 FIX: Cursors That Have a Long Lifetime May Cause Memory Fragmentation                                                                                                                                                                                  | 2005-09-27   |
+| 8.00.702  | 2000.80.702.0  | 328551 FIX: Concurrency enhancements for the tempdb database                                                                                                                                                                                                  | 2006-07-19   |
+| 8.00.701  | 2000.80.701.0  | 810026 FIX: A DELETE Statement with a Self-Join May Fail and You Receive a 625 Error                                                                                                                                                                          | 2005-09-27   |
+| 8.00.701  | 2000.80.701.0  | 810163 FIX: An Access Violation Occurs if an sp_cursoropen Call References a Parameter That Is Not Defined                                                                                                                                                    | 2005-09-27   |
+| 8.00.700  | 2000.80.700.0  | 810072 FIX: Merge Replication Reconciler Stack Overflow                                                                                                                                                                                                       | 2005-09-27   |
+| 8.00.696  | 2000.80.696.0  | 810052 FIX: A Memory Leak Occurs When Cursors Are Opened During a Connection                                                                                                                                                                                  | 2005-09-27   |
+| 8.00.696  | 2000.80.696.0  | 810010 FIX: The fn_get_sql System Table Function May Cause Various Handled Access Violations                                                                                                                                                                  | 2005-09-27   |
+| 8.00.695  | 2000.80.695.0  | 331885 FIX: Update/Delete Statement Fails with Error 1203 During Page Lock Escalation                                                                                                                                                                         | 2005-09-27   |
+| 8.00.695  | 2000.80.695.0  | 331965 FIX: The xp_readmail Extended Stored Procedure Overwrites Attachment That Already Exists                                                                                                                                                               | 2005-02-10   |
+| 8.00.695  | 2000.80.695.0  | 331968 FIX: The xp_readmail and xp_findnextmsg Extended Stored Procedures Do Not Read Mail in Time Received Order                                                                                                                                             | 2005-02-10   |
+| 8.00.693  | 2000.80.693.0  | 330212 FIX: Parallel logical operation returns results that are not consistent                                                                                                                                                                                | 2005-09-27   |
+| 8.00.690  | 2000.80.690.0  | 311104 FIX: The SELECT Statement with Parallelism Enabled May Cause an Assertion                                                                                                                                                                              | 2005-10-12   |
+| 8.00.689  | 2000.80.689.0  | 329499 FIX: Replication Removed from Database After Restore WITH RECOVERY                                                                                                                                                                                     | 2005-10-11   |
+| 8.00.688  | 2000.80.688.0  | 329487 FIX: Transaction Log Restore Fails with Message 3456                                                                                                                                                                                                   | 2005-10-11   |
+| 8.00.686  | 2000.80.686.0  | 316333 SQL Server 2000 Security Update for Service Pack 2                                                                                                                                                                                                     | 2006-11-24   |
+| 8.00.682  | 2000.80.682.0  | 319851 FIX: Assertion and Error Message 3314 Occurs If You Try to Roll Back a Text Operation with READ UNCOMMITTED                                                                                                                                            | 2005-10-18   |
+| 8.00.679  | 2000.80.679.0  | 316333 SQL Server 2000 Security Update for Service Pack 2                                                                                                                                                                                                     | 2006-11-24   |
+| 8.00.678  | 2000.80.678.0  | 328354 FIX: A RESTORE DATABASE WITH RECOVERY Statement Can Fail with Error 9003 or Error 9004                                                                                                                                                                 | 2005-09-27   |
 | 8.00.667  | 2000.80.667.0  | 2000 SP2+8/14 fix                                                                                                                                                                                                                                             | ???          |
 | 8.00.665  | 2000.80.665.0  | 2000 SP2+8/8 fix                                                                                                                                                                                                                                              | ???          |
-| 8.00.661  | 2000.80.661.0  | [326999 FIX: Lock escalation on a scan while an update query is running causes a 1203 error message to occur]                                                                                                                                                 | 2005-09-27   |
+| 8.00.661  | 2000.80.661.0  | 326999 FIX: Lock escalation on a scan while an update query is running causes a 1203 error message to occur                                                                                                                                                   | 2005-09-27   |
 | 8.00.655  | 2000.80.655.0  | 2000 SP2+7/24 fix                                                                                                                                                                                                                                             | ???          |
-| 8.00.652  | 2000.80.652.0  | [810010 FIX: The fn_get_sql System Table Function May Cause Various Handled Access Violations]                                                                                                                                                                | 2005-09-27   |
-| 8.00.650  | 2000.80.650.0  | [322853 FIX: SQL Server Grants Unnecessary Permissions or an Encryption Function Contains Unchecked Buffers]                                                                                                                                                  | 2003-11-05   |
-| 8.00.644  | 2000.80.644.0  | [324186 FIX: Slow Compile Time and Execution Time with Query That Contains Aggregates and Subqueries]                                                                                                                                                         | 2005-09-27   |
-| 8.00.636  | 2000.80.636.0  | [Microsoft Security Bulletin MS02-039]                                                                                                                                                                                                                        | 2002-06-24   |
-| 8.00.608  | 2000.80.608.0  | [319507 FIX: SQL Extended Procedure Functions Contain Unchecked Buffers]                                                                                                                                                                                      | 2004-06-21   |
+| 8.00.652  | 2000.80.652.0  | 810010 FIX: The fn_get_sql System Table Function May Cause Various Handled Access Violations                                                                                                                                                                  | 2005-09-27   |
+| 8.00.650  | 2000.80.650.0  | 322853 FIX: SQL Server Grants Unnecessary Permissions or an Encryption Function Contains Unchecked Buffers                                                                                                                                                    | 2003-11-05   |
+| 8.00.644  | 2000.80.644.0  | 324186 FIX: Slow Compile Time and Execution Time with Query That Contains Aggregates and Subqueries                                                                                                                                                           | 2005-09-27   |
+| 8.00.636  | 2000.80.636.0  | Microsoft Security Bulletin MS02-039                                                                                                                                                                                                                          | 2002-06-24   |
+| 8.00.608  | 2000.80.608.0  | 319507 FIX: SQL Extended Procedure Functions Contain Unchecked Buffers                                                                                                                                                                                        | 2004-06-21   |
 | 8.00.604  | 2000.80.604.0  | 2000 SP2+3/29 fix                                                                                                                                                                                                                                             | ???          |
-| 8.00.599  | 2000.80.599.0  | [319869 FIX: Improved SQL Manager Robustness for Odd Length Buffer]                                                                                                                                                                                           | 2005-09-27   |
-| 8.00.594  | 2000.80.594.0  | [319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors]                                                                                                                                                                 | 2005-09-27   |
-| 8.00.584  | 2000.80.584.0  | [318530 FIX: Reorder outer joins with filter criteria before non-selective joins and outer joins]                                                                                                                                                             | 2008-02-04   |
-| 8.00.578  | 2000.80.578.0  | [317979 FIX: Unchecked Buffer May Occur When You Connect to Remote Data Source]                                                                                                                                                                               | 2005-09-27   |
-| 8.00.578  | 2000.80.578.0  | [318045 FIX: SELECT with Timestamp Column That Uses FOR XML AUTO May Fail with Stack Overflow or AV]                                                                                                                                                          | 2005-09-27   |
-| 8.00.568  | 2000.80.568.0  | [317748 FIX: Handle Leak Occurs in SQL Server When Service or Application Repeatedly Connects and Disconnects with Shared Memory Network Library]                                                                                                             | 2002-10-30   |
+| 8.00.599  | 2000.80.599.0  | 319869 FIX: Improved SQL Manager Robustness for Odd Length Buffer                                                                                                                                                                                             | 2005-09-27   |
+| 8.00.594  | 2000.80.594.0  | 319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors                                                                                                                                                                   | 2005-09-27   |
+| 8.00.584  | 2000.80.584.0  | 318530 FIX: Reorder outer joins with filter criteria before non-selective joins and outer joins                                                                                                                                                               | 2008-02-04   |
+| 8.00.578  | 2000.80.578.0  | 317979 FIX: Unchecked Buffer May Occur When You Connect to Remote Data Source                                                                                                                                                                                 | 2005-09-27   |
+| 8.00.578  | 2000.80.578.0  | 318045 FIX: SELECT with Timestamp Column That Uses FOR XML AUTO May Fail with Stack Overflow or AV                                                                                                                                                            | 2005-09-27   |
+| 8.00.568  | 2000.80.568.0  | 317748 FIX: Handle Leak Occurs in SQL Server When Service or Application Repeatedly Connects and Disconnects with Shared Memory Network Library                                                                                                               | 2002-10-30   |
 | 8.00.561  | 2000.80.561.0  | 2000 SP2+1/29 fix                                                                                                                                                                                                                                             | ???          |
-| 8.00.558  | 2000.80.558.0  | [314003 FIX: Query That Uses DESC Index May Result in Access Violation]                                                                                                                                                                                       | 2005-09-26   |
-| 8.00.558  | 2000.80.558.0  | [315395 FIX: COM May Not Be Uninitialized for Worker Thread When You Use sp_OA]                                                                                                                                                                               | 2005-09-27   |
-| 8.00.552  | 2000.80.552.0  | [313002 The Knowledge Base (KB) Article You Requested Is Currently Not Available]                                                                                                                                                                             | ???          |
-| 8.00.552  | 2000.80.552.0  | [313005 FIX: SELECT from Computed Column That References UDF Causes SQL Server to Terminate]                                                                                                                                                                  | 2005-09-26   |
-| 8.00.534  | 2000.80.534.0  |  2000 SP2.01                                                                                                                                                                                                                                                   | ???          |
-| 8.00.532  | 2000.80.532.0  | [SQL Server 2000 Service Pack 2 (SP2)]                                                                                                                                                                                                                        | 2003-02-04   |
+| 8.00.558  | 2000.80.558.0  | 314003 FIX: Query That Uses DESC Index May Result in Access Violation                                                                                                                                                                                         | 2005-09-26   |
+| 8.00.558  | 2000.80.558.0  | 315395 FIX: COM May Not Be Uninitialized for Worker Thread When You Use sp_OA                                                                                                                                                                                 | 2005-09-27   |
+| 8.00.552  | 2000.80.552.0  | 313002 The Knowledge Base (KB) Article You Requested Is Currently Not Available                                                                                                                                                                               | ???          |
+| 8.00.552  | 2000.80.552.0  | 313005 FIX: SELECT from Computed Column That References UDF Causes SQL Server to Terminate                                                                                                                                                                    | 2005-09-26   |
+| 8.00.534  | 2000.80.534.0  | 2000 SP2.01                                                                                                                                                                                                                                                   | ???          |
+| 8.00.532  | 2000.80.532.0  | SQL Server 2000 Service Pack 2 (SP2)                                                                                                                                                                                                                          | 2003-02-04   |
 | 8.00.475  | 2000.80.475.0  | 2000 SP1+1/29 fix                                                                                                                                                                                                                                             | ???          |
-| 8.00.474  | 2000.80.474.0  | [315395 FIX: COM May Not Be Uninitialized for Worker Thread When You Use sp_OA]                                                                                                                                                                               | 2005-09-27   |
-| 8.00.473  | 2000.80.473.0  | [314003 FIX: Query That Uses DESC Index May Result in Access Violation]                                                                                                                                                                                       | 2005-09-26   |
-| 8.00.471  | 2000.80.471.0  | [313302 FIX: Shared Table Lock Is Not Released After Lock Escalation]                                                                                                                                                                                         | 2005-09-26   |
-| 8.00.469  | 2000.80.469.0  | [313005 FIX: SELECT from Computed Column That References UDF Causes SQL Server to Terminate]                                                                                                                                                                  | 2005-09-26   |
-| 8.00.452  | 2000.80.452.0  | [308547 FIX: SELECT DISTINCT from Table with LEFT JOIN of View Causes Error Messages or Client Application May Stop Responding]                                                                                                                               | 2005-09-26   |
-| 8.00.444  | 2000.80.444.0  | [307540 FIX: SQLPutData May Result in Leak of Buffer Pool Memory]                                                                                                                                                                                             | 2005-09-26   |
-| 8.00.444  | 2000.80.444.0  | [307655 FIX: Querying Syslockinfo with Large Numbers of Locks May Cause Server to Stop Responding]                                                                                                                                                            | 2005-10-07   |
-| 8.00.443  | 2000.80.443.0  | [307538 FIX: SQLTrace Start and Stop is Now Reported in Windows NT Event Log for SQL Server 2000]                                                                                                                                                             | 2005-09-26   |
-| 8.00.428  | 2000.80.428.0  | [304850 FIX: SQL Server Text Formatting Functions Contain Unchecked Buffers]                                                                                                                                                                                  | 2004-08-05   |
-| 8.00.384  | 2000.80.384.0  | [SQL Server 2000 Service Pack 1 (SP1)]                                                                                                                                                                                                                        | 2001-06-11   |
-| 8.00.296  | 2000.80.296.0  | [299717 FIX: Query Method Used to Access Data May Allow Rights that the Login Might Not Normally Have]                                                                                                                                                        | 2004-08-09   |
-| 8.00.287  | 2000.80.287.0  | [297209 FIX: Deletes, Updates and Rank Based Selects May Cause Deadlock of MSSEARCH]                                                                                                                                                                          | 2005-10-07   |
-| 8.00.251  | 2000.80.251.0  | [300194 FIX: Error 644 Using Two Indexes on a Column with Uppercase Preference Sort Order]                                                                                                                                                                    | 2003-10-17   |
-| 8.00.250  | 2000.80.250.0  | [291683 The Knowledge Base (KB) Article You Requested Is Currently Not Available]                                                                                                                                                                             | ???          |
-| 8.00.249  | 2000.80.249.0  | [288122 FIX: Lock Monitor Uses Excessive CPU]                                                                                                                                                                                                                 | 2003-09-12   |
-| 8.00.239  | 2000.80.239.0  | [285290 FIX: Complex ANSI Join Query with Distributed Queries May Cause Handled Access Violation]                                                                                                                                                             | 2003-10-09   |
-| 8.00.233  | 2000.80.233.0  | [282416 FIX: Opening the Database Folder in SQL Server Enterprise Manager 2000 Takes a Long Time]                                                                                                                                                             | 2003-10-09   |
-| 8.00.231  | 2000.80.231.0  | [282279 FIX: Execution of sp_OACreate on COM Object Without Type Information Causes Server Shut Down]                                                                                                                                                         | 2003-10-09   |
-| 8.00.226  | 2000.80.226.0  | [278239 FIX: Extreme Memory Usage When Adding Many Security Roles]                                                                                                                                                                                            | 2006-11-21   |
-| 8.00.225  | 2000.80.225.0  | [281663 "Access Denied" Error Message When You Try to Use a Network Drive to Modify Windows 2000 Permissions]                                                                                                                                                 | 2006-10-30   |
-| 8.00.223  | 2000.80.223.0  | [280380 FIX: Buffer Overflow Exploit Possible with Extended Stored Procedures]                                                                                                                                                                                | 2004-06-29   |
-| 8.00.222  | 2000.80.222.0  | [281769 FIX: Exception Access Violation Encountered During Query Normalization]                                                                                                                                                                               | 2005-10-07   |
-| 8.00.218  | 2000.80.218.0  | [279183 FIX: Scripting Object with Several Extended Properties May Cause Exception]                                                                                                                                                                           | 2003-10-09   |
-| 8.00.217  | 2000.80.217.0  | [279293 FIX: CASE Using LIKE with Empty String Can Result in Access Violation or Abnormal Server Shutdown]                                                                                                                                                    | 2003-10-09   |
-| 8.00.211  | 2000.80.211.0  | [276329 FIX: Complex Distinct or Group By Query Can Return Unexpected Results with Parallel Execution Plan]                                                                                                                                                   | 2003-11-05   |
-| 8.00.210  | 2000.80.210.0  | [275900 FIX: Linked Server Query with Hyphen in LIKE Clause May Run Slowly]                                                                                                                                                                                   | 2003-10-09   |
-| 8.00.205  | 2000.80.205.0  | [274330 FIX: Sending Open Files as Attachment in SQL Mail Fails with Error 18025]                                                                                                                                                                             | 2005-10-07   |
-| 8.00.204  | 2000.80.204.0  | [274329 FIX: Optimizer Slow to Generate Query Plan for Complex Queries that have Many Joins and Semi-Joins]                                                                                                                                                   | 2003-10-09   |
+| 8.00.474  | 2000.80.474.0  | 315395 FIX: COM May Not Be Uninitialized for Worker Thread When You Use sp_OA                                                                                                                                                                                 | 2005-09-27   |
+| 8.00.473  | 2000.80.473.0  | 314003 FIX: Query That Uses DESC Index May Result in Access Violation                                                                                                                                                                                         | 2005-09-26   |
+| 8.00.471  | 2000.80.471.0  | 313302 FIX: Shared Table Lock Is Not Released After Lock Escalation                                                                                                                                                                                           | 2005-09-26   |
+| 8.00.469  | 2000.80.469.0  | 313005 FIX: SELECT from Computed Column That References UDF Causes SQL Server to Terminate                                                                                                                                                                    | 2005-09-26   |
+| 8.00.452  | 2000.80.452.0  | 308547 FIX: SELECT DISTINCT from Table with LEFT JOIN of View Causes Error Messages or Client Application May Stop Responding                                                                                                                                 | 2005-09-26   |
+| 8.00.444  | 2000.80.444.0  | 307540 FIX: SQLPutData May Result in Leak of Buffer Pool Memory                                                                                                                                                                                               | 2005-09-26   |
+| 8.00.444  | 2000.80.444.0  | 307655 FIX: Querying Syslockinfo with Large Numbers of Locks May Cause Server to Stop Responding                                                                                                                                                              | 2005-10-07   |
+| 8.00.443  | 2000.80.443.0  | 307538 FIX: SQLTrace Start and Stop is Now Reported in Windows NT Event Log for SQL Server 2000                                                                                                                                                               | 2005-09-26   |
+| 8.00.428  | 2000.80.428.0  | 304850 FIX: SQL Server Text Formatting Functions Contain Unchecked Buffers                                                                                                                                                                                    | 2004-08-05   |
+| 8.00.384  | 2000.80.384.0  | SQL Server 2000 Service Pack 1 (SP1)                                                                                                                                                                                                                          | 2001-06-11   |
+| 8.00.296  | 2000.80.296.0  | 299717 FIX: Query Method Used to Access Data May Allow Rights that the Login Might Not Normally Have                                                                                                                                                          | 2004-08-09   |
+| 8.00.287  | 2000.80.287.0  | 297209 FIX: Deletes, Updates and Rank Based Selects May Cause Deadlock of MSSEARCH                                                                                                                                                                            | 2005-10-07   |
+| 8.00.251  | 2000.80.251.0  | 300194 FIX: Error 644 Using Two Indexes on a Column with Uppercase Preference Sort Order                                                                                                                                                                      | 2003-10-17   |
+| 8.00.250  | 2000.80.250.0  | 291683 The Knowledge Base (KB) Article You Requested Is Currently Not Available                                                                                                                                                                               | ???          |
+| 8.00.249  | 2000.80.249.0  | 288122 FIX: Lock Monitor Uses Excessive CPU                                                                                                                                                                                                                   | 2003-09-12   |
+| 8.00.239  | 2000.80.239.0  | 285290 FIX: Complex ANSI Join Query with Distributed Queries May Cause Handled Access Violation                                                                                                                                                               | 2003-10-09   |
+| 8.00.233  | 2000.80.233.0  | 282416 FIX: Opening the Database Folder in SQL Server Enterprise Manager 2000 Takes a Long Time                                                                                                                                                               | 2003-10-09   |
+| 8.00.231  | 2000.80.231.0  | 282279 FIX: Execution of sp_OACreate on COM Object Without Type Information Causes Server Shut Down                                                                                                                                                           | 2003-10-09   |
+| 8.00.226  | 2000.80.226.0  | 278239 FIX: Extreme Memory Usage When Adding Many Security Roles                                                                                                                                                                                              | 2006-11-21   |
+| 8.00.225  | 2000.80.225.0  | 281663 "Access Denied" Error Message When You Try to Use a Network Drive to Modify Windows 2000 Permissions                                                                                                                                                   | 2006-10-30   |
+| 8.00.223  | 2000.80.223.0  | 280380 FIX: Buffer Overflow Exploit Possible with Extended Stored Procedures                                                                                                                                                                                  | 2004-06-29   |
+| 8.00.222  | 2000.80.222.0  | 281769 FIX: Exception Access Violation Encountered During Query Normalization                                                                                                                                                                                 | 2005-10-07   |
+| 8.00.218  | 2000.80.218.0  | 279183 FIX: Scripting Object with Several Extended Properties May Cause Exception                                                                                                                                                                             | 2003-10-09   |
+| 8.00.217  | 2000.80.217.0  | 279293 FIX: CASE Using LIKE with Empty String Can Result in Access Violation or Abnormal Server Shutdown                                                                                                                                                      | 2003-10-09   |
+| 8.00.211  | 2000.80.211.0  | 276329 FIX: Complex Distinct or Group By Query Can Return Unexpected Results with Parallel Execution Plan                                                                                                                                                     | 2003-11-05   |
+| 8.00.210  | 2000.80.210.0  | 275900 FIX: Linked Server Query with Hyphen in LIKE Clause May Run Slowly                                                                                                                                                                                     | 2003-10-09   |
+| 8.00.205  | 2000.80.205.0  | 274330 FIX: Sending Open Files as Attachment in SQL Mail Fails with Error 18025                                                                                                                                                                               | 2005-10-07   |
+| 8.00.204  | 2000.80.204.0  | 274329 FIX: Optimizer Slow to Generate Query Plan for Complex Queries that have Many Joins and Semi-Joins                                                                                                                                                     | 2003-10-09   |
 | 8.00.194  | 2000.80.194.0  | SQL Server 2000 RTM (no SP)                                                                                                                                                                                                                                   | ???          |
 | 8.00.190  | 2000.80.190.0  | SQL Server 2000 Gold                                                                                                                                                                                                                                          | ???          |
 | 8.00.100  | 2000.80.100.0  | SQL Server 2000 Beta 2                                                                                                                                                                                                                                        | ???          |
 | 8.00.078  | 2000.80.078.0  | SQL Server 2000 EAP5                                                                                                                                                                                                                                          | ???          |
 | 8.00.047  | 2000.80.047.0  | SQL Server 2000 EAP4                                                                                                                                                                                                                                          | ???          |
 
-[983811 MS12-060: Description of the security update for SQL Server 2000 Service Pack 4 QFE: August 14, 2012]:http://support.microsoft.com/kb/983811/
-[983809 MS12-027: Description of the security update for Microsoft SQL Server 2000 Service Pack 4 QFE: April 10, 2012]:http://support.microsoft.com/kb/983809/
-[971524 FIX: An access violation occurs when you run a DELETE statement or an UPDATE statement in the Itanium-based versions of SQL Server 2000 after you install security update MS09-004]:http://support.microsoft.com/kb/971524/
-[960083 MS09-004: Description of the security update for SQL Server 2000 QFE and for MSDE 2000: February 10, 2009]:http://support.microsoft.com/kb/960083/
-[959678 FIX: When you run the SPSBackup.exe utility to back up a SQL Server 2000 database that is configured as a back-end database for a Windows SharePoint Services server, the backup operation fails]:http://support.microsoft.com/kb/959678/
-[948111 MS08-040: Description of the security update for SQL Server 2000 QFE and MSDE 2000 July 8, 2008]:http://support.microsoft.com/kb/948111/
-[946584 FIX: The SPACE function always returns one space in SQL Server 2000 if the SPACE function uses a collation that differs from the collation of the current database]:http://support.microsoft.com/kb/946584/
-[944985 FIX: The data on the publisher does not match the data on the subscriber when you synchronize a SQL Server 2005 Mobile Edition subscriber with a SQL Server 2000 "merge replication" publisher]:http://support.microsoft.com/kb/944985/
-[939317 FIX: The CPU utilization may suddenly increase to 100 percent when there are many connections to an instance of SQL Server 2000 on a computer that has multiple processors]:http://support.microsoft.com/kb/939317/
-[936232 FIX: An access violation may occur when you try to log in to an instance of SQL Server 2000]:http://support.microsoft.com/kb/936232/
-[935950 FIX: The foreign key that you created between two tables does not work after you run the CREATE INDEX statement in SQL Server 2000]:http://support.microsoft.com/kb/935950/
-[935465 An updated version of Sqlvdi.dll is now available for SQL Server 2000]:http://support.microsoft.com/kb/935465/
-[933573 FIX: You may receive an assertion or database corruption may occur when you use the bcp utility or the "Bulk Insert" Transact-SQL command to import data in SQL Server 2000]:http://support.microsoft.com/kb/933573/
-[934203 FIX: A hotfix for Microsoft SQL Server 2000 Service Pack 4 may not update all the necessary files on an x64-based computer]:http://support.microsoft.com/kb/934203/
-[929131 FIX: In SQL Server 2000, the synchronization process is slow, and the CPU usage is high on the computer that is configured as the Distributor]:http://support.microsoft.com/kb/929131/
-[931932 FIX: The merge agent fails intermittently when you use merge replication that uses a custom resolver after you install SQL Server 2000 Service Pack 4]:http://support.microsoft.com/kb/931932/
-[930484 FIX: CPU utilization may approach 100 percent on a computer that is running SQL Server 2000 after you run the BACKUP DATABASE statement or the BACKUP LOG statement]:http://support.microsoft.com/kb/930484/
-[929440 FIX: Error messages when you try to update table rows or insert table rows into a table in SQL Server 2000: "644" or "2511"]:http://support.microsoft.com/kb/929440/
-[928568 FIX: SQL Server 2000 stops responding when you cancel a query or when a query time-out occurs, and error messages are logged in the SQL Server error log file]:http://support.microsoft.com/kb/928568/
-[928079 FIX: The Sqldumper.exe utility cannot generate a filtered SQL Server dump file when you use the Remote Desktop Connection service or Terminal Services to connect to a Windows 2000 Server-based computer in SQL Server 2000]:http://support.microsoft.com/kb/928079/
-[927186 FIX: Error message when you create a merge replication for tables that have computed columns in SQL Server 2000 Service Pack 4: "The process could not log conflict information"]:http://support.microsoft.com/kb/927186/
-[925684 FIX: You may experience one or more symptoms when you run a "CREATE INDEX" statement on an instance of SQL Server 2000]:http://support.microsoft.com/kb/925684/
-[925732 FIX: You may receive inconsistent comparison results when you compare strings by using a width sensitive collation in SQL Server 2000]:http://support.microsoft.com/kb/925732/
-[925419 FIX: The server stops responding, the performance is slow, and a time-out occurs in SQL Server 2000]:http://support.microsoft.com/kb/925419/
-[925678 FIX: Error message when you schedule a Replication Merge Agent job to run after you install SQL Server 2000 Service Pack 4: "The process could not enumerate changes at the 'Subscriber'"]:http://support.microsoft.com/kb/925678/
-[925297 FIX: The result may be sorted in the wrong order when you run a query that uses the ORDER BY clause to sort a column in a table in SQL Server 2000]:http://support.microsoft.com/kb/925297/
-[924664 FIX: You cannot stop the SQL Server service, or many minidump files and many log files are generated in SQL Server 2000]:http://support.microsoft.com/kb/924664/
-[923796 FIX: Data in a subscriber of a merge publication in SQL Server 2000 differs from the data in the publisher]:http://support.microsoft.com/kb/923796/
-[924662 FIX: The query performance may be slow when you query data from a view in SQL Server 2000]:http://support.microsoft.com/kb/924662/
-[923563 FIX: Error message when you configure an immediate updating transactional replication in SQL Server 2000: "Implicit conversion from datatype 'text' to 'nvarchar' is not allowed"]:http://support.microsoft.com/kb/923563/
-[923327 FIX: You may receive an access violation error message when you import data by using the "Bulk Insert" command in SQL Server 2000]:http://support.microsoft.com/kb/923327/
-[923797 The Knowledge Base (KB) Article You Requested Is Currently Not Available]:http://support.microsoft.com/kb/923797/
-[923344 FIX: A SQL Server 2000 session may be blocked for the whole time that a Snapshot Agent job runs]:http://support.microsoft.com/kb/923344/
-[920930 FIX: Error message when you try to run a query on a linked server in SQL Server 2000]:http://support.microsoft.com/kb/920930/
-[919221 FIX: SQL Server 2000 may take a long time to complete the synchronization phase when you create a merge publication]:http://support.microsoft.com/kb/919221/
-[919133 FIX: Each query takes a long time to compile when you execute a single query or when you execute multiple concurrent queries in SQL Server 2000]:http://support.microsoft.com/kb/919133/
-[919068 FIX: The query may return incorrect results, and the execution plan for the query may contain a "Table Spool" operator in SQL Server 2000]:http://support.microsoft.com/kb/919068/
-[919399 FIX: A profiler trace in SQL Server 2000 may stop logging events unexpectedly, and you may receive the following error message: "Failed to read trace data"]:http://support.microsoft.com/kb/919399/
-[919165 FIX: A memory leak occurs when you run a remote query by using a linked server in SQL Server 2000]:http://support.microsoft.com/kb/919165/
-[917565 FIX: Error 17883 is logged in the SQL Server error log, and the instance of SQL Server 2000 temporarily stops responding]:http://support.microsoft.com/kb/917565/
-[917972 FIX: You receive an access violation error message when you try to perform a read of a large binary large object column in SQL Server 2000]:http://support.microsoft.com/kb/917972/
-[917606 FIX: You may notice a decrease in performance when you run a query that uses the UNION ALL operator in SQL Server 2000 Service Pack 4]:http://support.microsoft.com/kb/917606/
-[916698 FIX: Error message when you run SQL Server 2000: "Failed assertion = 'lockFound == TRUE'"]:http://support.microsoft.com/kb/916698/
-[916950 FIX: You may experience heap corruption, and SQL Server 2000 may shut down with fatal access violations when you try to browse files in SQL Server 2000 Enterprise Manager on a Windows Server 2003 x64-based computer]:http://support.microsoft.com/kb/916950/
-[916652 FIX: An access violation may occur when you run a query on a table that has a multicolumn index in SQL Server 2000]:http://support.microsoft.com/kb/916652/
-[913438 FIX: The SQL Server process may end unexpectedly when you turn on trace flag -T1204 and a profiler trace is capturing the Lock:DeadLock Chain event in SQL Server 2000 SP4]:http://support.microsoft.com/kb/913438/
-[915340 FIX: A deadlock occurs when the scheduled SQL Server Agent job that you add or that you update is running in SQL Server 2000]:http://support.microsoft.com/kb/915340/
-[916287 A cumulative hotfix package is available for SQL Server 2000 Service Pack 4 build 2187]:http://support.microsoft.com/kb/916287/
-[914384 FIX: The database status changes to Suspect when you perform a bulk copy in a transaction and then roll back the transaction in SQL Server 2000]:http://support.microsoft.com/kb/914384/
-[915065 FIX: Error message when you try to apply a hotfix on a SQL Server 2000-based computer that is configured as a MSCS node: "An error in updating your system has occurred"]:http://support.microsoft.com/kb/915065/
-[913789 FIX: The password that you specify in a BACKUP statement appears in the SQL Server Errorlog file or in the Application event log if the BACKUP statement does not run in SQL Server 2000]:http://support.microsoft.com/kb/913789/
-[913684 FIX: You may receive error messages when you use linked servers in SQL Server 2000 on a 64-bit Itanium processor]:http://support.microsoft.com/kb/913684/
-[911678 FIX: No rows may be returned, and you may receive an error message when you try to import SQL Profiler trace files into tables by using the fn_trace_gettable function in SQL Server 2000]:http://support.microsoft.com/kb/911678/
-[910707 FIX: When you query a view that was created by using the VIEW_METADATA option, an access violation may occur in SQL Server 2000]:http://support.microsoft.com/kb/910707/
-[909369 FIX: Automatic checkpoints on some SQL Server 2000 databases do not run as expected]:http://support.microsoft.com/kb/909369/
-[907813 FIX: An error occurs when you try to access the Analysis Services performance monitor counter object after you apply Windows Server 2003 SP1]:http://support.microsoft.com/kb/907813/
-[909734 FIX: An error message is logged, and new diagnostics do not capture the thread stack when the SQL Server User Mode Scheduler (UMS) experiences a nonyielding thread in SQL Server 2000 Service Pack 4]:http://support.microsoft.com/kb/909734/
-[904660 A cumulative hotfix package is available for SQL Server 2000 Service Pack 4 build 2162]:http://support.microsoft.com/kb/904660/
-[907250 FIX: You may experience concurrency issues when you run the DBCC INDEXDEFRAG statement in SQL Server 2000]:http://support.microsoft.com/kb/907250/
-[906790 FIX: You receive an error message when you try to rebuild the master database after you have installed hotfix builds in SQL Server 2000 SP4 64-bit]:http://support.microsoft.com/kb/906790/
-[903742 FIX: You receive an "Error: 8526, Severity: 16, State: 2" error message in SQL Profiler when you use SQL Query Analyzer to start or to enlist into a distributed transaction after you have installed SQL Server 2000 SP4]:http://support.microsoft.com/kb/903742/
-[904244 FIX: Incorrect data is inserted unexpectedly when you perform a bulk copy operation by using the DB-Library API in SQL Server 2000 Service Pack 4]:http://support.microsoft.com/kb/904244/
-[899430 FIX: An access violation may occur when you run a SELECT query and the NO_BROWSETABLE option is set to ON in Microsoft SQL Server 2000]:http://support.microsoft.com/kb/899430/
-[899431 FIX: An access violation occurs in the Mssdi98.dll file, and SQL Server crashes when you use SQL Query Analyzer to debug a stored procedure in SQL Server 2000 Service Pack 4]:http://support.microsoft.com/kb/899431/
-[900390 FIX: The Mssdmn.exe process may use lots of CPU capacity when you perform a SQL Server 2000 full text search of Office Word documents]:http://support.microsoft.com/kb/900390/
-[900404 FIX: The results of the query may be returned much slower than you expect when you run a query that includes a GROUP BY statement in SQL Server 2000]:http://support.microsoft.com/kb/900404/
-[901212 FIX: You receive an error message if you use the sp_addalias or sp_dropalias procedures when the IMPLICIT_TRANSACTIONS option is set to ON in SQL Server 2000 SP4]:http://support.microsoft.com/kb/901212/
-[902150 FIX: Some 32-bit applications that use SQL-DMO and SQL-VDI APIs may stop working after you install SQL Server 2000 Service Pack 4 on an Itanium-based computer]:http://support.microsoft.com/kb/902150/
-[902955 FIX: You receive a "Getting registry information" message when you run the Sqldiag.exe utility after you install SQL Server 2000 SP4]:http://support.microsoft.com/kb/902955/
-[899410 FIX: You may experience slow server performance when you start a trace in an instance of SQL Server 2000 that runs on a computer that has more than four processors]:http://support.microsoft.com/kb/899410/
-[826906 FIX: A query that uses a view that contains a correlated subquery and an aggregate runs slowly]:http://support.microsoft.com/kb/826906/
-[836651 FIX: You receive query results that were not expected when you use both ANSI joins and non-ANSI joins]:http://support.microsoft.com/kb/836651/
-[Microsoft Security Bulletin MS12-060]:https://technet.microsoft.com/en-us/security/bulletin/MS12-060
-[983808 MS12-027: Description of the security update for Microsoft SQL Server 2000 Service Pack 4 GDR: April 10, 2012]:http://support.microsoft.com/kb/983808/
-[959420 MS09-004: Vulnerabilities in Microsoft SQL Server could allow remote code execution]:http://support.microsoft.com/kb/959420/
-[899761 FIX: Not all memory is available when AWE is enabled on a computer that is running a 32-bit version of SQL Server 2000 SP4]:http://support.microsoft.com/kb/899761/
-[SQL Server 2000 Service Pack 4 (SP4)]:http://www.microsoft.com/downloads/details.aspx?FamilyId=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5
-[899410 FIX: You may experience slow server performance when you start a trace in an instance of SQL Server 2000 that runs on a computer that has more than four processors]:http://support.microsoft.com/kb/899410/
-[983814 MS12-070: Description of the security update for SQL Server 2000 Reporting Services Service Pack 2]:http://support.microsoft.com/kb/983814
-[930484 FIX: CPU utilization may approach 100 percent on a computer that is running SQL Server 2000 after you run the BACKUP DATABASE statement or the BACKUP LOG statement]:http://support.microsoft.com/kb/930484/
-[929410 FIX: Error message when you run a full-text query in SQL Server 2000: "Error: 17883, Severity: 1, State: 0"]:http://support.microsoft.com/kb/929410/
-[917593 FIX: The "Audit Logout" event does not appear in the trace results file when you run a profiler trace against a linked server instance in SQL Server 2000]:http://support.microsoft.com/kb/917593/
-[915328 FIX: You may intermittently experience an access violation error when a query is executed in a parallel plan and the execution plan contains either a HASH JOIN operation or a Sort operation in SQL Server 2000]:http://support.microsoft.com/kb/915328/
-[902852 FIX: Error message when you run an UPDATE statement that uses two JOIN hints to update a table in SQL Server 2000: "Internal SQL Server error"]:http://support.microsoft.com/kb/902852/
-[900416 FIX: A 17883 error may occur you run a query that uses a hash join in SQL Server 2000]:http://support.microsoft.com/kb/900416/
-[899428 FIX: You receive incorrect results when you run a query that uses a cross join operator in SQL Server 2000 SP3]:http://support.microsoft.com/kb/899428/
-[899430 FIX: An access violation may occur when you run a SELECT query and the NO_BROWSETABLE option is set to ON in Microsoft SQL Server 2000]:http://support.microsoft.com/kb/899430/
-[898709 FIX: Error message when you use SQL Server 2000: "Time out occurred while waiting for buffer latch type 3"]:http://support.microsoft.com/kb/898709/
-[887700 FIX: Server Network Utility may display incorrect protocol properties in SQL Server 2000]:http://support.microsoft.com/kb/887700/
-[896985 FIX: The Subscriber may not be able to upload changes to the Publisher when you incrementally add an article to a publication in SQL Server 2000 SP3]:http://support.microsoft.com/kb/896985/
-[897572 FIX: You may receive a memory-related error message when you repeatedly create and destroy an out-of-process COM object within the same batch or stored procedure in SQL Server 2000]:http://support.microsoft.com/kb/897572/
-[896425 FIX: The BULK INSERT statement silently skips insert attempts when the data value is NULL and the column is defined as NOT NULL for INT, SMALLINT, and BIGINT data types in SQL Server 2000]:http://support.microsoft.com/kb/896425/
-[895123 FIX: You may receive error message 701, error message 802, and error message 17803 when many hashed buffers are available in SQL Server 2000]:http://support.microsoft.com/kb/895123/
-[895187 FIX: You receive an error message when you try to delete records by running a Delete Transact-SQL statement in SQL Server 2000]:http://support.microsoft.com/kb/895187/
-[891866 FIX: The query runs slower than you expected when you try to parse a query in SQL Server 2000]:http://support.microsoft.com/kb/891866/
-[894257 FIX: You receive an "Incorrect syntax near ')'" error message when you run a script that was generated by SQL-DMO for an Operator object in SQL Server 2000]:http://support.microsoft.com/kb/894257/
-[893312 FIX: You may receive a "SQL Server could not spawn process_loginread thread" error message, and a memory leak may occur when you cancel a remote query in SQL Server 2000]:http://support.microsoft.com/kb/893312/
-[892923 FIX: Differential database backups may not contain database changes in the Page Free Space (PFS) pages in SQL Server 2000]:http://support.microsoft.com/kb/892923/
-[892205 FIX: You may receive a 17883 error message when SQL Server 2000 performs a very large hash operation]:http://support.microsoft.com/kb/892205/
-[891585 FIX: Database recovery does not occur, or a user database is marked as suspect in SQL Server 2000]:http://support.microsoft.com/kb/891585/
-[891311 FIX: You cannot create new TCP/IP socket based connections after error messages 17882 and 10055 are written to the Microsoft SQL Server 2000 error log]:http://support.microsoft.com/kb/891311/
-[891017 FIX: SQL Server 2000 may stop responding to other requests when you perform a large deallocation operation]:http://support.microsoft.com/kb/891017/
-[891268 FIX: You receive a 17883 error message and SQL Server 2000 may stop responding to other requests when you perform large in-memory sort operations]:http://support.microsoft.com/kb/891268/
-[890942 FIX: Some complex queries are slower after you install SQL Server 2000 Service Pack 2 or SQL Server 2000 Service Pack 3]:http://support.microsoft.com/kb/890942/
-[890768 FIX: You experience non-convergence in a replication topology when you unpublish or drop columns from a dynamically filtered publication in SQL Server 2000]:http://support.microsoft.com/kb/890768/
-[890767 FIX: You receive a "Server: Msg 107, Level 16, State 3, Procedure TEMP_VIEW_Merge, Line 1" error message when the sum of the length of the published column names in a merge publication exceeds 4,000 characters in SQL Server 2000]:http://support.microsoft.com/kb/890767/
-[890925 FIX: The @@ERROR system function may return an incorrect value when you execute a Transact-SQL statement that uses a parallel execution plan in SQL Server 2000 32-bit or in SQL Server 2000 64-bit]:http://support.microsoft.com/kb/890925/
-[888444 FIX: You receive a 17883 error in SQL Server 2000 Service Pack 3 or in SQL Server 2000 Service Pack 3a when a worker thread becomes stuck in a registry call]:http://support.microsoft.com/kb/888444/
-[890742 FIX: Error message when you use a loopback linked server to run a distributed query in SQL Server 2000: "Could not perform the requested operation because the minimum query memory is not available"]:http://support.microsoft.com/kb/890742/
-[889314 FIX: Non-convergence may occur in a merge replication topology if the primary connection to the publisher is disconnected]:http://support.microsoft.com/kb/889314/
-[890200 FIX: SQL Server 2000 stops listening for new TCP/IP Socket connections unexpectedly after error message 17882 is written to the SQL Server 2000 error log]:http://support.microsoft.com/kb/890200/
-[889166 FIX: You receive a "Msg 3628" error message when you run an inner join query in SQL Server 2000]:http://support.microsoft.com/kb/889166/
-[889239 FIX: Start times in the SQL Profiler are different for the Audit:Login and Audit:Logout Events in SQL Server 2000]:http://support.microsoft.com/kb/889239/
-[887974 FIX: A fetch on a dynamic cursor can cause unexpected results in SQL Server 2000 Service Pack 3]:http://support.microsoft.com/kb/887974/
-[888007 You receive a "The product does not have a prerequisite update installed" error message when you try to install a SQL Server 2000 post-Service Pack 3 hotfix]:http://support.microsoft.com/kb/888007/
-[884554 FIX: A SPID stops responding with a NETWORKIO (0x800) waittype in SQL Server Enterprise Manager when SQL Server tries to process a fragmented TDS network packet]:http://support.microsoft.com/kb/884554/
-[885290 FIX: An assertion error occurs when you insert data in the same row in a table by using multiple connections to an instance of SQL Server]:http://support.microsoft.com/kb/885290/
-[872842 FIX: A CHECKDB statement reports a 2537 corruption error after SQL Server transfers data to a sql_variant column in SQL Server 2000]:http://support.microsoft.com/kb/872842/
-[878501 FIX: You may receive an error message when you run a SET IDENTITY_INSERT ON statement on a table and then try to insert a row into the table in SQL Server 2000]:http://support.microsoft.com/kb/878501/
-[883415 FIX: A user-defined function returns results that are not correct for a query]:http://support.microsoft.com/kb/883415/
-[873446 FIX: An access violation exception may occur when multiple users try to perform data modification operations at the same time that fire triggers that reference a deleted or an inserted table in SQL Server 2000 on a computer that is running SMP]:http://support.microsoft.com/kb/873446/
-[878500 FIX: An Audit Object Permission event is not produced when you run a TRUNCATE TABLE statement]:http://support.microsoft.com/kb/878500/
-[870994 FIX: An access violation exception may occur when you run a query that uses index names in the WITH INDEX option to specify an index hint]:http://support.microsoft.com/kb/870994/
-[867798 FIX: The @date_received parameter of the xp_readmail extended stored procedure incorrectly returns the date and the time that an e-mail message is submitted by the sender in SQL Server 2000]:http://support.microsoft.com/kb/867798/
-[843282 FIX: The Osql.exe utility does not run a Transact-SQL script completely if you start the program from a remote session by using a background service and then log off the console session]:http://support.microsoft.com/kb/843282/
-[867878 FIX: The Log Reader Agent may cause 17883 error messages]:http://support.microsoft.com/kb/867878/
-[867879 FIX: Merge replication non-convergence occurs with SQL Server CE subscribers]:http://support.microsoft.com/kb/867879/
-[867880 FIX: Merge Agent may fail with an "Invalid character value for cast specification" error message]:http://support.microsoft.com/kb/867880/
-[843266 FIX: Shared page locks can be held until end of the transaction and can cause blocking or performance problems in SQL Server 2000 Service Pack 3 (SP3)]:http://support.microsoft.com/kb/843266/
-[843263 FIX: You may receive an 8623 error message when you try to run a complex query on an instance of SQL Server]:http://support.microsoft.com/kb/843263/
-[839280 FIX: SQL debugging does not work in Visual Studio .NET after you install Windows XP Service Pack 2]:http://support.microsoft.com/kb/839280/
-[841776 FIX: Additional diagnostics have been added to SQL Server 2000 to detect unreported read operation failures]:http://support.microsoft.com/kb/841776/
-[841627 FIX: SQL Server 2000 may underestimate the cardinality of a query expression under certain circumstances]:http://support.microsoft.com/kb/841627/
-[841401 FIX: You may notice incorrect values for the "Active Transactions" counter when you perform multiple transactions on an instance of SQL Server 2000 that is running on an SMP computer]:http://support.microsoft.com/kb/841401/
-[841404 FIX: You may receive a "The query processor could not produce a query plan" error message in SQL Server when you run a query that includes multiple subqueries that use self-joins]:http://support.microsoft.com/kb/841404/
-[840856 FIX: The MSSQLServer service exits unexpectedly in SQL Server 2000 Service Pack 3]:http://support.microsoft.com/kb/840856/
-[839529 FIX: 8621 error conditions may cause SQL Server 2000 64-bit to close unexpectedly]:http://support.microsoft.com/kb/839529/
-[839589 FIX: The thread priority is raised for some threads in a parallel query]:http://support.microsoft.com/kb/839589/
-[839688 FIX: Profiler RPC events truncate parameters that have a text data type to 16 characters]:http://support.microsoft.com/kb/839688/
-[839523 FIX: An access violation exception may occur when you update a text column by using a stored procedure in SQL Server 2000]:http://support.microsoft.com/kb/839523/
-[838460 FIX: The xp_logininfo procedure may fail with error 8198 after you install Q825042 or any hotfix with SQL Server 8.00.0840 or later]:http://support.microsoft.com/kb/838460/
-[837970 FIX: You may receive an "Invalid object name..." error message when you run the DBCC CHECKCONSTRAINTS Transact-SQL statement on a table in SQL Server 2000]:http://support.microsoft.com/kb/837970/
-[837957 FIX: When you use Transact-SQL cursor variables to perform operations that have large iterations, memory leaks may occur in SQL Server 2000]:http://support.microsoft.com/kb/837957/
-[317989 FIX: Sqlakw32.dll May Corrupt SQL Statements]:http://support.microsoft.com/kb/317989/
-[837401 FIX: Rows are not successfully inserted into a table when you use the BULK INSERT command to insert rows]:http://support.microsoft.com/kb/837401/
-[836651 FIX: You receive query results that were not expected when you use both ANSI joins and non-ANSI joins]:http://support.microsoft.com/kb/836651/
-[837957 FIX: When you use Transact-SQL cursor variables to perform operations that have large iterations, memory leaks may occur in SQL Server 2000]:http://support.microsoft.com/kb/837957/
-[834798 FIX: SQL Server 2000 may not start if many users try to log in to SQL Server when SQL Server is trying to start]:http://support.microsoft.com/kb/834798/
-[834290 FIX: You receive a 644 error message when you run an UPDATE statement and the isolation level is set to READ UNCOMMITTED]:http://support.microsoft.com/kb/834290/
-[834453 FIX: The Snapshot Agent may fail after you make schema changes to the underlying tables of a publication]:http://support.microsoft.com/kb/834453/
-[833710 FIX: You receive an error message when you try to restore a database backup that spans multiple devices]:http://support.microsoft.com/kb/833710/
-[836141 FIX: An access violation exception may occur when SQL Server runs many parallel query processing operations on a multiprocessor computer]:http://support.microsoft.com/kb/836141/
-[832977 FIX: The DBCC PSS Command may cause access violations and 17805 errors in SQL Server 2000]:http://support.microsoft.com/kb/832977/
-[831950 FIX: You receive error message 3456 when you try to apply a transaction log to a server]:http://support.microsoft.com/kb/831950/
-[830912 FIX: Key Names Read from an .Ini File for a Dynamic Properties Task May Be Truncated]:http://support.microsoft.com/kb/830912/
-[831997 FIX: An invalid cursor state occurs after you apply Hotfix 8.00.0859 or later in SQL Server 2000]:http://support.microsoft.com/kb/831997/
-[831999 FIX: An AWE system uses more memory for sorting or for hashing than a non-AWE system in SQL Server 2000]:http://support.microsoft.com/kb/831999/
-[830887 FIX: Some queries that have a left outer join and an IS NULL filter run slower after you install SQL Server 2000 post-SP3 hotfix]:http://support.microsoft.com/kb/830887/
-[830767 FIX: SQL Query Analyzer may stop responding when you close a query window or open a file]:http://support.microsoft.com/kb/830767/
-[830860 FIX: The performance of a computer that is running SQL Server 2000 degrades when query execution plans against temporary tables remain in the procedure cache]:http://support.microsoft.com/kb/830860/
-[830262 FIX: Unconditional Update May Not Hold Key Locks on New Key Values]:http://support.microsoft.com/kb/830262/
-[830588 FIX: Access violation when you trace keyset-driven cursors by using SQL Profiler]:http://support.microsoft.com/kb/830588/
-[830366 FIX: An access violation occurs in SQL Server 2000 when a high volume of local shared memory connections occur after you install security update MS03-031]:http://support.microsoft.com/kb/830366/
-[830395 FIX: An access violation occurs during compilation if the table contains statistics for a computed column]:http://support.microsoft.com/kb/830395/
-[828945 FIX: You cannot insert explicit values in an IDENTITY column of a SQL Server table by using the SQLBulkOperations function or the SQLSetPos ODBC function in SQL Server 2000]:http://support.microsoft.com/kb/828945/
-[829205 FIX: Query performance may be slow and may be inconsistent when you run a query while another query that contains an IN operator with many values is compiled]:http://support.microsoft.com/kb/829205/
-[829444 FIX: A floating point exception occurs during the optimization of a query]:http://support.microsoft.com/kb/829444/
-[821334 FIX: Issues that are resolved in SQL Server 2000 build 8.00.0859]:http://support.microsoft.com/kb/821334/
-[828637 FIX: Users Can Control the Compensating Change Process in Merge Replication]:http://support.microsoft.com/kb/828637/
-[828017 The Knowledge Base (KB) Article You Requested Is Currently Not Available]:http://support.microsoft.com/kb/828017/
-[827714 FIX: A query may fail with retail assertion when you use the NOLOCK hint or the READ UNCOMMITTED isolation level]:http://support.microsoft.com/kb/827714/
-[828308 FIX: An Internet Explorer script error occurs when you access metadata information by using DTS in SQL Server Enterprise Manager]:http://support.microsoft.com/kb/828308/
-[828096 FIX: Key Locks Are Held Until the End of the Statement for Rows That Do Not Pass Filter Criteria]:http://support.microsoft.com/kb/828096/
-[828699 FIX: An Access Violation Occurs When You Run DBCC UPDATEUSAGE on a Database That Has Many Objects]:http://support.microsoft.com/kb/828699/
-[830466 FIX: You may receive an "Internal SQL Server error" error message when you run a Transact-SQL SELECT statement on a view that has many subqueries in SQL Server 2000]:http://support.microsoft.com/kb/830466/
-[827954 FIX: Slow Execution Times May Occur When You Run DML Statements Against Tables That Have Cascading Referential Integrity]:http://support.microsoft.com/kb/827954/
-[826754 FIX: A Deadlock Occurs If You Run an Explicit UPDATE STATISTICS Command]:http://support.microsoft.com/kb/826754/
-[826860 FIX: Linked Server Query May Return NULL If It Is Performed Through a Keyset Cursor]:http://support.microsoft.com/kb/826860/
-[826815 FIX: You receive an 8623 error message in SQL Server when you try to run a query that has multiple correlated subqueries]:http://support.microsoft.com/kb/826815/
-[826906 FIX: A query that uses a view that contains a correlated subquery and an aggregate runs slowly]:http://support.microsoft.com/kb/826906/
-[826822 FIX: A Member of the db_accessadmin Fixed Database Role Can Create an Alias for the dbo Special User]:http://support.microsoft.com/kb/826822/
-[826433 PRB: Additional SQL Server Diagnostics Added to Detect Unreported I/O Problems]:http://support.microsoft.com/kb/826433/
-[826364 FIX: A Query with a LIKE Comparison Results in a Non-Optimal Query Plan When You Use a Hungarian SQL Server Collation]:http://support.microsoft.com/kb/826364/
-[825854 FIX: No Exclusive Locks May Be Taken If the DisAllowsPageLocks Value Is Set to True]:http://support.microsoft.com/kb/825854/
-[826080 FIX: SQL Server 2000 protocol encryption applies to JDBC clients]:http://support.microsoft.com/kb/826080/
-[825043 FIX: Rows are unexpectedly deleted when you run a distributed query to delete or to update a linked server table]:http://support.microsoft.com/kb/825043/
-[825225 FIX: You receive an error message when you run a parallel query that uses an aggregation function or the GROUP BY clause]:http://support.microsoft.com/kb/825225/
-[319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors]:http://support.microsoft.com/kb/319477/
-[319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors]:http://support.microsoft.com/kb/319477/
-[823877 FIX: An Access Violation May Occur When You Run a Query That Contains 32,000 or More OR Clauses]:http://support.microsoft.com/kb/823877/
-[824027 FIX: A Cursor with a Large Object Parameter May Cause an Access Violation on CStmtCond::XretExecute]:http://support.microsoft.com/kb/824027/
-[820788 FIX: Delayed domain authentication may cause SQL Server to stop responding]:http://support.microsoft.com/kb/820788/
-[821741 FIX: Lock monitor exception in DeadlockMonitor::ResolveDeadlock]:http://support.microsoft.com/kb/821741/
-[821548 FIX: A Parallel Query May Generate an Access Violation After You Install SQL Server 2000 SP3]:http://support.microsoft.com/kb/821548/
-[821740 FIX: MS DTC Transaction Commit Operation Blocks Itself]:http://support.microsoft.com/kb/821740/
-[823514 FIX: Build 8.00.0837: A query that contains a correlated subquery runs slowly]:http://support.microsoft.com/kb/823514/
-[826161 FIX: You are prompted for password confirmation after you change a standard SQL Server login]:http://support.microsoft.com/kb/826161/
-[821277 MS03-031: Security patch for SQL Server 2000 Service Pack 3]:http://support.microsoft.com/kb/821277/
-[821337 FIX: Localized versions of SQL Mail and the Web Assistant Wizard may not work as expected in SQL Server 2000 64 bit]:http://support.microsoft.com/kb/821337/
-[818388 FIX: A Transact-SQL Statement That Is Embedded in the Database Name Runs with System Administrator Permissions]:http://support.microsoft.com/kb/818388/
-[826161 FIX: You are prompted for password confirmation after you change a standard SQL Server login]:http://support.microsoft.com/kb/826161/
-[821280 MS03-031: Security Patch for SQL Server 2000 64-bit]:http://support.microsoft.com/kb/821280/
-[818766 FIX: Intense SQL Server activity results in spinloop wait]:http://support.microsoft.com/kb/818766/
-[819662 FIX: Distribution Cleanup Agent Incorrectly Cleans Up Entries for Anonymous Subscribers]:http://support.microsoft.com/kb/819662/
-[819248 FIX: An access violation exception may occur when you insert a row in a table that is referenced by indexed views in SQL Server 2000]:http://support.microsoft.com/kb/819248/
-[819662 FIX: Distribution Cleanup Agent Incorrectly Cleans Up Entries for Anonymous Subscribers]:http://support.microsoft.com/kb/819662/
-[818897 FIX: Invalid TDS Sent to SQL Server Results in Access Violation]:http://support.microsoft.com/kb/818897/
-[818899 FIX: Error Message 3628 May Occur When You Run a Complex Query]:http://support.microsoft.com/kb/818899/
-[818729 FIX: Internal Query Processor Error 8623 When Microsoft SQL Server Tries to Compile a Plan for a Complex Query]:http://support.microsoft.com/kb/818729/
-[818540 FIX: SQL Server Enterprise Manager unexpectedly quits when you modify a DTS package]:http://support.microsoft.com/kb/818540/
-[818414 FIX: The Sqldumper.exe File Does Not Generate a Userdump File When It Runs Against a Windows Service]:http://support.microsoft.com/kb/818414/
-[818097 FIX: An Access Violation May Occur When You Run DBCC DBREINDEX on a Table That Has Hypothetical Indexes]:http://support.microsoft.com/kb/818097/
-[818188 FIX: Query on the sysmembers Virtual Table May Fail with a Stack Overflow]:http://support.microsoft.com/kb/818188/
-[817464 FIX: Using Sp_executesql in Merge Agent Operations]:http://support.microsoft.com/kb/817464/
-[817464 FIX: Using Sp_executesql in Merge Agent Operations]:http://support.microsoft.com/kb/817464/
-[813524 FIX: OLE DB conversion errors may occur after you select a literal string that represents datetime data as a column]:http://support.microsoft.com/kb/813524/
-[816440 FIX: Error 8623 is Raised When SQL Server Compiles a Complex Query]:http://support.microsoft.com/kb/816440/
-[817709 FIX: SQL Server 2000 might produce an incorrect cardinality estimate for outer joins]:http://support.microsoft.com/kb/817709/
-[815249 FIX: Performance of a query that is run from a client program on a SQL Server SP3 database is slow after you restart the instance of SQL Server]:http://support.microsoft.com/kb/815249/
-[817081 FIX: You receive an error message when you use the SQL-DMO BulkCopy object to import data into a SQL Server table]:http://support.microsoft.com/kb/817081/
-[816840 FIX: Error 17883 May Display Message Text That Is Not Correct]:http://support.microsoft.com/kb/816840/
-[816985 FIX: You cannot install SQL Server 2000 SP3 on the Korean version of SQL Server 2000]:http://support.microsoft.com/kb/816985/
-[815057 FIX: SQL Server 2000 Uninstall Option Does Not Remove All Files]:http://support.microsoft.com/kb/815057/
-[816039 FIX: Code Point Comparison Semantics for SQL_Latin1_General_Cp850_BIN Collation]:http://support.microsoft.com/kb/816039/
-[816084 FIX: sysindexes.statblob Column May Be Corrupted After You Run a DBCC DBREINDEX Statement]:http://support.microsoft.com/kb/816084/
-[810185 SQL Server 2000 hotfix update for SQL Server 2000 Service Pack 3 and 3a]:http://support.microsoft.com/kb/810185/
-[814035 FIX: A Full-Text Population Fails After You Apply SQL Server 2000 Service Pack 3]:http://support.microsoft.com/kb/814035/
-[815115 FIX: A DTS package that uses global variables ignores an error message raised by RAISERROR]:http://support.microsoft.com/kb/815115/
-[814889 FIX: A DELETE statement with a JOIN might fail and you receive a 625 error]:http://support.microsoft.com/kb/814889/
-[814893 FIX: Error Message: "Insufficient key column information for updating" Occurs in SQL Server 2000 SP3]:http://support.microsoft.com/kb/814893/
-[810163 FIX: An Access Violation Occurs if an sp_cursoropen Call References a Parameter That Is Not Defined]:http://support.microsoft.com/kb/810163/
-[810688 FIX: Merge Agent Can Resend Changes for Filtered Publications]:http://support.microsoft.com/kb/810688/
-[811611 FIX: Reinitialized SQL Server CE 2.0 subscribers may experience data loss and non-convergence]:http://support.microsoft.com/kb/811611/
-[813769 FIX: You May Experience Slow Performance When You Debug a SQL Server Service]:http://support.microsoft.com/kb/813769/
-[814113 FIX: DTS Designer may generate an access violation after you install SQL Server 2000 Service Pack 3]:http://support.microsoft.com/kb/814113/
-[814032 FIX: Merge publications cannot synchronize on SQL Server 2000 Service Pack 3]:http://support.microsoft.com/kb/814032/
-[SQL Server 2000 Service Pack 3 (SP3 / SP3a)]:http://www.microsoft.com/downloads/details.aspx?familyid=90DCD52C-0488-4E46-AFBF-ACACE5369FA3
-[818406 FIX: A Transact-SQL query that uses views may fail unexpectedly in SQL Server 2000 SP2]:http://support.microsoft.com/kb/818406/
-[818763 FIX: Intense SQL Server Activity Results in Spinloop Wait in SQL Server 2000 Service Pack 2]:http://support.microsoft.com/kb/818763/
-[818096 FIX: Many Extent Lock Time-outs May Occur During Extent Allocation]:http://support.microsoft.com/kb/818096/
-[816937 FIX: A memory leak may occur when you use the sp_OAMethod stored procedure to call a method of a COM object]:http://support.microsoft.com/kb/816937/
-[814889 FIX: A DELETE statement with a JOIN might fail and you receive a 625 error]:http://support.microsoft.com/kb/814889/
-[813759 FIX: A Large Number of NULL Values in Join Columns Result in Slow Query Performance]:http://support.microsoft.com/kb/813759/
-[813769 FIX: You May Experience Slow Performance When You Debug a SQL Server Service]:http://support.microsoft.com/kb/813769/
-[814460 FIX: Merge Replication with Alternate Synchronization Partners May Not Succeed After You Change the Retention Period]:http://support.microsoft.com/kb/814460/
-[812995 FIX: A Query with an Aggregate Function May Fail with a 3628 Error]:http://support.microsoft.com/kb/812995/
-[813494 FIX: Distribution Agent Fails with "Violation of Primary Key Constraint" Error Message]:http://support.microsoft.com/kb/813494/
-[812798 FIX: A UNION ALL View May Not Use Index If Partitions Are Removed at Compile Time]:http://support.microsoft.com/kb/812798/
-[812250 FIX: Indexed View May Cause a Handled Access Violation in CIndex::SetLevel1Names]:http://support.microsoft.com/kb/812250/
-[812393 FIX: Update or Delete Statement Fails with Error 1203 During Row Lock Escalation]:http://support.microsoft.com/kb/812393/
-[811703 FIX: Unexpected results from partial aggregations based on conversions]:http://support.microsoft.com/kb/811703/
-[810688 FIX: Merge Agent Can Resend Changes for Filtered Publications]:http://support.microsoft.com/kb/810688/
-[811611 FIX: Reinitialized SQL Server CE 2.0 subscribers may experience data loss and non-convergence]:http://support.microsoft.com/kb/811611/
-[811478 FIX: Restoring a SQL Server 7.0 database backup in SQL Server 2000 Service Pack 2 (SP2) may cause an assertion error in the Xdes.cpp file]:http://support.microsoft.com/kb/811478/
-[811205 FIX: An error message occurs when you perform a database or a file SHRINK operation]:http://support.microsoft.com/kb/811205/
-[811052 FIX: Latch Time-Out Message 845 Occurs When You Perform a Database or File SHRINK Operation]:http://support.microsoft.com/kb/811052/
-[810920 FIX: The JOIN queries in the triggers that involve the inserted table or the deleted table may return results that are not consistent]:http://support.microsoft.com/kb/810920/
-[810526 FIX: Cursors That Have a Long Lifetime May Cause Memory Fragmentation]:http://support.microsoft.com/kb/810526/
-[328551 FIX: Concurrency enhancements for the tempdb database]:http://support.microsoft.com/kb/328551/
-[810026 FIX: A DELETE Statement with a Self-Join May Fail and You Receive a 625 Error]:http://support.microsoft.com/kb/810026/
-[810163 FIX: An Access Violation Occurs if an sp_cursoropen Call References a Parameter That Is Not Defined]:http://support.microsoft.com/kb/810163/
-[810072 FIX: Merge Replication Reconciler Stack Overflow]:http://support.microsoft.com/kb/810072/
-[810052 FIX: A Memory Leak Occurs When Cursors Are Opened During a Connection]:http://support.microsoft.com/kb/810052/
-[810010 FIX: The fn_get_sql System Table Function May Cause Various Handled Access Violations]:http://support.microsoft.com/kb/810010/
-[331885 FIX: Update/Delete Statement Fails with Error 1203 During Page Lock Escalation]:http://support.microsoft.com/kb/331885/
-[331965 FIX: The xp_readmail Extended Stored Procedure Overwrites Attachment That Already Exists]:http://support.microsoft.com/kb/331965/
-[331968 FIX: The xp_readmail and xp_findnextmsg Extended Stored Procedures Do Not Read Mail in Time Received Order]:http://support.microsoft.com/kb/331968/
-[330212 FIX: Parallel logical operation returns results that are not consistent]:http://support.microsoft.com/kb/330212/
-[311104 FIX: The SELECT Statement with Parallelism Enabled May Cause an Assertion]:http://support.microsoft.com/kb/311104/
-[329499 FIX: Replication Removed from Database After Restore WITH RECOVERY]:http://support.microsoft.com/kb/329499/
-[329487 FIX: Transaction Log Restore Fails with Message 3456]:http://support.microsoft.com/kb/329487/
-[316333 SQL Server 2000 Security Update for Service Pack 2]:http://support.microsoft.com/kb/316333/
-[319851 FIX: Assertion and Error Message 3314 Occurs If You Try to Roll Back a Text Operation with READ UNCOMMITTED]:http://support.microsoft.com/kb/319851/
-[316333 SQL Server 2000 Security Update for Service Pack 2]:http://support.microsoft.com/kb/316333/
-[328354 FIX: A RESTORE DATABASE WITH RECOVERY Statement Can Fail with Error 9003 or Error 9004]:http://support.microsoft.com/kb/328354/
-[326999 FIX: Lock escalation on a scan while an update query is running causes a 1203 error message to occur]:http://support.microsoft.com/kb/326999/
-[810010 FIX: The fn_get_sql System Table Function May Cause Various Handled Access Violations]:http://support.microsoft.com/kb/810010/
-[322853 FIX: SQL Server Grants Unnecessary Permissions or an Encryption Function Contains Unchecked Buffers]:http://support.microsoft.com/kb/322853/
-[324186 FIX: Slow Compile Time and Execution Time with Query That Contains Aggregates and Subqueries]:http://support.microsoft.com/kb/324186/
-[Microsoft Security Bulletin MS02-039]:http://technet.microsoft.com/en-us/security/bulletin/ms02-039
-[319507 FIX: SQL Extended Procedure Functions Contain Unchecked Buffers]:http://support.microsoft.com/kb/319507/
-[319869 FIX: Improved SQL Manager Robustness for Odd Length Buffer]:http://support.microsoft.com/kb/319869/
-[319477 FIX: Extremely Large Number of User Tables on AWE System May Cause BPool::Map Errors]:http://support.microsoft.com/kb/319477/
-[318530 FIX: Reorder outer joins with filter criteria before non-selective joins and outer joins]:http://support.microsoft.com/kb/318530/
-[317979 FIX: Unchecked Buffer May Occur When You Connect to Remote Data Source]:http://support.microsoft.com/kb/317979/
-[318045 FIX: SELECT with Timestamp Column That Uses FOR XML AUTO May Fail with Stack Overflow or AV]:http://support.microsoft.com/kb/318045/
-[317748 FIX: Handle Leak Occurs in SQL Server When Service or Application Repeatedly Connects and Disconnects with Shared Memory Network Library]:http://support.microsoft.com/kb/317748
-[314003 FIX: Query That Uses DESC Index May Result in Access Violation]:http://support.microsoft.com/kb/314003/
-[315395 FIX: COM May Not Be Uninitialized for Worker Thread When You Use sp_OA]:http://support.microsoft.com/kb/315395/
-[313002 The Knowledge Base (KB) Article You Requested Is Currently Not Available]:http://support.microsoft.com/kb/313002/
-[313005 FIX: SELECT from Computed Column That References UDF Causes SQL Server to Terminate]:http://support.microsoft.com/kb/313005/
-[SQL Server 2000 Service Pack 2 (SP2)]:http://www.microsoft.com/downloads/details.aspx?FamilyID=75672496-af8e-40dc-853e-ad2c9fe96882
-[315395 FIX: COM May Not Be Uninitialized for Worker Thread When You Use sp_OA]:http://support.microsoft.com/kb/315395/
-[314003 FIX: Query That Uses DESC Index May Result in Access Violation]:http://support.microsoft.com/kb/314003/
-[313302 FIX: Shared Table Lock Is Not Released After Lock Escalation]:http://support.microsoft.com/kb/313302/
-[313005 FIX: SELECT from Computed Column That References UDF Causes SQL Server to Terminate]:http://support.microsoft.com/kb/313005/
-[308547 FIX: SELECT DISTINCT from Table with LEFT JOIN of View Causes Error Messages or Client Application May Stop Responding]:http://support.microsoft.com/kb/308547/
-[307540 FIX: SQLPutData May Result in Leak of Buffer Pool Memory]:http://support.microsoft.com/kb/307540/
-[307655 FIX: Querying Syslockinfo with Large Numbers of Locks May Cause Server to Stop Responding]:http://support.microsoft.com/kb/307655/
-[307538 FIX: SQLTrace Start and Stop is Now Reported in Windows NT Event Log for SQL Server 2000]:http://support.microsoft.com/kb/307538/
-[304850 FIX: SQL Server Text Formatting Functions Contain Unchecked Buffers]:http://support.microsoft.com/kb/304850/
-[SQL Server 2000 Service Pack 1 (SP1)]:http://www.microsoft.com/downloads/details.aspx?FamilyID=DFF43C50-51DF-4FE0-9717-DE41FB48556E
-[299717 FIX: Query Method Used to Access Data May Allow Rights that the Login Might Not Normally Have]:http://support.microsoft.com/kb/299717/
-[297209 FIX: Deletes, Updates and Rank Based Selects May Cause Deadlock of MSSEARCH]:http://support.microsoft.com/kb/297209/
-[300194 FIX: Error 644 Using Two Indexes on a Column with Uppercase Preference Sort Order]:http://support.microsoft.com/kb/300194/
-[291683 The Knowledge Base (KB) Article You Requested Is Currently Not Available]:http://support.microsoft.com/kb/291683/
-[288122 FIX: Lock Monitor Uses Excessive CPU]:http://support.microsoft.com/kb/288122/
-[285290 FIX: Complex ANSI Join Query with Distributed Queries May Cause Handled Access Violation]:http://support.microsoft.com/kb/285290/
-[282416 FIX: Opening the Database Folder in SQL Server Enterprise Manager 2000 Takes a Long Time]:http://support.microsoft.com/kb/282416/
-[282279 FIX: Execution of sp_OACreate on COM Object Without Type Information Causes Server Shut Down]:http://support.microsoft.com/kb/282279/
-[278239 FIX: Extreme Memory Usage When Adding Many Security Roles]:http://support.microsoft.com/kb/278239/
-[281663 "Access Denied" Error Message When You Try to Use a Network Drive to Modify Windows 2000 Permissions]:http://support.microsoft.com/kb/281663/
-[280380 FIX: Buffer Overflow Exploit Possible with Extended Stored Procedures]:http://support.microsoft.com/kb/280380/
-[281769 FIX: Exception Access Violation Encountered During Query Normalization]:http://support.microsoft.com/kb/281769/
-[279183 FIX: Scripting Object with Several Extended Properties May Cause Exception]:http://support.microsoft.com/kb/279183/
-[279293 FIX: CASE Using LIKE with Empty String Can Result in Access Violation or Abnormal Server Shutdown]:http://support.microsoft.com/kb/279293/
-[276329 FIX: Complex Distinct or Group By Query Can Return Unexpected Results with Parallel Execution Plan]:http://support.microsoft.com/kb/276329/
-[275900 FIX: Linked Server Query with Hyphen in LIKE Clause May Run Slowly]:http://support.microsoft.com/kb/275900/
-[274330 FIX: Sending Open Files as Attachment in SQL Mail Fails with Error 18025]:http://support.microsoft.com/kb/274330/
-[274329 FIX: Optimizer Slow to Generate Query Plan for Complex Queries that have Many Joins and Semi-Joins]:http://support.microsoft.com/kb/274329/
+[983811 MS12-060: Description of the security update for SQL Server 2000 Service Pack 4 QFE: August 14, 2012]:https://support.microsoft.com/help/983811/
+[983809 MS12-027: Description of the security update for Microsoft SQL Server 2000 Service Pack 4 QFE: April 10, 2012]:https://support.microsoft.com/help/983809/
+[960083 MS09-004: Description of the security update for SQL Server 2000 QFE and for MSDE 2000: February 10, 2009]:https://support.microsoft.com/help/960083/
 
 
-## Microsoft SQL Server 7.0 Builds <a id="microsoft-sql-server-70-builds"></a>
+## Microsoft SQL Server 7.0 Builds
+<a id="microsoft-sql-server-70-builds"></a>
 
-| Build     | KB / Description                                                                                                                                                      | Release Date |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 7.00.1152 | [948113 MS08-040: Description of the security update for SQL Server 7.0: July 8, 2008]                                                                                | 2008-07-08   |
-| 7.00.1149 | [867763 FIX: An access violation exception may occur when you run a SELECT statement that contains complex JOIN operations in SQL Server 7.0]                         | 2006-06-01   |
-| 7.00.1143 | [830233 New Connection Events Are Not Recorded in SQL Server Traces]                                                                                                  | 2005-10-25   |
-| 7.00.1143 | [829015 FIX: An attention signal that is sent from a SQL Server client application because of a query time-out may cause the SQL Server service to quit unexpectedly] | 2005-10-25   |
-| 7.00.1097 | [822756 A Complex UPDATE Statement That Uses an Index Spool Operation May Cause an Assertion]                                                                         | 2005-10-25   |
-| 7.00.1094 | [821279 MS03-031: Security patch for SQL Server 7.0 Service Pack 4]                                                                                                   | 2006-05-11   |
-| 7.00.1094 | [815495 MS03-031: Cumulative security patch for SQL Server]                                                                                                           | 2006-05-10   |
-| 7.00.1092 | [820788 FIX: Delayed domain authentication may cause SQL Server to stop responding]                                                                                   | 2005-10-25   |
-| 7.00.1087 | [814693 FIX: SQL Server 7.0 Scheduler May Periodically Stop Responding During Large Sort Operation]                                                                   | 2005-09-27   |
-| 7.00.1079 | [329499 FIX: Replication Removed from Database After Restore WITH RECOVERY]                                                                                           | 2005-10-11   |
-| 7.00.1078 | [327068 INF: SQL Server 7.0 Security Update for Service Pack 4]                                                                                                       | 2005-09-27   |
-| 7.00.1077 | [316333 SQL Server 2000 Security Update for Service Pack 2]                                                                                                           | 2006-11-24   |
-| 7.00.1063 | [SQL Server 7.0 Service Pack 4 (SP4)]                                                                                                                                 | 2002-04-26   |
-| 7.00.1033 | [324469 FIX: Error message 9004 may occur when you restore a log that does not contain any transactions]                                                              | 2005-10-12   |
-| 7.00.1026 | [319851 FIX: Assertion and Error Message 3314 Occurs If You Try to Roll Back a Text Operation with READ UNCOMMITTED]                                                  | 2005-10-18   |
-| 7.00.1004 | [304851 FIX: SQL Server Text Formatting Functions Contain Unchecked Buffers]                                                                                          | 2004-08-05   |
-| 7.00.996  | [299717 FIX: Query Method Used to Access Data May Allow Rights that the Login Might Not Normally Have]                                                                | 2004-08-09   |
-| 7.00.978  | [285870 FIX: Update With Self Join May Update Incorrect Number Of Rows]                                                                                               | 2003-10-28   |
-| 7.00.977  | [284351 FIX: SQL Server Profiler and SQL Server Agent Alerts May Fail to Work After Installing SQL Server 7.0 SP3]                                                    | 2002-04-25   |
-| 7.00.970  | [283837 FIX: SQL Server May Generate Nested Query For Linked Server When Option Is Disabled]                                                                          | 2002-10-15   |
-| 7.00.970  | [282243 FIX: Incorrect Results with Join of Column Converted to Binary]                                                                                               | 2003-10-29   |
-| 7.00.961  | [SQL Server 7.0 Service Pack 3 (SP3)]                                                                                                                                 | 2000-12-15   |
-| 7.00.921  | [283837 FIX: SQL Server May Generate Nested Query For Linked Server When Option Is Disabled]                                                                          | 2002-10-15   |
-| 7.00.919  | [282243 FIX: Incorrect Results with Join of Column Converted to Binary]                                                                                               | 2003-10-29   |
-| 7.00.918  | [280380 FIX: Buffer Overflow Exploit Possible with Extended Stored Procedures]                                                                                        | 2004-06-29   |
-| 7.00.917  | [279180 FIX: Bcp.exe with Long Query String Can Result in Assertion Failure]                                                                                          | 2005-09-26   |
-| 7.00.910  | [275901 FIX: SQL RPC That Raises Error Will Mask @@ERROR with Msg 7221]                                                                                               | 2003-10-31   |
-| 7.00.905  | [274266 FIX: Data Modification Query with a Distinct Subquery on a View May Cause Error 3624]                                                                         | 2004-07-15   |
-| 7.00.889  | [243741 FIX: Replication Initialize Method Causes Handle Leak on Failure]                                                                                             | 2005-10-05   |
-| 7.00.879  | [281185 FIX: Linked Index Server Query Through OLE DB Provider with OR Clause Reports Error 7349]                                                                     | 2006-03-14   |
-| 7.00.857  | [260346 FIX: Transactional Publications with a Filter on Numeric Columns Fail to Replicate Data]                                                                      | 2006-03-14   |
-| 7.00.843  | [266766 FIX: Temporary Stored Procedures in SA Owned Databases May Bypass Permission Checks When You Run Stored Procedures]                                           | 2006-03-14   |
-| 7.00.842  | [SQL Server 7.0 Service Pack 2 (SP2)]                                                                                                                                 | 2000-03-20   |
-| 7.00.839  | SQL Server 7.0 Service Pack 2 (SP2) Unidentified                                                                                                                      |              |
-| 7.00.835  | SQL Server 7.0 Service Pack 2 (SP2) Beta                                                                                                                              |              |
-| 7.00.776  | [258087 FIX: Non-Admin User That Executes Batch While Server Shuts Down May Encounter Retail Assertion]                                                               | 2006-03-14   |
-| 7.00.770  | [252905 FIX: Slow Compile Time on Complex Joins with Unfiltered Table]                                                                                                | 2006-03-14   |
-| 7.00.745  | [253738 FIX: SQL Server Components that Access the Registry in a Cluster Environment May Cause a Memory Leak]                                                         | 2005-10-07   |
-| 7.00.722  | [239458 FIX: Replication: Problems Mapping Characters to DB2 OLEDB Subscribers]                                                                                       | 2005-10-05   |
-| 7.00.699  | [SQL Server 7.0 Service Pack 1 (SP1)]                                                                                                                                 | 1999-07-01   |
-| 7.00.689  | SQL Server 7.0 Service Pack 1 (SP1) Beta                                                                                                                              |              |
-| 7.00.677  | SQL Server 7.0 MSDE from Office 2000 disc                                                                                                                             |              |
-| 7.00.662  | [232707 FIX: Query with Complex View Hierarchy May Be Slow to Compile]                                                                                                | 2005-10-05   |
-| 7.00.658  | [244763 FIX: Access Violation Under High Cursor Stress]                                                                                                               | 2006-03-14   |
-| 7.00.657  | [229875 FIX: Unable to Perform Automated Installation of SQL 7.0 Using File Images]                                                                                   | 2005-10-05   |
-| 7.00.643  | [220156 FIX: SQL Cluster Install Fails When SVS Name Contains Special Characters]                                                                                     | 2005-10-05   |
-| 7.00.623  | SQL Server 7.0 RTM (Gold, no SP)                                                                                                                                      | 1998-11-27   |
-| 7.00.583  | SQL Server 7.0 RC1                                                                                                                                                    |              |
-| 7.00.517  | SQL Server 7.0 Beta 3                                                                                                                                                 |              |
+| Build     | KB / Description                                                                                                                                                    | Release Date |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 7.00.1152 | [948113 MS08-040: Description of the security update for SQL Server 7.0: July 8, 2008]                                                                              | 2008-07-08   |
+| 7.00.1149 | 867763 FIX: An access violation exception may occur when you run a SELECT statement that contains complex JOIN operations in SQL Server 7.0                         | 2006-06-01   |
+| 7.00.1143 | 830233 New Connection Events Are Not Recorded in SQL Server Traces                                                                                                  | 2005-10-25   |
+| 7.00.1143 | 829015 FIX: An attention signal that is sent from a SQL Server client application because of a query time-out may cause the SQL Server service to quit unexpectedly | 2005-10-25   |
+| 7.00.1097 | 822756 A Complex UPDATE Statement That Uses an Index Spool Operation May Cause an Assertion                                                                         | 2005-10-25   |
+| 7.00.1094 | 821279 MS03-031: Security patch for SQL Server 7.0 Service Pack 4                                                                                                   | 2006-05-11   |
+| 7.00.1094 | 815495 MS03-031: Cumulative security patch for SQL Server                                                                                                           | 2006-05-10   |
+| 7.00.1092 | 820788 FIX: Delayed domain authentication may cause SQL Server to stop responding                                                                                   | 2005-10-25   |
+| 7.00.1087 | 814693 FIX: SQL Server 7.0 Scheduler May Periodically Stop Responding During Large Sort Operation                                                                   | 2005-09-27   |
+| 7.00.1079 | 329499 FIX: Replication Removed from Database After Restore WITH RECOVERY                                                                                           | 2005-10-11   |
+| 7.00.1078 | 327068 INF: SQL Server 7.0 Security Update for Service Pack 4                                                                                                       | 2005-09-27   |
+| 7.00.1077 | 316333 SQL Server 2000 Security Update for Service Pack 2                                                                                                           | 2006-11-24   |
+| 7.00.1063 | [SQL Server 7.0 Service Pack 4 (SP4)]                                                                                                                               | 2002-04-26   |
+| 7.00.1033 | 324469 FIX: Error message 9004 may occur when you restore a log that does not contain any transactions                                                              | 2005-10-12   |
+| 7.00.1026 | 319851 FIX: Assertion and Error Message 3314 Occurs If You Try to Roll Back a Text Operation with READ UNCOMMITTED                                                  | 2005-10-18   |
+| 7.00.1004 | 304851 FIX: SQL Server Text Formatting Functions Contain Unchecked Buffers                                                                                          | 2004-08-05   |
+| 7.00.996  | 299717 FIX: Query Method Used to Access Data May Allow Rights that the Login Might Not Normally Have                                                                | 2004-08-09   |
+| 7.00.978  | 285870 FIX: Update With Self Join May Update Incorrect Number Of Rows                                                                                               | 2003-10-28   |
+| 7.00.977  | 284351 FIX: SQL Server Profiler and SQL Server Agent Alerts May Fail to Work After Installing SQL Server 7.0 SP3                                                    | 2002-04-25   |
+| 7.00.970  | 283837 FIX: SQL Server May Generate Nested Query For Linked Server When Option Is Disabled                                                                          | 2002-10-15   |
+| 7.00.970  | 282243 FIX: Incorrect Results with Join of Column Converted to Binary                                                                                               | 2003-10-29   |
+| 7.00.961  | SQL Server 7.0 Service Pack 3 (SP3)                                                                                                                                 | 2000-12-15   |
+| 7.00.921  | 283837 FIX: SQL Server May Generate Nested Query For Linked Server When Option Is Disabled                                                                          | 2002-10-15   |
+| 7.00.919  | 282243 FIX: Incorrect Results with Join of Column Converted to Binary                                                                                               | 2003-10-29   |
+| 7.00.918  | 280380 FIX: Buffer Overflow Exploit Possible with Extended Stored Procedures                                                                                        | 2004-06-29   |
+| 7.00.917  | 279180 FIX: Bcp.exe with Long Query String Can Result in Assertion Failure                                                                                          | 2005-09-26   |
+| 7.00.910  | 275901 FIX: SQL RPC That Raises Error Will Mask @@ERROR with Msg 7221                                                                                               | 2003-10-31   |
+| 7.00.905  | 274266 FIX: Data Modification Query with a Distinct Subquery on a View May Cause Error 3624                                                                         | 2004-07-15   |
+| 7.00.889  | 243741 FIX: Replication Initialize Method Causes Handle Leak on Failure                                                                                             | 2005-10-05   |
+| 7.00.879  | 281185 FIX: Linked Index Server Query Through OLE DB Provider with OR Clause Reports Error 7349                                                                     | 2006-03-14   |
+| 7.00.857  | 260346 FIX: Transactional Publications with a Filter on Numeric Columns Fail to Replicate Data                                                                      | 2006-03-14   |
+| 7.00.843  | 266766 FIX: Temporary Stored Procedures in SA Owned Databases May Bypass Permission Checks When You Run Stored Procedures                                           | 2006-03-14   |
+| 7.00.842  | SQL Server 7.0 Service Pack 2 (SP2)                                                                                                                                 | 2000-03-20   |
+| 7.00.839  | SQL Server 7.0 Service Pack 2 (SP2) Unidentified                                                                                                                    |              |
+| 7.00.835  | SQL Server 7.0 Service Pack 2 (SP2) Beta                                                                                                                            |              |
+| 7.00.776  | 258087 FIX: Non-Admin User That Executes Batch While Server Shuts Down May Encounter Retail Assertion                                                               | 2006-03-14   |
+| 7.00.770  | 252905 FIX: Slow Compile Time on Complex Joins with Unfiltered Table                                                                                                | 2006-03-14   |
+| 7.00.745  | 253738 FIX: SQL Server Components that Access the Registry in a Cluster Environment May Cause a Memory Leak                                                         | 2005-10-07   |
+| 7.00.722  | 239458 FIX: Replication: Problems Mapping Characters to DB2 OLEDB Subscribers                                                                                       | 2005-10-05   |
+| 7.00.699  | SQL Server 7.0 Service Pack 1 (SP1)                                                                                                                                 | 1999-07-01   |
+| 7.00.689  | SQL Server 7.0 Service Pack 1 (SP1) Beta                                                                                                                            |              |
+| 7.00.677  | SQL Server 7.0 MSDE from Office 2000 disc                                                                                                                           |              |
+| 7.00.662  | 232707 FIX: Query with Complex View Hierarchy May Be Slow to Compile                                                                                                | 2005-10-05   |
+| 7.00.658  | 244763 FIX: Access Violation Under High Cursor Stress                                                                                                               | 2006-03-14   |
+| 7.00.657  | 229875 FIX: Unable to Perform Automated Installation of SQL 7.0 Using File Images                                                                                   | 2005-10-05   |
+| 7.00.643  | 220156 FIX: SQL Cluster Install Fails When SVS Name Contains Special Characters                                                                                     | 2005-10-05   |
+| 7.00.623  | SQL Server 7.0 RTM (Gold, no SP)                                                                                                                                    | 1998-11-27   |
+| 7.00.583  | SQL Server 7.0 RC1                                                                                                                                                  |              |
+| 7.00.517  | SQL Server 7.0 Beta 3                                                                                                                                               |              |
 
-[948113 MS08-040: Description of the security update for SQL Server 7.0: July 8, 2008]:http://support.microsoft.com/kb/948113/
-[867763 FIX: An access violation exception may occur when you run a SELECT statement that contains complex JOIN operations in SQL Server 7.0]:http://support.microsoft.com/kb/867763/
-[830233 New Connection Events Are Not Recorded in SQL Server Traces]:http://support.microsoft.com/kb/830233/
-[829015 FIX: An attention signal that is sent from a SQL Server client application because of a query time-out may cause the SQL Server service to quit unexpectedly]:http://support.microsoft.com/kb/829015/
-[822756 A Complex UPDATE Statement That Uses an Index Spool Operation May Cause an Assertion]:http://support.microsoft.com/kb/822756/
-[821279 MS03-031: Security patch for SQL Server 7.0 Service Pack 4]:http://support.microsoft.com/kb/821279/
-[815495 MS03-031: Cumulative security patch for SQL Server]:http://support.microsoft.com/kb/815495/
-[820788 FIX: Delayed domain authentication may cause SQL Server to stop responding]:http://support.microsoft.com/kb/820788/
-[814693 FIX: SQL Server 7.0 Scheduler May Periodically Stop Responding During Large Sort Operation]:http://support.microsoft.com/kb/814693/
-[329499 FIX: Replication Removed from Database After Restore WITH RECOVERY]:http://support.microsoft.com/kb/329499/
-[327068 INF: SQL Server 7.0 Security Update for Service Pack 4]:http://support.microsoft.com/kb/327068/
-[316333 SQL Server 2000 Security Update for Service Pack 2]:http://support.microsoft.com/kb/316333/
+[948113 MS08-040: Description of the security update for SQL Server 7.0: July 8, 2008]:https://support.microsoft.com/help/941203
 [SQL Server 7.0 Service Pack 4 (SP4)]:https://www.microsoft.com/en-us/download/details.aspx?id=7959
-[324469 FIX: Error message 9004 may occur when you restore a log that does not contain any transactions]:http://support.microsoft.com/kb/324469/
-[319851 FIX: Assertion and Error Message 3314 Occurs If You Try to Roll Back a Text Operation with READ UNCOMMITTED]:http://support.microsoft.com/kb/319851/
-[304851 FIX: SQL Server Text Formatting Functions Contain Unchecked Buffers]:http://support.microsoft.com/kb/304851/
-[299717 FIX: Query Method Used to Access Data May Allow Rights that the Login Might Not Normally Have]:http://support.microsoft.com/kb/299717/
-[285870 FIX: Update With Self Join May Update Incorrect Number Of Rows]:http://support.microsoft.com/kb/285870/
-[284351 FIX: SQL Server Profiler and SQL Server Agent Alerts May Fail to Work After Installing SQL Server 7.0 SP3]:http://support.microsoft.com/kb/284351/
-[283837 FIX: SQL Server May Generate Nested Query For Linked Server When Option Is Disabled]:http://support.microsoft.com/kb/283837/
-[282243 FIX: Incorrect Results with Join of Column Converted to Binary]:http://support.microsoft.com/kb/282243/
-[SQL Server 7.0 Service Pack 3 (SP3)]:https://support.microsoft.com/en-us/kb/274799
-[283837 FIX: SQL Server May Generate Nested Query For Linked Server When Option Is Disabled]:http://support.microsoft.com/kb/283837/
-[282243 FIX: Incorrect Results with Join of Column Converted to Binary]:http://support.microsoft.com/kb/282243/
-[280380 FIX: Buffer Overflow Exploit Possible with Extended Stored Procedures]:http://support.microsoft.com/kb/280380/
-[279180 FIX: Bcp.exe with Long Query String Can Result in Assertion Failure]:http://support.microsoft.com/kb/279180/
-[275901 FIX: SQL RPC That Raises Error Will Mask @@ERROR with Msg 7221]:http://support.microsoft.com/kb/275901/
-[274266 FIX: Data Modification Query with a Distinct Subquery on a View May Cause Error 3624]:http://support.microsoft.com/kb/274266/
-[243741 FIX: Replication Initialize Method Causes Handle Leak on Failure]:http://support.microsoft.com/kb/243741/
-[281185 FIX: Linked Index Server Query Through OLE DB Provider with OR Clause Reports Error 7349]:http://support.microsoft.com/kb/281185/
-[260346 FIX: Transactional Publications with a Filter on Numeric Columns Fail to Replicate Data]:http://support.microsoft.com/kb/260346/
-[266766 FIX: Temporary Stored Procedures in SA Owned Databases May Bypass Permission Checks When You Run Stored Procedures]:http://support.microsoft.com/kb/266766/
-[SQL Server 7.0 Service Pack 2 (SP2)]:https://support.microsoft.com/en-us/kb/254561
-[258087 FIX: Non-Admin User That Executes Batch While Server Shuts Down May Encounter Retail Assertion]:http://support.microsoft.com/kb/258087/
-[252905 FIX: Slow Compile Time on Complex Joins with Unfiltered Table]:http://support.microsoft.com/kb/252905/
-[253738 FIX: SQL Server Components that Access the Registry in a Cluster Environment May Cause a Memory Leak]:http://support.microsoft.com/kb/253738/
-[239458 FIX: Replication: Problems Mapping Characters to DB2 OLEDB Subscribers]:http://support.microsoft.com/kb/239458/
-[SQL Server 7.0 Service Pack 1 (SP1)]:https://support.microsoft.com/en-us/kb/232570
-[232707 FIX: Query with Complex View Hierarchy May Be Slow to Compile]:http://support.microsoft.com/kb/232707/
-[244763 FIX: Access Violation Under High Cursor Stress]:http://support.microsoft.com/kb/244763/
-[229875 FIX: Unable to Perform Automated Installation of SQL 7.0 Using File Images]:http://support.microsoft.com/kb/229875/
-[220156 FIX: SQL Cluster Install Fails When SVS Name Contains Special Characters]:http://support.microsoft.com/kb/220156/
 
 
-## Microsoft SQL Server 6.5 Builds <a id="microsoft-sql-server-65-builds"></a>
+## Microsoft SQL Server 6.5 Builds
+<a id="microsoft-sql-server-65-builds"></a>
 
-| Build    | KB / Description                                                                                                    | Release Date |
-|----------|---------------------------------------------------------------------------------------------------------------------|--------------|
-| 6.50.480 | [238621 FIX: Integrated Security Sprocs Have Race Condition Between Threads That Can Result in an Access Violation] | 2005-10-07   |
-| 6.50.479 | [273914 Microsoft SQL Server 6.5 Post Service Pack 5a Update]                                                       | 2000-09-12   |
-| 6.50.469 | [249343 FIX: SQL Performance Counters May Cause Handle Leak in WinLogon Process]                                    |              |
-| 6.50.465 | [250493 FIX: Memory Leak with xp_sendmail Using Attachments]                                                        |              |
-| 6.50.464 | [275483 FIX: Insert Error (Msg 213) with NO_BROWSETABLE and INSERT EXEC]                                            | 1999-11-08   |
-| 6.50.462 | [238620 FIX: Terminating Clients with TSQL KILL May Cause ODS AV]                                                   |              |
-| 6.50.451 | [236447 FIX: ODS Errors During Attention Signal May Cause SQL Server to Stop Responding]                            |              |
-| 6.50.444 | [240172 FIX: Multiple Attachments not Sent Correctly Using xp_sendmail]                                             |              |
-| 6.50.441 | [234679 FIX: SNMP Extended Stored Procedures May Leak Memory]                                                       |              |
-| 6.50.422 | [187278 FIX: Large Query Text from Socket Client May Cause Open Data Services Access Violation]                     |              |
-| 6.50.416 | [197176 Microsoft SQL Server 6.5 Service Pack 5a (SP5a)]                                                            | 1998-12-24   |
-| 6.50.415 | Microsoft SQL Server 6.5 Service Pack 5 (SP5)                                                                       |              |
-| 6.50.339 | Y2K hotfix                                                                                                          |              |
-| 6.50.297 | "Site Server 3.0 Commerce Edition" hotfix                                                                           |              |
-| 6.50.281 | 178295 Microsoft SQL Server 6.5 Service Pack 4 (SP4)                                                                |              |
-| 6.50.259 | 6.5 as included with "Small Business Server" only                                                                   |              |
-| 6.50.258 | Microsoft SQL Server 6.5 Service Pack 3a (SP3a)                                                                     |              |
-| 6.50.252 | Microsoft SQL Server 6.5 Service Pack 3 (SP3)                                                                       |              |
-| 6.50.240 | [160727 Microsoft SQL Server 6.5 Service Pack 2 (SP2)]                                                              |              |
-| 6.50.213 | [153096 Microsoft SQL Server 6.5 Service Pack 1 (SP1)]                                                              |              |
-| 6.50.201 | Microsoft SQL Server 6.5 RTM                                                                                        | 1996-06-30   |
-
-[238621 FIX: Integrated Security Sprocs Have Race Condition Between Threads That Can Result in an Access Violation]:http://support.microsoft.com/kb/238621/en-us#
-[273914 Microsoft SQL Server 6.5 Post Service Pack 5a Update]:http://support.microsoft.com/kb/273914/en-us#
-[249343 FIX: SQL Performance Counters May Cause Handle Leak in WinLogon Process]:http://support.microsoft.com/kb/249343/en-us#
-[250493 FIX: Memory Leak with xp_sendmail Using Attachments]:http://support.microsoft.com/kb/250493/en-us#
-[275483 FIX: Insert Error (Msg 213) with NO_BROWSETABLE and INSERT EXEC]:http://support.microsoft.com/kb/275483/en-us#
-[238620 FIX: Terminating Clients with TSQL KILL May Cause ODS AV]:http://support.microsoft.com/kb/238620/en-us#
-[236447 FIX: ODS Errors During Attention Signal May Cause SQL Server to Stop Responding]:http://support.microsoft.com/kb/236447/en-us#
-[240172 FIX: Multiple Attachments not Sent Correctly Using xp_sendmail]:http://support.microsoft.com/kb/240172/en-us#
-[234679 FIX: SNMP Extended Stored Procedures May Leak Memory]:http://support.microsoft.com/kb/234679/en-us#
-[187278 FIX: Large Query Text from Socket Client May Cause Open Data Services Access Violation]:http://support.microsoft.com/kb/187278/en-us#
-[197176 Microsoft SQL Server 6.5 Service Pack 5a (SP5a)]:http://support.microsoft.com/kb/197176/en-us#
-[178295 Microsoft SQL Server 6.5 Service Pack 4 (SP4)]:http://support.microsoft.com/kb/178295/en-us#
-[160727 Microsoft SQL Server 6.5 Service Pack 2 (SP2)]:http://support.microsoft.com/kb/160727/en-us#
-[153096 Microsoft SQL Server 6.5 Service Pack 1 (SP1)]:http://support.microsoft.com/kb/153096/en-us#
+| Build    | KB / Description                                                                                                  | Release Date |
+|----------|-------------------------------------------------------------------------------------------------------------------|--------------|
+| 6.50.480 | 238621 FIX: Integrated Security Sprocs Have Race Condition Between Threads That Can Result in an Access Violation | 2005-10-07   |
+| 6.50.479 | 273914 Microsoft SQL Server 6.5 Post Service Pack 5a Update                                                       | 2000-09-12   |
+| 6.50.469 | 249343 FIX: SQL Performance Counters May Cause Handle Leak in WinLogon Process                                    |              |
+| 6.50.465 | 250493 FIX: Memory Leak with xp_sendmail Using Attachments                                                        |              |
+| 6.50.464 | 275483 FIX: Insert Error (Msg 213) with NO_BROWSETABLE and INSERT EXEC                                            | 1999-11-08   |
+| 6.50.462 | 238620 FIX: Terminating Clients with TSQL KILL May Cause ODS AV                                                   |              |
+| 6.50.451 | 236447 FIX: ODS Errors During Attention Signal May Cause SQL Server to Stop Responding                            |              |
+| 6.50.444 | 240172 FIX: Multiple Attachments not Sent Correctly Using xp_sendmail                                             |              |
+| 6.50.441 | 234679 FIX: SNMP Extended Stored Procedures May Leak Memory                                                       |              |
+| 6.50.422 | 187278 FIX: Large Query Text from Socket Client May Cause Open Data Services Access Violation                     |              |
+| 6.50.416 | 197176 Microsoft SQL Server 6.5 Service Pack 5a (SP5a)                                                            | 1998-12-24   |
+| 6.50.415 | Microsoft SQL Server 6.5 Service Pack 5 (SP5)                                                                     |              |
+| 6.50.339 | Y2K hotfix                                                                                                        |              |
+| 6.50.297 | "Site Server 3.0 Commerce Edition" hotfix                                                                         |              |
+| 6.50.281 | 178295 Microsoft SQL Server 6.5 Service Pack 4 (SP4)                                                              |              |
+| 6.50.259 | 6.5 as included with "Small Business Server" only                                                                 |              |
+| 6.50.258 | Microsoft SQL Server 6.5 Service Pack 3a (SP3a)                                                                   |              |
+| 6.50.252 | Microsoft SQL Server 6.5 Service Pack 3 (SP3)                                                                     |              |
+| 6.50.240 | 160727 Microsoft SQL Server 6.5 Service Pack 2 (SP2)                                                              |              |
+| 6.50.213 | 153096 Microsoft SQL Server 6.5 Service Pack 1 (SP1)                                                              |              |
+| 6.50.201 | Microsoft SQL Server 6.5 RTM                                                                                      | 1996-06-30   |
 
 
-## Microsoft SQL Server 6.0 Builds <a id="microsoft-sql-server-60-builds"></a>
+## Microsoft SQL Server 6.0 Builds
+<a id="microsoft-sql-server-60-builds"></a>
 
 | Build    | KB / Description                              | Release Date |
 |----------|-----------------------------------------------|--------------|

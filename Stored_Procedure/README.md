@@ -1,9 +1,13 @@
 # Microsoft SQL Server Stored Procedure
+[SQL Server Name Convention and T-SQL Programming Style](https://github.com/ktaranov/sqlserver-kit/blob/master/SQL%20Server%20Name%20Convention%20and%20T-SQL%20Programming%20Style.md)
+
 Start all procedure from if exist statement:
 ```sql
 IF OBJECT_ID('dbo.ProcedureName', 'P') IS NULL
 EXECUTE ('CREATE PROCEDURE dbo.ProcedureName AS SELECT 1');
 GO
+
+
 ALTER PROCEDURE dbo.usp_ProcedureName(
 ```
 It helps to save all grants for procedure (analog `CREATE OR REPLACE PROCEDURE` in [Oracle](http://docs.oracle.com/cd/B19306_01/server.102/b14200/statements_6009.htm 'Offical Oracle Documentation')).
@@ -16,8 +20,26 @@ Tested on SQL Server version: 2012/2014
 
 
 ## [sp_RestoreGene](sp_RestoreGene.sql)
+Author: Andy Yun<br/>
+Original link: https://sqlbek.wordpress.com/2015/03/04/sp_helpexpandview-well-i-didnt-expect-that/<br/>
+Tested on SQL Server version: 2008/2012/2014
+
+
+## [sp_RestoreGene](sp_RestoreGene.sql)
 Author: Paul Brewer<br/>
 Original link: https://paulbrewer.wordpress.com/sp_restoregene/<br/>
+Tested on SQL Server version: 2008/2012/2014
+
+
+## [usp_GetUntrustedForeignKeys](usp_GetUntrustedForeignKeys.sql)
+Author: Jefferson Elias<br/>
+Original link: http://www.sqlshack.com/managing-untrusted-foreign-keys/<br/>
+Tested on SQL Server version: 2008/2012/2014
+
+
+## [usp_RunCheckAllUntrustedForeignKeys](usp_RunCheckAllUntrustedForeignKeys.sql)
+Author: Jefferson Elias<br/>
+Original link: http://www.sqlshack.com/managing-untrusted-foreign-keys/<br/>
 Tested on SQL Server version: 2008/2012/2014
 
 
@@ -31,6 +53,18 @@ Tested on SQL Server version: 2012
 Author: Unknown<br/>
 Original link: Unknown<br/>
 Tested on SQL Server version: 2012/2014
+
+
+## [sp_Blocked_Process_Report_Viewer](sp_blocked_process_report_viewer.sql)
+Author: Michael J. Swart<br/>
+Original link: https://sqlblockedprocesses.codeplex.com/<br/>
+Tested on SQL Server version: 2012/2014
+
+
+## [sp_sqltrace](sp_sqltrace.sql)
+Author:  Erland Sommarskog<br/>
+Original link: http://www.sommarskog.se/sqlutil/sqltrace.html<br/>
+Tested on SQL Server version: 2005/2008/2012/2014
 
 
 ## [usp_BulkUpload](usp_BulkUpload.sql)
@@ -150,4 +184,16 @@ Tested on SQL Server version: 2008/2012/2014
 ## [usp_Generate_Merge](usp_SSIS_ScriptEnvironment.sql)
 Author: Jeff Jordan<br/>
 Original link: http://www.sqlservercentral.com/articles/Integration+Services+%28SSIS%29/135173/<br />
+Tested on SQL Server version: 2012/2014
+
+
+## [usp_SQLskillsAnalyzeLog](usp_SQLskillsAnalyzeLog.sql)
+Author: Paul S. Randal<br/>
+Original link: http://www.sqlskills.com/blogs/paul/code-to-analyze-the-transaction-hierarchy-in-the-log/<br />
+Tested on SQL Server version: 2012/2014
+
+
+## [usp_CreatePlantUMLCode](usp_CreatePlantUMLCode.sql)
+Author: Phil Factor<br/>
+Original link: https://www.simple-talk.com/sql/sql-tools/automatically-creating-uml-database-diagrams-for-sql-server/<br />
 Tested on SQL Server version: 2012/2014
